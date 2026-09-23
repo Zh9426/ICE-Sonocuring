@@ -1,0 +1,9 @@
+# Keep reviewable CSV/PNG/JSON snapshots; regenerate large MATLAB arrays locally.
+results/**/*.mat
+results/**/*.fig
+results/**/*.log
+results/validation/sweep_smoke/
+*.log
+*.asv
+slprj/
+.DS_Store
