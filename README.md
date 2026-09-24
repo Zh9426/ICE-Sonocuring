@@ -6,6 +6,8 @@ GitHub 私有仓库：[Zh9426/ICE-Sonocuring](https://github.com/Zh9426/ICE-Sono
 
 2026-09-24 升级范围、差距和阶段验收见 [P0 升级计划](docs/superpowers/plans/2026-09-24-ice-p0-upgrade.md)，代码与数值解释见 [P0-A 升级报告](docs/upgrade_2026-09-24.md)。旧版结果报告记录升级前的基线，不代表新模型的结果。
 
+项目更新与下一步判断见 [更新公告](CHANGELOG.md)；提交说明规则见 [AGENTS.md](AGENTS.md)。
+
 ## 快速开始
 
 要求 MATLAB R2024b 或兼容版本；仅用基础 MATLAB 与内置单元测试框架，不依赖 k-Wave、Field II 或信号处理工具箱。已验证的版本见 `docs/verification.md`。
