@@ -1,0 +1,19 @@
+function cfg = synthetic_dual_96_config()
+%SYNTHETIC_DUAL_96_CONFIG Two illustrative 12x8 arrays; not a real ICE.
+cfg=demo_config('matrix');
+a=cfg.array;
+cfg.probe=struct('kind','dual_array', ...
+    'imaging',struct('array',a,'offset_m',[-.002 0 0]), ...
+    'curing',struct('array',a,'offset_m',[.002 0 0]));
+cfg.array=struct('type','dual_array');
+cfg.architecture.type='dual_array';
+cfg.architecture.pattern='separate';
+cfg.excitation.focus_m=[.002 0 .015];
+cfg.excitation.regional_points_m=[.0005 0 .015;.002 0 .015;.0035 0 .015];
+cfg.provenance.description=['Synthetic two-subarray 12x8 + 12x8 coplanar layout; ' ...
+    'offset and acoustic values are illustrative, not measured ICE parameters.'];
+cfg.provenance.parameter_sources=struct('imaging_array','synthetic', ...
+    'curing_array','synthetic','offsets','synthetic', ...
+    'medium','synthetic','source_velocity','synthetic', ...
+    'material_threshold','synthetic');
+end

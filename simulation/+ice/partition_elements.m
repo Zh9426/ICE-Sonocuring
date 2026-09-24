@@ -14,9 +14,22 @@ n = size(geom.positions_m,1);
 if ~isstruct(architecture) || ~isscalar(architecture) || ~isfield(architecture,'type')
     error('ice:Partition','Architecture must specify shared or partitioned type.');
 end
-type = enum_text(architecture.type, {'shared','partitioned'});
+type = enum_text(architecture.type, {'shared','partitioned','dual_array'});
 if strcmp(type,'shared')
     partition = struct('imaging_mask',true(n,1),'curing_mask',true(n,1));
+    return
+end
+if strcmp(type,'dual_array')
+    if ~all(isfield(geom,{'imaging_mask','curing_mask'})) || ...
+            ~isequal(size(geom.imaging_mask),[n 1]) || ...
+            ~isequal(size(geom.curing_mask),[n 1]) || ...
+            ~islogical(geom.imaging_mask) || ~islogical(geom.curing_mask) || ...
+            ~any(geom.imaging_mask) || ~any(geom.curing_mask) || ...
+            any(geom.imaging_mask & geom.curing_mask) || ...
+            ~all(geom.imaging_mask | geom.curing_mask)
+        error('ice:Partition','Dual array geometry needs nonempty disjoint imaging/curing masks.');
+    end
+    partition=struct('imaging_mask',geom.imaging_mask,'curing_mask',geom.curing_mask);
     return
 end
 if n<2
@@ -26,7 +39,8 @@ if ~all(isfield(architecture,{'pattern','curing_fraction'}))
     error('ice:Partition','Partitioned architecture requires pattern and curing_fraction.');
 end
 pattern = enum_text(architecture.pattern, ...
-    {'central_curing','peripheral_curing','checkerboard','random_sparse','custom'});
+    {'central_curing','peripheral_curing','checkerboard','random_sparse','custom', ...
+    'left_curing','right_curing','lower_curing','upper_curing'});
 f = architecture.curing_fraction;
 if ~isnumeric(f) || ~isreal(f) || ~isscalar(f) || ~isfinite(f) || f<=0 || f>=1
     error('ice:Partition','curing_fraction must be strictly between zero and one.');
@@ -53,6 +67,18 @@ switch pattern
         end
         parity = mod(sum(geom.grid_indices,2),2);
         [~,order] = sortrows([parity,r2,index],[1 2 3]);
+        curing(order(1:count)) = true;
+    case 'left_curing'
+        [~,order] = sortrows([xy,index],[1 2 3]);
+        curing(order(1:count)) = true;
+    case 'right_curing'
+        [~,order] = sortrows([xy,index],[-1 2 3]);
+        curing(order(1:count)) = true;
+    case 'lower_curing'
+        [~,order] = sortrows([xy,index],[2 1 3]);
+        curing(order(1:count)) = true;
+    case 'upper_curing'
+        [~,order] = sortrows([xy,index],[-2 1 3]);
         curing(order(1:count)) = true;
     case 'random_sparse'
         if ~isfield(architecture,'seed')

@@ -11,21 +11,26 @@
 | array.pitch_m | [px py] / m | 中心间距；一维 y 间距不参与排列 |
 | array.element_width_m | 单元 x 宽度 / m | 正数且不大于 px |
 | array.element_height_m | 单元 y 高度 / m | 矩阵多行时不大于 py |
+| probe.kind | dual_array | 可选；两组独立共面阵列时启用 |
+| probe.imaging / curing.array | 各自的线/矩阵阵列参数 | 两组参数独立，示例各 12×8 |
+| probe.imaging / curing.offset_m | 各组中心相对局部原点 [x y 0] / m | 必须共面且实体阵元不重叠；任意 z 偏移/曲率尚不支持 |
 | acoustics.frequency_hz | 中心频率 / Hz | 单频，正数 |
 | acoustics.sound_speed_m_s | 均匀声速 / m/s | 正数 |
 | acoustics.density_kg_m3 | 密度 / kg/m³ | 正数；强度换算所需 |
 | source.velocity_m_s | 均匀单元法向速度峰值 / m/s | 非负；不是发射电压 |
 | source.calibrated | 是否具有绝对幅值标定 | logical；绝对阈值要求 true |
 | source.calibration_note | 标定来源、工况与日期 | 不能为空；不替代标定数据 |
-| architecture.type | shared / partitioned | shared 的成像和固化掩码都为全部 |
-| architecture.pattern | central_curing / peripheral_curing / checkerboard / random_sparse / custom | 分区时生效 |
+| architecture.type | dual_array / shared / partitioned | dual_array 使用探头的独立组掩码；shared 是理论全孔径基线 |
+| architecture.pattern | central/peripheral/left/right/upper/lower_curing、checkerboard、random_sparse、custom | 连续块优先作工程候选；随机仅为数值基线 |
 | architecture.curing_fraction | 期望固化单元占比 | (0,1)，离散计数取整并保留两类单元 |
 | architecture.seed | 随机种子 | 局部随机流，不改变全局 RNG |
 | architecture.custom_curing_mask | N×1 logical | 成像掩码为补集；不可全空或全满 |
-| excitation.mode | focused / broad / expanded | 聚焦、未聚焦平面延时、时序多焦点 |
+| excitation.mode | single_focus / focal_scan / multi_point_scan / trajectory_scan；旧 focused / broad / expanded | 新 scan 名称目前均为离散顺序焦点；旧名兼容 |
 | excitation.focus_m | 1×3 目标焦点 / m | z>0；同时定义默认基线 |
 | excitation.regional_points_m | K×3 扫描焦点 / m | 每行对应单独一次发射 |
 | excitation.dwell_weights | K×1 时间占比 | 非负和为1；空值为均匀分配 |
+| exposure.dwell_time_s | K×1 各焦点停留秒数 / s | 可选；各项正且总和等于 exposure_time_s；与非空 dwell_weights 同时给出时须一致 |
+| exposure.pulse_cycles / prf_hz | 每脉冲周期数 / 脉冲重复频率 Hz | 可选，必须成对；`cycles*PRF/frequency=duty_cycle`；仅作协议检查 |
 | excitation.aperture_size_m | [x y] / m | 以原点为中心，按单元中心筛选；Inf 表示不限 |
 | excitation.apodization | uniform / hann / N×1 非负幅值 | Hann 为几何位置加窗，不压缩稀疏孔洞 |
 | excitation.normalization | fixed_element / fixed_total | 保留单元幅值 / 面积加权平方驱动积分固定 |
@@ -33,6 +38,9 @@
 | excitation.custom_delay_s | N×1 延时 / s | 空值自动设计；否则覆盖全部 shot 延时 |
 | exposure.duty_cycle | 固化发射占总时间比例 | [0,1]；必须包含成像等停发间隔 |
 | exposure.exposure_time_s | 总曝光时长 / s | 正数；当前只保留，不预测剂量反应 |
+| hardware.max_element_velocity_m_s | 单阵元峰值表面速度上限 / m/s | 可选、显式数值；无电压映射 |
+| hardware.max_duty_cycle / max_exposure_time_s | 占空比 / 秒数上限 | 可选；仅检验配置约束 |
+| hardware.max_total_channels / max_curing_channels | 总阵元/活动固化通道数上限 | 可选；模型通道计数，不代表真实连接器映射 |
 | grid.x_m / y_m / z_m | 体素中心坐标 / m | 每轴至少2个，严格递增且等间距，z>0 |
 | target.center_m | 椭球中心 / m | 1×3；完整目标必须落在 ROI 内 |
 | target.radii_m | 椭球三轴半径 / m | 正数；目标至少被一个体素中心采到 |
@@ -51,3 +59,5 @@
 压力使用峰值相量幅度，不是 RMS。若原材料阈值为正弦 RMS，转换为峰值需乘 √2；宽带/非对称波形不能照搬。强度 `1 W/cm² = 10^4 W/m²`；声压 `1 MPa = 10^6 Pa`。未知“400”不做任何换算。
 
 `intensity_pulse_average_w_m2` 是整个扫描中正停留 shots 的脉冲内强度平均，不代表每个焦点单独的峰值强度。`intensity_temporal_average_w_m2` 再乘总体占空比。`pressure_peak_pa` 是曾达到的峰值包络。三者是不同物理统计量。
+
+新增 `safety` 指标中的 `prefocal`/`postfocal` 以目标椭球的轴向边界划分，均只覆盖所选 ROI；`NaN` 与 `status=empty_roi` 表示该区域没有采样体素。`focus_position_error_m` 是**目标内采样峰值**与设定焦点的距离，单次聚焦才定义，不能代替连续空间的真实焦点误差。`feasibility.status=unknown` 表示没有可检验限值，`pass` 仅表示已声明的数值限值未越界。

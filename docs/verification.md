@@ -1,6 +1,6 @@
 # 验证记录
 
-日期：2026-09-22。运行环境：MATLAB 24.2.0.2773142 (R2024b) Update 2，Windows。当前代码使用基础 MATLAB；没有调用 k-Wave、Field II 或 Verasonics。
+基线记录日期：2026-09-22。运行环境：MATLAB 24.2.0.2773142 (R2024b) Update 2，Windows。当前代码使用基础 MATLAB；没有调用 k-Wave、Field II 或 Verasonics。以下 49 项是当日基线计数；`results/validation/test_results.csv` 已在 2026-09-24 更新为 60 项，最新证据见文末。
 
 ## 软件检查
 
@@ -53,3 +53,9 @@
 ## 实验端仍待验证
 
 真实几何/曲率/声透镜、频带和电压输出能力、硬件延时单位、接收链、吸收/温升、材料阈值单位与剂量关系均未验证。k-Wave 目前是数据和要求接口，Verasonics 目前是非执行交接契约。没有真实硬件发射或实验水槽数据。
+
+## 2026-09-24 P0-A 增量验证
+
+- 全套 `run_tests`：**60/60 通过，0 失败**；机器记录为已更新的 `results/validation/test_results.csv`。旧 49 项回归与 11 项新增检查同时运行。
+- 对 `simulation/+ice`、`config`、`scripts`、`adapters/+iceio`、`tests` 的 **39 个 MATLAB 文件**执行 `checkcode(...,'-id')`，**0 条警告**。
+- 合成双阵列与连续分区各运行一次，并输出同一公共相对阈值下的比较表、阈值敏感性与图像；运行 `run_p0_convergence` 检查两级体素与两个点的积分分片敏感性。具体数值、ROI 截断与解释限制见 [升级记录](upgrade_2026-09-24.md)。

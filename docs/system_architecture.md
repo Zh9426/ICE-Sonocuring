@@ -2,11 +2,15 @@
 
 配置 → 阵列几何 → 成像/固化掩码 → 每次发射的权重和延时 → 声场求解 → 时序聚合 → 阈值指标 → 图表/CSV/MAT。
 
+2026-09-24 起，研究决策链扩展为：探头几何/阵列架构 → 发射协议 → 快速声场 → 目标与非目标声学暴露 → 驱动数值约束 → 候选筛选。异质传播、热/流、材料剂量与成像 PSF 位于后续独立验证层；当前数据链不能由声压直接推出组织安全或成功固化。
+
 `simulation/+ice` 使用 MATLAB 包命名空间。几何、序列、传播和指标可以单独调用；`ice.simulate` 是组合入口。`adapters/+iceio` 保存未来后端交接契约。
 
 ## 坐标与几何
 
 阵元位于 x-y 平面，法线沿 +z；x 沿导管轴向与线阵排列，y 是俯仰方向，z 是 side-looking 出射方向。该坐标系随导管局部表面定义，与全局心脏坐标尚未配准。矩形阵元内法向速度均匀；表面被划分为积分小片，阵元高度/宽度真实参与积分。未额外乘 sinc 指向性，以免重复计算有限尺寸效应。
+
+`ice.make_probe_geometry` 把成像与固化两组独立线/矩阵阵列放入同一局部平面，各自的阵元尺寸、pitch 与平移由配置给出，并拒绝实体阵元重叠。`dual_array` 的成像/固化掩码互斥；`shared` 对同一组合几何仅作全孔径理论参考。当前 Rayleigh 求解器要求 z=0 且共同 +z 法线，故导管曲率、非共面/倾斜组、匹配层和外壳尚不能由这个几何表示。`left/right/upper/lower_curing` 以坐标排序形成连续半平面分区；目标计数切断等坐标行时，索引破平局可能破坏镜像对称。
 
 ## 声压公式与单位
 
@@ -19,6 +23,8 @@ p(\mathbf r)=\frac{i\rho c k}{2\pi}\sum_n v_0 w_n e^{-i\omega\tau_n}\sum_q\Delta
 这是均匀无损介质、无限刚性挡板和线性单频条件下 Rayleigh 表面积分的中点数值求积。`v0` 为峰值法向速度 m/s，`w` 无量纲，`tau` 为 s，`rho` 为 kg/m³，`c` 为 m/s，`k` 为 1/m，`dS` 为 m²，输出是 Pa 的复数峰值相量。不是电压到声压的转换模型。中点积分必须通过小片细分检查收敛。
 
 点聚焦使用 `tau_n=(max(R_active)-R_n)/c`，因此传播相位与延时相位相消。宽波束使用平面波转向延时，仍是有限孔径的未聚焦波束，不保证目标内均匀。扩展焦区使用独立焦点的时序扫描。
+
+`single_focus` 与旧 `focused` 等价；`focal_scan`、`multi_point_scan`、`trajectory_scan` 与旧 `expanded` 在本版都调用显式 K×3 焦点列表，逐 shot 发射。`dwell_time_s` 和 `exposure_time_s` 约束总时长；周期数和 PRF 只检查推导占空比与指定占空比相容，并未将窄带单频求解器升级为瞬态脉冲传播模型。
 
 上述线性表面积分思路可与 [Field II 用户指南的空间响应与阵元细分方法](https://field-ii.dk/documents/users_guide_2010.pdf) 对照。积分相量约定参考 [Fast nearfield method 的 Rayleigh 积分表达](https://pmc.ncbi.nlm.nih.gov/articles/PMC2806438/)。本项目没有调用 Field II。
 
@@ -39,3 +45,5 @@ p(\mathbf r)=\frac{i\rho c k}{2\pi}\sum_n v_0 w_n e^{-i\omega\tau_n}\sum_q\Delta
 网格为均匀体素中心，体积为 dx*dy*dz，ROI 边界在首尾中心外半个体素。覆盖率的分母是目标体素体积；目标外超阈值比例的分母是本次 ROI 内非目标体积。改变 ROI 会改变后一比例，必须保留配置。目标均匀性使用所选物理量的体积加权 CV，越低越均匀，零均值或空集合标为未定义。
 
 主瓣 -6 dB 宽度只针对选定焦平面的 x/y 切线，并报告是否截断；次级峰需要由两侧局部极小值划出主瓣。它不自动等于栅瓣。周期采样满足可见的相位重复方向才有栅瓣解释，参见 [MathWorks 栅瓣方向定义](https://www.mathworks.com/help/phased/ref/plotgratinglobediagram.html)。
+
+新增 `ice.acoustic_safety_metrics` 将目标轴向范围 `[z0-rz,z0+rz]` 之外的采样点分为焦前/焦后，并报告压力/全时段等效强度最大值和超阈值体积。目标外峰值与焦点误差都是选定 ROI 和体素上的离散统计；更远处可能还有未采样峰。`ice.check_drive_limits` 仅将模型表面速度、占空比、总时长和阵元/固化通道数与**用户显式填写**的上限比较，电压、辐射声功率、探头发热均未映射。无上限时结果是 `unknown`，并非设备通过认证。

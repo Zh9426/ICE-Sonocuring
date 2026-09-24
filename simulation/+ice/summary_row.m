@@ -12,6 +12,7 @@ m=r.metrics;row=struct('case_name',string(label),'array_type',string(r.cfg.array
     'target_uniformity_cv',m.target_uniformity_cv,'above_threshold_volume_m3',m.above_threshold_volume_m3, ...
     'target_volume_m3',m.target_volume_m3,'off_target_volume_m3',m.off_target_volume_m3, ...
     'width_x_6db_m',r.beam.x.width_6db_m,'width_y_6db_m',r.beam.y.width_6db_m, ...
+    'width_z_6db_m',r.beam.z.width_6db_m, ...
     'secondary_x_db',r.beam.x.secondary_peak_db,'secondary_y_db',r.beam.y.secondary_peak_db, ...
     'secondary_x_status',string(r.beam.x.secondary_peak_status), ...
     'secondary_y_status',string(r.beam.y.secondary_peak_status), ...
@@ -21,5 +22,31 @@ m=r.metrics;row=struct('case_name',string(label),'array_type',string(r.cfg.array
     'duty_cycle',r.cfg.exposure.duty_cycle,'exposure_time_s',r.cfg.exposure.exposure_time_s, ...
     'threshold_type',string(r.cfg.threshold.type),'threshold_scale',string(r.cfg.threshold.scale), ...
     'threshold_value_si',m.threshold_value_si,'intensity_basis',string(r.cfg.threshold.intensity_basis));
+if isfield(r,'safety')
+    s=r.safety;
+    row.off_target_max_pressure_pa=s.off_target_max_pressure_pa;
+    row.off_target_max_intensity_ta_w_m2=s.off_target_max_intensity_ta_w_m2;
+    row.prefocal_max_pressure_pa=s.prefocal_max_pressure_pa;
+    row.postfocal_max_pressure_pa=s.postfocal_max_pressure_pa;
+    row.prefocal_above_threshold_volume_m3=s.prefocal_above_threshold_volume_m3;
+    row.postfocal_above_threshold_volume_m3=s.postfocal_above_threshold_volume_m3;
+    row.target_to_off_target_peak_pressure_ratio=s.target_to_off_target_peak_pressure_ratio;
+    row.focus_position_error_m=s.focus_position_error_m;
+    row.prefocal_status=string(s.status.prefocal);
+    row.postfocal_status=string(s.status.postfocal);
+end
+if isfield(r,'feasibility')
+    row.drive_limit_status=string(r.feasibility.status);
+    row.max_element_velocity_m_s=r.feasibility.observed.max_element_velocity_m_s;
+    row.total_channels=r.feasibility.observed.total_channels;
+    row.curing_channels=r.feasibility.observed.curing_channels;
+end
+if isfield(r,'solver_info')
+    row.solver_name=string(r.solver_info.name);
+    row.solver_version=string(r.solver_info.version);
+    row.grid_dx_m=r.solver_info.grid_spacing_m(1);
+    row.grid_dy_m=r.solver_info.grid_spacing_m(2);
+    row.grid_dz_m=r.solver_info.grid_spacing_m(3);
+end
 if strcmp(r.cfg.architecture.type,'shared'),row.pattern="shared";end
 end
