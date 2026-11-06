@@ -1,0 +1,4 @@
+candidate,imaging_elements,exposure_elements,shared_elements,max_element_on_time_us,total_element_on_time_us,acoustic_power_status,hardware_qualified
+full64_image_16_exposure,64,16,16,1075,20800,unknown_requires_calibration,0
+full64_image_32_exposure,64,32,32,1075,36800,unknown_requires_calibration,0
+full64_image_64_exposure,64,64,64,1075,68800,unknown_requires_calibration,0

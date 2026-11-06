@@ -1,0 +1,18 @@
+[
+  {
+    "file": "+iceind/prepare_aperture_control.m",
+    "messages": []
+  },
+  {
+    "file": "verify_aperture_control.m",
+    "messages": []
+  },
+  {
+    "file": "run_kwave_aperture_control.m",
+    "messages": []
+  },
+  {
+    "file": "tests/test_aperture_control.m",
+    "messages": []
+  }
+]

@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "tag": "fine52",
+  "controlled_change": "grid spacing only",
+  "solver": "kspaceFirstOrder3D",
+  "kwave_version": "1.4.1",
+  "matlab": "24.2.0.2773142 (R2024b) Update 2",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "runtime_s": 809.8842171,
+  "grid_size": [
+    200,
+    100,
+    600
+  ],
+  "dx_m": 5.2E-5,
+  "dt_s": 6.7532467532467536E-9,
+  "Nt": 5925,
+  "record_start_index": 1,
+  "record_window_end_s": 4.000623376623377E-5,
+  "pml_cells": 20,
+  "config": {
+    "input_mat": "H:\\print_transducer\\results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "dx_m": 5.2E-5,
+    "domain_m": [
+      0.010400000000000001,
+      0.0052000000000000006,
+      0.0312
+    ],
+    "source_offset_m": 0.00052,
+    "pml_m": 0.00104,
+    "cfl": 0.2,
+    "density_kg_m3": 1000,
+    "source_amplitude_pa": 1,
+    "output_dir": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22",
+    "provenance": "assumed_homogeneous_lossless_linear_flat_elements"
+  },
+  "source": {
+    "input_mat": "H:\\print_transducer\\results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "input_sha256": "e89b2e056538cff0f9fe6ba5a4a11cd23d35829be6019a7411391b9eb417bb3d",
+    "input_partition": "odd_imaging_even_exposure",
+    "num_elements": 64,
+    "active_elements": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64
+    ],
+    "tx_index": 16,
+    "target_m": [
+      0,
+      0,
+      0.02
+    ],
+    "element_area_m2": 2.2220000000000002E-7,
+    "area_error_m2": 6.1082843961045969E-16,
+    "source_z_offset_m": 0.00052,
+    "source_z_kgrid_m": -0.01508,
+    "active_center_arrival_spread_s": 3.3881317890172014E-21,
+    "waveform": {
+      "half_cycles": 40,
+      "active_fraction": 0.67,
+      "frequency_hz": 6.0E+6,
+      "nominal_drive_duration_s": 3.3333333333333333E-6,
+      "assumed_filter_group_delay_s": 4.5E-7,
+      "acoustic_duration_s": 4.234E-6,
+      "assumed_reference_source_pa": 1,
+      "calibration": "assumed_not_voltage_calibrated",
+      "waveform_model": "nominal_centered_PWM_assumed_Gaussian_bandpass_normalized"
+    },
+    "source_model": "assumed_flat_rectangular_additive_pressure_no_lens",
+    "elevation_focus_m_metadata_only": 0.03,
+    "sound_speed_m_s": 1540,
+    "source_pitch_m": 0.00013,
+    "points_per_wavelength": 4.9358974358974361,
+    "spectral_energy_above_spatial_nyquist_fraction": 4.5170731475686118E-8,
+    "sensor_coordinates_m": [
+      [
+        0,
+        0,
+        0.014976
+      ],
+      [
+        -0.000988,
+        0,
+        0.02002
+      ],
+      [
+        0,
+        0,
+        0.02002
+      ],
+      [
+        0.000988,
+        0,
+        0.02002
+      ]
+    ],
+    "source_geometry_provenance": "existing_code_unverified",
+    "medium_provenance": "assumed_homogeneous_lossless_linear_flat_elements"
+  },
+  "metrics": {
+    "forward_roi_z_min_m": 0.002,
+    "forward_peak_pa_assumed": 1.4088793992996216,
+    "forward_peak_xyz_m": [
+      0,
+      0,
+      0.01846
+    ],
+    "forward_peak_error_m": 0.0015399999999999997,
+    "forward_peak_on_boundary": false,
+    "near_target_halfwidth_m": [
+      0.002,
+      0.002,
+      0.004
+    ],
+    "near_target_peak_pa_assumed": 1.4088793992996216,
+    "near_target_peak_xyz_m": [
+      0,
+      0,
+      0.01846
+    ],
+    "near_target_peak_error_m": 0.0015399999999999997,
+    "near_target_peak_on_boundary": false,
+    "target_pa_assumed_interpolated": 1.3510387310614953,
+    "target_over_forward_peak": 0.95894562141594242,
+    "target_plane_sampled_z_m": 0.02002,
+    "target_plane_peak_xyz_m": [
+      0,
+      0,
+      0.02002
+    ],
+    "target_plane_peak_pa_assumed": 1.3497551679611206,
+    "target_plane_lateral_error_m": 0,
+    "width_at_forward_peak_m": [
+      0.00071731000132689419,
+      0.0028936612223403567,
+      0.013477399540574943
+    ],
+    "width_clipped": [
+      false,
+      false,
+      false
+    ],
+    "width_definition": "Contiguous half-amplitude crossings through forward peak, approx -6.02 dB; NaN if unclosed.",
+    "proposed_position_tolerance_m": 0.0005,
+    "within_proposed_0p5mm_tolerance": false,
+    "physical_accuracy": "unknown",
+    "pressure_definition": "max_t(abs(p)); not a simultaneous pressure snapshot"
+  },
+  "exposure": [
+    {
+      "target_m": [
+        0,
+        0,
+        0.02
+      ],
+      "target_halfwidth_m_assumed": [
+        0.0005,
+        0.0005,
+        0.0005
+      ],
+      "material_bounds_m_assumed": [
+        [
+          -0.004,
+          0.004
+        ],
+        [
+          -0.002,
+          0.002
+        ],
+        [
+          0.01,
+          0.028
+        ]
+      ],
+      "target_clipped": false,
+      "material_clipped": false,
+      "voxel_volume_m3": 1.406079999999997E-13,
+      "target_voxels": 7220,
+      "material_voxels": 4.076226E+6,
+      "target_voxel_volume_m3": 1.0151897599999978E-9,
+      "material_voxel_volume_m3": 5.7314998540799874E-7,
+      "target_max_qp_pa2_s": 3.0604306375811235E-6,
+      "target_min_qp_pa2_s": 2.1479157231249257E-7,
+      "target_mean_qp_pa2_s": 1.59615397816699E-6,
+      "target_cv_qp": 0.55679457962355372,
+      "target_qp_integral_pa2_s_m3": 1.6203991740183884E-15,
+      "material_qp_integral_pa2_s_m3": 7.5024069167926106E-14,
+      "target_qp_fraction_of_material": 0.021598390916273212,
+      "outside_qp_fraction_of_material": 0.97840160908372675,
+      "outside_max_qp_pa2_s": 3.1959853613021309E-6,
+      "outside_over_target_max_qp": 1.0442926959547583,
+      "outside_max_xyz_m": [
+        0,
+        0,
+        0.018355999999999997
+      ],
+      "outside_over_target_max_pressure": 1.0237633452203911,
+      "target_relative_halfmax_coverage": 0.53573407202216061,
+      "prefocal_qp_fraction_of_material": 0.54013541119612807,
+      "postfocal_qp_fraction_of_material": 0.40164476246771919,
+      "lateral_qp_fraction_of_material": 0.036621435419879528,
+      "units": "Qp Pa^2 s; spatial integral Pa^2 s m^3; fractions are observed-volume proxy fractions, not energy.",
+      "provenance": "synthetic_target_assumed_material_box_no_cure_or_safety_threshold"
+    },
+    {
+      "target_m": [
+        0,
+        0,
+        0.02
+      ],
+      "target_halfwidth_m_assumed": [
+        0.0005,
+        0.001,
+        0.0005
+      ],
+      "material_bounds_m_assumed": [
+        [
+          -0.004,
+          0.004
+        ],
+        [
+          -0.002,
+          0.002
+        ],
+        [
+          0.01,
+          0.028
+        ]
+      ],
+      "target_clipped": false,
+      "material_clipped": false,
+      "voxel_volume_m3": 1.406079999999997E-13,
+      "target_voxels": 14820,
+      "material_voxels": 4.076226E+6,
+      "target_voxel_volume_m3": 2.0838105599999955E-9,
+      "material_voxel_volume_m3": 5.7314998540799874E-7,
+      "target_max_qp_pa2_s": 3.0604306375811235E-6,
+      "target_min_qp_pa2_s": 1.409933364064805E-7,
+      "target_mean_qp_pa2_s": 1.4101032703190827E-6,
+      "target_cv_qp": 0.5812119050322635,
+      "target_qp_integral_pa2_s_m3": 2.9383880853814327E-15,
+      "material_qp_integral_pa2_s_m3": 7.5024069167926106E-14,
+      "target_qp_fraction_of_material": 0.039165938584382158,
+      "outside_qp_fraction_of_material": 0.96083406141561789,
+      "outside_max_qp_pa2_s": 3.1959853613021309E-6,
+      "outside_over_target_max_qp": 1.0442926959547583,
+      "outside_max_xyz_m": [
+        0,
+        0,
+        0.018355999999999997
+      ],
+      "outside_over_target_max_pressure": 1.0237633452203911,
+      "target_relative_halfmax_coverage": 0.46356275303643724,
+      "prefocal_qp_fraction_of_material": 0.54013541119612807,
+      "postfocal_qp_fraction_of_material": 0.40164476246771919,
+      "lateral_qp_fraction_of_material": 0.019053887751770623,
+      "units": "Qp Pa^2 s; spatial integral Pa^2 s m^3; fractions are observed-volume proxy fractions, not energy.",
+      "provenance": "synthetic_target_assumed_material_box_no_cure_or_safety_threshold"
+    },
+    {
+      "target_m": [
+        0,
+        0,
+        0.02
+      ],
+      "target_halfwidth_m_assumed": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "material_bounds_m_assumed": [
+        [
+          -0.004,
+          0.004
+        ],
+        [
+          -0.002,
+          0.002
+        ],
+        [
+          0.01,
+          0.028
+        ]
+      ],
+      "target_clipped": false,
+      "material_clipped": false,
+      "voxel_volume_m3": 1.406079999999997E-13,
+      "target_voxels": 57798,
+      "material_voxels": 4.076226E+6,
+      "target_voxel_volume_m3": 8.1268611839999821E-9,
+      "material_voxel_volume_m3": 5.7314998540799874E-7,
+      "target_max_qp_pa2_s": 3.1451370883744339E-6,
+      "target_min_qp_pa2_s": 2.4453633877708925E-9,
+      "target_mean_qp_pa2_s": 7.2393701069392948E-7,
+      "target_cv_qp": 1.2086723190292155,
+      "target_qp_integral_pa2_s_m3": 5.8833355918694764E-15,
+      "material_qp_integral_pa2_s_m3": 7.5024069167926106E-14,
+      "target_qp_fraction_of_material": 0.078419308058335621,
+      "outside_qp_fraction_of_material": 0.92158069194166448,
+      "outside_max_qp_pa2_s": 3.1959853613021309E-6,
+      "outside_over_target_max_qp": 1.0161672675940425,
+      "outside_max_xyz_m": [
+        0,
+        0,
+        0.018355999999999997
+      ],
+      "outside_over_target_max_pressure": 1.0089146337195058,
+      "target_relative_halfmax_coverage": 0.21422886605072841,
+      "prefocal_qp_fraction_of_material": 0.51383045918906056,
+      "postfocal_qp_fraction_of_material": 0.37556309928212472,
+      "lateral_qp_fraction_of_material": 0.032187133470479211,
+      "units": "Qp Pa^2 s; spatial integral Pa^2 s m^3; fractions are observed-volume proxy fractions, not energy.",
+      "provenance": "synthetic_target_assumed_material_box_no_cure_or_safety_threshold"
+    },
+    {
+      "target_m": [
+        0,
+        0,
+        0.02
+      ],
+      "target_halfwidth_m_assumed": [
+        0.0005,
+        0.001,
+        0.002
+      ],
+      "material_bounds_m_assumed": [
+        [
+          -0.004,
+          0.004
+        ],
+        [
+          -0.002,
+          0.002
+        ],
+        [
+          0.01,
+          0.028
+        ]
+      ],
+      "target_clipped": false,
+      "material_clipped": false,
+      "voxel_volume_m3": 1.406079999999997E-13,
+      "target_voxels": 57057,
+      "material_voxels": 4.076226E+6,
+      "target_voxel_volume_m3": 8.0226706559999829E-9,
+      "material_voxel_volume_m3": 5.7314998540799874E-7,
+      "target_max_qp_pa2_s": 3.1959853613021309E-6,
+      "target_min_qp_pa2_s": 1.2609195333860563E-7,
+      "target_mean_qp_pa2_s": 1.3795174817319772E-6,
+      "target_cv_qp": 0.57957142550331375,
+      "target_qp_integral_pa2_s_m3": 1.1067414420130126E-14,
+      "material_qp_integral_pa2_s_m3": 7.5024069167926106E-14,
+      "target_qp_fraction_of_material": 0.1475181837359151,
+      "outside_qp_fraction_of_material": 0.85248181626408492,
+      "outside_max_qp_pa2_s": 3.1807534926232519E-6,
+      "outside_over_target_max_qp": 0.99523406181288854,
+      "outside_max_xyz_m": [
+        0,
+        0,
+        0.017992
+      ],
+      "outside_over_target_max_pressure": 0.99392665945031944,
+      "target_relative_halfmax_coverage": 0.40999351525667316,
+      "prefocal_qp_fraction_of_material": 0.45812538568125644,
+      "postfocal_qp_fraction_of_material": 0.31793022544123672,
+      "lateral_qp_fraction_of_material": 0.076426205141591153,
+      "units": "Qp Pa^2 s; spatial integral Pa^2 s m^3; fractions are observed-volume proxy fractions, not energy.",
+      "provenance": "synthetic_target_assumed_material_box_no_cure_or_safety_threshold"
+    }
+  ],
+  "observed_forward_qp_integral_pa2_s_m3": 1.2763322150074447E-13,
+  "qp_definition": "dt * Nt * p_rms^2 = discrete sum_t(p^2)*dt, Pa^2 s; record starts at step 1.",
+  "recording": "Full-volume RMS and time extrema only; no full-domain time histories.",
+  "target_provenance": "synthetic",
+  "material_provenance": "assumed_box_not_actual_sample",
+  "absolute_pressure_calibration": "unknown",
+  "physical_validation": "unknown",
+  "hardware_run": false,
+  "setup_modified": false,
+  "full_sequence_simulated": false,
+  "limitations": [
+    "Homogeneous linear lossless fluid and assumed 1 Pa source; no measured electric-to-acoustic transfer.",
+    "Elevation lens, matching/backing layers, interelement coupling, container walls and absorption omitted.",
+    "Qp volume fractions are pressure-squared-time proxies, not acoustic energy, heat, cure or safety.",
+    "Finite domain and 40 us recording window; all-space/all-time convergence not established.",
+    "Box sizes and 5 percent/0.13 mm numerical sensitivity criteria are proposed, not material/device specifications."
+  ]
+}

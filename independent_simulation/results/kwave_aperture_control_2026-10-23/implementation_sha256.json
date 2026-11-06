@@ -1,0 +1,30 @@
+[
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\prepare_aperture_control.m",
+    "sha256": "5703cddca991f7f2d7b001e6a426a6706a2a1a1fabd111b6d99509d04c644d82"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_aperture_control.m",
+    "sha256": "68f526abb8737141667b73950f084caaafe27fec47eed29436268c4050fdef21"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\verify_aperture_control.m",
+    "sha256": "6a548ab9b4bc33de58ec10ad431732011e3914b1a55fc34a40a4b8a7f8f74d7b"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_aperture_control_R2024b.ps1",
+    "sha256": "286cf5116bb39158a6cd46e0b445210853395fded629b839b1f6c7a0a9da0acf"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_aperture_control.m",
+    "sha256": "6789e583bb588aae4c06be99298afba9262b64249d00a7371e56eab7ccac6295"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\analyze_aperture_control.py",
+    "sha256": "db705041ee2ed7fe9c2430d1c3456f4422fd5e59da181e42cac791fed4aebc67"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_aperture_analysis.py",
+    "sha256": "69b48ca92e93e7997aa310f88552a59bbcccc1c58f5733c23035acd9a6517375"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "stage": "stage1",
+  "lang": "zh",
+  "primary_language": "zh-CN",
+  "recommend": { "canvas": "ppt169" },
+  "audience": { "value": "课题组与导师；需要了解ICE-Sonocuring近期完成的工程工作、当前64元奇偶方案、数值证据边界和下一步所需条件。" },
+  "communication_intent": { "value": "先汇报2026年9月至10月的可追溯进展，再解释当前声场结果与空间选择性问题，最后对齐体外单点、连续短线和双功能流程的验证优先级与资源需求。" },
+  "audience_outcome": { "value": "听众能够区分已实现工具、模型内数值证据和未验证的物理能力，理解负结果为何决定下一步，并明确需要补齐的探头、系统、材料和计量资料。" },
+  "core_message": { "value": "已形成声学筛选、离线序列与独立三维传播的可追溯工具链；当前模型显示目标附近声压集中，但焦移、长轴向焦区与目标外暴露仍待解释，真实声压、材料固化及完整双功能流程尚未验证。下一步先取得有标定、有对照的体外单点证据。" },
+  "delivery_context": { "value": "主要用于8—10分钟、有主讲的中文课题组或导师阶段汇报，五页均承载内容，不另占封面或目录页；次要用于会后结合演讲备注复核。" },
+  "artifact_afterlife": { "value": "交付可编辑PPTX，作为阶段汇报、讨论与后续修改的底稿；备注保留讲稿、完整来源路径、模型假设以及硬件手册版本和页码。" },
+  "content_divergence": { "value": "以《PPT详细大纲_5页.md》的五页叙事为主要参考，以《项目工作梳理报告.md》及仓库保存结果核对事实；可精炼文字和优化构图，保留负结果、假设标签及未验证边界，不增加无来源数字、身份或固化结论。" },
+  "template_options": {
+    "schema_version": 1,
+    "phase": "template",
+    "lang": "zh",
+    "default_mode": "free_design",
+    "explicit_workspace_roots": []
+  }
+}

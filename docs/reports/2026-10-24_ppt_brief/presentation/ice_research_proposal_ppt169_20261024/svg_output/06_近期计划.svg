@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei, Arial" font-size="30" data-pptx-page-role="content">
+<defs><marker id="n06-input-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 1 L 9 5 L 0 9" fill="none" stroke="#C27B22" stroke-width="1.5" /></marker></defs>
+<rect id="n06-bg" data-pptx-role="background" width="1280" height="720" fill="#FFFFFF" />
+<g id="n06-title" data-pptx-bounds="48 28 1184 108"><text x="48" y="48" font-size="16" fill="#516176">近期计划  /  先后顺序与并行输入</text><text x="48" y="108" font-size="40" font-weight="bold" fill="#142B45">先解决声场可信度，再筛选照射配置</text></g>
+<g id="n06-plan-qualifier" data-pptx-bounds="48 145 1184 32"><text x="48" y="167" font-size="20" fill="#516176">以下均为拟开展任务；保持20 mm物理目标，未知参数继续标为unknown。</text></g>
+<g id="n06-computational-tasks" data-pptx-bounds="48 190 1184 224">
+<g id="n06-trust-field" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="snip1Rect" data-pptx-frame="48 190 510 222" data-pptx-av-adj="val 10000" fill="#142B45" stroke="none"><path d="M 48 190 L 535.8 190 L 558 212.2 L 558 412 L 48 412 Z" /></g>
+<text x="76" y="229" font-size="22" fill="#FFFFFF">先做</text><text x="76" y="281" font-weight="bold" fill="#FFFFFF">源表示与浅层网格敏感性</text><text x="76" y="329" font-size="20" fill="#FFFFFF">拟评估带限源及传播稳定性</text><text x="76" y="377" font-size="20" fill="#FFFFFF">产物：可说明适用范围的声场基线</text>
+<g id="n06-next-arrow" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="rightArrow" data-pptx-frame="584 278 78 32" fill="#008C95" stroke="none"><path d="M 584 286 L 646 286 L 646 278 L 662 294 L 646 310 L 646 302 L 584 302 Z" /></g>
+<text x="700" y="229" font-size="22" fill="#008C95">接着</text><text x="700" y="281" font-weight="bold" fill="#142B45">活动配置、焦深与俯仰模型</text><text x="700" y="329" font-size="20" fill="#203247">同时评价目标集中与目标外暴露</text><text x="700" y="377" font-size="20" fill="#516176">产物：比较口径明确的受控对照</text>
+</g>
+<g id="n06-parallel-inputs" data-pptx-bounds="48 417 1184 168">
+<line x1="1120" y1="474" x2="1120" y2="420" stroke="#C27B22" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#n06-input-arrow)" />
+<text x="48" y="453" font-size="20" fill="#516176">资料收集与计算并行推进，为后续标定和材料验证准备输入。</text>
+<g id="n06-input-field" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="snip1Rect" data-pptx-frame="48 475 1184 107" data-pptx-av-adj="val 10000" fill="#EFF3F7" stroke="none"><path d="M 48 475 L 1221.3 475 L 1232 485.7 L 1232 582 L 48 582 Z" /></g>
+<text x="72" y="517" font-size="28" font-weight="bold" fill="#142B45">并行准备</text><text x="256" y="517" font-size="20" fill="#203247">探头输出 · 样品与容器 · SonoInk具体配方</text><text x="256" y="559" font-size="20" fill="#516176">产物：标定与材料验证的输入清单</text>
+</g>
+<g id="n06-takeaway" data-pptx-bounds="48 610 1184 48"><text x="48" y="642" font-size="28" fill="#142B45">先排除<tspan font-weight="bold">数值与比较口径问题</tspan>，再讨论物理改进。</text></g>
+<g id="n06-footer" data-pptx-role="footer" data-pptx-bounds="48 674 1184 29" fill="#516176" font-size="16"><text x="48" y="694">依据：E1、E2、E7｜带限源、焦深补偿、真实透镜及声热材料模型均未完成</text><text x="1232" y="694" text-anchor="end">主汇报 06 / 07</text></g>
+</svg>

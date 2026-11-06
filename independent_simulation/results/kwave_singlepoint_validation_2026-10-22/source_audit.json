@@ -1,0 +1,72 @@
+{
+  "input_sha256": "e89b2e056538cff0f9fe6ba5a4a11cd23d35829be6019a7411391b9eb417bb3d",
+  "tx_index_one_based": 16,
+  "active_elements": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48,
+    50,
+    52,
+    54,
+    56,
+    58,
+    60,
+    62,
+    64
+  ],
+  "delay_units_manual": "D00163 Rev. K, TX.Delay A171-A172, computeTXDelays A176",
+  "reference_frequency_hz": 6000000.0,
+  "trans_reference_frequency_hz": 6500000.0,
+  "target_m": [
+    0.0,
+    0.0,
+    0.02
+  ],
+  "max_delay_error_s": 2.63374307036884e-21,
+  "arrival_spread_s": 3.3881317890172014e-21,
+  "monochromatic_reference": [
+    {
+      "quadrature_xy": [
+        4,
+        32
+      ],
+      "peak_z_m": 0.01831499999999999,
+      "target_over_peak": 0.9574653895651373
+    },
+    {
+      "quadrature_xy": [
+        8,
+        64
+      ],
+      "peak_z_m": 0.01831499999999999,
+      "target_over_peak": 0.9575055396952318
+    }
+  ],
+  "normalized_reference_quadrature_l2": 0.0003235025353159927,
+  "source_geometry": "existing_code_unverified",
+  "reference_model": "assumed_scalar_monochromatic_finite_rectangle_exp_minus_ikr_over_r",
+  "interpretation": "A pre-focal maximum also occurs in this separate finite-aperture model. This supports a diffraction-focus-shift explanation but does not establish the sole cause or validate real-probe accuracy.",
+  "absolute_pressure_calibration": "unknown",
+  "hardware_run": false
+}

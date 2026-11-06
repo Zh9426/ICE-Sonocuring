@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "main_slides": 7,
+  "backup_slides": 2,
+  "notes": 9,
+  "array_element_count": 64,
+  "native_tables": [
+    [
+      [
+        "指标",
+        "偶数32元",
+        "全64元"
+      ],
+      [
+        "离轴/主焦区Qp比",
+        "93.899%",
+        "0.0623%"
+      ],
+      [
+        "深层主峰深度 / mm",
+        "18.460",
+        "18.460"
+      ],
+      [
+        "目标/主焦区Qp比",
+        "0.9164",
+        "0.9164"
+      ]
+    ],
+    [
+      [
+        "区域",
+        "偶数32元",
+        "全64元"
+      ],
+      [
+        "0＜z＜2 mm",
+        "11.681%",
+        "2.463%"
+      ],
+      [
+        "2≤z＜5 mm",
+        "6.893%",
+        "1.157%"
+      ],
+      [
+        "z≥5 mm",
+        "0.572%",
+        "0.474%"
+      ]
+    ]
+  ],
+  "source_qp_ratio_percent": {
+    "even32": 93.89936832599646,
+    "full64_matched": 0.062314273150938335
+  },
+  "source_image_checks": {
+    "widegrid_shallow.png": {
+      "sha256": "a8e05c5d36879879b2b7dcba0132088ccff8182c2b4e63dd00324975c07f9c2b",
+      "embedded_bytes_unchanged": true
+    },
+    "source_sampling.png": {
+      "sha256": "7beae7c6455b51c75be4fc98e9457650540a0e922838e3802550e1e1827992dc",
+      "embedded_bytes_unchanged": true
+    }
+  },
+  "pressure_picture_crop_rectangles": [
+    {
+      "l": "47778",
+      "t": "6319",
+      "r": "12626",
+      "b": "54375"
+    },
+    {
+      "l": "47778",
+      "t": "54792",
+      "r": "12626",
+      "b": "5903"
+    },
+    {
+      "l": "91616",
+      "t": "6389",
+      "r": "5354",
+      "b": "5903"
+    }
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "editable_text_runs": 21,
+      "pictures": 0,
+      "native_tables": 0
+    },
+    {
+      "slide": 2,
+      "editable_text_runs": 22,
+      "pictures": 0,
+      "native_tables": 0
+    },
+    {
+      "slide": 3,
+      "editable_text_runs": 23,
+      "pictures": 0,
+      "native_tables": 0
+    },
+    {
+      "slide": 4,
+      "editable_text_runs": 24,
+      "pictures": 0,
+      "native_tables": 0
+    },
+    {
+      "slide": 5,
+      "editable_text_runs": 46,
+      "pictures": 3,
+      "native_tables": 0
+    },
+    {
+      "slide": 6,
+      "editable_text_runs": 20,
+      "pictures": 0,
+      "native_tables": 0
+    },
+    {
+      "slide": 7,
+      "editable_text_runs": 26,
+      "pictures": 0,
+      "native_tables": 0
+    },
+    {
+      "slide": 8,
+      "editable_text_runs": 34,
+      "pictures": 0,
+      "native_tables": 2
+    },
+    {
+      "slide": 9,
+      "editable_text_runs": 15,
+      "pictures": 1,
+      "native_tables": 0
+    }
+  ],
+  "delivery": "H:\\print_transducer\\docs\\reports\\2026-10-24_ppt_brief\\ICE新课题汇报_7页主汇报_2页备份.pptx",
+  "sha256": "4c08395268eaceb4603bc5efd8136214cc26055648435d11b2f1c9cb1ab63680",
+  "scope": "PPTX package and content readback only; saved acoustic results read, no solver/hardware/material run"
+}

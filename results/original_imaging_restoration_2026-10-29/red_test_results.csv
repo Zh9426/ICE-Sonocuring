@@ -1,0 +1,4 @@
+Name,Passed,Failed,Incomplete,Duration,Details
+test_verasonics_original_baseline/testDefaultRestoresOriginalImagingGeometry,0,1,0,7.9246435,
+test_verasonics_original_baseline/testFull64ControlMatchesOriginalTransmitAndReceive,0,1,1,0.0321753,
+test_verasonics_original_baseline/testExplicitVoltageAndSharedProfileConflict,1,0,0,0.4125843,

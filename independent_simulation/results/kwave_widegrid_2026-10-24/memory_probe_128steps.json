@@ -1,0 +1,22 @@
+{
+  "tag": "memory_probe_128steps",
+  "purpose": "Resource probe only; truncated source and time, not a physical field result.",
+  "grid_size": [
+    300,
+    200,
+    600
+  ],
+  "grid_with_pml": [
+    340,
+    240,
+    640
+  ],
+  "Nt": 128,
+  "runtime_s": 52.3134985,
+  "available_gpu_bytes_before": 7.411335168E+9,
+  "estimated_bytes": 7.81136E+9,
+  "matlab": "24.2.0.2773142 (R2024b) Update 2",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "solver": "kspaceFirstOrder3D",
+  "kwave_version": "1.4.1"
+}

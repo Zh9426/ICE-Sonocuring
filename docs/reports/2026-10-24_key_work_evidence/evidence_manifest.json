@@ -1,0 +1,327 @@
+{
+  "date": "2026-10-24",
+  "scope": "saved repository evidence; no solver rerun",
+  "images": [
+    {
+      "id": "F01",
+      "title": "P0合成双阵列声场",
+      "source": "results/p0_probe_compare/dual_96_plus_96.png",
+      "copy": "figures/F01_dual_96_plus_96.png",
+      "kind": "原始仿真结果",
+      "limit": "历史synthetic 96+96，不能解释当前实物",
+      "sha256": "f42e3d9d937ca8b3401235acaefe8ca032935e145377d9a615440acc83180d4e",
+      "size_px": [
+        1746,
+        1393
+      ]
+    },
+    {
+      "id": "F02",
+      "title": "当前奇偶物理分区",
+      "source": "results/verasonics_linear64_oddeven/physical_partition.png",
+      "copy": "figures/F02_physical_partition.png",
+      "kind": "配置可视化",
+      "limit": "不是实物接线照片",
+      "sha256": "e2584147eee252ade4333fa1e18b1bfcfc4d2536310bf7672f17d1f62c1b4214",
+      "size_px": [
+        1317,
+        311
+      ]
+    },
+    {
+      "id": "F03",
+      "title": "奇偶分配与交替时序示意",
+      "source": "docs/reports/2026-10-23_project_review/figures/03_partition_sequence.png",
+      "copy": "figures/F03_03_partition_sequence.png",
+      "kind": "已有说明示意图",
+      "limit": "示意不按比例，不是运行时序实测",
+      "sha256": "853faf6abb726576bfaca973c3759663afacaa3b5e6e61d8861b843e1837ed70",
+      "size_px": [
+        1800,
+        650
+      ]
+    },
+    {
+      "id": "F04",
+      "title": "解析RF与DAS单点基准",
+      "source": "independent_simulation/results/point_target.png",
+      "copy": "figures/F04_point_target.png",
+      "kind": "原始仿真结果",
+      "limit": "共享简化正反演，非实际成像精度",
+      "sha256": "883f9202ad70ae3800e673218381feb88f9de697b40912a8862684948aa33ffe",
+      "size_px": [
+        1915,
+        810
+      ]
+    },
+    {
+      "id": "F05",
+      "title": "偶数32元52微米局部声场",
+      "source": "independent_simulation/results/kwave_oddeven/even32_focus20mm_dx52um.png",
+      "copy": "figures/F05_even32_focus20mm_dx52um.png",
+      "kind": "原始仿真结果",
+      "limit": "10月19日局部域，未标定源",
+      "sha256": "9d49e521bda2a0024c1b4c0ce273de58414eb3f68a156c3adfa6881ada5df71b",
+      "size_px": [
+        1876,
+        1221
+      ]
+    },
+    {
+      "id": "F06",
+      "title": "扩域压力与Qp场",
+      "source": "independent_simulation/results/kwave_singlepoint_validation_2026-10-22/wide_field.png",
+      "copy": "figures/F06_wide_field.png",
+      "kind": "原始仿真结果",
+      "limit": "wide65，搜索域及积分域须区分",
+      "sha256": "2f4cb8b231500a9430a028b6e1ad62bf17e56aa2c7d93c2e8b0186ae15338b57",
+      "size_px": [
+        1800,
+        900
+      ]
+    },
+    {
+      "id": "F07",
+      "title": "评价材料盒分母诊断",
+      "source": "docs/reports/2026-10-23_project_review/figures/06_qp_denominator.png",
+      "copy": "figures/F07_06_qp_denominator.png",
+      "kind": "已有数据重绘图",
+      "limit": "仅改变积分盒，非薄层传播或材料结果",
+      "sha256": "e1c6f4a6856279247333d1846a9bc1bf7bb91ab9221a2f88fb5055319dd16707",
+      "size_px": [
+        2120,
+        780
+      ]
+    },
+    {
+      "id": "F08",
+      "title": "边界诊断测点时序",
+      "source": "independent_simulation/results/kwave_offaxis_diagnostic_2026-10-22/offaxis_traces.png",
+      "copy": "figures/F08_offaxis_traces.png",
+      "kind": "原始仿真结果",
+      "limit": "稀疏测点p(t)与Qp，不是全域Qp",
+      "sha256": "c2d11b5da6aa9125ed2b468c06699fe7c6fc093ed7b95c48833060f8008e9d7c",
+      "size_px": [
+        2200,
+        1400
+      ]
+    },
+    {
+      "id": "F09",
+      "title": "边界诊断浅层场",
+      "source": "independent_simulation/results/kwave_offaxis_diagnostic_2026-10-22/offaxis_shallow.png",
+      "copy": "figures/F09_offaxis_shallow.png",
+      "kind": "原始仿真结果",
+      "limit": "两个有限边界改变，非完整收敛",
+      "sha256": "7f92becb212e7a24d273775f608d2a4b7c6b48251019df9cfb05a8db78403959",
+      "size_px": [
+        2200,
+        800
+      ]
+    },
+    {
+      "id": "F10",
+      "title": "65微米活动阵元对照",
+      "source": "independent_simulation/results/kwave_aperture_control_2026-10-23/aperture_comparison.png",
+      "copy": "figures/F10_aperture_comparison.png",
+      "kind": "原始仿真结果",
+      "limit": "全64为synthetic等源端代理预算候选",
+      "sha256": "00b9aa9861b472c3abb63fb0b07c7e9271ca6453f68d5b302ca14d664d099227",
+      "size_px": [
+        2200,
+        1600
+      ]
+    },
+    {
+      "id": "F11",
+      "title": "宽域两配置两网格浅层场",
+      "source": "independent_simulation/results/kwave_widegrid_2026-10-24/widegrid_shallow.png",
+      "copy": "figures/F11_widegrid_shallow.png",
+      "kind": "原始仿真结果",
+      "limit": "32元浅层幅值尚未稳定",
+      "sha256": "a8e05c5d36879879b2b7dcba0132088ccff8182c2b4e63dd00324975c07f9c2b",
+      "size_px": [
+        1980,
+        1440
+      ]
+    },
+    {
+      "id": "F12",
+      "title": "宽域轴上峰压剖线",
+      "source": "independent_simulation/results/kwave_widegrid_2026-10-24/widegrid_axial.png",
+      "copy": "figures/F12_widegrid_axial.png",
+      "kind": "原始仿真结果",
+      "limit": "显示焦前偏移，非材料选择性",
+      "sha256": "495feaa659171cc3fb6159253a843146ebe183a2939b5e34b8616b2f190c6bea",
+      "size_px": [
+        1980,
+        720
+      ]
+    },
+    {
+      "id": "F13",
+      "title": "矩形源空间谱审计",
+      "source": "independent_simulation/results/kwave_widegrid_2026-10-24/source_sampling.png",
+      "copy": "figures/F13_source_sampling.png",
+      "kind": "解析诊断曲线",
+      "limit": "未执行带限源传播，非实物指向性",
+      "sha256": "7beae7c6455b51c75be4fc98e9457650540a0e922838e3802550e1e1827992dc",
+      "size_px": [
+        1260,
+        720
+      ]
+    }
+  ],
+  "files": [
+    {
+      "source": "docs/project_implementation_report.md",
+      "copy": "evidence/docs/project_implementation_report.md",
+      "sha256": "172c8d100e21552e401e3217e4f568521b4bc7a9e73af08cf561909c8672e624"
+    },
+    {
+      "source": "docs/upgrade_2026-09-24.md",
+      "copy": "evidence/docs/upgrade_2026-09-24.md",
+      "sha256": "9c836f15cf95fcb2517af51f91ac4d722a008850eb559235a323b3fd816169d2"
+    },
+    {
+      "source": "docs/verasonics/linear64_oddeven_2026-10-12.md",
+      "copy": "evidence/docs/verasonics/linear64_oddeven_2026-10-12.md",
+      "sha256": "5c7177464adb084addaee49cdd479399a7c79b549339b9e0bbeab61acc8552ee"
+    },
+    {
+      "source": "results/verasonics_linear64_oddeven/validation.json",
+      "copy": "evidence/results/verasonics_linear64_oddeven/validation.json",
+      "sha256": "a1e0f77a1f47f5c94d3af743cb57a7b88c34eadf29502d34d738294e0148c171"
+    },
+    {
+      "source": "independent_simulation/docs/model_and_validation.md",
+      "copy": "evidence/independent_simulation/docs/model_and_validation.md",
+      "sha256": "6e424aed104d3223bf48d32f8566bd9a9e7f6f49b0e8fba3ddda63531d98dc32"
+    },
+    {
+      "source": "independent_simulation/docs/kwave_oddeven_results_2026-10-19.md",
+      "copy": "evidence/independent_simulation/docs/kwave_oddeven_results_2026-10-19.md",
+      "sha256": "c2db47bc37e957dbd649109b36fffe8abcda3b3fee7f9086eb3d74a89cf71778"
+    },
+    {
+      "source": "independent_simulation/docs/singlepoint_validation_2026-10-22.md",
+      "copy": "evidence/independent_simulation/docs/singlepoint_validation_2026-10-22.md",
+      "sha256": "7d5ccb9ab95d53d613404b0507988885d5a33b89c5f80a58ff4d2d34f3cadffb"
+    },
+    {
+      "source": "independent_simulation/docs/singlepoint_interpretation_2026-10-22.md",
+      "copy": "evidence/independent_simulation/docs/singlepoint_interpretation_2026-10-22.md",
+      "sha256": "843a6341c29af345ea81dd22bad98817813b8fd7b4d2b5dce2d749d0b60278e2"
+    },
+    {
+      "source": "independent_simulation/docs/offaxis_diagnostic_2026-10-22.md",
+      "copy": "evidence/independent_simulation/docs/offaxis_diagnostic_2026-10-22.md",
+      "sha256": "de27d759e2974b0d01e46a1a454f925eb6e0794374c33b96983f3c50f5191925"
+    },
+    {
+      "source": "independent_simulation/docs/aperture_control_2026-10-23.md",
+      "copy": "evidence/independent_simulation/docs/aperture_control_2026-10-23.md",
+      "sha256": "21f7ccf81458ef4ef4864339b35c5faf777b25fbc786a97fdc65c7a9f9db2595"
+    },
+    {
+      "source": "independent_simulation/docs/widegrid_2026-10-24.md",
+      "copy": "evidence/independent_simulation/docs/widegrid_2026-10-24.md",
+      "sha256": "b5c15b681cc6225e3b3c894014be5459d222229e67baff5b2cbd507480a29dcf"
+    },
+    {
+      "source": "independent_simulation/results/kwave_widegrid_2026-10-24/validation.json",
+      "copy": "evidence/independent_simulation/results/kwave_widegrid_2026-10-24/validation.json",
+      "sha256": "c2dd17c582a3e0d32edb6449315ca2d2b8e15ff0afc3977aa9d8929a5f997652"
+    },
+    {
+      "source": "independent_simulation/docs/findings_2026-10-24.md",
+      "copy": "evidence/independent_simulation/docs/findings_2026-10-24.md",
+      "sha256": "7e7c7a7f7ffa5b0d899bc64af72b2b84a3f8d7864ca8338c9f5c1286bf54ad63"
+    },
+    {
+      "source": "independent_simulation/docs/ice_bench_poc_plan_2026-10-21.md",
+      "copy": "evidence/independent_simulation/docs/ice_bench_poc_plan_2026-10-21.md",
+      "sha256": "f11679070fb4710fd84e678531e990575f0e68302aa66cbb4844ac26c26d364e"
+    },
+    {
+      "source": "docs/verasonics/simulation_verification_2026-10-09.md",
+      "copy": "evidence/docs/verasonics/simulation_verification_2026-10-09.md",
+      "sha256": "a04b2f36fd8bbbc0554bbe448f714408ef4df1b5466eea06fdaa4530676c87d6"
+    },
+    {
+      "source": "docs/verasonics/sonic_eyes_hardware_2026-10-12.md",
+      "copy": "evidence/docs/verasonics/sonic_eyes_hardware_2026-10-12.md",
+      "sha256": "0d71b1e2a9cc6f436e98624f8372e3b87aee31437eb937e4afca33f7b61d85c9"
+    },
+    {
+      "source": "docs/reports/2026-10-24_ppt_brief/ICE新课题汇报_PPT制作说明书.md",
+      "copy": "evidence/docs/reports/2026-10-24_ppt_brief/ICE新课题汇报_PPT制作说明书.md",
+      "sha256": "4f656246140bb372004e821624e44ec94aa8e44efd2660dc10c2dc42f71c3e49"
+    },
+    {
+      "source": "results/p0_probe_compare/comparison.csv",
+      "copy": "evidence/results/p0_probe_compare/comparison.csv",
+      "sha256": "2ccdf08b5c7e74794b9225967bf322a4bb295499f406066ca6b7c25a9c5686a5"
+    },
+    {
+      "source": "results/p0_probe_compare/voxel_check.csv",
+      "copy": "evidence/results/p0_probe_compare/voxel_check.csv",
+      "sha256": "cbdd6cf17ae2edd7104ef8d5d15a4adc70211fdd214495732092bf8b7b2bc31e"
+    },
+    {
+      "source": "results/verasonics_linear64_oddeven/mode_summary.csv",
+      "copy": "evidence/results/verasonics_linear64_oddeven/mode_summary.csv",
+      "sha256": "655803718901472e278933a5170e65810db33008f604bc4f6b11979766bf74b9"
+    },
+    {
+      "source": "independent_simulation/results/point_target_report.json",
+      "copy": "evidence/independent_simulation/results/point_target_report.json",
+      "sha256": "796d057d8d0d5c0b2d633619d7614f0fa65129d7dd79ba8073cd4ca7a94bd398"
+    },
+    {
+      "source": "independent_simulation/results/kwave_oddeven/grid_comparison.json",
+      "copy": "evidence/independent_simulation/results/kwave_oddeven/grid_comparison.json",
+      "sha256": "1016d9f7475d6bd171feb52ed49f34b380247558d935c9894e6579847675831f"
+    },
+    {
+      "source": "independent_simulation/results/kwave_singlepoint_validation_2026-10-22/sensitivity_summary.csv",
+      "copy": "evidence/independent_simulation/results/kwave_singlepoint_validation_2026-10-22/sensitivity_summary.csv",
+      "sha256": "0ea27d0f95d9b69f9e5925f072e699b8c8a8bd5723842fbeba89a5613e83b48f"
+    },
+    {
+      "source": "independent_simulation/results/kwave_singlepoint_validation_2026-10-22/interpretation_diagnostics.json",
+      "copy": "evidence/independent_simulation/results/kwave_singlepoint_validation_2026-10-22/interpretation_diagnostics.json",
+      "sha256": "7418165bf615799dfad69b6d44b617bd5a98928ac1f8af8757c990d2bb0cea70"
+    },
+    {
+      "source": "independent_simulation/results/kwave_offaxis_diagnostic_2026-10-22/trace_summary.csv",
+      "copy": "evidence/independent_simulation/results/kwave_offaxis_diagnostic_2026-10-22/trace_summary.csv",
+      "sha256": "f7c9528dca208f172a909c6b05e35a017352029bd185715b3acde7594dda9939"
+    },
+    {
+      "source": "independent_simulation/results/kwave_aperture_control_2026-10-23/comparison.csv",
+      "copy": "evidence/independent_simulation/results/kwave_aperture_control_2026-10-23/comparison.csv",
+      "sha256": "9c07dca5be00266912effa7281d08c9ec1dd07d762ae8233d4753b0fd437fe22"
+    },
+    {
+      "source": "independent_simulation/results/kwave_widegrid_2026-10-24/trace_comparison.csv",
+      "copy": "evidence/independent_simulation/results/kwave_widegrid_2026-10-24/trace_comparison.csv",
+      "sha256": "063c7321b59368e00fa6035d941c97763b43a5fb543fcd0ea124c3e41cfe2743"
+    },
+    {
+      "source": "independent_simulation/results/kwave_widegrid_2026-10-24/source_sampling.json",
+      "copy": "evidence/independent_simulation/results/kwave_widegrid_2026-10-24/source_sampling.json",
+      "sha256": "016fdaa092bb846509e9862b761aafabe6fef378e9ba721733b023c7aad9ad3f"
+    },
+    {
+      "source": "independent_simulation/results/kwave_widegrid_2026-10-24/source_sampling.csv",
+      "copy": "evidence/independent_simulation/results/kwave_widegrid_2026-10-24/source_sampling.csv",
+      "sha256": "be161af20dc9e36bdb9e39a53784c5e242787e0621919d380defba84a1a4b8c0"
+    },
+    {
+      "source": "independent_simulation/results/kwave_widegrid_2026-10-24/test_results.csv",
+      "copy": "evidence/independent_simulation/results/kwave_widegrid_2026-10-24/test_results.csv",
+      "sha256": "2b4f98ade61928cb8cee3220d3e82409d534892df95bcaa072cb79346b4417ec"
+    }
+  ]
+}

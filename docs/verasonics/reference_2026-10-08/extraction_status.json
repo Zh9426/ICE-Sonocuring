@@ -1,0 +1,35 @@
+{
+  "pdf_files_extracted": 347,
+  "pdf_pages_extracted": 918,
+  "pdf_failures": [],
+  "text_search_extensions": [
+    ".cpp",
+    ".csv",
+    ".h",
+    ".hpp",
+    ".html",
+    ".json",
+    ".m",
+    ".md",
+    ".txt"
+  ],
+  "excluded_content": [
+    "license.enc",
+    "systemInfo.txt from general identity search",
+    "binary and P-code contents",
+    "MATLAB data content (separate load-only audit)"
+  ],
+  "duplicate_pairs": 40,
+  "duplicate_pairs_identical": 40,
+  "probe_rows_literal_only": 75,
+  "pdf_topic_rows": 408,
+  "mat_snapshot_parser": "scipy.io.loadmat 1.18.1",
+  "matlab_attempt": "R2024b failed before audit script with System Error: File system inconsistency; no vendor sequence executed",
+  "mat_snapshot_status": "parsed successfully with existing Python environment",
+  "pdf_zero_text_files": [],
+  "physical_probe_element_count": {
+    "value": 96,
+    "source": "user relays supervisor and senior colleague",
+    "status": "user_reported; not independently verified; conflicts with 64-element software definition"
+  }
+}

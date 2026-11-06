@@ -1,0 +1,339 @@
+{
+  "common_reference_pa": 1.4087532758712769,
+  "field": "max_t |p|",
+  "color_max_pa": 3.0,
+  "z_min_exclusive_mm": 0,
+  "date": "2026-10-24",
+  "geometry_provenance": "existing_code_unverified",
+  "medium_source_provenance": "assumed",
+  "physical_validation": "unknown",
+  "numerical_convergence": "not_established",
+  "cases": [
+    {
+      "id": "even32",
+      "label": "偶数32元",
+      "source_mat": "results/kwave_widegrid_2026-10-24/fine_even32.mat",
+      "source_sha256": "e374c2517d6da23128210c1e0068208e3434e07bb72c8c64b518f2eb8283c42d",
+      "shape_xyz": [
+        300,
+        200,
+        600
+      ],
+      "regions": [
+        {
+          "id": "near_source",
+          "pressure_pa_assumed": 2.5430328845977783,
+          "xyz_mm": [
+            -1.456,
+            -0.5199999999999999,
+            0.10400000000000166
+          ],
+          "index_xyz": [
+            122,
+            90,
+            12
+          ],
+          "on_search_boundary": false,
+          "z_interval_mm": "0<z<2"
+        },
+        {
+          "id": "shallow",
+          "pressure_pa_assumed": 1.673194408416748,
+          "xyz_mm": [
+            6.343999999999999,
+            0.0,
+            2.0279999999999987
+          ],
+          "index_xyz": [
+            272,
+            100,
+            49
+          ],
+          "on_search_boundary": true,
+          "z_interval_mm": "2<=z<5"
+        },
+        {
+          "id": "deep",
+          "pressure_pa_assumed": 1.4087532758712769,
+          "xyz_mm": [
+            0.0,
+            0.0,
+            18.46
+          ],
+          "index_xyz": [
+            150,
+            100,
+            365
+          ],
+          "on_search_boundary": false,
+          "z_interval_mm": "z>=5"
+        },
+        {
+          "id": "forward",
+          "pressure_pa_assumed": 2.5430328845977783,
+          "xyz_mm": [
+            -1.456,
+            -0.5199999999999999,
+            0.10400000000000166
+          ],
+          "index_xyz": [
+            122,
+            90,
+            12
+          ],
+          "on_search_boundary": false,
+          "z_interval_mm": "z>0"
+        }
+      ],
+      "target_requested_mm": [
+        0.0,
+        0.0,
+        20.0
+      ],
+      "target_sampled_mm": [
+        0.0,
+        0.0,
+        20.02
+      ],
+      "target_sampled_pressure_pa": 1.349105954170227,
+      "reference_pa": 1.4087532758712769,
+      "mesh_sampling": {
+        "nominal_stride": 2,
+        "sampled_shape": [
+          151,
+          101,
+          299
+        ],
+        "actual_min_step_mm": [
+          0.05200000000000049,
+          0.05200000000000049,
+          0.05199999999999605
+        ],
+        "actual_max_step_mm": [
+          0.10400000000000187,
+          0.10400000000000187,
+          0.10400000000000631
+        ],
+        "preserved_region_peak_indices": [
+          [
+            122,
+            90,
+            12
+          ],
+          [
+            272,
+            100,
+            49
+          ],
+          [
+            150,
+            100,
+            365
+          ],
+          [
+            122,
+            90,
+            12
+          ],
+          [
+            150,
+            100,
+            395
+          ]
+        ],
+        "method": "native point subsampling plus band extrema and endpoints; not max pooling or full-resolution geometry"
+      },
+      "solver": "kspaceFirstOrder3D",
+      "budget_pa2_s_m2": 1.1509677870663817e-11
+    },
+    {
+      "id": "full64_matched",
+      "label": "全64元 等B 离线候选",
+      "source_mat": "results/kwave_widegrid_2026-10-24/fine_full64_matched.mat",
+      "source_sha256": "534093dee9ff04b4ad803a0441a08228cbc90960900d6711f3a9a4dc05521f2e",
+      "shape_xyz": [
+        300,
+        200,
+        600
+      ],
+      "regions": [
+        {
+          "id": "near_source",
+          "pressure_pa_assumed": 0.9124698042869568,
+          "xyz_mm": [
+            -3.483999999999999,
+            -0.5720000000000001,
+            0.936000000000001
+          ],
+          "index_xyz": [
+            83,
+            89,
+            28
+          ],
+          "on_search_boundary": false,
+          "z_interval_mm": "0<z<2"
+        },
+        {
+          "id": "shallow",
+          "pressure_pa_assumed": 1.1134061813354492,
+          "xyz_mm": [
+            -2.2880000000000003,
+            0.0,
+            4.939999999999999
+          ],
+          "index_xyz": [
+            106,
+            100,
+            105
+          ],
+          "on_search_boundary": false,
+          "z_interval_mm": "2<=z<5"
+        },
+        {
+          "id": "deep",
+          "pressure_pa_assumed": 1.992277979850769,
+          "xyz_mm": [
+            0.0,
+            0.0,
+            18.46
+          ],
+          "index_xyz": [
+            150,
+            100,
+            365
+          ],
+          "on_search_boundary": false,
+          "z_interval_mm": "z>=5"
+        },
+        {
+          "id": "forward",
+          "pressure_pa_assumed": 1.992277979850769,
+          "xyz_mm": [
+            0.0,
+            0.0,
+            18.46
+          ],
+          "index_xyz": [
+            150,
+            100,
+            365
+          ],
+          "on_search_boundary": false,
+          "z_interval_mm": "z>0"
+        }
+      ],
+      "target_requested_mm": [
+        0.0,
+        0.0,
+        20.0
+      ],
+      "target_sampled_mm": [
+        0.0,
+        0.0,
+        20.02
+      ],
+      "target_sampled_pressure_pa": 1.907923936843872,
+      "reference_pa": 1.4087532758712769,
+      "mesh_sampling": {
+        "nominal_stride": 2,
+        "sampled_shape": [
+          152,
+          102,
+          299
+        ],
+        "actual_min_step_mm": [
+          0.05199999999999916,
+          0.051999999999999824,
+          0.05199999999999605
+        ],
+        "actual_max_step_mm": [
+          0.10400000000000187,
+          0.10400000000000187,
+          0.10400000000000631
+        ],
+        "preserved_region_peak_indices": [
+          [
+            83,
+            89,
+            28
+          ],
+          [
+            106,
+            100,
+            105
+          ],
+          [
+            150,
+            100,
+            365
+          ],
+          [
+            150,
+            100,
+            365
+          ],
+          [
+            150,
+            100,
+            395
+          ]
+        ],
+        "method": "native point subsampling plus band extrema and endpoints; not max pooling or full-resolution geometry"
+      },
+      "solver": "kspaceFirstOrder3D",
+      "budget_pa2_s_m2": 1.1509677471029828e-11
+    }
+  ],
+  "html_bytes": 19727725,
+  "uncompressed_payload_bytes": 40315770,
+  "mesh_counts": [
+    [
+      {
+        "db": -12.0,
+        "vertices": 56822,
+        "triangles": 112772,
+        "touches_display_boundary": true
+      },
+      {
+        "db": -6.020599913279624,
+        "vertices": 35709,
+        "triangles": 70964,
+        "touches_display_boundary": true
+      },
+      {
+        "db": -3.0,
+        "vertices": 16348,
+        "triangles": 32040,
+        "touches_display_boundary": true
+      }
+    ],
+    [
+      {
+        "db": -12.0,
+        "vertices": 61980,
+        "triangles": 123538,
+        "touches_display_boundary": true
+      },
+      {
+        "db": -6.020599913279624,
+        "vertices": 49858,
+        "triangles": 98716,
+        "touches_display_boundary": true
+      },
+      {
+        "db": -3.0,
+        "vertices": 17972,
+        "triangles": 35892,
+        "touches_display_boundary": false
+      }
+    ]
+  ],
+  "html_sha256": "e76ddbd2c58cf253cbe5cc0eeb440d251bc72d64d5212cbf1934593ca98fd384",
+  "source_mats_unchanged": true,
+  "solver_rerun": false,
+  "xz_yz_sampling": "native full-resolution y=0 / x=0 sections; pressure rounded to 1e-6 Pa",
+  "xy_sampling": "native strided x/y (nominal 104 um), depth planes (nominal 416 um); extra native region-peak / target / endpoint coordinates",
+  "surface_sampling": "native strided 3D grid (nominal 104 um); preserves band extrema / target / endpoints; physical interpolation of mesh vertices",
+  "excluded_source_plane": "z<=0 excluded from forward visualization; saved source/back buffer retained in original MAT",
+  "is_not": "not a simultaneous snapshot, time animation, Qp, heat, cure, real probe measurement or full convergence proof"
+}

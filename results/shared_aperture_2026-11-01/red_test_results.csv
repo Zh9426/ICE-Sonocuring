@@ -1,0 +1,9 @@
+Name,Passed,Failed,Incomplete,Duration,Details
+test_verasonics_shared_aperture/testDefaultFullImagingAndSelectedExposure,0,1,1,2.7803226,
+test_verasonics_shared_aperture/testAnyNonemptySubsetIncludingAll64,0,1,0,4.6459502,
+test_verasonics_shared_aperture/testInvalidSubsetsRejected,0,1,0,2.7538671,
+test_verasonics_shared_aperture/testPhysicalRanksIndependentOfListAndConnectorOrder,0,1,0,0.2919495,
+test_verasonics_shared_aperture/testModesKeepTransmitReceiveSeparateAndRecovery,1,0,0,0.4496888,
+test_verasonics_shared_aperture/testElementLoadCountsBothRolesAndNoEnergyClaim,0,1,1,0.115107,
+test_verasonics_shared_aperture/testApodizationRespectsSelectionAndFullImaging,1,0,0,0.0505579,
+test_verasonics_shared_aperture/testSavedMasksAndDistinctSubsetNames,0,1,0,5.8989527,

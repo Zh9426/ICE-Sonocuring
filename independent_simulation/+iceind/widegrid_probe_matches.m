@@ -1,0 +1,6 @@
+function ok=widegrid_probe_matches(p,n,pml,gpuName,availableBytes)
+%WIDEGRID_PROBE_MATCHES JSON numeric vectors decode as columns in MATLAB.
+ok=isequal(p.grid_with_pml(:)',n(:)'+2*pml) && p.Nt==128 && ...
+ strcmp(p.solver,'kspaceFirstOrder3D') && strcmp(p.gpu,gpuName) && ...
+ availableBytes>p.available_gpu_bytes_before-1e8;
+end

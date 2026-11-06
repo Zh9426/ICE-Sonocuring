@@ -1,0 +1,45 @@
+{
+  "baseline_source": "H:\\print_transducer\\VantageNXT-2.3.2-p2\\XJD\\SetUpP9_4TSICE_FlashAngles.m",
+  "baseline_setup_copy": "H:\\print_transducer\\results\\verification_2026-10-09\\SetUpICE_BaselinePoint_SimOnly.m",
+  "baseline_status": "prepared_not_executed",
+  "target_wavelengths": [
+    0,
+    0,
+    80
+  ],
+  "target_provenance": "synthetic",
+  "hardware_validation": "unknown",
+  "simulation_validation": "pending",
+  "modes": [
+    {
+      "mode": "imaging_only",
+      "mat": "H:\\print_transducer\\results\\verification_2026-10-09\\ICE_ImagingCuring_imaging_only.mat",
+      "events": 21,
+      "target_mm": [
+        0,
+        0,
+        18.953846153846154
+      ]
+    },
+    {
+      "mode": "exposure_only",
+      "mat": "H:\\print_transducer\\results\\verification_2026-10-09\\ICE_ImagingCuring_exposure_only.mat",
+      "events": 16,
+      "target_mm": [
+        0,
+        0,
+        18.953846153846154
+      ]
+    },
+    {
+      "mode": "interleaved",
+      "mat": "H:\\print_transducer\\results\\verification_2026-10-09\\ICE_ImagingCuring_interleaved.mat",
+      "events": 34,
+      "target_mm": [
+        0,
+        0,
+        18.953846153846154
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei, Arial" font-size="28" data-pptx-page-role="content">
+  <defs>
+    <marker id="p02-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9" fill="none" stroke="#516176" stroke-width="1.5" /></marker>
+  </defs>
+  <rect id="p02-background" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="p02-title" data-pptx-bounds="48 26 1184 110">
+    <text x="48" y="47" font-size="16" fill="#516176">ICE-SONOCURING  /  已实现能力</text>
+    <text x="48" y="108" font-size="42" font-weight="bold" fill="#142B45">已建立可追溯的声学与序列验证工具</text>
+  </g>
+  <g id="p02-three-worklines" data-pptx-bounds="48 172 1184 288">
+    <g id="p02-rayleigh">
+      <rect x="48" y="172" width="310" height="5" fill="#008C95" />
+      <text x="48" y="224" font-size="40" font-weight="bold" fill="#008C95">01</text>
+      <text x="48" y="274" font-size="30" font-weight="bold" fill="#142B45">快速筛选</text>
+      <text x="48" y="307" font-size="20" fill="#516176">Rayleigh</text>
+      <text x="48" y="357" fill="#203247">阵列 · 孔径 · 扫描</text>
+      <text x="48" y="403" font-size="20" fill="#516176">覆盖 / 目标外暴露 / 均匀性</text>
+    </g>
+    <g id="p02-offline-sequence">
+      <rect x="450" y="172" width="340" height="5" fill="#008C95" />
+      <text x="450" y="224" font-size="40" font-weight="bold" fill="#008C95">02</text>
+      <text x="450" y="274" font-size="30" font-weight="bold" fill="#142B45">离线编排</text>
+      <text x="450" y="307" font-size="20" fill="#516176">Verasonics对象</text>
+      <text x="450" y="357" fill="#203247">成像 / 照射 / 交替</text>
+      <text x="450" y="403" font-size="20" fill="#516176">保存MAT · 事件表 · 参数来源</text>
+    </g>
+    <g id="p02-kwave">
+      <rect x="882" y="172" width="350" height="5" fill="#008C95" />
+      <text x="882" y="224" font-size="40" font-weight="bold" fill="#008C95">03</text>
+      <text x="882" y="274" font-size="30" font-weight="bold" fill="#142B45">独立复核</text>
+      <text x="882" y="307" font-size="20" fill="#516176">k-Wave</text>
+      <text x="882" y="357" fill="#203247">选定TX → 三维传播</text>
+      <text x="882" y="403" font-size="20" fill="#516176">网格 / 域 / PML · Qp代理</text>
+    </g>
+    <line x1="376" y1="258" x2="430" y2="258" stroke="#516176" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#p02-arrow)" />
+    <text x="401" y="295" font-size="16" text-anchor="middle" fill="#516176">未贯通</text>
+    <g id="p02-selected-tx-bridge" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="rightArrow" data-pptx-frame="807 245 58 26" fill="#008C95" stroke="none">
+      <path d="M 807 251.5 L 852 251.5 L 852 245 L 865 258 L 852 271 L 852 264.5 L 807 264.5 Z" />
+    </g>
+    <text x="836" y="295" font-size="16" text-anchor="middle" fill="#516176">选定TX</text>
+    <text x="48" y="450" font-size="20" fill="#516176">虚线：尚未自动贯通；实线：读取保存MAT的选定TX，尚非完整交替流程。</text>
+  </g>
+  <g id="p02-traceability" data-pptx-bounds="48 484 1184 45">
+    <text x="48" y="515" fill="#142B45">证据链：<tspan font-weight="bold">配置与单位 → 软件检查 → 数值结果 → 解释范围</tspan></text>
+  </g>
+  <g id="p02-missing-physical-links" data-pptx-bounds="48 548 1184 98">
+    <g id="p02-pending-field" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="snip1Rect" data-pptx-frame="48 548 1184 98" data-pptx-av-adj="val 10000" fill="#EFF3F7" stroke="none">
+      <path d="M 48 548 L 1222.2 548 L 1232 557.8 L 1232 646 L 48 646 Z" />
+    </g>
+    <text x="72" y="581" font-size="20" font-weight="bold" fill="#C27B22">待连接的物理链</text>
+    <text x="72" y="625" fill="#142B45">电声标定 → 吸收 / 热 → 材料转化 → 双功能实测</text>
+  </g>
+  <g id="p02-footer" data-pptx-role="footer" data-pptx-bounds="48 674 1184 30" fill="#516176" font-size="16">
+    <text x="48" y="694">来源：项目工作梳理报告 S02—S03、S06—S11、S13｜软件通过与物理验证分别报告</text>
+    <text x="1232" y="694" text-anchor="end">02 / 05</text>
+  </g>
+</svg>

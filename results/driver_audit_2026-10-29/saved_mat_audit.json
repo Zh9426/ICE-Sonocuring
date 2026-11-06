@@ -1,0 +1,263 @@
+[
+  {
+    "artifact": "results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_imaging_only.mat",
+    "scope": "previously_saved_MAT_read_only_audit_not_fresh_build",
+    "mode": "imaging_only",
+    "events": 543,
+    "controls": 523,
+    "image_acquisitions": 450,
+    "exposure_pulses": 0,
+    "simulate_mode": 1,
+    "supply_requests_v": [
+      5
+    ],
+    "last_command": "stop",
+    "checks_passed": true,
+    "issues": [],
+    "operating_envelope": {
+      "imaging_burst_us": 0.16666666666666666,
+      "exposure_burst_us": 3.3333333333333335,
+      "imaging_local_duty_cycle": 0.00041666666666666664,
+      "exposure_local_duty_cycle": 0,
+      "imaging_min_scheduled_start_interval_us": 400,
+      "exposure_min_scheduled_start_interval_us": null,
+      "imaging_total_on_time_us": 75,
+      "exposure_total_on_time_us": 0,
+      "total_on_time_us": 75,
+      "nominal_session_duty_upper_estimate": 0.00012396694214876033,
+      "imaging_aperture_width_mm": 8.170000000000002,
+      "exposure_aperture_width_mm": 8.170000000000002,
+      "hardware_limits_status": "unknown",
+      "hardware_qualified": 0,
+      "basis": "Nominal burst envelope; not voltage high-state time, acoustic energy, temperature or cure.",
+      "limit_checks": [
+        {
+          "quantity": "max_burst_us",
+          "requested": 0.16666666666666666,
+          "limit": null,
+          "status": "unknown"
+        },
+        {
+          "quantity": "max_local_duty_cycle",
+          "requested": 0.00041666666666666664,
+          "limit": null,
+          "status": "unknown"
+        },
+        {
+          "quantity": "max_total_on_time_us",
+          "requested": 75,
+          "limit": null,
+          "status": "unknown"
+        },
+        {
+          "quantity": "max_voltage_v",
+          "requested": 5,
+          "limit": null,
+          "status": "unknown"
+        }
+      ],
+      "waveform_quantization": "unknown_until_VSX_validation",
+      "probe_thermal_monitoring": "unknown",
+      "profile5_installed": "unknown",
+      "local_duty_basis": "Maximum of configured burst/PRI and burst/shortest compiled same-role start interval lower bound, including group boundaries. With fewer than two starts, only the configured ratio is available. Nominal timing, not measured output."
+    },
+    "timing_summary": {
+      "mode": "imaging_only",
+      "num_frames": 30,
+      "scheduled_cycle_us": 20000,
+      "scheduled_total_us": 605000,
+      "initialization_us": 5000,
+      "shutdown_us": 0,
+      "nominal_exposure_on_time_us": 0,
+      "nominal_total_exposure_on_time_us": 0,
+      "nominal_exposure_duty_cycle": 0,
+      "total_exposure_pulses": 0,
+      "total_imaging_acquisitions": 450,
+      "is_lower_bound": 1,
+      "parameter_status": "assumed",
+      "profile5_requested": 0,
+      "profile5_hardware_support": "unknown",
+      "description": "Scheduled lower bound, not an exact hardware period. Within-group TTNA includes acquisition time; only group-final explicit noops are added, with no pending TTNA at group boundaries. Final-acquisition execution, DMA, processing, command overhead and profile transitions may add time. Completion noops add the full effective duration after the acquisition event. All settle, recovery and recharge values are assumed; 5000 us cannot guarantee profile completion (D00163 Rev. K/L section 12.1 reports up to 6-8 ms).",
+      "duty_cycle_basis": "Per-supercycle nominal pulse time divided by the scheduled cycle lower bound; an upper estimate for that nominal timing model, not measured acoustic exposure, successful curing, or a clinical safety conclusion.",
+      "manual_references": [
+        "D00163 Rev. K: section 12.1 pp.96-97; A103,A107,A109-A110",
+        "D00163 Rev. L: section 12.1 pp.96-97; A104,A108,A110-A111"
+      ]
+    },
+    "baseline_config_same_freq": true
+  },
+  {
+    "artifact": "results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_exposure_only.mat",
+    "scope": "previously_saved_MAT_read_only_audit_not_fresh_build",
+    "mode": "exposure_only",
+    "events": 393,
+    "controls": 363,
+    "image_acquisitions": 0,
+    "exposure_pulses": 300,
+    "simulate_mode": 1,
+    "supply_requests_v": [
+      5
+    ],
+    "last_command": "stop",
+    "checks_passed": true,
+    "issues": [],
+    "operating_envelope": {
+      "imaging_burst_us": 0.16666666666666666,
+      "exposure_burst_us": 3.3333333333333335,
+      "imaging_local_duty_cycle": 0,
+      "exposure_local_duty_cycle": 0.0033333333333333335,
+      "imaging_min_scheduled_start_interval_us": null,
+      "exposure_min_scheduled_start_interval_us": 1000,
+      "imaging_total_on_time_us": 0,
+      "exposure_total_on_time_us": 1000,
+      "total_on_time_us": 1000,
+      "nominal_session_duty_upper_estimate": 0.001574148700382833,
+      "imaging_aperture_width_mm": 8.170000000000002,
+      "exposure_aperture_width_mm": 8.170000000000002,
+      "hardware_limits_status": "unknown",
+      "hardware_qualified": 0,
+      "basis": "Nominal burst envelope; not voltage high-state time, acoustic energy, temperature or cure.",
+      "limit_checks": [
+        {
+          "quantity": "max_burst_us",
+          "requested": 3.3333333333333335,
+          "limit": null,
+          "status": "unknown"
+        },
+        {
+          "quantity": "max_local_duty_cycle",
+          "requested": 0.0033333333333333335,
+          "limit": null,
+          "status": "unknown"
+        },
+        {
+          "quantity": "max_total_on_time_us",
+          "requested": 1000,
+          "limit": null,
+          "status": "unknown"
+        },
+        {
+          "quantity": "max_voltage_v",
+          "requested": 5,
+          "limit": null,
+          "status": "unknown"
+        }
+      ],
+      "waveform_quantization": "unknown_until_VSX_validation",
+      "probe_thermal_monitoring": "unknown",
+      "profile5_installed": "unknown",
+      "local_duty_basis": "Maximum of configured burst/PRI and burst/shortest compiled same-role start interval lower bound, including group boundaries. With fewer than two starts, only the configured ratio is available. Nominal timing, not measured output."
+    },
+    "timing_summary": {
+      "mode": "exposure_only",
+      "num_frames": 30,
+      "scheduled_cycle_us": 21008.8,
+      "scheduled_total_us": 635264,
+      "initialization_us": 5000,
+      "shutdown_us": 0,
+      "nominal_exposure_on_time_us": 33.333333333333336,
+      "nominal_total_exposure_on_time_us": 1000.0000000000001,
+      "nominal_exposure_duty_cycle": 0.0015866367109655638,
+      "total_exposure_pulses": 300,
+      "total_imaging_acquisitions": 0,
+      "is_lower_bound": 1,
+      "parameter_status": "assumed",
+      "profile5_requested": 0,
+      "profile5_hardware_support": "unknown",
+      "description": "Scheduled lower bound, not an exact hardware period. Within-group TTNA includes acquisition time; only group-final explicit noops are added, with no pending TTNA at group boundaries. Final-acquisition execution, DMA, processing, command overhead and profile transitions may add time. Completion noops add the full effective duration after the acquisition event. All settle, recovery and recharge values are assumed; 5000 us cannot guarantee profile completion (D00163 Rev. K/L section 12.1 reports up to 6-8 ms).",
+      "duty_cycle_basis": "Per-supercycle nominal pulse time divided by the scheduled cycle lower bound; an upper estimate for that nominal timing model, not measured acoustic exposure, successful curing, or a clinical safety conclusion.",
+      "manual_references": [
+        "D00163 Rev. K: section 12.1 pp.96-97; A103,A107,A109-A110",
+        "D00163 Rev. L: section 12.1 pp.96-97; A104,A108,A110-A111"
+      ]
+    },
+    "baseline_config_same_freq": true
+  },
+  {
+    "artifact": "results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "scope": "previously_saved_MAT_read_only_audit_not_fresh_build",
+    "mode": "interleaved",
+    "events": 933,
+    "controls": 883,
+    "image_acquisitions": 450,
+    "exposure_pulses": 300,
+    "simulate_mode": 1,
+    "supply_requests_v": [
+      5
+    ],
+    "last_command": "stop",
+    "checks_passed": true,
+    "issues": [],
+    "operating_envelope": {
+      "imaging_burst_us": 0.16666666666666666,
+      "exposure_burst_us": 3.3333333333333335,
+      "imaging_local_duty_cycle": 0.00041666666666666664,
+      "exposure_local_duty_cycle": 0.0033333333333335274,
+      "imaging_min_scheduled_start_interval_us": 400,
+      "exposure_min_scheduled_start_interval_us": 999.9999999999418,
+      "imaging_total_on_time_us": 75,
+      "exposure_total_on_time_us": 1000,
+      "total_on_time_us": 1075,
+      "nominal_session_duty_upper_estimate": 0.0008702593129889638,
+      "imaging_aperture_width_mm": 8.170000000000002,
+      "exposure_aperture_width_mm": 8.170000000000002,
+      "hardware_limits_status": "unknown",
+      "hardware_qualified": 0,
+      "basis": "Nominal burst envelope; not voltage high-state time, acoustic energy, temperature or cure.",
+      "limit_checks": [
+        {
+          "quantity": "max_burst_us",
+          "requested": 3.3333333333333335,
+          "limit": null,
+          "status": "unknown"
+        },
+        {
+          "quantity": "max_local_duty_cycle",
+          "requested": 0.0033333333333335274,
+          "limit": null,
+          "status": "unknown"
+        },
+        {
+          "quantity": "max_total_on_time_us",
+          "requested": 1075,
+          "limit": null,
+          "status": "unknown"
+        },
+        {
+          "quantity": "max_voltage_v",
+          "requested": 5,
+          "limit": null,
+          "status": "unknown"
+        }
+      ],
+      "waveform_quantization": "unknown_until_VSX_validation",
+      "probe_thermal_monitoring": "unknown",
+      "profile5_installed": "unknown",
+      "local_duty_basis": "Maximum of configured burst/PRI and burst/shortest compiled same-role start interval lower bound, including group boundaries. With fewer than two starts, only the configured ratio is available. Nominal timing, not measured output."
+    },
+    "timing_summary": {
+      "mode": "interleaved",
+      "num_frames": 30,
+      "scheduled_cycle_us": 41008.8,
+      "scheduled_total_us": 1235264.0000000007,
+      "initialization_us": 5000,
+      "shutdown_us": 0,
+      "nominal_exposure_on_time_us": 33.333333333333336,
+      "nominal_total_exposure_on_time_us": 1000.0000000000001,
+      "nominal_exposure_duty_cycle": 0.0008128336682208046,
+      "total_exposure_pulses": 300,
+      "total_imaging_acquisitions": 450,
+      "is_lower_bound": 1,
+      "parameter_status": "assumed",
+      "profile5_requested": 0,
+      "profile5_hardware_support": "unknown",
+      "description": "Scheduled lower bound, not an exact hardware period. Within-group TTNA includes acquisition time; only group-final explicit noops are added, with no pending TTNA at group boundaries. Final-acquisition execution, DMA, processing, command overhead and profile transitions may add time. Completion noops add the full effective duration after the acquisition event. All settle, recovery and recharge values are assumed; 5000 us cannot guarantee profile completion (D00163 Rev. K/L section 12.1 reports up to 6-8 ms).",
+      "duty_cycle_basis": "Per-supercycle nominal pulse time divided by the scheduled cycle lower bound; an upper estimate for that nominal timing model, not measured acoustic exposure, successful curing, or a clinical safety conclusion.",
+      "manual_references": [
+        "D00163 Rev. K: section 12.1 pp.96-97; A103,A107,A109-A110",
+        "D00163 Rev. L: section 12.1 pp.96-97; A104,A108,A110-A111"
+      ]
+    },
+    "baseline_config_same_freq": true
+  }
+]

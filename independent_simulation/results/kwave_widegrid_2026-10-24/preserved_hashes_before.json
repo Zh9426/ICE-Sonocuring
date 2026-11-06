@@ -1,0 +1,694 @@
+[
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\compile_kwave.m",
+    "sha256": "42a1b880f551e59ddc5cd981aa3c3180aad84c7abe01644f5c59e3ffc4fb8db3"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\default_config.m",
+    "sha256": "badd952a3c1a4f38ed83de9a791a8d4d00f6d4f4135b06725f3fdc4b4968e106"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\kw_waveform.m",
+    "sha256": "1ef424c3f46fafaf5915a5940c01faf06aedb323ae161c8443d37b4f383e51ad"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\kwave_focus_config.m",
+    "sha256": "d031465b0dd99523e8b97cee2d31bc5b310f471544ebb396b799c82bc98d9a05"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\kwave_offaxis_cases.m",
+    "sha256": "7a2d04519a8a52e3ee06ef126aaa63adc41af3e9d68b2a58417e111b2fc844cd"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\kwave_validation_cases.m",
+    "sha256": "3de7e893e1bba6de26833599d636817163c7e999e7480ebcf86977f936d16235"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\matrix96_config.m",
+    "sha256": "2ae13edcb0ed38d5cfa12405366bca9ac978e6a26f04d42901dc9b92102ac7e7"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\matrix96_model.m",
+    "sha256": "53114362d20906824d0350b12dc0d15e3f3aaf93cb39802d19faa62c42972545"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\matrix96_weights.m",
+    "sha256": "e8436f284c89d94fe83c9109f5c2348ad395dfbcea9de0ef7771e9c482dbc719"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\offaxis_sensor.m",
+    "sha256": "3aac1533a59347a0ccb6fcf152dbd4daa279366144e6ccd9a4354fd404f2b85a"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\prepare_aperture_control.m",
+    "sha256": "5703cddca991f7f2d7b001e6a426a6706a2a1a1fabd111b6d99509d04c644d82"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\prepare_kwave_focus.m",
+    "sha256": "a6589b4a9573c65409343463572cc6e76af2adbf77dc61cad88ecf041c807fc1"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\pressure_exposure_metrics.m",
+    "sha256": "4ce176a51e3ebe1ce1417a58768d1073a8aca5d1984b560c9ae0d09ca63dbf0f"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\pressure_focus_metrics.m",
+    "sha256": "e2238500279900dbbb478a165e542739189d181eaf1742785b1a90f8ddbc3585"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\reconstruct.m",
+    "sha256": "6b27a4d3f437b2aa97f613e97f252085b31de79a43efe0f2fb4e8bbc02b53cd8"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\rms_to_qp.m",
+    "sha256": "0ac8f5ce3522243323c2b120bc95e84de6c83d01dec63991169bc231fd899495"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\simulate_rf.m",
+    "sha256": "9e00667b7f4272c2d631b1fa9604adfd84df8681af7a7fa75b1a5a74a4429a84"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\trace_integral_audit.m",
+    "sha256": "0f3cb222a548a73811e8d5b0ca73e14d54d51847619c96687a2eef28c4250eea"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\analyze_aperture_control.py",
+    "sha256": "d9f5bec06892ce35e90cef6b491db5803620e75dd3deb0d664cf28df80412b42"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\analyze_kwave_offaxis.py",
+    "sha256": "7bfe4f18e0d15eb55754e8774572332d9e4c2c71b37678917df6805e7dca6a75"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\analyze_kwave_singlepoint_validation.py",
+    "sha256": "e5820dcf7c731ecb9ee059595ebb6b5f16e054729d2d5b0599217022965bd9fa"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\audit_kwave_oddeven.py",
+    "sha256": "ba60b42425d14563dcf868a8ad499a2864921ddb72ecee2a983ea4d82334b4d2"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\compare_kwave_grids.m",
+    "sha256": "d273545bf00c81a4ed1aa33748993bc51c5b2422494f94200fdedcdbc19990f5"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\compare_kwave_oddeven.m",
+    "sha256": "369d4c83ff086e6af8ddd0e44befae75b86f410a33ef82fb0c20b02c5a46bb93"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\docs\\offaxis_diagnostic_2026-10-22.md",
+    "sha256": "de27d759e2974b0d01e46a1a454f925eb6e0794374c33b96983f3c50f5191925"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\export_kwave_oddeven.py",
+    "sha256": "4cbc5186184157803fed7108602a378cb0872e325b971670b1981ced3b72bb2f"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\export_matrix96_view.py",
+    "sha256": "e81377fc9e246ddd60d5fffd1a94b73edf3ce99161bceddfb49712b84c965442"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\render_kwave_oddeven.m",
+    "sha256": "501b9b7778fcf8f169a539829d79e44cd79cdbdc04c15b66749db5fb2333d440"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\render_matrix96.m",
+    "sha256": "c1635b5243495dda32b9d3ad176639b5f4cc6a324c633f76ac10982ad4450388"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\analysis.json",
+    "sha256": "05cae0b5016994d9399447fd576697790c73dbf71f7d2600227ea50bfdd38777"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\aperture_comparison.pdf",
+    "sha256": "c572fe1449cca6191b9f38daa851f0cf888c0dda06dde80d4db143b1592e38ef"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\aperture_comparison.png",
+    "sha256": "00b9aa9861b472c3abb63fb0b07c7e9271ca6453f68d5b302ca14d664d099227"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\code_analysis.json",
+    "sha256": "04f90b88c4d4b44cdc0576115d93c72cd06b04e41cffe9a1845966d0b25ebf85"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\comparison.csv",
+    "sha256": "9c07dca5be00266912effa7281d08c9ec1dd07d762ae8233d4753b0fd437fe22"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\full64_matched.json",
+    "sha256": "d3c2348fcccd2767b0a4346058ad5c02e74289b443e85ce99bfeee6bc03c21a6"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\full64_matched.mat",
+    "sha256": "6c8fb6860c72091886d3ec7a9d4e645f393df74a88d95479a12c762c1843ddac"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\full64_matched.raw.mat",
+    "sha256": "b3052511b1190681b9be2a162f34d6844a870e5b61014a0a7df2ac0027c1b6e5"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\implementation_sha256.json",
+    "sha256": "c293b97d5467f8a5ca2329d3bc7a4385bf346ed9d693025c252e5f52a4adf1aa"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\postprocessing_sha256.json",
+    "sha256": "b6ca8f130b1efa7f19c82e4f046ecb912777e6c4894ecdef12dce4a32648d1bd"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\preserved_hashes_before.json",
+    "sha256": "d755057809befd4d78be52f9f7d3e910efb2f527591a203f329d36b7814172d4"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\run_20261023_225159_341.log",
+    "sha256": "5d81f6bda5247e1aa445fe3ff53faadf9432531439002caacbf506ae50be0a24"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\run_20261023_230316_207.log",
+    "sha256": "afa7191db855b349591359288f82a8dca33069d633dfafc7b24eeebe221253b7"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\tdd_red.csv",
+    "sha256": "3fb985ad33bd8acfb696752aa2731467ca13415f6c653369470f7064d14e5143"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\test_results.csv",
+    "sha256": "c1eacfca62dd26057dbb817def47a037aca57b80ac765a47f6a06d4bd68d8835"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_aperture_control_2026-10-23\\validation.json",
+    "sha256": "9a9ebdfef86945f9c642a556a36ac6bbb44a912bb3a87fafa00f718442c93c2b"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_oddeven\\even32_focus20mm_dx52um.json",
+    "sha256": "c36a08c8fc4823d2cf64d379b704fedc7b0d717c96179cc676efed3004018266"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_oddeven\\even32_focus20mm_dx52um.mat",
+    "sha256": "303e1a1d2638a036519c1b921455907616614799982f327b296ee3acd9e134e0"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_oddeven\\even32_focus20mm_dx65um.json",
+    "sha256": "165e41d43c9b089a8e9e64e47ef17ab2e76962f0f8a490e6fad0576c2655006c"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_oddeven\\even32_focus20mm_dx65um.mat",
+    "sha256": "f074198cb89dc8e83a079deee7e52c08e6d9c4becbfeccdf09999a432b4af257"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\analysis.json",
+    "sha256": "b0ca91bc3681a61f0411d2c20e0682d73100dc10aec097f5e04462489bc91b14"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\code_analysis.json",
+    "sha256": "87a9fc18bcc7b1b436e38713def45609caa61af1941171941bcd8e5e62ef9ba6"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\implementation_sha256.json",
+    "sha256": "80daff3f1ebd6acc31804a1df188b968524f817ecefa9d23645fb36538e49b8a"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\memory_red.csv",
+    "sha256": "045f837bcea3e26490d86b9a64632cfef90abffe4f5de09905917e35361a46c0"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\memory_red.log",
+    "sha256": "f344b36a90b6ae2cd94c1245cf8dc2c9cae59c681d6bfb2904883a0731bcd47a"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\near_source_criteria_red.xml",
+    "sha256": "7ff60f64d39fd2d21a03482457fba76c704f5bc4e85426d399388dd60d9c5cb3"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\offaxis_shallow.pdf",
+    "sha256": "3141d83fffa952445bc698d2f8ab4692b7c0c2dfcac1b19514043192f95af2de"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\offaxis_shallow.png",
+    "sha256": "7f92becb212e7a24d273775f608d2a4b7c6b48251019df9cfb05a8db78403959"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\offaxis_traces.pdf",
+    "sha256": "67d16f8a51937abbdf8f248117b26bf0048a29a6132c7652bdeba13126c9759e"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\offaxis_traces.png",
+    "sha256": "c2d11b5da6aa9125ed2b468c06699fe7c6fc093ed7b95c48833060f8008e9d7c"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\permuted_rows_red.xml",
+    "sha256": "21ef0fb720faccd271907b4efffc24086cd06f53d627bf616d737f7fb60d6a4f"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\preserved_hashes_before.json",
+    "sha256": "ba500f5b62614b069b2b6a929cdc7f9917590182c216c6d3672554a12d8bddbb"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\progress.json",
+    "sha256": "4e7ae42e6e3c7927a1f1c633fe0ad70087ba5324fbb2eb02463e3527542f384b"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\python_metrics_tests.xml",
+    "sha256": "f0d246d1863dab44d1f93165c6668eab96f595c56069296379c4bef94f94d305"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\python_metrics_tests_v2.xml",
+    "sha256": "b609e6010c6dafb15fdb9f7dac4bdaecd006a7ee55fa6bdb2998722f84faa14f"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\python_metrics_tests_v3.xml",
+    "sha256": "65a2c2ca550a8ea8dde8b1b29d8c651fe62e299fc8b0a5500c96968ffc6bc083"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\python_red.xml",
+    "sha256": "4cb6bd757e2acbf5d2ed6cc88d6474779d3435ed32ebe97d1d1cecf5cf72b152"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\python_tests.xml",
+    "sha256": "f26800c096ee973b580b9af90a1c4d10314db560f3c59ea1766de6ca765605e5"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\python_tests_final.xml",
+    "sha256": "482e31b6dc4da0fc3683fe75a71052220c8477b8d1b26152022205b71241b439"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\python_tests_sandbox_failure.xml",
+    "sha256": "7b3ada47536a08f68c00f0c26c8b7962c0054a3a84edcf7384423e7f89daf031"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\resume_20261023.log",
+    "sha256": "94f4904c02fbfc9c5e95ec495521783215ce6de4d8c9a939f1103d1b3f2243d3"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\rms_audit_red.csv",
+    "sha256": "d214d1203322e8611c83f90756cb9eaccbe0804a9ff4d75eabccdebd74216530"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\rms_audit_red.log",
+    "sha256": "94c7558e9e89b1f5c556f6de74dd0e13c7a365897416f30853e7fcc4b6abe661"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\rms_replay.log",
+    "sha256": "ff4f7337998a968677b1f0894c87c09bc68b87704d198509e7e693cf43fe632c"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\rms_replay_diagnosis.json",
+    "sha256": "8f07db7ab6fd521050aed79a44257d0e9d9aa226e8b36f2d7d02f9569db033a6"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\solver_20261022_212644_932.log",
+    "sha256": "3ccc531f91e5ba998c1c33c4d9c54968c29da271e0458df4d13b227fa2ed0059"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\solver_20261022_213212_540.log",
+    "sha256": "c428bb0d4245e9b428a2317e4b321825f838a6abc2aadc0429f55a2431228b29"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\solver_20261022_215353_633.log",
+    "sha256": "e9457cf509046d99af79361255c7ca23816f6559ef10e0c7c45397ee9bcdb9f2"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\sparse_rms_probe.log",
+    "sha256": "2f4d899b7287e0880f47656623e43dfa7199ef81eda508ab741f5d60cbd0d9a1"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\sparse_rms_probe.mat",
+    "sha256": "e68ec9bad8dd5202c880827bac10482cd8f0210e484d71a5b09926db941beb5c"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\tdd_red.csv",
+    "sha256": "a7e030b4c8f233ca27b2af485ed278f09fd7d71f257dd2ab2e055c967654ac39"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\tdd_red_3.log",
+    "sha256": "4a124bea7e674289f860856e3c928f6fb9beca5cb6dce2804cf179fe37c2395b"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\test_results.csv",
+    "sha256": "4cfe0ac14d89a215436bda092ad516cb33814e2917354ac00514aac4aa164261"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\tests_20261022_212600_576.log",
+    "sha256": "359aac61ce3ccd1e7f10c5e5619daf4328691a4ef21f2ccb07347da6a4c6f5a9"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\trace_summary.csv",
+    "sha256": "f7c9528dca208f172a909c6b05e35a017352029bd185715b3acde7594dda9939"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\wide_pml20.json",
+    "sha256": "30a8aa0bbd839996fde0ee5bbb62814a737cd018d5ef7956ad3b534e687fc3d2"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\wide_pml20.mat",
+    "sha256": "dba64f57539d7fba963b6a89e7e5c944746bb574b13680dae013de2428826847"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\wide_pml20.raw.mat",
+    "sha256": "ae4d82ae7112c65b46aabbdf59ee268959d2da3b2dc55af5ea9218bc94038dd1"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\wider_x256.json",
+    "sha256": "c43fc822ef12560717513504b122ecf66b022b5e7ad21e3e365f60576a82fe83"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\wider_x256.mat",
+    "sha256": "977944ce2fd8c22cde1ef5eb723b0cd86808e9102e9020d600e712f171e907d5"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\wider_x256.raw.mat",
+    "sha256": "97aae60e017805adf8563a9b3ee42bdcf6f71b3da69921c08f7abd3c23449e88"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\analysis.json",
+    "sha256": "f52e7916ea10b96781b7bb0dc7b318544326f8ba0a9e8e61dae0408332c94174"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\baseline65.json",
+    "sha256": "46c1c32fc6615ef779e1d0d351b37ee674668f02520ec8034ff15625de1fcf8f"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\baseline65.mat",
+    "sha256": "dc14398e74bddb5c2ba5359cabcdda58e35199450491a17040c2a55bc851a2ee"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\code_analysis.json",
+    "sha256": "e72c4a5695b424d1bc93efba3791c378d265fbb5d468dbee24d768b068adc495"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\exposure_summary.csv",
+    "sha256": "52f06c950eada6a6dc09217efff5c85bc00d1c4f2f494cf5504e1ab0c6da19f1"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\field_exposure.png",
+    "sha256": "2a70ab298e777d5737c99d303aca97b4396c02a7e625c94218243049f4bafd34"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\fine52.json",
+    "sha256": "2977af7bf9562a2f4c46caad599c6c42328196def05612b3771d131d2dfc6e6b"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\fine52.mat",
+    "sha256": "ee94550c462e30cbc4b04f0e2a471a90548a22e93bc94a0550fd5bff5787a0b3"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\focus_summary.csv",
+    "sha256": "965d7b0e88257297446dc150d7b08390f3c74d0ddf26fa6724b44a581df3a7e4"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\historic_sparse_qp.json",
+    "sha256": "5766728fd31962625a37de7be8572d508b7b4d02e2864261574e188ebc7fd9ba"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\interpretation_diagnostics.json",
+    "sha256": "7418165bf615799dfad69b6d44b617bd5a98928ac1f8af8757c990d2bb0cea70"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\long65.json",
+    "sha256": "9d4fece851ab9d7f933253601ec1a05a1c5b64823d0b06591a9945eba912b9f4"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\long65.mat",
+    "sha256": "35696ee9af37fe8c0bdbd2a5f8a280aeb09307dbc92287c89ec94c24afa8e7a1"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\material_box_sensitivity.csv",
+    "sha256": "fa9e7edc425583692fec7cd61603a53ec9e85cac9388818ea741f9ffd6153350"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\onaxis_reference.csv",
+    "sha256": "f6b219f78ceddfd27d7cdb40fa2cdb2672a021b107addb2cc46915c2f240157c"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\pml65.json",
+    "sha256": "0ba540cd49cb7bcbbdc3f16ae5c1dbf98528d9eb8e65cc5150832cab57bc27f7"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\pml65.mat",
+    "sha256": "de66fa3a48f2fdf634faab44af528fef5433f7e3d2d57b69ef7ef8b1ca83a127"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\preserved_hashes_before.json",
+    "sha256": "4a01a1db3a386d79eefbec54cab22f6d0661188ac453ffe77cdc28f07cfb28ce"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\progress.json",
+    "sha256": "c7e7636e40e6cab51139151ea36d271c176aa78b1f2ee36ae5f21732409ebf84"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\python_tests.xml",
+    "sha256": "66d0c12bc5dce819059809389690f7517d1ec9126f7e8c7156ba60931e11e073"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\sensitivity.png",
+    "sha256": "94c9844dcea80092ff8d1257c6698a34cdb765958beb2ed9f11f414572e05bc4"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\sensitivity_summary.csv",
+    "sha256": "0ea27d0f95d9b69f9e5925f072e699b8c8a8bd5723842fbeba89a5613e83b48f"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\solver.log",
+    "sha256": "6eed22301751f7dab89b4a22f36ec631fd713a1c719204d4610e9285d542eeea"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\source_audit.json",
+    "sha256": "d056317bd53fa2eb2e18dec606346ffa7a8d78dff6f25420dc4805660edfe2f2"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\tdd_red.csv",
+    "sha256": "59ab7257491c22de990bb1e911603b83e3ff4ad6a34cf52e32136996f94ce7ab"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\tdd_zero_red.csv",
+    "sha256": "793d7cebafed2867aee1ffc8b03160e46096f77b05ec820d185a0be7a44d6d8e"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\test_results.csv",
+    "sha256": "fffa652c8a951e2d8ca67be1da85e649de5380a26f613fdd8e0b1c49a1dd161b"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\tests_20261022_205600_208.log",
+    "sha256": "7f85aa971c8ca36e34cb269f35f327429de5243b9d6105bcb2ca57e1b2f02b04"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\validation.json",
+    "sha256": "e288ff4ae96683c2b3194ce2a1e9abbeb9c99a488642fee035c98a546f3a59b4"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\wide65.json",
+    "sha256": "cb6130ae44c546f3e17bedff696f32ccd1e4f57853f80661641bae5bbb1b708d"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\wide65.mat",
+    "sha256": "8f1ca432dd645ebe1fa741493ace0115fa901b16c6025c3a6b34153fd078fe13"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\wide_field.png",
+    "sha256": "2f4cb8b231500a9430a028b6e1ad62bf17e56aa2c7d93c2e8b0186ae15338b57"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_singlepoint_validation_2026-10-22\\zero_red.log",
+    "sha256": "62acb3d61b2776575da0d497b25205bf233d228fa1c0ea43885c78b69997f02b"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_independent_demo.m",
+    "sha256": "92264a4e9f37e1a9772274df9a3ade929830e1b30804b21c8521d25a42b01ce7"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_independent_tests.m",
+    "sha256": "38d524e9b5e4b621a5fba55877acc2490690ba34d49c7c43a245075e67e793dd"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_aperture_control.m",
+    "sha256": "68f526abb8737141667b73950f084caaafe27fec47eed29436268c4050fdef21"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_aperture_control_R2024b.ps1",
+    "sha256": "286cf5116bb39158a6cd46e0b445210853395fded629b839b1f6c7a0a9da0acf"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_field.m",
+    "sha256": "c36a9dbed0fae24dd016f6b374304922db6a6f5ac60d9fde8f828fbbcdf4da58"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_import.m",
+    "sha256": "740c44743f097820b7ddcdf6a680f9dd725483d97db50d45398dafffc079bdc2"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_oddeven.m",
+    "sha256": "322e704247ccf5f5d40804cb2c6ad9893191135f3566b3f00a156bf0727ccd4d"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_oddeven_R2024b.ps1",
+    "sha256": "cd7dd89cab80a26d746ec3ce37eb5fdee4f732c14f003754b45de0a64d73d829"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_offaxis_diagnostic.m",
+    "sha256": "a9d17b4119c89505e1285029804aeb4feab86b7f9e01bd6cfb6c373c8f95c509"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_offaxis_diagnostic_R2024b.ps1",
+    "sha256": "0bdc22f75c8b1fcadb15ec2479d2b112e26b58bab2bdd28239a99374d9d67aa6"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_R2024b.ps1",
+    "sha256": "eebed36e6946724f222441760a66b984bfbcb3cc7aa01a1f89060ddaee974d93"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_sequence.m",
+    "sha256": "6439ff512b694a4482e189850b9d62e7cc044595b2f2f1d87c3c376eaf56fb87"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_singlepoint_validation.m",
+    "sha256": "e7ffdb6b680f73a567e4ad0eaf0585b4fb5f9f253d6a32f15bd30e78b28fbbf6"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_kwave_singlepoint_validation_R2024b.ps1",
+    "sha256": "1f0a2ed203ac867f2005360ad11c4fae03219a36ca91332823f60f54af2c1c58"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_matrix96.m",
+    "sha256": "328b61fbcc19ecd7cef1de341b047d7a8d444688b3d621fbeefb53b076af4eba"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_matrix96_R2024b.ps1",
+    "sha256": "bcff0f083852c92cd941962ca46cfe223979f794cda3cbd85bee73eebbada341"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\run_R2024b.ps1",
+    "sha256": "86cc7abd797de6ac2906eec8b5e311dd62ce3184bba305cfe2d5e30f859b689a"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\singlepoint_source_audit.py",
+    "sha256": "e1845e758695a6773a83f4d972e4c6515ac39ea811ca12732b6cb2a036986172"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_aperture_analysis.py",
+    "sha256": "69b48ca92e93e7997aa310f88552a59bbcccc1c58f5733c23035acd9a6517375"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_aperture_control.m",
+    "sha256": "6789e583bb588aae4c06be99298afba9262b64249d00a7371e56eab7ccac6295"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_kwave_bridge.m",
+    "sha256": "66bf24db8afa7b5887530afeb1a7fa80e07f3b30622c66c3db71ef3391ccbb76"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_kwave_oddeven.m",
+    "sha256": "eae18beb5f43ec3b17b408e29e7fb7c4a52f9925087216069ee0c2371cf3a398"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_kwave_offaxis_diagnostic.m",
+    "sha256": "3d8dbac01619a46b1e361985d0a2e3115b8bdd2cc60de15d30a9b5dd91970ea7"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_kwave_singlepoint_validation.m",
+    "sha256": "be91e91da9e13146965b2fe2af1ba51a9035e40cd84f5b9390cd505011beeab5"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_matrix96.m",
+    "sha256": "f53cac67fbd80ece5a35fdc8580c57c90d794b663a1fc50a146109743082ea64"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_matrix96_export.py",
+    "sha256": "7307b8274837fc698d3d2d1329cf5cfa5a3c50487b2da67d6274fbd844dfbbee"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_offaxis_analysis.py",
+    "sha256": "bd4f7352f591c2b54041f7619d48b70e2dcdf3794d330c9359b4058c68e61751"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_point_target.m",
+    "sha256": "1277ec57178dacae10c163d2fd5efbdf2d35723f34809893381d1ca5a8dae4de"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_singlepoint_analysis.py",
+    "sha256": "a705c725b76174d8cd851bd001eb7de6065cd2fefb2bb09cf668396c5ed5ffe8"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\tests\\test_singlepoint_reference.py",
+    "sha256": "9d80d4b2114cd87a3396726c7ee0eb1f9381301c0e4c1d93ddd0c5253d903be9"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\verify_aperture_control.m",
+    "sha256": "6a548ab9b4bc33de58ec10ad431732011e3914b1a55fc34a40a4b8a7f8f74d7b"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\verify_kwave_offaxis_diagnostic.m",
+    "sha256": "bcbc9671d01e2f023643c665d93b8ad0ab9de180bf29208d0aff539ce1a1d913"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\verify_kwave_singlepoint_validation.m",
+    "sha256": "e03b1c90721c071377714e2070d45ff6883410c93e356cdb12531f7057ee852f"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\write_kwave_oddeven_report.py",
+    "sha256": "1c15385f6435b319f7018ab3a23e2da85ba86ed0e4bd2804f2fba1fdff81af4e"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\write_kwave_offaxis_report.py",
+    "sha256": "9dbe60444e1aec844beef2e8eacb2bc68028d3dbcf94b1c9f401b3b5d25d8c20"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\write_singlepoint_validation_report.py",
+    "sha256": "9f2dc249de2339273c07399eb7057e6d130f241a5cde22578dab8c2108cf15f8"
+  },
+  {
+    "path": "H:\\print_transducer\\results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "sha256": "e89b2e056538cff0f9fe6ba5a4a11cd23d35829be6019a7411391b9eb417bb3d"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\build.m",
+    "sha256": "b4768b591c7bef5c348bc21c7e6e0c55de224c0bd7221386ab9dd031491b1112"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\compile_events.m",
+    "sha256": "c736412b2cf8ed2d6c45cb4f162fc9fb3d2a272d45c72757bb5f0ddf7714251a"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\default_config.m",
+    "sha256": "dd6ff66721e34889f94534324c7af31d78783fc9c5c17f2745ad093a17569e3f"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\focus_delays.m",
+    "sha256": "28e52584908a48d0361bfe5e1244ffcdf8d4b81568f166b4969cc9c70ad413ac"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\make_trans.m",
+    "sha256": "d2f80f59ce70b7dabf7f2b68ac704465944b6f4c97812385d4ca27df7831f7c1"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\matrix_trans.m",
+    "sha256": "ff59bc761f2c627b7e32e1900d5169e48c05589ec03e7748ff7e643c8bac7f52"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\operating_envelope.m",
+    "sha256": "c288d6bfce90f38f240fd60c5fcb8ac910e23b95bfac82f4cd4a9bbfb67ac1a8"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\partition_apertures.m",
+    "sha256": "1f9dcbaab5ff95093a30e5f977db31a28492c699aae063484f595007ec376fe7"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\save_sequence.m",
+    "sha256": "943900ff09eb5d569db06c90cf7a412c17a495c861a39319eab94cdef1d6a31f"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\tx_delays.m",
+    "sha256": "d55790e7c5a25dda54fd1f5dd4ce6070d51f2b590adf3d3d7b01f34c4437991a"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\validate_config.m",
+    "sha256": "0ed6aa93e74fedc04962fa0c3b869116799d0f9670b5f3b602c63146ec64bab0"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\README.md",
+    "sha256": "5a7884c4c18be3ceb4d7265570052c3fe1317972be265dbbeb2e391490851cc5"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\SetUpICE_ImagingCuring.m",
+    "sha256": "cc40aa1799ad5189ab02ba3785417fd98fbd0c38439dc0df70a16ef5902e5dac"
+  }
+]

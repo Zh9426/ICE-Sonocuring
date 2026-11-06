@@ -1,0 +1,24 @@
+{
+  "files_checked": 16,
+  "unchanged": true,
+  "changed_files": [],
+  "scope": "12 custom MATLAB files plus 4 key vendor files",
+  "hashes_after": {
+    "verasonics\\dual_mode\\SetUpICE_ImagingCuring.m": "cc40aa1799ad5189ab02ba3785417fd98fbd0c38439dc0df70a16ef5902e5dac",
+    "verasonics\\dual_mode\\+icevs\\build.m": "b4768b591c7bef5c348bc21c7e6e0c55de224c0bd7221386ab9dd031491b1112",
+    "verasonics\\dual_mode\\+icevs\\compile_events.m": "c736412b2cf8ed2d6c45cb4f162fc9fb3d2a272d45c72757bb5f0ddf7714251a",
+    "verasonics\\dual_mode\\+icevs\\default_config.m": "dd6ff66721e34889f94534324c7af31d78783fc9c5c17f2745ad093a17569e3f",
+    "verasonics\\dual_mode\\+icevs\\focus_delays.m": "28e52584908a48d0361bfe5e1244ffcdf8d4b81568f166b4969cc9c70ad413ac",
+    "verasonics\\dual_mode\\+icevs\\make_trans.m": "d2f80f59ce70b7dabf7f2b68ac704465944b6f4c97812385d4ca27df7831f7c1",
+    "verasonics\\dual_mode\\+icevs\\matrix_trans.m": "ff59bc761f2c627b7e32e1900d5169e48c05589ec03e7748ff7e643c8bac7f52",
+    "verasonics\\dual_mode\\+icevs\\operating_envelope.m": "c288d6bfce90f38f240fd60c5fcb8ac910e23b95bfac82f4cd4a9bbfb67ac1a8",
+    "verasonics\\dual_mode\\+icevs\\partition_apertures.m": "1f9dcbaab5ff95093a30e5f977db31a28492c699aae063484f595007ec376fe7",
+    "verasonics\\dual_mode\\+icevs\\save_sequence.m": "943900ff09eb5d569db06c90cf7a412c17a495c861a39319eab94cdef1d6a31f",
+    "verasonics\\dual_mode\\+icevs\\tx_delays.m": "d55790e7c5a25dda54fd1f5dd4ce6070d51f2b590adf3d3d7b01f34c4437991a",
+    "verasonics\\dual_mode\\+icevs\\validate_config.m": "0ed6aa93e74fedc04962fa0c3b869116799d0f9670b5f3b602c63146ec64bab0",
+    "VantageNXT-2.3.2-p2\\XJD\\SetUpP9_4TSICE_FlashAngles.m": "f6486733742e376d5f3f8fbe848683789ef3e2f948123523e0e7ef8bcd3a3892",
+    "VantageNXT-2.3.2-p2\\MatFiles\\SetUpP9_4TSICE_FlashAngles.mat": "6bf80b5d915104a6bcf30844a18f4b6a1adccd4953c57a81c1a6e3f060267916",
+    "VantageNXT-2.3.2-p2\\Utilities\\computeTrans.m": "2078ce9cffbe9717aaa2ec01c765cf42feace83fb173ff461a79670c4beb4796",
+    "VantageNXT-2.3.2-p2\\Utilities\\computeTXDelays.m": "f822cdcf42b2d989d15ead5a641c3da8d75a3c71bf6603cfac241e8e99c1f37e"
+  }
+}

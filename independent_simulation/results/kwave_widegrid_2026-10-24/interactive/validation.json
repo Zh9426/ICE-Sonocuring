@@ -1,0 +1,23 @@
+{
+  "cases": [
+    {
+      "case": "even32",
+      "source_sha256_unchanged": true,
+      "xz_yz_and_all_exported_xy_planes_match_native_mat": true,
+      "mesh_indices_and_common_thresholds_valid": true,
+      "native_region_peaks_match": true
+    },
+    {
+      "case": "full64_matched",
+      "source_sha256_unchanged": true,
+      "xz_yz_and_all_exported_xy_planes_match_native_mat": true,
+      "mesh_indices_and_common_thresholds_valid": true,
+      "native_region_peaks_match": true
+    }
+  ],
+  "unit_tests": 5,
+  "external_script_dependencies": 0,
+  "browser_runtime_validation": "not_completed; browser tool rejected file protocol; no workaround attempted",
+  "static_preview": "Matplotlib rendering of exact exported meshes and sections; not a browser screenshot",
+  "solver_rerun": false
+}

@@ -1,0 +1,15 @@
+{
+  "pages": 7,
+  "planned_pages": 7,
+  "screenshots": 6,
+  "screenshot_hashes_match": true,
+  "missing_local_sources": [],
+  "user_confirmed_mainline": "ICE dual function continues; external FUS is collaborators existing route",
+  "new_solver_or_hardware_runs": false,
+  "visual_review": "passed; all 7 rendered pages inspected",
+  "pdf": "H:\\print_transducer\\independent_simulation\\results\\research_update_2026-10-29\\ICE双功能课题新信息与工作进度整合_20261029.pdf",
+  "markdown": "H:\\print_transducer\\independent_simulation\\docs\\updates\\2026-10-29_new_inputs\\ICE双功能课题新信息与工作进度整合_20261029.md",
+  "text_chars": 5207,
+  "git_diff_check_exit_code": 0,
+  "pdf_sha256": "e19835b2d530c5618f5ff586db8b21022b0ace8030fab8ae5eb460878fda43cc"
+}

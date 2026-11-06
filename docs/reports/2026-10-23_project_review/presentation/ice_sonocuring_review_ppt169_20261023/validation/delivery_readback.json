@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "slide_count": 5,
+  "notes_count": 5,
+  "native_chart_count": 1,
+  "array_element_count": 64,
+  "halfwidth_mm": [
+    0.717,
+    2.894,
+    13.477
+  ],
+  "raster_slide_images": 0,
+  "animations_and_transitions": false,
+  "slides": [
+    {
+      "slide": 1,
+      "editable_text_runs": 29,
+      "native_shape_elements": 35,
+      "contains_native_chart": false
+    },
+    {
+      "slide": 2,
+      "editable_text_runs": 26,
+      "native_shape_elements": 31,
+      "contains_native_chart": false
+    },
+    {
+      "slide": 3,
+      "editable_text_runs": 35,
+      "native_shape_elements": 112,
+      "contains_native_chart": false
+    },
+    {
+      "slide": 4,
+      "editable_text_runs": 28,
+      "native_shape_elements": 25,
+      "contains_native_chart": true
+    },
+    {
+      "slide": 5,
+      "editable_text_runs": 38,
+      "native_shape_elements": 42,
+      "contains_native_chart": false
+    }
+  ],
+  "sha256": "5eada8717fdccca7e8ab038d3c6a0df1fd4ec2fab116eaf44494eed78694cc36",
+  "file": "H:\\print_transducer\\docs\\reports\\2026-10-23_project_review\\presentation\\ice_sonocuring_review_ppt169_20261023\\exports\\ice_sonocuring_review_20261023_125958_native_charts_tables.pptx",
+  "scope": "PPTX content/package readback; no new acoustic simulation or hardware/material validation"
+}

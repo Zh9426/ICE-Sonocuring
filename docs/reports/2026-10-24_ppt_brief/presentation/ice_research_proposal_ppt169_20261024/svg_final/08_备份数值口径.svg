@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei, Arial" font-size="30" data-pptx-page-role="content">
+<rect id="n08-bg" data-pptx-role="background" width="1280" height="720" fill="#FFFFFF" />
+<g id="n08-title" data-pptx-bounds="48 28 1184 108"><text x="48" y="48" font-size="16" fill="#516176">技术备份 A  /  按需答问</text><text x="48" y="108" font-size="40" font-weight="bold" fill="#142B45">近期对照的数值口径与限制</text></g>
+<g id="n08-context" data-pptx-bounds="48 145 1184 65" font-size="20"><text x="48" y="167" fill="#516176">全64元为synthetic离线候选；测点Qp比与区域压力场差是不同量。</text><text x="48" y="203" font-weight="bold" fill="#142B45">52 μm｜同网格、同B固定测点</text><text x="668" y="203" font-weight="bold" fill="#142B45">65→52 μm｜原始压力场L2差</text></g>
+<g id="point-metrics" data-pptx-bounds="48 228 564 258" data-pptx-replace-with="table" data-pptx-fallback-sha256="38943bc5b2bdd37fce24c5696f32f2af62833715830c559b0c9ea69efcd0d99e">
+<metadata type="application/json">{
+"schema":"ppt-master.semantic-table.v2","name":"point-metrics","x":48,"y":228,"width":564,"height":258,
+"column_widths":[270,147,147],"row_heights":[54,68,68,68],"header_rows":1,
+"defaults":{"cell":{"padding":12,"valign":"middle","borders":{"left":{"style":"none"},"right":{"style":"none"},"top":{"style":"none"},"bottom":{"style":"solid","color":"#CBD5DF","width":1}}}},
+"cell_styles":{"numeric":{"font_size":28,"align":"r"}},
+"columns":[{"text":"指标","align":"l","bold":true},{"text":"偶数32元","align":"r","bold":true},{"text":"全64元","align":"r","bold":true}],
+"rows":[["离轴/主焦区Qp比",{"text":"93.899%","cell_style":"numeric"},{"text":"0.0623%","cell_style":"numeric"}],["深层主峰深度 / mm",{"text":"18.460","cell_style":"numeric"},{"text":"18.460","cell_style":"numeric"}],["目标/主焦区Qp比",{"text":"0.9164","cell_style":"numeric"},{"text":"0.9164","cell_style":"numeric"}]],
+"style":{"font_family":"Microsoft YaHei, Arial","font_size":20,"header_font_size":20,"header_fill":"#142B45","header_text":"#FFFFFF","body_fill":"#FFFFFF","body_text":"#203247","band_row":false}
+}</metadata>
+<rect x="48" y="228" width="564" height="54" fill="#142B45" />
+<g id="n08-point-grid" stroke="#CBD5DF" stroke-width="1"><line x1="48" y1="282" x2="612" y2="282" /><line x1="48" y1="350" x2="612" y2="350" /><line x1="48" y1="418" x2="612" y2="418" /><line x1="48" y1="486" x2="612" y2="486" /></g>
+<g font-size="20" font-weight="bold" fill="#FFFFFF"><text x="60" y="262">指标</text><text x="453" y="262" text-anchor="end">偶数32元</text><text x="600" y="262" text-anchor="end">全64元</text></g>
+<g font-size="20" fill="#203247"><text x="60" y="323">离轴/主焦区Qp比</text><text x="60" y="391">深层主峰深度 / mm</text><text x="60" y="459">目标/主焦区Qp比</text></g>
+<g font-size="28" text-anchor="end" fill="#203247"><text x="453" y="326">93.899%</text><text x="600" y="326">0.0623%</text><text x="453" y="394">18.460</text><text x="600" y="394">18.460</text><text x="453" y="462">0.9164</text><text x="600" y="462">0.9164</text></g>
+</g>
+<g id="grid-errors" data-pptx-bounds="668 228 564 258" data-pptx-replace-with="table" data-pptx-fallback-sha256="372c6a9a1972be69c4384b47c2ee886346315e4d81725d48be3e6360b7a94f21">
+<metadata type="application/json">{
+"schema":"ppt-master.semantic-table.v2","name":"grid-errors","x":668,"y":228,"width":564,"height":258,
+"column_widths":[270,147,147],"row_heights":[54,68,68,68],"header_rows":1,
+"defaults":{"cell":{"padding":12,"valign":"middle","borders":{"left":{"style":"none"},"right":{"style":"none"},"top":{"style":"none"},"bottom":{"style":"solid","color":"#CBD5DF","width":1}}}},
+"cell_styles":{"numeric":{"font_size":28,"align":"r"}},
+"columns":[{"text":"区域","align":"l","bold":true},{"text":"偶数32元","align":"r","bold":true},{"text":"全64元","align":"r","bold":true}],
+"rows":[["0＜z＜2 mm",{"text":"11.681%","cell_style":"numeric"},{"text":"2.463%","cell_style":"numeric"}],["2≤z＜5 mm",{"text":"6.893%","cell_style":"numeric"},{"text":"1.157%","cell_style":"numeric"}],["z≥5 mm",{"text":"0.572%","cell_style":"numeric"},{"text":"0.474%","cell_style":"numeric"}]],
+"style":{"font_family":"Microsoft YaHei, Arial","font_size":20,"header_font_size":20,"header_fill":"#142B45","header_text":"#FFFFFF","body_fill":"#FFFFFF","body_text":"#203247","band_row":false}
+}</metadata>
+<rect x="668" y="228" width="564" height="54" fill="#142B45" />
+<g id="n08-error-grid" stroke="#CBD5DF" stroke-width="1"><line x1="668" y1="282" x2="1232" y2="282" /><line x1="668" y1="350" x2="1232" y2="350" /><line x1="668" y1="418" x2="1232" y2="418" /><line x1="668" y1="486" x2="1232" y2="486" /></g>
+<g font-size="20" font-weight="bold" fill="#FFFFFF"><text x="680" y="262">区域</text><text x="1073" y="262" text-anchor="end">偶数32元</text><text x="1220" y="262" text-anchor="end">全64元</text></g>
+<g font-size="20" fill="#203247"><text x="680" y="323">0＜z＜2 mm</text><text x="680" y="391">2≤z＜5 mm</text><text x="680" y="459">z≥5 mm</text></g>
+<g font-size="28" text-anchor="end" fill="#203247"><text x="1073" y="326">11.681%</text><text x="1220" y="326">2.463%</text><text x="1073" y="394">6.893%</text><text x="1220" y="394">1.157%</text><text x="1073" y="462">0.572%</text><text x="1220" y="462">0.474%</text></g>
+</g>
+<g id="n08-interpretation" data-pptx-bounds="48 520 1184 126" font-size="20"><text x="48" y="544" fill="#C27B22">32元近源/浅层未通过proposed 5%场差诊断；全64元这些场差通过，但峰位检查未全通过。</text><text x="48" y="587" fill="#516176">场差为细网格插值到粗网格；两网格不等于完整收敛。测点实际坐标与边界对照见备注。</text><text x="48" y="630" fill="#142B45">Qp仅为压力平方时间积分代理；上述比值不是能量占比、全空间旁瓣或材料效率。</text></g>
+<g id="n08-footer" data-pptx-role="footer" data-pptx-bounds="48 674 1184 29" fill="#516176" font-size="16"><text x="48" y="694">来源：E2、E3、E5｜trace_comparison.csv / widegrid_2026-10-24.md｜保存记录，本轮未重跑</text><text x="1232" y="694" text-anchor="end">备份 A / B</text></g>
+</svg>

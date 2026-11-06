@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-09",
+  "schema_version": 2,
+  "architecture": "matrix_fixed_physical_partition",
+  "shape": [
+    12,
+    8
+  ],
+  "imaging_elements": 48,
+  "exposure_elements": 48,
+  "matlab_version": "24.2.0.2773142 (R2024b) Update 2",
+  "tests_total": 91,
+  "tests_passed": 91,
+  "tests_failed": 0,
+  "tests_incomplete": 0,
+  "analyzer_files": 16,
+  "analyzer_messages": 0,
+  "vendor_key_files_unchanged": true,
+  "git_diff_check": "passed",
+  "new_file_whitespace_check": "passed",
+  "vsx_run": false,
+  "hardware_run": false,
+  "physical_calibration": "unknown",
+  "topology_source": "user_confirmation",
+  "supersedes": "2026-10-08 linear shared-aperture prototype"
+}

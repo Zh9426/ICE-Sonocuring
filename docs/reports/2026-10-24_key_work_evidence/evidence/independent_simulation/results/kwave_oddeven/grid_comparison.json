@@ -1,0 +1,27 @@
+{
+  "coarse_dx_m": 6.5E-5,
+  "fine_dx_m": 5.2E-5,
+  "common_roi_m": [
+    [
+      -0.004,
+      0.004
+    ],
+    [
+      -0.002,
+      0.002
+    ],
+    [
+      0.002,
+      0.029
+    ]
+  ],
+  "relative_l2_3d": 0.0074897415075927789,
+  "relative_peak_pressure_change": 0.001423864779213857,
+  "peak_position_change_m": 6.5000000000002556E-5,
+  "proposed_l2_threshold": 0.05,
+  "proposed_position_change_threshold_m": 0.00013,
+  "two_grid_check_passed": true,
+  "full_convergence": "not_established_two_grids_only",
+  "domain_pml_sensitivity": "not_tested",
+  "physical_validation": "unknown"
+}

@@ -1,0 +1,76 @@
+﻿name,case_line,numelements_literal,frequency_expression,spacingMm_expression,elementWidth_expression,ConnectorES_expression,connType_expression
+L7-4,323,128,5.208,.298,.250,(1:Trans.numelements)',1
+L10-5,344,192,7.813,.1979,.1729,[1:128 1:64]',1
+L10-4v,382,128,7.5,0.30,0.27,(1:Trans.numelements)',1
+L11-4v,418,128,7.24,0.300,0.270,(1:Trans.numelements)',4
+L11-5,445,192,7.813,0.260,0.235,(1:Trans.numelements)',1
+ULSL11-5,462,192,8.2,0.2,0.235,(1:Trans.numelements)',4
+SL9-3,479,128,6.0,0.300,0.265,(1:Trans.numelements)',4
+T80,498,64,11.8,0.108,0.088,(1:Trans.numelements)',4
+N8,516,8,7.5,0.105,0.08,(1:8)',4
+SL9-3sm,534,128,7.5,0.2995,0.275,(1:Trans.numelements)',4
+YS648F,553,64,12,0.111,0.091,(1:Trans.numelements)',4
+6ML64,571,128,7.8,0.11,0.091,(1:Trans.numelements)',1
+L11-5v,590,128,7,0.200,0.270,(1:Trans.numelements)',4
+L11-5v,590,128,7.6,0.300,0.270,(1:Trans.numelements)',4
+L15-7,623,192,10,0.200,0.270,(1:Trans.numelements)',1
+L11-5gH,639,128,7.6,0.300,0.270,(1:Trans.numelements)',7
+GEL12-3,659,192,8.0,0.248,0.225,(1:Trans.numelements)',4
+ULS25L192,679,192,22.5,0.075,0.05,(1:Trans.numelements)',4
+L15-7v,699,192,11.0,0.204,0.17,(1:Trans.numelements)',1
+L12-3v,720,192,7.54,.200,.170,[1:128 1:64]',1
+L12-5 38mm,759,192,7.813,.1979,.1729,[1:128 1:64]',1
+L12-5 50mm,797,256,7.813,.1953,.1703,[1:128 1:128]',1
+L15MHz_TE260,836,128,12,0.100,0.08,,4
+L22-8v,875,256,15.625,0.108,.0703,[1:128 1:128]',1
+L22-14v,913,128,15.625,0.100,0.08,(1:Trans.numelements)',4
+L22-14v LF,942,128,15.625,0.100,0.08,(1:Trans.numelements)',1
+L22-14vXULSO,971,128,17.05,0.100,0.08,(1:Trans.numelements)',4
+L22-14vXULSO LF,1002,128,15.625,0.100,0.08,(1:Trans.numelements)',4
+L35-16vX,1032,128,28,0.069,0.8*Trans.spacingMm,(1:Trans.numelements)',1
+L35-16Ulso,1052,128,26,0.07,0.8*Trans.spacingMm,(1:Trans.numelements)',1
+L38-22v,1073,256,30,0.069,0.065,[1:128 1:128]',1
+L39-21gD,1112,128,30,0.0550,0.0440,,7
+GE9LD,1139,192,5.2083,.230,0.9 * Trans.spacingMm,(33:224)',7
+GEL3-12D,1169,256,6.25,0.200,0.9 * Trans.spacingMm,[1:128 1:128]',7
+CL10-5,1249,128,6.25,0.200,Trans.spacingMm - 0.05,(1:Trans.numelements)',1
+CL15-7,1267,128,8.929,0.178,0.16,(1:Trans.numelements)',4
+C4-2,1286,128,2.976,spacingMm,(spacingMm - kerf),(1:Trans.numelements)',4
+C5-2,1315,128,3.125,spacingMm,(spacingMm - kerf),(1:Trans.numelements)',1
+C5-2ULSO,1348,192,3.2,spacingMm,,(1:Trans.numelements)',4
+C6-2,1384,128,2.9,spacingMm,(spacingMm - kerf),(1:Trans.numelements)',4
+C5-2v,1418,128,3.57,spacingMm,(spacingMm - kerf),(1:Trans.numelements)',1
+C5-2gH,1452,128,3.3,.475,(Trans.spacingMm - kerf),(1:Trans.numelements)',7
+GEC1-6D,1481,192,3.9,spacingMm,(spacingMm - kerf),(33:224)',7
+GE4CD,1518,128,3.125,spacingMm,(spacingMm - kerf),(1:128)',7
+C9-5ICT,1552,128,7.813,spacingMm,(spacingMm - kerf),,1
+GEIC5-9D,1580,192,5.682,spacingMm,(spacingMm - kerf),(33:224)',7
+GEM5ScD,1618,160,2.841,0.270,0.230,"zeros(160, 1)",7
+P4-1,1691,96,2.5,0.2950,(Trans.spacingMm - kerf),,1
+P4-2,1719,64,2.5,0.3200,0.2950,"[1:32,97:128]'",1
+P4-2v,1741,64,2.72,0.300,0.250,(33:96)',1
+ULSP4-2v,1768,80,2.72,0.254,0.250,(1:80)',4
+P4-2gH,1792,96,3.15,0.200,0.180,(1:96)',7
+P6-3,1813,128,4.464,0.218,(.218-.025),(1:Trans.numelements)',1
+P7-4,1832,64,5.208,0.1711,0.1369,"[1:32,97:128]'",1
+P9-4ULts,1854,64,6.5,0.13,.11,[1:Trans.numelements]',4
+AYDKEM6L64,1881,64,7.86,0.11,.1085,[1:Trans.numelements]',1
+P10-3ULYS,1907,64,8.5,0.1215,.085,[1:Trans.numelements]',4
+P9-15ULYS,1932,48,9,0.1,.08,[9:56]',4
+5RC128,1959,256,5.9,0.2495,0.225,(1:256)',1
+RC6gV,1977,256,6.0,0.200,0.175,,7
+RC15gV,2016,160,13.6,0.11,0.10,(1:160)',7
+P5-64vN,2034,64,5.0,0.500,0.400,(1:64)',10
+P5-128vN,2052,128,5.0,0.500,0.400,(1:128)',10
+H-101,2070,4,1.1,0,,[ 65  69  70  71  73  74  75  76  77  78  79  80  84  85  90  91,1
+H-104,2107,3,0.5,0,,[65  69  70  71  73  74  75  76  77  78  79  80  84  85  90  91,1
+H-106,2132,8,2.0,0,,[ 65    69    70    71    75    76    78    79,1
+H-301,2168,128,1.1,10.15/0.9,10.15,,1
+H-302,2201,128,1.953,10.15/0.9,10.15,,1
+IP-104,2302,128,3.472,0.22,0.9*Trans.spacingMm,(1:128)',1
+IP-105,2323,64,5.208,0.150,0.9*Trans.spacingMm,(1:64)',1
+Matrix1024-3,2344,1024,3.47,.3,.275,"[ConnMap, ConnMap+256, ConnMap+512, ConnMap+768]'",8
+Matrix1024-8,2365,1024,7.81,.3,.275,"[ConnMap, ConnMap+256, ConnMap+512, ConnMap+768]'",8
+JD_tst,2388,20,5.0,0.300,1,(1:Trans.numelements)',1
+JD_6M32E,2406,32,6.5,0.108,0.088,(1:Trans.numelements)',4
+HRU5M_ims,2426,128,5,spacingMm,(spacingMm - kerf),,4

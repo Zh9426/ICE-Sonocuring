@@ -1,0 +1,85 @@
+{
+  "partition": "right",
+  "active_elements": 48,
+  "config": {
+    "layout": [
+      12,
+      8
+    ],
+    "pitch_m": [
+      0.00015999999999999999,
+      0.00015999999999999999
+    ],
+    "element_size_m": [
+      0.00014,
+      0.00014
+    ],
+    "frequency_hz": 6.0E+6,
+    "bandwidth_hz": 3.6E+6,
+    "sound_speed_m_s": 1540,
+    "density_kg_m3": 1000,
+    "focus_m": [
+      0,
+      0,
+      0.02
+    ],
+    "cycles": 20,
+    "source_pressure_pa": 1,
+    "dx_m": 6.4E-5,
+    "cfl": 0.2,
+    "domain_m": [
+      0.01024,
+      0.01024,
+      0.0256
+    ],
+    "pml_m": 0.00128,
+    "source_offset_m": 0.00064,
+    "roi_z_m": [
+      0.012,
+      0.024
+    ],
+    "provenance": {
+      "layout": "user_reported_12x8_not_independently_measured",
+      "pitch_and_frequency": "assumed_literature_inspired_not_a_12x8_product_spec",
+      "element_size": "assumed_140um_not_from_paper",
+      "medium_waveform_focus_and_amplitude": "assumed",
+      "wiring_and_calibration": "unknown_simulation_indices_only",
+      "reference": "https://doi.org/10.1016/j.ultrasmedbio.2023.11.001"
+    }
+  },
+  "solver": "kspaceFirstOrder3D",
+  "kwave_version": "1.4.1",
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "runtime_s": 304.508458,
+  "dt_s": 8.311688311688312E-9,
+  "Nt": 2746,
+  "grid_size": [
+    160,
+    160,
+    400
+  ],
+  "pml_cells": 20,
+  "target_requested_m": [
+    0,
+    0,
+    0.02
+  ],
+  "target_sampled_m": [
+    0,
+    0,
+    0.019968
+  ],
+  "target_peak_pa_assumed": 0.18328694999217987,
+  "roi_peak_pa_assumed": 0.30343982577323914,
+  "roi_peak_xyz_m": [
+    0.000192,
+    0,
+    0.012032000000000001
+  ],
+  "roi_peak_on_boundary": true,
+  "minus6db_surface_touches_roi_boundary": true,
+  "source_squared_integral_pa2_s_proxy": 7.7157267184140162E-5,
+  "physical_validation": "unknown",
+  "convergence": "not_established",
+  "model": "flat_rectangular_additive_pressure_sources_no_lens_no_baffle_no_coupling"
+}

@@ -1,0 +1,6 @@
+Name,Passed,Failed,Incomplete,Duration,Details
+test_kwave_oddeven/testSavedOddEvenSourceAndArrivalTimes,0,1,1,0.0720169,
+test_kwave_oddeven/testRefinementKeepsDomainAndPhysicalSource,0,1,1,0.0007783,
+test_kwave_oddeven/testShiftedPeakIsNotCalledPrecise,0,1,1,0.0071203,
+test_kwave_oddeven/testBoundaryPeakAndUnclosedWidthFlagged,0,1,1,0.0011563,
+test_kwave_oddeven/testEmptyTargetNeighborhoodRejected,0,1,0,0.3684056,

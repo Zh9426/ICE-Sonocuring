@@ -1,0 +1,7 @@
+Name,Passed,Failed,Incomplete,Duration,Details
+test_verasonics_curing_only/testMinimalContainsNoImagingOrReceiveObjects,1,0,0,0.5686631,
+test_verasonics_curing_only/testFourVariantsUseCentralPhysicalRanks,1,0,0,0.1633647,
+test_verasonics_curing_only/testFocusAndProbeMatchExistingExposureBackend,1,0,0,0.7572828,
+test_verasonics_curing_only/testOnlyFiniteTransmitAndRecharge,1,0,0,0.039156,
+test_verasonics_curing_only/testCustomRanksAndInvalidRequests,1,0,0,0.4703022,
+test_verasonics_curing_only/testFourEntryPointsSaveOnlyMinimalPayload,1,0,0,0.7893577,

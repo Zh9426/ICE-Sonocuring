@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "tag": "wide_pml20",
+  "controlled_change": "PML thickness only relative to wide65",
+  "reference_tag": "wide65",
+  "solver": "kspaceFirstOrder3D",
+  "kwave_version": "1.4.1",
+  "matlab": "24.2.0.2773142 (R2024b) Update 2",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "runtime_s": 767.9213159,
+  "grid_size": [
+    240,
+    160,
+    480
+  ],
+  "dx_m": 6.5E-5,
+  "dt_s": 8.441558441558441E-9,
+  "Nt": 4740,
+  "record_start_index": 1,
+  "record_window_end_s": 4.0004545454545455E-5,
+  "pml_cells": 20,
+  "config": {
+    "input_mat": "H:\\print_transducer\\results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "dx_m": 6.5E-5,
+    "domain_m": [
+      0.0156,
+      0.010400000000000001,
+      0.0312
+    ],
+    "source_offset_m": 0.00052,
+    "pml_m": 0.0013,
+    "cfl": 0.2,
+    "density_kg_m3": 1000,
+    "source_amplitude_pa": 1,
+    "output_dir": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22",
+    "provenance": "assumed_homogeneous_lossless_linear_flat_elements"
+  },
+  "source": {
+    "input_mat": "H:\\print_transducer\\results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "input_sha256": "e89b2e056538cff0f9fe6ba5a4a11cd23d35829be6019a7411391b9eb417bb3d",
+    "input_partition": "odd_imaging_even_exposure",
+    "num_elements": 64,
+    "active_elements": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64
+    ],
+    "tx_index": 16,
+    "target_m": [
+      0,
+      0,
+      0.02
+    ],
+    "element_area_m2": 2.2220000000000002E-7,
+    "area_error_m2": 2.4092382847182883E-15,
+    "source_z_offset_m": 0.00052,
+    "source_z_kgrid_m": -0.01508,
+    "active_center_arrival_spread_s": 3.3881317890172014E-21,
+    "waveform": {
+      "half_cycles": 40,
+      "active_fraction": 0.67,
+      "frequency_hz": 6.0E+6,
+      "nominal_drive_duration_s": 3.3333333333333333E-6,
+      "assumed_filter_group_delay_s": 4.5E-7,
+      "acoustic_duration_s": 4.234E-6,
+      "assumed_reference_source_pa": 1,
+      "calibration": "assumed_not_voltage_calibrated",
+      "waveform_model": "nominal_centered_PWM_assumed_Gaussian_bandpass_normalized"
+    },
+    "source_model": "assumed_flat_rectangular_additive_pressure_no_lens",
+    "elevation_focus_m_metadata_only": 0.03,
+    "sound_speed_m_s": 1540,
+    "source_pitch_m": 0.00013,
+    "points_per_wavelength": 3.9487179487179489,
+    "spectral_energy_above_spatial_nyquist_fraction": 2.3347565768626564E-7,
+    "sensor_coordinates_m": [
+      [
+        0,
+        0,
+        0.015014999999999999
+      ],
+      [
+        -0.00097499999999999985,
+        0,
+        0.02002
+      ],
+      [
+        0,
+        0,
+        0.02002
+      ],
+      [
+        0.00097499999999999985,
+        0,
+        0.02002
+      ]
+    ],
+    "source_geometry_provenance": "existing_code_unverified",
+    "medium_provenance": "assumed_homogeneous_lossless_linear_flat_elements"
+  },
+  "trace_meta": {
+    "labels": [
+      "target",
+      "near_main",
+      "qp_main",
+      "offaxis_pos",
+      "offaxis_neg",
+      "offaxis_pos_z1",
+      "offaxis_neg_z1",
+      "offaxis_pos_z3",
+      "offaxis_pos_z5",
+      "near_source_peak",
+      "axis_z2",
+      "axis_z5"
+    ],
+    "requested_xyz_m": [
+      [
+        0,
+        0,
+        0.02
+      ],
+      [
+        0,
+        0,
+        0.018395
+      ],
+      [
+        0,
+        0,
+        0.01833
+      ],
+      [
+        0.0063700000000000007,
+        0,
+        0.0020150000000000003
+      ],
+      [
+        -0.0063700000000000007,
+        0,
+        0.0020150000000000003
+      ],
+      [
+        0.0063700000000000007,
+        0,
+        0.0010400000000000001
+      ],
+      [
+        -0.0063700000000000007,
+        0,
+        0.0010400000000000001
+      ],
+      [
+        0.0063700000000000007,
+        0,
+        0.0030550000000000004
+      ],
+      [
+        0.0063700000000000007,
+        0,
+        0.005005
+      ],
+      [
+        0.00182,
+        0.00052000000000000006,
+        0.00013000000000000002
+      ],
+      [
+        0,
+        0,
+        0.0020150000000000003
+      ],
+      [
+        0,
+        0,
+        0.005005
+      ]
+    ],
+    "actual_xyz_m": [
+      [
+        0,
+        0,
+        0.02002
+      ],
+      [
+        0,
+        0,
+        0.018394999999999998
+      ],
+      [
+        0,
+        0,
+        0.01833
+      ],
+      [
+        0.0063699999999999989,
+        0,
+        0.0020150000000000012
+      ],
+      [
+        -0.0063699999999999989,
+        0,
+        0.0020150000000000012
+      ],
+      [
+        0.0063699999999999989,
+        0,
+        0.0010400000000000027
+      ],
+      [
+        -0.0063699999999999989,
+        0,
+        0.0010400000000000027
+      ],
+      [
+        0.0063699999999999989,
+        0,
+        0.0030549999999999987
+      ],
+      [
+        0.0063699999999999989,
+        0,
+        0.0050050000000000008
+      ],
+      [
+        0.0018199999999999998,
+        0.00052,
+        0.00013000000000000338
+      ],
+      [
+        0,
+        0,
+        0.0020150000000000012
+      ],
+      [
+        0,
+        0,
+        0.0050050000000000008
+      ]
+    ],
+    "linear_indices": [
+      1.2153721E+7,
+      1.1193721E+7,
+      1.1155321E+7,
+      1.517019E+6,
+      1.516823E+6,
+      941019,
+      940823,
+      2.131419E+6,
+      3.283419E+6,
+      405269,
+      1.516921E+6,
+      3.283321E+6
+    ],
+    "trace_row": [
+      12,
+      11,
+      10,
+      6,
+      4,
+      3,
+      2,
+      7,
+      9,
+      1,
+      5,
+      8
+    ],
+    "ordering": "Rows of p follow find(sensor.mask), not label order."
+  },
+  "trace_qp_pa2_s": [
+    6.2132323440727191E-6,
+    6.4088702863997917E-7,
+    6.6346013628295814E-7,
+    2.3105671489716647E-6,
+    2.1967311910902894E-7,
+    2.4404090128810816E-6,
+    8.80944936546766E-8,
+    7.2930699207746752E-7,
+    1.2029275447550534E-8,
+    3.182172613340649E-6,
+    3.1818319474593859E-6,
+    2.9171102371379153E-6
+  ],
+  "rms_direct_relative_l2": 0.00010263414374599019,
+  "integral_audit": {
+    "rms_direct_relative_l2": 0.00010263414374599019,
+    "rms_consistency_tolerance_relative": 0.001,
+    "rms_consistency_passed": true,
+    "primary": "Double direct dt*sum(p^2) over saved time samples.",
+    "tolerance_basis": "Proposed 0.1 percent diagnostic, informed by 4740-step GPU single replay (0.0119 percent RMS-Qp drift); not a physical sensitivity criterion."
+  },
+  "raw_checkpoint": "H:\\print_transducer\\independent_simulation\\results\\kwave_offaxis_diagnostic_2026-10-22\\wide_pml20.raw.mat",
+  "resumed_raw_checkpoint": false,
+  "metrics": {
+    "forward_roi_z_min_m": 0.002,
+    "forward_peak_pa_assumed": 1.501599907875061,
+    "forward_peak_xyz_m": [
+      0.0063699999999999989,
+      0,
+      0.0020150000000000012
+    ],
+    "forward_peak_error_m": 0.019079756942896313,
+    "forward_peak_on_boundary": true,
+    "near_target_halfwidth_m": [
+      0.002,
+      0.002,
+      0.004
+    ],
+    "near_target_peak_pa_assumed": 1.4065018892288208,
+    "near_target_peak_xyz_m": [
+      0,
+      0,
+      0.01833
+    ],
+    "near_target_peak_error_m": 0.0016700000000000013,
+    "near_target_peak_on_boundary": false,
+    "target_pa_assumed_interpolated": 1.3481734440876887,
+    "target_over_forward_peak": 0.89782467155016765,
+    "target_plane_sampled_z_m": 0.02002,
+    "target_plane_peak_xyz_m": [
+      0,
+      0,
+      0.02002
+    ],
+    "target_plane_peak_pa_assumed": 1.3469134569168091,
+    "target_plane_lateral_error_m": 0,
+    "width_at_forward_peak_m": [
+      null,
+      0.0016427457583355126,
+      null
+    ],
+    "width_clipped": [
+      true,
+      false,
+      true
+    ],
+    "width_definition": "Contiguous half-amplitude crossings through forward peak, approx -6.02 dB; NaN if unclosed.",
+    "proposed_position_tolerance_m": 0.0005,
+    "within_proposed_0p5mm_tolerance": false,
+    "physical_accuracy": "unknown",
+    "pressure_definition": "max_t(abs(p)); not a simultaneous pressure snapshot"
+  },
+  "recording": "Sparse p(t)/RMS and full-volume positive/negative extrema; no full-volume Qp.",
+  "qp_definition": "dt*sum(p(t_n)^2), Pa^2 s; not deposited energy, heat or cure.",
+  "absolute_pressure_calibration": "unknown",
+  "material_model": "none",
+  "physical_validation": "unknown",
+  "hardware_run": false,
+  "setup_modified": false,
+  "limitations": [
+    "Assumed 1 Pa flat additive pressure source and homogeneous linear lossless fluid.",
+    "No elevation lens, matching/backing layers, coupling, container, absorption, heat or cure.",
+    "Only X extent and PML controlled; finite Y/Z extent and time window remain.",
+    "Peak pressure and Qp have different temporal meanings; no absolute calibration."
+  ]
+}

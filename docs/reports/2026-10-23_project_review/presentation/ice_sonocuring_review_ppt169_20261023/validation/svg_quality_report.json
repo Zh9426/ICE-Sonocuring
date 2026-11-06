@@ -1,0 +1,438 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "final",
+  "target": "H:\\print_transducer\\docs\\reports\\2026-10-23_project_review\\presentation\\ice_sonocuring_review_ppt169_20261023",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "4a8e3fab37d9ea054f7bb891633ecc6208466adab05c0cf88c61abdbe578c332",
+    "file_count": 5,
+    "files": [
+      {
+        "file": "01_目标聚焦.svg",
+        "sha256": "94933cb730ab92cd4f998dc7bc751181426c230ce9524a3ce429e86ed665667c"
+      },
+      {
+        "file": "02_验证工具.svg",
+        "sha256": "c9f0d3cbac1289b1c6e068feff093c4445dc7e4b4bf25bfcece3f225efb51d2f"
+      },
+      {
+        "file": "03_奇偶与时序.svg",
+        "sha256": "fc202d49d24d8288206a8c001213c479db88ace2d0f4e9ce027ec3d176a63ea9"
+      },
+      {
+        "file": "04_数值证据.svg",
+        "sha256": "5eba0548e5e4d78a8d6bc4f25bd892c28bd842f13d3a33680e6356f08b4d654e"
+      },
+      {
+        "file": "05_验证路线.svg",
+        "sha256": "f5b7334d571dc0821efe19633447401476e5a1be164a97ca95f86c1da540cc77"
+      }
+    ]
+  },
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "warnings": 0,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 0,
+      "issues": []
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {
+      "#FFF6E9": [
+        "04_数值证据.svg"
+      ]
+    },
+    "fonts": {},
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 5,
+    "totals": {
+      "text_elements": 154,
+      "image_placements": 0,
+      "icons": 0,
+      "svg_geometry_elements": 36,
+      "preset_shapes": 12,
+      "page_frame_elements": 5,
+      "marker_uses": 6,
+      "inline_emphasis_runs": 8,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 0,
+      "icons": 0,
+      "presets": 5,
+      "charts": 1,
+      "tables": 0,
+      "formulas": 0,
+      "inline_emphasis_runs": 5,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": 5,
+    "geometry_elements": {
+      "circle": 4,
+      "ellipse": 0,
+      "line": 14,
+      "path": 0,
+      "polygon": 0,
+      "polyline": 0,
+      "rect": 18
+    },
+    "preset_names": {
+      "chevron": 5,
+      "flowChartDelay": 2,
+      "rightArrow": 2,
+      "snip1Rect": 3
+    },
+    "native_objects": {
+      "chart": 1,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 0
+    },
+    "image_page_max_frame_share_range": []
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_目标聚焦.svg",
+      "path": "H:\\print_transducer\\docs\\reports\\2026-10-23_project_review\\presentation\\ice_sonocuring_review_ppt169_20261023\\svg_output\\01_目标聚焦.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 27,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 2,
+              "circle": 4,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 1,
+            "preset_names": {
+              "snip1Rect": 1
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 27,
+        "tspan_elements": 2
+      },
+      "passed": true,
+      "source_sha256": "94933cb730ab92cd4f998dc7bc751181426c230ce9524a3ce429e86ed665667c"
+    },
+    {
+      "file": "02_验证工具.svg",
+      "path": "H:\\print_transducer\\docs\\reports\\2026-10-23_project_review\\presentation\\ice_sonocuring_review_ppt169_20261023\\svg_output\\02_验证工具.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 25,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 2,
+            "preset_names": {
+              "rightArrow": 1,
+              "snip1Rect": 1
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 1
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 25,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "c9f0d3cbac1289b1c6e068feff093c4445dc7e4b4bf25bfcece3f225efb51d2f"
+    },
+    {
+      "file": "03_奇偶与时序.svg",
+      "path": "H:\\print_transducer\\docs\\reports\\2026-10-23_project_review\\presentation\\ice_sonocuring_review_ppt169_20261023\\svg_output\\03_奇偶与时序.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 34,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 7,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 2,
+            "preset_names": {
+              "flowChartDelay": 2
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 5
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 34,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "fc202d49d24d8288206a8c001213c479db88ace2d0f4e9ce027ec3d176a63ea9"
+    },
+    {
+      "file": "04_数值证据.svg",
+      "path": "H:\\print_transducer\\docs\\reports\\2026-10-23_project_review\\presentation\\ice_sonocuring_review_ppt169_20261023\\svg_output\\04_数值证据.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 32,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 2,
+            "preset_names": {
+              "rightArrow": 1,
+              "snip1Rect": 1
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 1,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 32,
+        "tspan_elements": 4,
+        "contextual_values": {
+          "colors": [
+            "#FFF6E9"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "5eba0548e5e4d78a8d6bc4f25bd892c28bd842f13d3a33680e6356f08b4d654e"
+    },
+    {
+      "file": "05_验证路线.svg",
+      "path": "H:\\print_transducer\\docs\\reports\\2026-10-23_project_review\\presentation\\ice_sonocuring_review_ppt169_20261023\\svg_output\\05_验证路线.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 36,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 5,
+            "preset_names": {
+              "chevron": 5
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 36,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "f5b7334d571dc0821efe19633447401476e5a1be164a97ca95f86c1da540cc77"
+    }
+  ]
+}

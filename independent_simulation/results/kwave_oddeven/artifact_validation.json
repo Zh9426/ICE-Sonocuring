@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-19",
+  "completed_volumes_checked": 2,
+  "records": [
+    {
+      "file": "even32_focus20mm_dx52um.mat",
+      "grid_size": [
+        200,
+        100,
+        600
+      ],
+      "finite_volume": true,
+      "peak_volume_matches_signed_extrema": true,
+      "sensor_time_shape": [
+        4,
+        4080
+      ],
+      "independent_peak_xyz_m": [
+        0.0,
+        0.0,
+        0.01846
+      ],
+      "independent_peak_error_m": 0.0015399999999999997,
+      "input_mat_hash_matches": true
+    },
+    {
+      "file": "even32_focus20mm_dx65um.mat",
+      "grid_size": [
+        160,
+        80,
+        480
+      ],
+      "finite_volume": true,
+      "peak_volume_matches_signed_extrema": true,
+      "sensor_time_shape": [
+        4,
+        3264
+      ],
+      "independent_peak_xyz_m": [
+        0.0,
+        0.0,
+        0.018394999999999998
+      ],
+      "independent_peak_error_m": 0.0016050000000000023,
+      "input_mat_hash_matches": true
+    }
+  ],
+  "setup_hashes": [
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\README.md",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\SetUpICE_ImagingCuring.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\build.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\compile_events.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\default_config.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\focus_delays.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\make_trans.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\matrix_trans.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\operating_envelope.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\partition_apertures.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\save_sequence.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\tx_delays.m",
+      "matches": true
+    },
+    {
+      "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\validate_config.m",
+      "matches": true
+    }
+  ],
+  "setup_preserved": true,
+  "scope": "Saved-volume integrity and independent numerical metric calculation; not physical calibration."
+}

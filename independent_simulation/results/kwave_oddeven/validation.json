@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-19",
+  "solver": "kspaceFirstOrder3D",
+  "kwave_version": "1.4.1",
+  "matlab": "24.2.0.2773142 (R2024b) Update 2",
+  "test_count": 20,
+  "passed": 20,
+  "static_files": 7,
+  "static_messages": 0,
+  "completed_grids_m": [
+    6.5e-05,
+    5.2e-05
+  ],
+  "completed_volumes_checked": 2,
+  "setup_preserved": true,
+  "two_grid_check_passed": true,
+  "position_check_passed": false,
+  "pressure_calibration": "assumed_not_voltage_calibrated",
+  "full_convergence": "not_established",
+  "domain_pml_sensitivity": "not_tested",
+  "physical_validation": "unknown",
+  "hardware_run": false,
+  "cure_validation": "not_run",
+  "matlab_startup_issue": "resolved_after_user_email_verification_and_service_restart",
+  "html_interaction": "rotation_verified_in_app_browser"
+}

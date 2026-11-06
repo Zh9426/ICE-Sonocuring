@@ -1,0 +1,46 @@
+{
+  "sparse_coordinates_m": [
+    [
+      0.0,
+      0.0,
+      0.015014999999999999
+    ],
+    [
+      -0.000975,
+      0.0,
+      0.02002
+    ],
+    [
+      0.0,
+      0.0,
+      0.02002
+    ],
+    [
+      0.000975,
+      0.0,
+      0.02002
+    ]
+  ],
+  "old_direct_qp_pa2_s": [
+    1.6939131904085354e-06,
+    1.2163429908515263e-07,
+    2.9242858631560266e-06,
+    1.214578228272996e-07
+  ],
+  "new_full_rms_qp_pa2_s": [
+    1.6937697810565426e-06,
+    1.2162444671114788e-07,
+    2.9240359058034277e-06,
+    1.21448708795487e-07
+  ],
+  "relative_change": [
+    -8.466157109163528e-05,
+    -8.099996529644478e-05,
+    -8.547637416307882e-05,
+    -7.503865622190645e-05
+  ],
+  "max_absolute_relative_change": 8.547637416307882e-05,
+  "old_end_s": 2.7544805194805192e-05,
+  "new_end_s": 4.0004545454545455e-05,
+  "interpretation": "Same source/grid/coordinates; different recording windows and single-precision accumulation. Not an identical-window RMS identity test."
+}

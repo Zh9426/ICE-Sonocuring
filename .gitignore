@@ -7,3 +7,21 @@ results/validation/sweep_smoke/
 *.asv
 slprj/
 .DS_Store
+
+# Machine-specific vendor installation, credentials, caches and temporary files.
+/VantageNXT-2.3.2-p2/
+/output/
+/tmp/
+**/tmp/
+pytest-cache-files-*/
+__pycache__/
+*.pyc
+independent_simulation/results/**/*.mat
+independent_simulation/results/**/*.fig
+independent_simulation/results/**/*.log
+docs/reports/**/backup/
+docs/reports/**/validation/temp-directory-probe-*/
+docs/reports/**/.svg_final.candidate-*/
+/results/driver_audit_2026-10-29/package_Vantage*.txt
+/results/driver_audit_2026-10-29/required_Vantage*.txt
+/results/verification_2026-10-09/systemInfo_*.txt

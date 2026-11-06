@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-12",
+  "matlab": "24.2.0.2773142 (R2024b) Update 2",
+  "design": "64-linear physical odd32 imaging even32 exposure; time interleaved",
+  "role_assignment": "assumed_odd_imaging_default_swap_supported",
+  "test_count": 43,
+  "passed": 43,
+  "failed": 0,
+  "incomplete": 0,
+  "static_files": 19,
+  "static_messages": 0,
+  "artifacts_reopened": 3,
+  "vendor_key_hashes_unchanged": true,
+  "physical_validation": "unknown",
+  "vsx_validation": "not_run",
+  "hardware_run": false,
+  "cure_validation": "not_run",
+  "full_repository_tests": "not_run",
+  "review": "In-thread source and exported-artifact review; no independent reviewer",
+  "manuals": [
+    "D00163 Rev.K sections4.3.2,13.1 pp24-25,107,110-111",
+    "D00108 Rev.L section1.3.1 p7",
+    "D00107 Rev.K section4.4.1-4.4.2 p30",
+    "D00109 Rev.D section4.5 p9"
+  ]
+}

@@ -1,0 +1,1064 @@
+{
+  "cases": [
+    {
+      "kind": "even32",
+      "runtime_s": 1737.9424372,
+      "budget_pa2_s_m2": 1.1509677870663706e-11,
+      "budget_ratio_vs_coarse": 1.0000000159888311,
+      "rms_direct_relative_l2": 0.0001277421188694003,
+      "normalized_source_waveform_max_abs_difference_pa": 7.994415684997591e-09,
+      "comparison": {
+        "all_physical": {
+          "linear": {
+            "raw_amplitude_relative_l2": 0.07761255822793228,
+            "maximum_relative_change": 0.017000715064582263,
+            "voxels": 18432000,
+            "evaluation": "linear fine-to-coarse interpolation, no amplitude normalization"
+          },
+          "shared": {
+            "raw_amplitude_relative_l2": 0.07218223195634925,
+            "maximum_relative_change": 0.1162677355346858,
+            "voxels": 288000,
+            "evaluation": "exact shared physical lattice, no interpolation"
+          },
+          "native_peak_displacement_m": 0.0010273290612067781,
+          "mirror_equivalent_argmax_displacement_m_diagnostic_only": 0.0010273290612067781,
+          "argmax_caveat": "Single voxel argmax may switch nearly equal mirror or repeated source lobes; inspect signed positions and field differences. Mirror-equivalent distance is diagnostic, not physical migration.",
+          "field_5pct_both_evaluations": false,
+          "native_peak_013mm": false
+        },
+        "near_source": {
+          "linear": {
+            "raw_amplitude_relative_l2": 0.11681481527164876,
+            "maximum_relative_change": 0.08683559399999202,
+            "voxels": 1152000,
+            "evaluation": "linear fine-to-coarse interpolation, no amplitude normalization"
+          },
+          "shared": {
+            "raw_amplitude_relative_l2": 0.10890477729684306,
+            "maximum_relative_change": 0.12037302308917827,
+            "voxels": 16800,
+            "evaluation": "exact shared physical lattice, no interpolation"
+          },
+          "native_peak_displacement_m": 0.003437215733700752,
+          "mirror_equivalent_argmax_displacement_m_diagnostic_only": 0.00036492739003807304,
+          "argmax_caveat": "Single voxel argmax may switch nearly equal mirror or repeated source lobes; inspect signed positions and field differences. Mirror-equivalent distance is diagnostic, not physical migration.",
+          "field_5pct_both_evaluations": false,
+          "native_peak_013mm": false
+        },
+        "shallow": {
+          "linear": {
+            "raw_amplitude_relative_l2": 0.06893275776110569,
+            "maximum_relative_change": 0.11288507821041523,
+            "voxels": 1766400,
+            "evaluation": "linear fine-to-coarse interpolation, no amplitude normalization"
+          },
+          "shared": {
+            "raw_amplitude_relative_l2": 0.06935016273931056,
+            "maximum_relative_change": 0.11233496495710736,
+            "voxels": 28800,
+            "evaluation": "exact shared physical lattice, no interpolation"
+          },
+          "native_peak_displacement_m": 2.9068883707495307e-05,
+          "mirror_equivalent_argmax_displacement_m_diagnostic_only": 2.9068883707495307e-05,
+          "argmax_caveat": "Single voxel argmax may switch nearly equal mirror or repeated source lobes; inspect signed positions and field differences. Mirror-equivalent distance is diagnostic, not physical migration.",
+          "field_5pct_both_evaluations": false,
+          "native_peak_013mm": true
+        },
+        "deep": {
+          "linear": {
+            "raw_amplitude_relative_l2": 0.0057157523761795104,
+            "maximum_relative_change": 0.0015329604722820016,
+            "voxels": 15168000,
+            "evaluation": "linear fine-to-coarse interpolation, no amplitude normalization"
+          },
+          "shared": {
+            "raw_amplitude_relative_l2": 0.004783912741988248,
+            "maximum_relative_change": 0.001641109339736163,
+            "voxels": 235200,
+            "evaluation": "exact shared physical lattice, no interpolation"
+          },
+          "native_peak_displacement_m": 6.500000000000256e-05,
+          "mirror_equivalent_argmax_displacement_m_diagnostic_only": 6.500000000000256e-05,
+          "argmax_caveat": "Single voxel argmax may switch nearly equal mirror or repeated source lobes; inspect signed positions and field differences. Mirror-equivalent distance is diagnostic, not physical migration.",
+          "field_5pct_both_evaluations": true,
+          "native_peak_013mm": true
+        },
+        "z2_plus": {
+          "linear": {
+            "raw_amplitude_relative_l2": 0.029238797759063257,
+            "maximum_relative_change": 0.11288507821041523,
+            "voxels": 16934400,
+            "evaluation": "linear fine-to-coarse interpolation, no amplitude normalization"
+          },
+          "shared": {
+            "raw_amplitude_relative_l2": 0.02985629759047858,
+            "maximum_relative_change": 0.11233496495710736,
+            "voxels": 264000,
+            "evaluation": "exact shared physical lattice, no interpolation"
+          },
+          "native_peak_displacement_m": 2.9068883707495307e-05,
+          "mirror_equivalent_argmax_displacement_m_diagnostic_only": 2.9068883707495307e-05,
+          "argmax_caveat": "Single voxel argmax may switch nearly equal mirror or repeated source lobes; inspect signed positions and field differences. Mirror-equivalent distance is diagnostic, not physical migration.",
+          "field_5pct_both_evaluations": false,
+          "native_peak_013mm": true
+        }
+      },
+      "native_peaks": {
+        "all_physical": {
+          "coarse": {
+            "peak_pa_assumed": 2.514672040939331,
+            "xyz_m": [
+              -6.5e-05,
+              -0.00038999999999999994,
+              0.0
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              -1.0,
+              1.0
+            ]
+          },
+          "fine": {
+            "peak_pa_assumed": 2.900660753250122,
+            "xyz_m": [
+              -0.001092,
+              -0.00041600000000000003,
+              1.734723475976807e-18
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              -1.0,
+              1.0
+            ]
+          }
+        },
+        "near_source": {
+          "coarse": {
+            "peak_pa_assumed": 2.2214550971984863,
+            "xyz_m": [
+              0.0018199999999999998,
+              0.00052,
+              0.00013000000000000338
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              1e-10,
+              0.002
+            ]
+          },
+          "fine": {
+            "peak_pa_assumed": 2.5430328845977783,
+            "xyz_m": [
+              -0.001456,
+              -0.00052,
+              0.00010400000000000166
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              1e-10,
+              0.002
+            ]
+          }
+        },
+        "shallow": {
+          "coarse": {
+            "peak_pa_assumed": 1.5016236305236816,
+            "xyz_m": [
+              0.006369999999999999,
+              0.0,
+              0.002015000000000001
+            ],
+            "on_search_boundary": true,
+            "z_range_requested_m_half_open": [
+              0.002,
+              0.005
+            ]
+          },
+          "fine": {
+            "peak_pa_assumed": 1.673194408416748,
+            "xyz_m": [
+              0.006344,
+              0.0,
+              0.0020279999999999986
+            ],
+            "on_search_boundary": true,
+            "z_range_requested_m_half_open": [
+              0.002,
+              0.005
+            ]
+          }
+        },
+        "deep": {
+          "coarse": {
+            "peak_pa_assumed": 1.4065970182418823,
+            "xyz_m": [
+              0.0,
+              0.0,
+              0.018394999999999998
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              0.005,
+              1.0
+            ]
+          },
+          "fine": {
+            "peak_pa_assumed": 1.4087532758712769,
+            "xyz_m": [
+              0.0,
+              0.0,
+              0.01846
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              0.005,
+              1.0
+            ]
+          }
+        },
+        "z2_plus": {
+          "coarse": {
+            "peak_pa_assumed": 1.5016236305236816,
+            "xyz_m": [
+              0.006369999999999999,
+              0.0,
+              0.002015000000000001
+            ],
+            "on_search_boundary": true,
+            "z_range_requested_m_half_open": [
+              0.002,
+              1.0
+            ]
+          },
+          "fine": {
+            "peak_pa_assumed": 1.673194408416748,
+            "xyz_m": [
+              0.006344,
+              0.0,
+              0.0020279999999999986
+            ],
+            "on_search_boundary": true,
+            "z_range_requested_m_half_open": [
+              0.002,
+              1.0
+            ]
+          }
+        }
+      },
+      "trace_comparison": [
+        {
+          "kind": "even32",
+          "label": "target",
+          "coarse_xyz_m": [
+            0.0,
+            0.0,
+            0.02002
+          ],
+          "fine_xyz_m": [
+            0,
+            0,
+            0.02002
+          ],
+          "sampling_displacement_m": 0.0,
+          "coarse_peak_pa_assumed": 1.3471745252609253,
+          "fine_peak_pa_assumed": 1.349105954170227,
+          "coarse_qp_pa2_s": 2.9170294098637585e-06,
+          "fine_qp_pa2_s_direct": 2.9280425224102143e-06,
+          "qp_relative_change_at_nearest_voxels": 0.0037754547517470094,
+          "last_5us_qp_fraction": 2.1893919451944356e-13,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "near_main",
+          "coarse_xyz_m": [
+            0.0,
+            0.0,
+            0.018394999999999998
+          ],
+          "fine_xyz_m": [
+            0,
+            0,
+            0.018408
+          ],
+          "sampling_displacement_m": 1.3000000000002593e-05,
+          "coarse_peak_pa_assumed": 1.4065970182418823,
+          "fine_peak_pa_assumed": 1.408683180809021,
+          "coarse_qp_pa2_s": 3.1816868907409523e-06,
+          "fine_qp_pa2_s_direct": 3.1951107945261456e-06,
+          "qp_relative_change_at_nearest_voxels": 0.004219115282606323,
+          "last_5us_qp_fraction": 1.409990153368564e-13,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "qp_main",
+          "coarse_xyz_m": [
+            0.0,
+            0.0,
+            0.01833
+          ],
+          "fine_xyz_m": [
+            0,
+            0,
+            0.018304
+          ],
+          "sampling_displacement_m": 2.5999999999998247e-05,
+          "coarse_peak_pa_assumed": 1.4065217971801758,
+          "fine_peak_pa_assumed": 1.4076203107833862,
+          "coarse_qp_pa2_s": 3.1820372866199774e-06,
+          "fine_qp_pa2_s_direct": 3.195579081101997e-06,
+          "qp_relative_change_at_nearest_voxels": 0.004255699497601961,
+          "last_5us_qp_fraction": 1.4018513635880012e-13,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "offaxis_pos",
+          "coarse_xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.002015000000000001
+          ],
+          "fine_xyz_m": [
+            0.006395999999999998,
+            0,
+            0.0020279999999999986
+          ],
+          "sampling_displacement_m": 2.9068883707495307e-05,
+          "coarse_peak_pa_assumed": 1.5016236305236816,
+          "fine_peak_pa_assumed": 1.667590856552124,
+          "coarse_qp_pa2_s": 2.440113757974594e-06,
+          "fine_qp_pa2_s_direct": 3.0001888533757775e-06,
+          "qp_relative_change_at_nearest_voxels": 0.22952827243024587,
+          "last_5us_qp_fraction": 8.523173664922024e-14,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "offaxis_neg",
+          "coarse_xyz_m": [
+            -0.006369999999999999,
+            0.0,
+            0.002015000000000001
+          ],
+          "fine_xyz_m": [
+            -0.006395999999999998,
+            0,
+            0.0020279999999999986
+          ],
+          "sampling_displacement_m": 2.9068883707495307e-05,
+          "coarse_peak_pa_assumed": 1.456397294998169,
+          "fine_peak_pa_assumed": 1.621186375617981,
+          "coarse_qp_pa2_s": 2.3102733926297086e-06,
+          "fine_qp_pa2_s_direct": 2.8492155037582103e-06,
+          "qp_relative_change_at_nearest_voxels": 0.23328066403216519,
+          "last_5us_qp_fraction": 4.810165160274338e-14,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "offaxis_pos_z1",
+          "coarse_xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.0010400000000000027
+          ],
+          "fine_xyz_m": [
+            0.006395999999999998,
+            0,
+            0.0010399999999999993
+          ],
+          "sampling_displacement_m": 2.5999999999999114e-05,
+          "coarse_peak_pa_assumed": 0.7532750964164734,
+          "fine_peak_pa_assumed": 0.8531979322433472,
+          "coarse_qp_pa2_s": 6.63392436388077e-07,
+          "fine_qp_pa2_s_direct": 8.543491561787886e-07,
+          "qp_relative_change_at_nearest_voxels": 0.28784880459355144,
+          "last_5us_qp_fraction": 1.1603303159996983e-14,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "offaxis_neg_z1",
+          "coarse_xyz_m": [
+            -0.006369999999999999,
+            0.0,
+            0.0010400000000000027
+          ],
+          "fine_xyz_m": [
+            -0.006395999999999998,
+            0,
+            0.0010399999999999993
+          ],
+          "sampling_displacement_m": 2.5999999999999114e-05,
+          "coarse_peak_pa_assumed": 0.7529411315917969,
+          "fine_peak_pa_assumed": 0.8529021143913269,
+          "coarse_qp_pa2_s": 6.408115196336826e-07,
+          "fine_qp_pa2_s_direct": 8.272404634689416e-07,
+          "qp_relative_change_at_nearest_voxels": 0.29092633032226134,
+          "last_5us_qp_fraction": 1.3296305775500855e-14,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "offaxis_pos_z3",
+          "coarse_xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.0030549999999999987
+          ],
+          "fine_xyz_m": [
+            0.006395999999999998,
+            0,
+            0.0030680000000000013
+          ],
+          "sampling_displacement_m": 2.9068883707497634e-05,
+          "coarse_peak_pa_assumed": 0.25434035062789917,
+          "fine_peak_pa_assumed": 0.27607423067092896,
+          "coarse_qp_pa2_s": 8.808712919851908e-08,
+          "fine_qp_pa2_s_direct": 1.0838056177488004e-07,
+          "qp_relative_change_at_nearest_voxels": 0.23037908898843007,
+          "last_5us_qp_fraction": 1.8445501020910892e-11,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "offaxis_pos_z5",
+          "coarse_xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.005005000000000001
+          ],
+          "fine_xyz_m": [
+            0.006395999999999998,
+            0,
+            0.004992000000000002
+          ],
+          "sampling_displacement_m": 2.9068883707496083e-05,
+          "coarse_peak_pa_assumed": 0.1061200201511383,
+          "fine_peak_pa_assumed": 0.1139882355928421,
+          "coarse_qp_pa2_s": 1.2028373742525183e-08,
+          "fine_qp_pa2_s_direct": 1.4126343870063816e-08,
+          "qp_relative_change_at_nearest_voxels": 0.17441843531361667,
+          "last_5us_qp_fraction": 1.837707632247408e-10,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "near_source_peak",
+          "coarse_xyz_m": [
+            0.0018199999999999998,
+            0.00052,
+            0.00013000000000000338
+          ],
+          "fine_xyz_m": [
+            0.0018199999999999998,
+            0.00052,
+            0.00010400000000000166
+          ],
+          "sampling_displacement_m": 2.6000000000001716e-05,
+          "coarse_peak_pa_assumed": 2.2214550971984863,
+          "fine_peak_pa_assumed": 2.4965980052948,
+          "coarse_qp_pa2_s": 6.212523372223267e-06,
+          "fine_qp_pa2_s_direct": 7.773910412130199e-06,
+          "qp_relative_change_at_nearest_voxels": 0.2513289602881865,
+          "last_5us_qp_fraction": 4.2993673335730926e-15,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "axis_z2",
+          "coarse_xyz_m": [
+            0.0,
+            0.0,
+            0.002015000000000001
+          ],
+          "fine_xyz_m": [
+            0,
+            0,
+            0.0020279999999999986
+          ],
+          "sampling_displacement_m": 1.2999999999997389e-05,
+          "coarse_peak_pa_assumed": 0.38482049107551575,
+          "fine_peak_pa_assumed": 0.389490008354187,
+          "coarse_qp_pa2_s": 2.1965057792438306e-07,
+          "fine_qp_pa2_s_direct": 2.2828978174042476e-07,
+          "qp_relative_change_at_nearest_voxels": 0.0393315778983101,
+          "last_5us_qp_fraction": 1.7352733434812224e-11,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "even32",
+          "label": "axis_z5",
+          "coarse_xyz_m": [
+            0.0,
+            0.0,
+            0.005005000000000001
+          ],
+          "fine_xyz_m": [
+            0,
+            0,
+            0.004992000000000002
+          ],
+          "sampling_displacement_m": 1.2999999999999123e-05,
+          "coarse_peak_pa_assumed": 0.6747036576271057,
+          "fine_peak_pa_assumed": 0.680278480052948,
+          "coarse_qp_pa2_s": 7.292375511904271e-07,
+          "fine_qp_pa2_s_direct": 7.394010251632329e-07,
+          "qp_relative_change_at_nearest_voxels": 0.013937123720815903,
+          "last_5us_qp_fraction": 1.0811409616006477e-11,
+          "coarse_qp_method": "GPU RMS",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        }
+      ],
+      "offaxis_over_near_main_qp": 0.9389936832599646,
+      "target_over_near_main_qp": 0.9164134550283916
+    },
+    {
+      "kind": "full64_matched",
+      "runtime_s": 1738.4003452,
+      "budget_pa2_s_m2": 1.1509677471029702e-11,
+      "budget_ratio_vs_coarse": 1.0000000147845118,
+      "rms_direct_relative_l2": 9.694272916625383e-05,
+      "normalized_source_waveform_max_abs_difference_pa": 9.36635535797592e-09,
+      "comparison": {
+        "all_physical": {
+          "linear": {
+            "raw_amplitude_relative_l2": 0.00992636460108407,
+            "maximum_relative_change": 0.0015319224521114676,
+            "voxels": 18432000,
+            "evaluation": "linear fine-to-coarse interpolation, no amplitude normalization"
+          },
+          "shared": {
+            "raw_amplitude_relative_l2": 0.008752547049108095,
+            "maximum_relative_change": 0.0016405088454244745,
+            "voxels": 288000,
+            "evaluation": "exact shared physical lattice, no interpolation"
+          },
+          "native_peak_displacement_m": 6.500000000000256e-05,
+          "mirror_equivalent_argmax_displacement_m_diagnostic_only": 6.500000000000256e-05,
+          "argmax_caveat": "Single voxel argmax may switch nearly equal mirror or repeated source lobes; inspect signed positions and field differences. Mirror-equivalent distance is diagnostic, not physical migration.",
+          "field_5pct_both_evaluations": true,
+          "native_peak_013mm": true
+        },
+        "near_source": {
+          "linear": {
+            "raw_amplitude_relative_l2": 0.024631056958355727,
+            "maximum_relative_change": 0.002602001639694798,
+            "voxels": 1152000,
+            "evaluation": "linear fine-to-coarse interpolation, no amplitude normalization"
+          },
+          "shared": {
+            "raw_amplitude_relative_l2": 0.020455579411607586,
+            "maximum_relative_change": 0.01048643519829449,
+            "voxels": 16800,
+            "evaluation": "exact shared physical lattice, no interpolation"
+          },
+          "native_peak_displacement_m": 0.0068938498678169655,
+          "mirror_equivalent_argmax_displacement_m_diagnostic_only": 0.0005350570063086747,
+          "argmax_caveat": "Single voxel argmax may switch nearly equal mirror or repeated source lobes; inspect signed positions and field differences. Mirror-equivalent distance is diagnostic, not physical migration.",
+          "field_5pct_both_evaluations": true,
+          "native_peak_013mm": false
+        },
+        "shallow": {
+          "linear": {
+            "raw_amplitude_relative_l2": 0.01156506931989288,
+            "maximum_relative_change": 0.000452840680532879,
+            "voxels": 1766400,
+            "evaluation": "linear fine-to-coarse interpolation, no amplitude normalization"
+          },
+          "shared": {
+            "raw_amplitude_relative_l2": 0.011011042418313452,
+            "maximum_relative_change": 0.002509962017643853,
+            "voxels": 28800,
+            "evaluation": "exact shared physical lattice, no interpolation"
+          },
+          "native_peak_displacement_m": 0.004563,
+          "mirror_equivalent_argmax_displacement_m_diagnostic_only": 1.299999999999999e-05,
+          "argmax_caveat": "Single voxel argmax may switch nearly equal mirror or repeated source lobes; inspect signed positions and field differences. Mirror-equivalent distance is diagnostic, not physical migration.",
+          "field_5pct_both_evaluations": true,
+          "native_peak_013mm": false
+        },
+        "deep": {
+          "linear": {
+            "raw_amplitude_relative_l2": 0.004740011374506405,
+            "maximum_relative_change": 0.0015319224521114676,
+            "voxels": 15168000,
+            "evaluation": "linear fine-to-coarse interpolation, no amplitude normalization"
+          },
+          "shared": {
+            "raw_amplitude_relative_l2": 0.0038124466456569083,
+            "maximum_relative_change": 0.0016405088454244745,
+            "voxels": 235200,
+            "evaluation": "exact shared physical lattice, no interpolation"
+          },
+          "native_peak_displacement_m": 6.500000000000256e-05,
+          "mirror_equivalent_argmax_displacement_m_diagnostic_only": 6.500000000000256e-05,
+          "argmax_caveat": "Single voxel argmax may switch nearly equal mirror or repeated source lobes; inspect signed positions and field differences. Mirror-equivalent distance is diagnostic, not physical migration.",
+          "field_5pct_both_evaluations": true,
+          "native_peak_013mm": true
+        },
+        "z2_plus": {
+          "linear": {
+            "raw_amplitude_relative_l2": 0.005897538615009545,
+            "maximum_relative_change": 0.0015319224521114676,
+            "voxels": 16934400,
+            "evaluation": "linear fine-to-coarse interpolation, no amplitude normalization"
+          },
+          "shared": {
+            "raw_amplitude_relative_l2": 0.005187910813193857,
+            "maximum_relative_change": 0.0016405088454244745,
+            "voxels": 264000,
+            "evaluation": "exact shared physical lattice, no interpolation"
+          },
+          "native_peak_displacement_m": 6.500000000000256e-05,
+          "mirror_equivalent_argmax_displacement_m_diagnostic_only": 6.500000000000256e-05,
+          "argmax_caveat": "Single voxel argmax may switch nearly equal mirror or repeated source lobes; inspect signed positions and field differences. Mirror-equivalent distance is diagnostic, not physical migration.",
+          "field_5pct_both_evaluations": true,
+          "native_peak_013mm": true
+        }
+      },
+      "native_peaks": {
+        "all_physical": {
+          "coarse": {
+            "peak_pa_assumed": 1.9892306327819824,
+            "xyz_m": [
+              0.0,
+              0.0,
+              0.018394999999999998
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              -1.0,
+              1.0
+            ]
+          },
+          "fine": {
+            "peak_pa_assumed": 1.992277979850769,
+            "xyz_m": [
+              0.0,
+              0.0,
+              0.01846
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              -1.0,
+              1.0
+            ]
+          }
+        },
+        "near_source": {
+          "coarse": {
+            "peak_pa_assumed": 0.9000521898269653,
+            "xyz_m": [
+              0.003315,
+              0.00045499999999999995,
+              0.0014300000000000024
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              1e-10,
+              0.002
+            ]
+          },
+          "fine": {
+            "peak_pa_assumed": 0.9124698042869568,
+            "xyz_m": [
+              -0.0034839999999999993,
+              -0.000572,
+              0.0009360000000000011
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              1e-10,
+              0.002
+            ]
+          }
+        },
+        "shallow": {
+          "coarse": {
+            "peak_pa_assumed": 1.1083388328552246,
+            "xyz_m": [
+              0.002275,
+              0.0,
+              0.00494
+            ],
+            "on_search_boundary": true,
+            "z_range_requested_m_half_open": [
+              0.002,
+              0.005
+            ]
+          },
+          "fine": {
+            "peak_pa_assumed": 1.1134061813354492,
+            "xyz_m": [
+              -0.002288,
+              0.0,
+              0.004939999999999998
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              0.002,
+              0.005
+            ]
+          }
+        },
+        "deep": {
+          "coarse": {
+            "peak_pa_assumed": 1.9892306327819824,
+            "xyz_m": [
+              0.0,
+              0.0,
+              0.018394999999999998
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              0.005,
+              1.0
+            ]
+          },
+          "fine": {
+            "peak_pa_assumed": 1.992277979850769,
+            "xyz_m": [
+              0.0,
+              0.0,
+              0.01846
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              0.005,
+              1.0
+            ]
+          }
+        },
+        "z2_plus": {
+          "coarse": {
+            "peak_pa_assumed": 1.9892306327819824,
+            "xyz_m": [
+              0.0,
+              0.0,
+              0.018394999999999998
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              0.002,
+              1.0
+            ]
+          },
+          "fine": {
+            "peak_pa_assumed": 1.992277979850769,
+            "xyz_m": [
+              0.0,
+              0.0,
+              0.01846
+            ],
+            "on_search_boundary": false,
+            "z_range_requested_m_half_open": [
+              0.002,
+              1.0
+            ]
+          }
+        }
+      },
+      "trace_comparison": [
+        {
+          "kind": "full64_matched",
+          "label": "target",
+          "coarse_xyz_m": [
+            0.0,
+            0.0,
+            0.02002
+          ],
+          "fine_xyz_m": [
+            0,
+            0,
+            0.02002
+          ],
+          "sampling_displacement_m": 0.0,
+          "coarse_peak_pa_assumed": 1.9051921367645264,
+          "fine_peak_pa_assumed": 1.907923936843872,
+          "coarse_qp_pa2_s": 5.834496195084649e-06,
+          "fine_qp_pa2_s_direct": 5.856087240286388e-06,
+          "qp_relative_change_at_nearest_voxels": 0.0037005843315021103,
+          "last_5us_qp_fraction": 2.2115201296402858e-13,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "near_main",
+          "coarse_xyz_m": [
+            0.0,
+            0.0,
+            0.018394999999999998
+          ],
+          "fine_xyz_m": [
+            0,
+            0,
+            0.018408
+          ],
+          "sampling_displacement_m": 1.3000000000002593e-05,
+          "coarse_peak_pa_assumed": 1.9892306327819824,
+          "fine_peak_pa_assumed": 1.9921791553497314,
+          "coarse_qp_pa2_s": 6.363883235527283e-06,
+          "fine_qp_pa2_s_direct": 6.390226147357131e-06,
+          "qp_relative_change_at_nearest_voxels": 0.004139439844336623,
+          "last_5us_qp_fraction": 1.3831532051271871e-13,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "qp_main",
+          "coarse_xyz_m": [
+            0.0,
+            0.0,
+            0.01833
+          ],
+          "fine_xyz_m": [
+            0,
+            0,
+            0.018304
+          ],
+          "sampling_displacement_m": 2.5999999999998247e-05,
+          "coarse_peak_pa_assumed": 1.9891217947006226,
+          "fine_peak_pa_assumed": 1.9906762838363647,
+          "coarse_qp_pa2_s": 6.364582158212275e-06,
+          "fine_qp_pa2_s_direct": 6.391163533408128e-06,
+          "qp_relative_change_at_nearest_voxels": 0.004176452520383567,
+          "last_5us_qp_fraction": 1.3793468337081776e-13,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "offaxis_pos",
+          "coarse_xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.002015000000000001
+          ],
+          "fine_xyz_m": [
+            0.006395999999999998,
+            0,
+            0.0020279999999999986
+          ],
+          "sampling_displacement_m": 2.9068883707495307e-05,
+          "coarse_peak_pa_assumed": 0.034643691033124924,
+          "fine_peak_pa_assumed": 0.05226874724030495,
+          "coarse_qp_pa2_s": 2.3759886631008466e-09,
+          "fine_qp_pa2_s_direct": 3.9820229764268055e-09,
+          "qp_relative_change_at_nearest_voxels": 0.6759435927736968,
+          "last_5us_qp_fraction": 8.588334684250065e-11,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "offaxis_neg",
+          "coarse_xyz_m": [
+            -0.006369999999999999,
+            0.0,
+            0.002015000000000001
+          ],
+          "fine_xyz_m": [
+            -0.006395999999999998,
+            0,
+            0.0020279999999999986
+          ],
+          "sampling_displacement_m": 2.9068883707495307e-05,
+          "coarse_peak_pa_assumed": 0.034642644226551056,
+          "fine_peak_pa_assumed": 0.052268289029598236,
+          "coarse_qp_pa2_s": 2.375864371277439e-09,
+          "fine_qp_pa2_s_direct": 3.982062670100335e-09,
+          "qp_relative_change_at_nearest_voxels": 0.6760479757349473,
+          "last_5us_qp_fraction": 8.741417167103025e-11,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "offaxis_pos_z1",
+          "coarse_xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.0010400000000000027
+          ],
+          "fine_xyz_m": [
+            0.006395999999999998,
+            0,
+            0.0010399999999999993
+          ],
+          "sampling_displacement_m": 2.5999999999999114e-05,
+          "coarse_peak_pa_assumed": 0.02861158549785614,
+          "fine_peak_pa_assumed": 0.031722575426101685,
+          "coarse_qp_pa2_s": 1.5910977591990033e-09,
+          "fine_qp_pa2_s_direct": 2.82263037466564e-09,
+          "qp_relative_change_at_nearest_voxels": 0.774014423907315,
+          "last_5us_qp_fraction": 6.691520262155939e-12,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "offaxis_neg_z1",
+          "coarse_xyz_m": [
+            -0.006369999999999999,
+            0.0,
+            0.0010400000000000027
+          ],
+          "fine_xyz_m": [
+            -0.006395999999999998,
+            0,
+            0.0010399999999999993
+          ],
+          "sampling_displacement_m": 2.5999999999999114e-05,
+          "coarse_peak_pa_assumed": 0.028612183406949043,
+          "fine_peak_pa_assumed": 0.03172161057591438,
+          "coarse_qp_pa2_s": 1.5910229742788495e-09,
+          "fine_qp_pa2_s_direct": 2.8226088888564516e-09,
+          "qp_relative_change_at_nearest_voxels": 0.7740843058132667,
+          "last_5us_qp_fraction": 7.253429077094634e-12,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "offaxis_pos_z3",
+          "coarse_xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.0030549999999999987
+          ],
+          "fine_xyz_m": [
+            0.006395999999999998,
+            0,
+            0.0030680000000000013
+          ],
+          "sampling_displacement_m": 2.9068883707497634e-05,
+          "coarse_peak_pa_assumed": 0.04295366629958153,
+          "fine_peak_pa_assumed": 0.05010697618126869,
+          "coarse_qp_pa2_s": 3.463003573317271e-09,
+          "fine_qp_pa2_s_direct": 3.959369477627381e-09,
+          "qp_relative_change_at_nearest_voxels": 0.14333392784652332,
+          "last_5us_qp_fraction": 1.044308677156801e-09,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "offaxis_pos_z5",
+          "coarse_xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.005005000000000001
+          ],
+          "fine_xyz_m": [
+            0.006395999999999998,
+            0,
+            0.004992000000000002
+          ],
+          "sampling_displacement_m": 2.9068883707496083e-05,
+          "coarse_peak_pa_assumed": 0.049181777983903885,
+          "fine_peak_pa_assumed": 0.051423441618680954,
+          "coarse_qp_pa2_s": 4.4416739233288735e-09,
+          "fine_qp_pa2_s_direct": 4.685537177825198e-09,
+          "qp_relative_change_at_nearest_voxels": 0.05490345727890755,
+          "last_5us_qp_fraction": 1.1214969010879534e-09,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "near_source_peak",
+          "coarse_xyz_m": [
+            0.0018199999999999998,
+            0.00052,
+            0.00013000000000000338
+          ],
+          "fine_xyz_m": [
+            0.0018199999999999998,
+            0.00052,
+            0.00010400000000000166
+          ],
+          "sampling_displacement_m": 2.6000000000001716e-05,
+          "coarse_peak_pa_assumed": 0.7284960746765137,
+          "fine_peak_pa_assumed": 0.717296838760376,
+          "coarse_qp_pa2_s": 8.15180140292052e-07,
+          "fine_qp_pa2_s_direct": 7.831806731114113e-07,
+          "qp_relative_change_at_nearest_voxels": -0.03925447345807076,
+          "last_5us_qp_fraction": 6.667126984496607e-14,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "axis_z2",
+          "coarse_xyz_m": [
+            0.0,
+            0.0,
+            0.002015000000000001
+          ],
+          "fine_xyz_m": [
+            0,
+            0,
+            0.0020279999999999986
+          ],
+          "sampling_displacement_m": 1.2999999999997389e-05,
+          "coarse_peak_pa_assumed": 0.5442187190055847,
+          "fine_peak_pa_assumed": 0.5508232116699219,
+          "coarse_qp_pa2_s": 4.393427478189605e-07,
+          "fine_qp_pa2_s_direct": 4.565793678473798e-07,
+          "qp_relative_change_at_nearest_voxels": 0.03923274052886372,
+          "last_5us_qp_fraction": 1.7517374130833136e-11,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        },
+        {
+          "kind": "full64_matched",
+          "label": "axis_z5",
+          "coarse_xyz_m": [
+            0.0,
+            0.0,
+            0.005005000000000001
+          ],
+          "fine_xyz_m": [
+            0,
+            0,
+            0.004992000000000002
+          ],
+          "sampling_displacement_m": 1.2999999999999123e-05,
+          "coarse_peak_pa_assumed": 0.9541745781898499,
+          "fine_peak_pa_assumed": 0.9620602130889893,
+          "coarse_qp_pa2_s": 1.458634569536202e-06,
+          "fine_qp_pa2_s_direct": 1.478805472569754e-06,
+          "qp_relative_change_at_nearest_voxels": 0.013828619898927696,
+          "last_5us_qp_fraction": 1.0790488286752213e-11,
+          "coarse_qp_method": "double direct",
+          "coordinate_caveat": "Nearest voxels differ across grids; not an exact fixed-point Qp convergence test."
+        }
+      ],
+      "offaxis_over_near_main_qp": 0.0006231427315093834,
+      "target_over_near_main_qp": 0.9164131448944648
+    }
+  ],
+  "protected_files_unchanged": 173,
+  "pressure_comparison": "Raw amplitudes; fine-to-coarse linear interpolation and separate exact 260um common lattice.",
+  "numerical_convergence": "not_established",
+  "physical_validation": "unknown",
+  "hardware_run": false,
+  "limitations": "Two grids only, finite domain/PML/time, uncalibrated flat source and lossless medium; source surface rasterization and waveform time sampling vary with dx. Nearest-point Qp includes coordinate mismatch. No lens, absorption, heat or SonoInk cure model."
+}

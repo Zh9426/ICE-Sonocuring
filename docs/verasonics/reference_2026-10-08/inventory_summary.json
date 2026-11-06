@@ -1,0 +1,134 @@
+{
+  "root": "H:\\print_transducer\\VantageNXT-2.3.2-p2",
+  "date": "2026-10-08",
+  "total_files": 4046,
+  "total_bytes": 616534219,
+  "extensions": {
+    ".p": 2071,
+    ".m": 803,
+    ".mat": 46,
+    ".pdf": 347,
+    ".jpg": 303,
+    ".txt": 16,
+    ".c": 3,
+    ".cu": 2,
+    ".enc": 1,
+    ".conf": 1,
+    ".mlappinstall": 1,
+    ".mexa64": 7,
+    ".mexmaci64": 6,
+    ".mexw64": 7,
+    ".linux64": 8,
+    ".exe": 7,
+    ".mac64": 2,
+    ".bin": 9,
+    ".h": 15,
+    ".run": 1,
+    ".msi": 1,
+    ".dylib": 13,
+    ".so": 19,
+    ".dll": 21,
+    ".jnilib": 6,
+    ".lic": 1,
+    ".fig": 7,
+    "": 1,
+    ".lib": 6,
+    ".png": 35,
+    ".gif": 1,
+    ".jar": 8,
+    ".vrs": 2,
+    ".html": 72,
+    ".js": 153,
+    ".css": 5,
+    ".svg": 1,
+    ".cpp": 12,
+    ".hpp": 12,
+    ".md": 14
+  },
+  "top_level": {
+    "activate.p": {
+      "files": 1,
+      "bytes": 5119
+    },
+    "Applications": {
+      "files": 623,
+      "bytes": 3357509
+    },
+    "Documentation": {
+      "files": 352,
+      "bytes": 35352823
+    },
+    "Example_Scripts": {
+      "files": 498,
+      "bytes": 10075544
+    },
+    "HardwareTest": {
+      "files": 2,
+      "bytes": 2874
+    },
+    "license.enc": {
+      "files": 1,
+      "bytes": 8724
+    },
+    "MatFiles": {
+      "files": 3,
+      "bytes": 795566
+    },
+    "MovieCreation": {
+      "files": 300,
+      "bytes": 204514157
+    },
+    "reprogramHardware.p": {
+      "files": 1,
+      "bytes": 1554
+    },
+    "SST.p": {
+      "files": 1,
+      "bytes": 2341
+    },
+    "System": {
+      "files": 1800,
+      "bytes": 329071055
+    },
+    "systemInfo.m": {
+      "files": 1,
+      "bytes": 1091
+    },
+    "systemInfo.txt": {
+      "files": 1,
+      "bytes": 189918
+    },
+    "Tools": {
+      "files": 49,
+      "bytes": 1137407
+    },
+    "UserData": {
+      "files": 43,
+      "bytes": 6373779
+    },
+    "Utilities": {
+      "files": 40,
+      "bytes": 725156
+    },
+    "Version.p": {
+      "files": 1,
+      "bytes": 3489
+    },
+    "vsacqsdk": {
+      "files": 309,
+      "bytes": 24840423
+    },
+    "vstoolbox": {
+      "files": 16,
+      "bytes": 20545
+    },
+    "VSX.m": {
+      "files": 1,
+      "bytes": 1993
+    },
+    "XJD": {
+      "files": 3,
+      "bytes": 53152
+    }
+  }
+}

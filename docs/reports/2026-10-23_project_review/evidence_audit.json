@@ -1,0 +1,72 @@
+{
+  "compiled_on": "2026-10-23",
+  "source_cutoff": "2026-10-22",
+  "operation": "Read saved sources and regenerate reporting figures only",
+  "matlab_kwave_rerun": false,
+  "vsx_or_hardware_run": false,
+  "material_experiment": false,
+  "report_uses_historical_test_records": true,
+  "test_counts_are_not_additive": true,
+  "slide_reference_pages": 5,
+  "editable_pptx_created": false,
+  "source_hashes": {
+    "CHANGELOG.md": "bb4763584689cc7cc535b77b5c867b64b9e7c5c78582cd68d0038fe91f86f27a",
+    "README.md": "a86a104aeb2fe57bed8124995edabbf96e36c570ca7b27a69d507519aabd1334",
+    "docs/project_implementation_report.md": "172c8d100e21552e401e3217e4f568521b4bc7a9e73af08cf561909c8672e624",
+    "docs/upgrade_2026-09-24.md": "9c836f15cf95fcb2517af51f91ac4d722a008850eb559235a323b3fd816169d2",
+    "docs/verasonics/linear64_oddeven_2026-10-12.md": "5c7177464adb084addaee49cdd479399a7c79b549339b9e0bbeab61acc8552ee",
+    "verasonics/dual_mode/+icevs/default_config.m": "dd6ff66721e34889f94534324c7af31d78783fc9c5c17f2745ad093a17569e3f",
+    "independent_simulation/docs/kwave_oddeven_results_2026-10-19.md": "c2db47bc37e957dbd649109b36fffe8abcda3b3fee7f9086eb3d74a89cf71778",
+    "independent_simulation/docs/ice_bench_poc_plan_2026-10-21.md": "f11679070fb4710fd84e678531e990575f0e68302aa66cbb4844ac26c26d364e",
+    "independent_simulation/docs/singlepoint_validation_2026-10-22.md": "7d5ccb9ab95d53d613404b0507988885d5a33b89c5f80a58ff4d2d34f3cadffb",
+    "independent_simulation/docs/singlepoint_interpretation_2026-10-22.md": "843a6341c29af345ea81dd22bad98817813b8fd7b4d2b5dce2d749d0b60278e2",
+    "independent_simulation/results/kwave_singlepoint_validation_2026-10-22/focus_summary.csv": "965d7b0e88257297446dc150d7b08390f3c74d0ddf26fa6724b44a581df3a7e4",
+    "independent_simulation/results/kwave_singlepoint_validation_2026-10-22/sensitivity_summary.csv": "0ea27d0f95d9b69f9e5925f072e699b8c8a8bd5723842fbeba89a5613e83b48f",
+    "independent_simulation/results/kwave_singlepoint_validation_2026-10-22/exposure_summary.csv": "52f06c950eada6a6dc09217efff5c85bc00d1c4f2f494cf5504e1ab0c6da19f1",
+    "independent_simulation/results/kwave_singlepoint_validation_2026-10-22/interpretation_diagnostics.json": "7418165bf615799dfad69b6d44b617bd5a98928ac1f8af8757c990d2bb0cea70",
+    "independent_simulation/results/kwave_singlepoint_validation_2026-10-22/validation.json": "e288ff4ae96683c2b3194ce2a1e9abbeb9c99a488642fee035c98a546f3a59b4",
+    "independent_simulation/results/kwave_oddeven/grid_comparison.json": "1016d9f7475d6bd171feb52ed49f34b380247558d935c9894e6579847675831f"
+  },
+  "fine52_peak_z_mm": 18.46,
+  "fine52_pressure_halfwidth_mm": [
+    0.7173100013268942,
+    2.8936612223403566,
+    13.477399540574943
+  ],
+  "wide65_global_peak_stability_passed": false,
+  "source_pressure_calibration": "assumed 1 Pa source; physical calibration unknown",
+  "manuals": [
+    {
+      "file": "Vantage NXT System Product Specification.pdf",
+      "version": "D00108 Rev. L",
+      "section": "1.4",
+      "printed_pages": "8-9",
+      "pdf_pages": "9-10",
+      "sha256": "c42020b8fb8e733eacc77f2c5fbf7e3ed871380d031c65b770a7dfaea0a101be"
+    },
+    {
+      "file": "Vantage NXT System Initial Setup Instructions.pdf",
+      "version": "D00109 Rev. D",
+      "section": "4.5",
+      "printed_pages": "9-10",
+      "pdf_pages": "9-10",
+      "sha256": "a4fead1127c1094c3e389233f4909fd2f8951fc1ec5e1da9ee52a867fc69e6ba"
+    },
+    {
+      "file": "Vantage NXT System User Manual.pdf",
+      "version": "D00107 Rev. K",
+      "section": "4.4.1-4.4.2",
+      "printed_pages": "30",
+      "pdf_pages": "30",
+      "sha256": "db3fb635582c7f6155998170fcefdb655a8752d4ec78ed8b68bc6d3614da6073"
+    },
+    {
+      "file": "Vantage NXT Sequence Programming Manual.pdf",
+      "version": "D00163 Rev. K",
+      "section": "4.3.2; TX.Delay",
+      "printed_pages": "24-25; A171",
+      "pdf_pages": "24-25;310",
+      "sha256": "41e8b8df13fa3503f1550b7806b530968ad131b4f4a9e46e0b169cf8c633bf9f"
+    }
+  ]
+}

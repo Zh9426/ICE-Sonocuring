@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="0.539" timestamp="2026-10-24T11:25:10.582032+08:00" hostname="Zh89"><testcase classname="independent_simulation.tests.test_widegrid_analysis" name="test_common_lattice_uses_exact_physical_coordinates" time="0.082" /><testcase classname="independent_simulation.tests.test_widegrid_analysis" name="test_interpolation_recovers_linear_field_without_amplitude_normalization" time="0.002" /><testcase classname="independent_simulation.tests.test_widegrid_analysis" name="test_interpolation_rejects_extrapolation" time="0.000" /><testcase classname="independent_simulation.tests.test_widegrid_analysis" name="test_trace_row_mapping_rejects_permutation_even_with_equal_peaks" time="0.000"><failure message="AttributeError: module 'analyze_widegrid' has no attribute 'check_trace_rows'">def test_trace_row_mapping_rejects_permutation_even_with_equal_peaks():
+&gt;       audit.check_trace_rows([8, 2, 5], [3, 1, 2])
+        ^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'analyze_widegrid' has no attribute 'check_trace_rows'
+
+independent_simulation\tests\test_widegrid_analysis.py:39: AttributeError</failure></testcase></testsuite></testsuites>

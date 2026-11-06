@@ -1,0 +1,16 @@
+index,kind,focus,requested_wait_us,scheduled_wait_us,profile,scheduled_start_lower_bound_us,group,tx,rcv,recon,process,commands
+1,profile_switch,0,0,0,1,0,0,0,0,0,0,setTPCProfile
+2,initial_settle,0,5000,5000,1,0,0,0,0,0,0,noop
+3,exposure_transmit,1,1000,1000,1,5000,1,1,0,0,0,timeToNextAcq
+4,exposure_transmit,1,1000,1000,1,6000,1,1,0,0,0,timeToNextAcq
+5,exposure_transmit,1,1000,1000,1,7000,1,1,0,0,0,timeToNextAcq
+6,exposure_transmit,1,1000,1000,1,8000,1,1,0,0,0,timeToNextAcq
+7,exposure_transmit,1,1000,1000,1,9000,1,1,0,0,0,timeToNextAcq
+8,exposure_transmit,1,1000,1000,1,10000,1,1,0,0,0,timeToNextAcq
+9,exposure_transmit,1,1000,1000,1,11000,1,1,0,0,0,timeToNextAcq
+10,exposure_transmit,1,1000,1000,1,12000,1,1,0,0,0,timeToNextAcq
+11,exposure_transmit,1,1000,1000,1,13000,1,1,0,0,0,timeToNextAcq
+12,exposure_transmit,1,0,0,1,14000,1,1,0,0,0,
+13,exposure_complete,1,8.60269437319287,8.8,1,14000,1,0,0,0,0,noop
+14,recharge,1,10000,10000,1,14008.8,1,0,0,0,0,noop
+15,stop,0,0,0,1,24008.8,1,0,0,0,0,stop

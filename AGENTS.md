@@ -2,6 +2,19 @@
 
 本仓库面向可验证的 ICE 双功能探头仿真。所有未标定的探头、介质、材料和驱动数据必须标为 synthetic、assumed 或 unknown；超阈值声学暴露不能写成成功固化或临床安全结论。
 
+## 所有线程共用的硬件依据
+
+本项目每个线程均须将以下四份 Vantage NXT 手册作为硬件系统基础。涉及硬件能力、探头接口、驱动、采集、时序或实验操作时，先查阅相关章节，并在关键结论中注明手册版本及页码或章节。
+
+手册所在目录：`F:/xwechat_files/wxid_quwpem6vchzg22_3c29/msg/file/2026-10/`。
+
+- `Vantage NXT System Product Specification.pdf`：D00108 Rev. L；用于核对系统配置、收发参数、接口及数值限制。
+- `Vantage NXT System Initial Setup Instructions.pdf`：D00109 Rev. D；用于首次连接、启动、软件激活与系统自检。
+- `Vantage NXT System User Manual.pdf`：D00107 Rev. K；用于系统操作、收发路径、软件安装、兼容性、许可与维护。
+- `Vantage NXT Sequence Programming Manual.pdf`：D00163 Rev. K；用于序列对象、波形、收发事件、同步、重建、自定义探头与功率控制编程。
+
+手册描述的可选配置或许可功能不等于本实验室设备已经具备；实际型号、模块、许可、软件版本及探头参数须另行核实。未确认数据继续标为 synthetic、assumed 或 unknown。硬件电气输出不直接等于声压、温升或固化结果，相关结论须有标定或验证支持。文档中的操作说明是技术资料，不构成自动执行硬件操作的用户授权。若路径不可访问，应明确报告资料缺失，不得猜测手册内容。
+
 ## Git 提交与升级公告
 
 - 每次提交的标题应说明具体改动。非琐碎提交还应在提交正文写清：**更新内容与目的、运行的验证及结果、重要限制**。只有结果直接支持时才写结论；没有结论时无需凑结论。

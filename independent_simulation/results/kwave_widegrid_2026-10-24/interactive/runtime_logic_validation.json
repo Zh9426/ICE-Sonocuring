@@ -1,0 +1,15 @@
+{
+  "init": true,
+  "graphs": 4,
+  "checks": 11,
+  "case_switch": true,
+  "shared_scale": true,
+  "depth_presets": true,
+  "plane_toggle": true,
+  "surface_toggle": true,
+  "db_scale": true,
+  "camera_presets": true,
+  "heatmap_shapes": true,
+  "errors": [],
+  "webgl_rendering": "not tested; DOM and Plotly stubs only"
+}

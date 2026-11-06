@@ -1,0 +1,4 @@
+mode,events,imaging_acquisitions,exposure_pulses,scheduled_cycle_us,scheduled_total_us,nominal_duty,buffer_mib
+imaging_only,543,450,0,20000,605000,0,900
+exposure_only,393,0,300,21008.8,635264,0.00158663671096556,900
+interleaved,933,450,300,41008.8,1235264,0.000812833668220805,900

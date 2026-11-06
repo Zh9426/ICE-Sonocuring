@@ -1,0 +1,11 @@
+{
+  "coarse_dx_m": 8E-5,
+  "fine_dx_m": 6.4E-5,
+  "xz_fixed_roi_relative_l2": 0.0086517025680913837,
+  "roi_peak_relative_change": 0.00072669061416996087,
+  "proposed_internal_tolerance": 0.05,
+  "two_grid_check_passed": true,
+  "convergence": "not_established_two_grids_only",
+  "pml_domain_and_source_bandwidth_sensitivity": "pending",
+  "scope": "assumed_model_not_measured_probe"
+}

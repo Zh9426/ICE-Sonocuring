@@ -1,0 +1,58 @@
+[
+  {
+    "path_relative_to_independent_simulation": "run_kwave_offaxis_diagnostic.m",
+    "sha256": "a9d17b4119c89505e1285029804aeb4feab86b7f9e01bd6cfb6c373c8f95c509"
+  },
+  {
+    "path_relative_to_independent_simulation": "verify_kwave_offaxis_diagnostic.m",
+    "sha256": "bcbc9671d01e2f023643c665d93b8ad0ab9de180bf29208d0aff539ce1a1d913"
+  },
+  {
+    "path_relative_to_independent_simulation": "run_kwave_offaxis_diagnostic_R2024b.ps1",
+    "sha256": "0bdc22f75c8b1fcadb15ec2479d2b112e26b58bab2bdd28239a99374d9d67aa6"
+  },
+  {
+    "path_relative_to_independent_simulation": "+iceind/kwave_offaxis_cases.m",
+    "sha256": "7a2d04519a8a52e3ee06ef126aaa63adc41af3e9d68b2a58417e111b2fc844cd"
+  },
+  {
+    "path_relative_to_independent_simulation": "+iceind/offaxis_sensor.m",
+    "sha256": "3aac1533a59347a0ccb6fcf152dbd4daa279366144e6ccd9a4354fd404f2b85a"
+  },
+  {
+    "path_relative_to_independent_simulation": "+iceind/trace_integral_audit.m",
+    "sha256": "0f3cb222a548a73811e8d5b0ca73e14d54d51847619c96687a2eef28c4250eea"
+  },
+  {
+    "path_relative_to_independent_simulation": "+iceind/prepare_kwave_focus.m",
+    "sha256": "a6589b4a9573c65409343463572cc6e76af2adbf77dc61cad88ecf041c807fc1"
+  },
+  {
+    "path_relative_to_independent_simulation": "+iceind/compile_kwave.m",
+    "sha256": "42a1b880f551e59ddc5cd981aa3c3180aad84c7abe01644f5c59e3ffc4fb8db3"
+  },
+  {
+    "path_relative_to_independent_simulation": "+iceind/kw_waveform.m",
+    "sha256": "1ef424c3f46fafaf5915a5940c01faf06aedb323ae161c8443d37b4f383e51ad"
+  },
+  {
+    "path_relative_to_independent_simulation": "analyze_kwave_offaxis.py",
+    "sha256": "7bfe4f18e0d15eb55754e8774572332d9e4c2c71b37678917df6805e7dca6a75"
+  },
+  {
+    "path_relative_to_independent_simulation": "tests/test_offaxis_analysis.py",
+    "sha256": "bd4f7352f591c2b54041f7619d48b70e2dcdf3794d330c9359b4058c68e61751"
+  },
+  {
+    "path_relative_to_independent_simulation": "tests/test_kwave_offaxis_diagnostic.m",
+    "sha256": "3d8dbac01619a46b1e361985d0a2e3115b8bdd2cc60de15d30a9b5dd91970ea7"
+  },
+  {
+    "path_relative_to_independent_simulation": "dependencies/k-wave-1.4.1/k-wave-toolbox-version-1.4.1/kspaceFirstOrder3D.m",
+    "sha256": "77611493c281dd2b5107de04e7422bea61065cfa3bae1ebed34458ca9ed092da"
+  },
+  {
+    "path_relative_to_independent_simulation": "dependencies/k-wave-1.4.1/k-wave-toolbox-version-1.4.1/private/kspaceFirstOrder_extractSensorData.m",
+    "sha256": "824bef00526c89f1bc65e28d21c23ba6ac6851ae34d752ce443a6f4c10e9f1ee"
+  }
+]

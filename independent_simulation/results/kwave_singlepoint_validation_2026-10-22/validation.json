@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-22",
+  "status": "completed_with_global_peak_sensitivity_failure",
+  "solver_process_exit_code": 0,
+  "completed_cases": [
+    "baseline65",
+    "pml65",
+    "wide65",
+    "long65",
+    "fine52"
+  ],
+  "matlab_tests_total": 26,
+  "matlab_tests_passed": 26,
+  "python_tests_total": 10,
+  "python_tests_passed": 10,
+  "code_analysis_file_count": 6,
+  "code_analysis_messages": 0,
+  "all_artifact_integrity_checks_passed": true,
+  "all_numerical_sensitivity_checks_passed": false,
+  "failed_numerical_cases": [
+    "wide65"
+  ],
+  "preserved_source_and_baseline_files": 20,
+  "all_preserved_hashes_match": true,
+  "git_diff_check_exit_code": 0,
+  "added_text_whitespace_check_passed": true,
+  "implementation_sha256": {
+    "run_kwave_singlepoint_validation.m": "e7ffdb6b680f73a567e4ad0eaf0585b4fb5f9f253d6a32f15bd30e78b28fbbf6",
+    "verify_kwave_singlepoint_validation.m": "e03b1c90721c071377714e2070d45ff6883410c93e356cdb12531f7057ee852f",
+    "run_kwave_singlepoint_validation_R2024b.ps1": "1f0a2ed203ac867f2005360ad11c4fae03219a36ca91332823f60f54af2c1c58",
+    "+iceind/kwave_validation_cases.m": "3de7e893e1bba6de26833599d636817163c7e999e7480ebcf86977f936d16235",
+    "+iceind/rms_to_qp.m": "0ac8f5ce3522243323c2b120bc95e84de6c83d01dec63991169bc231fd899495",
+    "+iceind/pressure_exposure_metrics.m": "4ce176a51e3ebe1ce1417a58768d1073a8aca5d1984b560c9ae0d09ca63dbf0f",
+    "tests/test_kwave_singlepoint_validation.m": "be91e91da9e13146965b2fe2af1ba51a9035e40cd84f5b9390cd505011beeab5",
+    "tests/test_singlepoint_reference.py": "9d80d4b2114cd87a3396726c7ee0eb1f9381301c0e4c1d93ddd0c5253d903be9",
+    "tests/test_singlepoint_analysis.py": "a705c725b76174d8cd851bd001eb7de6065cd2fefb2bb09cf668396c5ed5ffe8",
+    "singlepoint_source_audit.py": "e1845e758695a6773a83f4d972e4c6515ac39ea811ca12732b6cb2a036986172",
+    "analyze_kwave_singlepoint_validation.py": "e5820dcf7c731ecb9ee059595ebb6b5f16e054729d2d5b0599217022965bd9fa",
+    "write_singlepoint_validation_report.py": "9f2dc249de2339273c07399eb7057e6d130f241a5cde22578dab8c2108cf15f8"
+  },
+  "physical_pressure_calibration": "unknown",
+  "sonoink_prediction_performed": false,
+  "hardware_run": false,
+  "scope": "Independent module software and finite-domain numerical checks; no full-repository or vendor-runtime/hardware validation."
+}

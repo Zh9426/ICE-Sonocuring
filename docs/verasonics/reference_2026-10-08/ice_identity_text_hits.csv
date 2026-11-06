@@ -1,0 +1,23 @@
+﻿path,line,text
+UserData/Utilities/computeTrans.m,191,"'P9-4ULts',   '01FFF9',  50,   0;..."
+UserData/Utilities/computeTrans.m,1699,Trans.numelements = 96;
+UserData/Utilities/computeTrans.m,1799,Trans.numelements = 96;
+UserData/Utilities/computeTrans.m,1854,case 'P9-4ULts'
+UserData/Utilities/computeTrans.m,1855,%% P9-4ULts HDI Probe
+UserData/Utilities/computeTrans.m,1856,"% The P9-4ULts is a 64 element array, so to use it with a 128 connector I/O system"
+UserData/Utilities/computeTrans.m,1908,%% P9-4ULts HDI Probe
+UserData/Utilities/computeTrans.m,1909,"% The P9-4ULts is a 64 element array, so to use it with a 128 connector I/O system"
+UserData/Utilities/computeTrans.m,1933,%% P9-4ULts HDI Probe
+UserData/Utilities/computeTrans.m,1934,"% The P9-4ULts is a 64 element array, so to use it with a 128 connector I/O system"
+Utilities/computeTrans.m,191,"'P9-4ULts',   '01FFF9',  50,   0;..."
+Utilities/computeTrans.m,1699,Trans.numelements = 96;
+Utilities/computeTrans.m,1799,Trans.numelements = 96;
+Utilities/computeTrans.m,1854,case 'P9-4ULts'
+Utilities/computeTrans.m,1855,%% P9-4ULts HDI Probe
+Utilities/computeTrans.m,1856,"% The P9-4ULts is a 64 element array, so to use it with a 128 connector I/O system"
+Utilities/computeTrans.m,1908,%% P9-4ULts HDI Probe
+Utilities/computeTrans.m,1909,"% The P9-4ULts is a 64 element array, so to use it with a 128 connector I/O system"
+Utilities/computeTrans.m,1933,%% P9-4ULts HDI Probe
+Utilities/computeTrans.m,1934,"% The P9-4ULts is a 64 element array, so to use it with a 128 connector I/O system"
+XJD/SetUpP9_4TSICE_FlashAngles.m,46,Trans.name = 'P9-4ULts';
+XJD/SetUpP9_4TSICE_FlashAngles.m,288,filename = 'MatFiles/SetUpP9_4TSICE_FlashAngles';

@@ -1,0 +1,6 @@
+Test,Passed,Failed,Incomplete
+test_kwave_singlepoint_validation/testCasesChangeOnePhysicalControl,0,1,1
+test_kwave_singlepoint_validation/testKnownExposurePartitionAndOutsidePeak,0,1,1
+test_kwave_singlepoint_validation/testClippedTargetIsReported,0,1,1
+test_kwave_singlepoint_validation/testRejectNonphysicalProxy,0,1,0
+test_kwave_singlepoint_validation/testRmsIntegralAgreesWithTimeSamples,0,1,1

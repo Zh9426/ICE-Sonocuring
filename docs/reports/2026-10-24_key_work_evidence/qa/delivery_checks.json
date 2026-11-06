@@ -1,0 +1,16 @@
+{
+  "pdf": "H:\\print_transducer\\output\\pdf\\ICE双功能探头关键工作与图片证据汇总_20261024.pdf",
+  "pages": 13,
+  "planned_pages": 13,
+  "image_count": 13,
+  "sources_count": 30,
+  "image_hashes_match": true,
+  "source_files_match": true,
+  "all_source_paths_exist": true,
+  "solver_rerun": false,
+  "historical_tests_rerun": false,
+  "visual_review": "passed; all 13 rendered pages inspected; pages 1 and 13 reinspected after final wording update",
+  "text_chars": 9453,
+  "git_diff_check_exit_code": 0,
+  "pdf_sha256": "1a305bfe73bc438c090547d31a096852c6da9b5d650628e3ab679a7719968990"
+}

@@ -1,0 +1,5 @@
+Test,Passed,Failed
+test_widegrid/testFineGridPreservesPhysicalDomainAndPML,1,0
+test_widegrid/testFineSourcesMatchCoarseBudgetAndCoverGeometry,1,0
+test_widegrid/testProbeGateAcceptsJSONVectorOrientation,0,1
+test_widegrid/testProbeGateRejectsChangedMemoryOrGrid,0,1

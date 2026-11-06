@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei, Arial" font-size="30" data-pptx-page-role="content">
+<rect id="n09-bg" data-pptx-role="background" width="1280" height="720" fill="#FFFFFF" />
+<g id="n09-title" data-pptx-bounds="48 28 1184 108"><text x="48" y="48" font-size="16" fill="#516176">技术备份 B  /  解释近期优先级</text><text x="48" y="108" font-size="40" font-weight="bold" fill="#142B45">源表示为何成为优先项</text></g>
+<g id="n09-audit-scope" data-pptx-bounds="48 145 1184 34"><text x="48" y="168" font-size="20" font-weight="bold" fill="#C27B22">源表示审计，非实物指向性；代表单元的解析比较，不是改进后的传播结果。</text></g>
+<g id="n09-spectrum-figure" data-pptx-bounds="48 202 826 472"><image href="../images/source_sampling.png" x="48" y="202" width="826" height="472" preserveAspectRatio="xMidYMid meet" /></g>
+<g id="n09-audit-lessons" data-pptx-bounds="910 202 322 458">
+<text x="910" y="236" font-size="28" font-weight="bold" fill="#142B45">细阵元：0.11 mm</text><text x="910" y="278" font-size="20" fill="#516176">65 / 52 μm网格上<tspan x="910" dy="32">约占1.69 / 2.12格</tspan></text><text x="910" y="344" font-size="16" fill="#516176">源码尺寸 existing_code_unverified</text>
+<text x="910" y="401" font-size="28" font-weight="bold" fill="#142B45">面积一致 ≠ 角谱一致</text><text x="910" y="439" font-size="20" fill="#516176">6 MHz、75°代表例偏差</text><text x="910" y="481" font-size="28" fill="#142B45">−18.39% / −7.38%</text>
+<text x="910" y="548" font-size="28" font-weight="bold" fill="#C27B22">拟验证带限源</text><text x="910" y="590" font-size="20" fill="#516176">替换与传播尚未完成<tspan x="910" dy="34">不预先保证离轴场下降</tspan></text>
+</g>
+<g id="n09-footer" data-pptx-role="footer" data-pptx-bounds="48 678 1184 27" fill="#516176" font-size="16"><text x="48" y="697">来源：E2、E4、F3（2026.10.24）｜偏差是源空间谱审计量，不是实物声压误差</text><text x="1232" y="697" text-anchor="end">备份 B / B</text></g>
+</svg>

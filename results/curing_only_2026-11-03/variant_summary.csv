@@ -1,0 +1,5 @@
+variant,entry,active_elements,first_rank,last_rank,aperture_width_mm,frequency_mhz,cycles,pri_us,groups,pulses_per_group,total_pulses,nominal_on_time_us,total_element_on_time_us,events,startup_hv_omitted,effective_default_supply_request_v,mat_path
+All64,SetUpICE_Curing_All64,64,1,64,8.3,6,20,1000,30,10,300,1000,64000,363,1,1.6,H:\print_transducer\results\curing_only_2026-11-03\drivers\ICE_CuringOnly_ExposureFFFFFFFFFFFFFFFF_exposure_only.mat
+Center48,SetUpICE_Curing_Center48,48,9,56,6.22,6,20,1000,30,10,300,1000,48000,363,1,1.6,H:\print_transducer\results\curing_only_2026-11-03\drivers\ICE_CuringOnly_Exposure00FFFFFFFFFFFF00_exposure_only.mat
+Center32,SetUpICE_Curing_Center32,32,17,48,4.14,6,20,1000,30,10,300,1000,32000,363,1,1.6,H:\print_transducer\results\curing_only_2026-11-03\drivers\ICE_CuringOnly_Exposure0000FFFFFFFF0000_exposure_only.mat
+Center16,SetUpICE_Curing_Center16,16,25,40,2.06,6,20,1000,30,10,300,1000,16000,363,1,1.6,H:\print_transducer\results\curing_only_2026-11-03\drivers\ICE_CuringOnly_Exposure000000FFFF000000_exposure_only.mat

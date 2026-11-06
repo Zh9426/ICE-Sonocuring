@@ -1,0 +1,7 @@
+results/*.mat
+results/*.fig
+results/*.log
+tmp/
+dependencies/*/
+dependencies/*.zip
+results/**/*.mat

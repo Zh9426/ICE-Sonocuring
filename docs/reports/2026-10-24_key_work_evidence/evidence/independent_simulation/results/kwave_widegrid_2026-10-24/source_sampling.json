@@ -1,0 +1,70 @@
+{
+  "width_m_existing_code_unverified": 0.00011,
+  "representative_even_element_center_x_m": -6.5e-05,
+  "cells_across_width": {
+    "65um": 1.6923076923076925,
+    "52um": 2.1153846153846154
+  },
+  "definition": "Per-element XZ spatial Fourier source transfer, ky=0, kx=2*pi*f/c*sin(theta); divide by identical physical rectangle area. Not field normalization.",
+  "selected_rows": [
+    {
+      "frequency_hz": 6000000.0,
+      "dx_m": 6.5e-05,
+      "angle_deg_xz": 0.0,
+      "continuous_rectangle_source_transfer": 1.0,
+      "cell_overlap_source_transfer_abs": 0.9999999999999998,
+      "amplitude_error_vs_continuous": -2.220446049250313e-16,
+      "source_transfer_phase_rad": 0.0
+    },
+    {
+      "frequency_hz": 6000000.0,
+      "dx_m": 6.5e-05,
+      "angle_deg_xz": 60.0,
+      "continuous_rectangle_source_transfer": 0.7883165993182331,
+      "cell_overlap_source_transfer_abs": 0.6692860251584736,
+      "amplitude_error_vs_continuous": -0.15099336264478225,
+      "source_transfer_phase_rad": 0.0
+    },
+    {
+      "frequency_hz": 6000000.0,
+      "dx_m": 6.5e-05,
+      "angle_deg_xz": 75.0,
+      "continuous_rectangle_source_transfer": 0.7410092852409463,
+      "cell_overlap_source_transfer_abs": 0.6047413954689015,
+      "amplitude_error_vs_continuous": -0.18389498281082406,
+      "source_transfer_phase_rad": 0.0
+    },
+    {
+      "frequency_hz": 6000000.0,
+      "dx_m": 5.2e-05,
+      "angle_deg_xz": 0.0,
+      "continuous_rectangle_source_transfer": 1.0,
+      "cell_overlap_source_transfer_abs": 1.0,
+      "amplitude_error_vs_continuous": 0.0,
+      "source_transfer_phase_rad": 0.0
+    },
+    {
+      "frequency_hz": 6000000.0,
+      "dx_m": 5.2e-05,
+      "angle_deg_xz": 60.0,
+      "continuous_rectangle_source_transfer": 0.7883165993182331,
+      "cell_overlap_source_transfer_abs": 0.7413930898126259,
+      "amplitude_error_vs_continuous": -0.059523685719910624,
+      "source_transfer_phase_rad": 0.012854519403928748
+    },
+    {
+      "frequency_hz": 6000000.0,
+      "dx_m": 5.2e-05,
+      "angle_deg_xz": 75.0,
+      "continuous_rectangle_source_transfer": 0.7410092852409463,
+      "cell_overlap_source_transfer_abs": 0.6863182093411929,
+      "amplitude_error_vs_continuous": -0.07380619513015962,
+      "source_transfer_phase_rad": 0.023128818222176512
+    }
+  ],
+  "interpretation": "Different cell-overlap source spectra are demonstrated. Causal share of the observed full-field change is not isolated: time sampling and propagation grid also change.",
+  "limitations": "Ideal continuous flat pressure-source geometry only; not actual probe directivity, array beam, radiated power, thermal or cure model. No replacement k-Wave source or propagation implemented.",
+  "candidate_followup": "Test kWaveArray band-limited geometry as an independent source representation; its nonlocal mask support, clipping, scaling and BLI tolerance must be audited before comparison.",
+  "primary_documentation": "https://www.k-wave.org/documentation/kWaveArray.php",
+  "source_representation_paper_doi": "10.1121/1.5116132"
+}

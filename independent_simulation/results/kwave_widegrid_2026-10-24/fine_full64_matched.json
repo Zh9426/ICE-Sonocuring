@@ -1,0 +1,493 @@
+{
+  "tag": "fine_full64_matched",
+  "kind": "full64_matched",
+  "config": {
+    "input_mat": "H:\\print_transducer\\results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "dx_m": 5.2E-5,
+    "domain_m": [
+      0.0156,
+      0.010400000000000001,
+      0.0312
+    ],
+    "source_offset_m": 0.00052,
+    "pml_m": 0.00104,
+    "cfl": 0.2,
+    "density_kg_m3": 1000,
+    "source_amplitude_pa": 1,
+    "output_dir": "H:\\print_transducer\\independent_simulation\\results\\kwave_widegrid_2026-10-24",
+    "provenance": "assumed_homogeneous_lossless_linear_flat_elements"
+  },
+  "source": {
+    "input_mat": "H:\\print_transducer\\results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "input_sha256": "e89b2e056538cff0f9fe6ba5a4a11cd23d35829be6019a7411391b9eb417bb3d",
+    "input_partition": "odd_imaging_even_exposure",
+    "num_elements": 64,
+    "active_elements": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "tx_index": 16,
+    "target_m": [
+      0,
+      0,
+      0.02
+    ],
+    "element_area_m2": 2.2220000000000002E-7,
+    "area_error_m2": 6.1082843961045969E-16,
+    "source_z_offset_m": 0.00052,
+    "source_z_kgrid_m": -0.01508,
+    "active_center_arrival_spread_s": 1.6940658945086007E-21,
+    "waveform": {
+      "half_cycles": 40,
+      "active_fraction": 0.67,
+      "frequency_hz": 6.0E+6,
+      "nominal_drive_duration_s": 3.3333333333333333E-6,
+      "assumed_filter_group_delay_s": 4.5E-7,
+      "acoustic_duration_s": 4.234E-6,
+      "assumed_reference_source_pa": 0.70710678780956426,
+      "calibration": "assumed_not_voltage_calibrated",
+      "waveform_model": "nominal_centered_PWM_assumed_Gaussian_bandpass_normalized"
+    },
+    "source_model": "assumed_flat_rectangular_additive_pressure_no_lens",
+    "elevation_focus_m_metadata_only": 0.03,
+    "sound_speed_m_s": 1540,
+    "source_pitch_m": 0.00013,
+    "points_per_wavelength": 4.9358974358974361,
+    "spectral_energy_above_spatial_nyquist_fraction": 4.5396316174740091E-8,
+    "sensor_coordinates_m": [
+      [
+        0,
+        0,
+        0.014976
+      ],
+      [
+        -0.000988,
+        0,
+        0.02002
+      ],
+      [
+        0,
+        0,
+        0.02002
+      ],
+      [
+        0.000988,
+        0,
+        0.02002
+      ]
+    ],
+    "source_geometry_provenance": "existing_code_unverified",
+    "medium_provenance": "assumed_homogeneous_lossless_linear_flat_elements",
+    "saved_tx_used_as_template_only": true,
+    "aperture_control": {
+      "kind": "full64_matched",
+      "reference_budget_pa2_s_m2": 1.15096778706638E-11,
+      "actual_budget_pa2_s_m2": 1.1509677471029828E-11,
+      "signal_scale": 0.707106781186547,
+      "active_pitch_m": 0.00012999999999999996,
+      "active_center_x_m": -1.2197274440461925E-19,
+      "outer_aperture_x_m": 0.0083000000000000018,
+      "delay_s": [
+        0,
+        1.6674513955004981E-8,
+        3.2831159883276924E-8,
+        4.8468037339540743E-8,
+        6.3583298152083816E-8,
+        7.8175147463083183E-8,
+        9.2241844747063912E-8,
+        1.0578170480619785E-7,
+        1.1879309874117881E-7,
+        1.3127445489640575E-7,
+        1.4322425977827785E-7,
+        1.5464105894536446E-7,
+        1.6552345786926048E-7,
+        1.7587012276500979E-7,
+        1.8567978138994536E-7,
+        1.9495122380985363E-7,
+        2.0368330313142415E-7,
+        2.1187493619996681E-7,
+        2.1952510426141605E-7,
+        2.266328535876986E-7,
+        2.3319729606457502E-7,
+        2.392176097411325E-7,
+        2.4469303934011794E-7,
+        2.4962289672840631E-7,
+        2.540065613469213E-7,
+        2.5784348059934877E-7,
+        2.61133170199142E-7,
+        2.63875214474243E-7,
+        2.6606926662913831E-7,
+        2.6771504896380586E-7,
+        2.68812353049278E-7,
+        2.6936103985953233E-7,
+        2.6936103985953233E-7,
+        2.68812353049278E-7,
+        2.6771504896380586E-7,
+        2.6606926662913831E-7,
+        2.63875214474243E-7,
+        2.61133170199142E-7,
+        2.5784348059934877E-7,
+        2.540065613469213E-7,
+        2.4962289672840631E-7,
+        2.4469303934011794E-7,
+        2.392176097411325E-7,
+        2.3319729606457502E-7,
+        2.266328535876986E-7,
+        2.1952510426141605E-7,
+        2.1187493619996681E-7,
+        2.0368330313142415E-7,
+        1.9495122380985363E-7,
+        1.8567978138994536E-7,
+        1.7587012276500979E-7,
+        1.6552345786926048E-7,
+        1.5464105894536446E-7,
+        1.4322425977827785E-7,
+        1.3127445489640575E-7,
+        1.1879309874117881E-7,
+        1.0578170480619785E-7,
+        9.2241844747063912E-8,
+        7.8175147463083183E-8,
+        6.3583298152083816E-8,
+        4.8468037339540743E-8,
+        3.2831159883276924E-8,
+        1.6674513955004981E-8,
+        0
+      ],
+      "budget_definition": "element_area*dt*sum_e,t(signal_e(t)^2), Pa^2 s m^2; not power or energy.",
+      "provenance": "synthetic_offline_aperture_control_not_hardware_TX",
+      "budget_stage": "Aperture-adapter values before cross-grid scaling; final budget is widegrid_budget.actual_budget_pa2_s_m2"
+    },
+    "widegrid_budget": {
+      "reference_budget_pa2_s_m2": 1.1509677686637412E-11,
+      "before_crossgrid_scaling_pa2_s_m2": 1.1509677471029828E-11,
+      "actual_budget_pa2_s_m2": 1.1509677471029828E-11,
+      "signal_scale_across_grids": 1.0000000093663608,
+      "definition": "element_area*dt*sum_e,t(signal_e(t)^2); not acoustic power or energy"
+    }
+  },
+  "trace_meta": {
+    "labels": [
+      "target",
+      "near_main",
+      "qp_main",
+      "offaxis_pos",
+      "offaxis_neg",
+      "offaxis_pos_z1",
+      "offaxis_neg_z1",
+      "offaxis_pos_z3",
+      "offaxis_pos_z5",
+      "near_source_peak",
+      "axis_z2",
+      "axis_z5"
+    ],
+    "requested_xyz_m": [
+      [
+        0,
+        0,
+        0.02
+      ],
+      [
+        0,
+        0,
+        0.018395
+      ],
+      [
+        0,
+        0,
+        0.01833
+      ],
+      [
+        0.0063700000000000007,
+        0,
+        0.0020150000000000003
+      ],
+      [
+        -0.0063700000000000007,
+        0,
+        0.0020150000000000003
+      ],
+      [
+        0.0063700000000000007,
+        0,
+        0.0010400000000000001
+      ],
+      [
+        -0.0063700000000000007,
+        0,
+        0.0010400000000000001
+      ],
+      [
+        0.0063700000000000007,
+        0,
+        0.0030550000000000004
+      ],
+      [
+        0.0063700000000000007,
+        0,
+        0.005005
+      ],
+      [
+        0.00182,
+        0.00052000000000000006,
+        0.00013000000000000002
+      ],
+      [
+        0,
+        0,
+        0.0020150000000000003
+      ],
+      [
+        0,
+        0,
+        0.005005
+      ]
+    ],
+    "actual_xyz_m": [
+      [
+        0,
+        0,
+        0.02002
+      ],
+      [
+        0,
+        0,
+        0.018408
+      ],
+      [
+        0,
+        0,
+        0.018304
+      ],
+      [
+        0.006395999999999998,
+        0,
+        0.0020279999999999986
+      ],
+      [
+        -0.006395999999999998,
+        0,
+        0.0020279999999999986
+      ],
+      [
+        0.006395999999999998,
+        0,
+        0.0010399999999999993
+      ],
+      [
+        -0.006395999999999998,
+        0,
+        0.0010399999999999993
+      ],
+      [
+        0.006395999999999998,
+        0,
+        0.0030680000000000013
+      ],
+      [
+        0.006395999999999998,
+        0,
+        0.0049920000000000016
+      ],
+      [
+        0.0018199999999999998,
+        0.00052,
+        0.00010400000000000166
+      ],
+      [
+        0,
+        0,
+        0.0020279999999999986
+      ],
+      [
+        0,
+        0,
+        0.0049920000000000016
+      ]
+    ],
+    "linear_indices": [
+      2.3730151E+7,
+      2.1870151E+7,
+      2.1750151E+7,
+      2.970274E+6,
+      2.970028E+6,
+      1.830274E+6,
+      1.830028E+6,
+      4.170274E+6,
+      6.390274E+6,
+      753186,
+      2.970151E+6,
+      6.390151E+6
+    ],
+    "trace_row": [
+      12,
+      11,
+      10,
+      6,
+      4,
+      3,
+      2,
+      7,
+      9,
+      1,
+      5,
+      8
+    ],
+    "ordering": "Rows of p follow find(sensor.mask), not label order."
+  },
+  "trace_qp_pa2_s": [
+    7.8318067311141083E-7,
+    2.8226088888564437E-9,
+    2.8226303746656295E-9,
+    3.9820626701003282E-9,
+    4.5657936784737945E-7,
+    3.9820229764267964E-9,
+    3.9593694776273738E-9,
+    1.4788054725697494E-6,
+    4.6855371778251889E-9,
+    6.3911635334081204E-6,
+    6.3902261473571179E-6,
+    5.8560872402863717E-6
+  ],
+  "integral_audit": {
+    "rms_direct_relative_l2": 9.69427291717802E-5,
+    "rms_consistency_tolerance_relative": 0.001,
+    "rms_consistency_passed": true,
+    "primary": "Double direct dt*sum(p^2) over saved time samples.",
+    "tolerance_basis": "Proposed 0.1 percent diagnostic, informed by 4740-step GPU single replay (0.0119 percent RMS-Qp drift); not a physical sensitivity criterion."
+  },
+  "metrics": {
+    "forward_roi_z_min_m": 0.002,
+    "forward_peak_pa_assumed": 1.992277979850769,
+    "forward_peak_xyz_m": [
+      0,
+      0,
+      0.01846
+    ],
+    "forward_peak_error_m": 0.0015399999999999997,
+    "forward_peak_on_boundary": false,
+    "near_target_halfwidth_m": [
+      0.002,
+      0.002,
+      0.004
+    ],
+    "near_target_peak_pa_assumed": 1.992277979850769,
+    "near_target_peak_xyz_m": [
+      0,
+      0,
+      0.01846
+    ],
+    "near_target_peak_error_m": 0.0015399999999999997,
+    "near_target_peak_on_boundary": false,
+    "target_pa_assumed_interpolated": 1.9097212461324837,
+    "target_over_forward_peak": 0.9585616392123808,
+    "target_plane_sampled_z_m": 0.02002,
+    "target_plane_peak_xyz_m": [
+      0,
+      0,
+      0.02002
+    ],
+    "target_plane_peak_pa_assumed": 1.9079239368438721,
+    "target_plane_lateral_error_m": 0,
+    "width_at_forward_peak_m": [
+      0.00071726029325375326,
+      0.0028949898179115151,
+      0.013459250735905199
+    ],
+    "width_clipped": [
+      false,
+      false,
+      false
+    ],
+    "width_definition": "Contiguous half-amplitude crossings through forward peak, approx -6.02 dB; NaN if unclosed.",
+    "proposed_position_tolerance_m": 0.0005,
+    "within_proposed_0p5mm_tolerance": false,
+    "physical_accuracy": "unknown",
+    "pressure_definition": "max_t(abs(p)); not a simultaneous pressure snapshot"
+  },
+  "runtime_s": 1738.4003452,
+  "dt_s": 6.7532467532467536E-9,
+  "Nt": 5925,
+  "grid_size": [
+    300,
+    200,
+    600
+  ],
+  "pml_cells": 20,
+  "matlab": "24.2.0.2773142 (R2024b) Update 2",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "solver": "kspaceFirstOrder3D",
+  "kwave_version": "1.4.1",
+  "raw_checkpoint": "H:\\print_transducer\\independent_simulation\\results\\kwave_widegrid_2026-10-24\\fine_full64_matched.raw.mat",
+  "hardware_run": false,
+  "physical_validation": "unknown",
+  "material_model": "none",
+  "limitations": [
+    "Assumed lossless fluid and flat uncalibrated pressure source; finite domain/PML/time.",
+    "Source proxy budget matched across grids, not actual power or energy.",
+    "Source rasterization and waveform sampling change with dx; sparse nearest-voxel trace coordinates differ.",
+    "Synthetic full64 changes count/pitch/fill/aperture/centroid together; not a hardware sequence.",
+    "No elevation lens, coupling, backing, container, absorption, heat or SonoInk cure."
+  ]
+}

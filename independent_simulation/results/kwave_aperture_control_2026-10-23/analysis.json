@@ -1,0 +1,334 @@
+{
+  "budget_even32_pa2_s_m2": 1.1509677686637412e-11,
+  "budget_full64_pa2_s_m2": 1.1509677300864742e-11,
+  "signal_scale": 0.7071067811865468,
+  "geometry_controls": {
+    "even32": {
+      "active_count": 32,
+      "active_pitch_m": 0.00026000000000000003,
+      "active_center_x_m": 6.499999999999993e-05,
+      "outer_aperture_x_m": 0.008170000000000002
+    },
+    "full64": {
+      "active_count": 64,
+      "active_pitch_m": 0.0001299999999999999,
+      "active_center_x_m": 8.131516293641283e-20,
+      "outer_aperture_x_m": 0.0083
+    }
+  },
+  "rms_direct_relative_l2": 7.616428407104192e-05,
+  "peaks": {
+    "near_source": {
+      "even32": {
+        "peak_pa_assumed": 2.2214550971984863,
+        "xyz_m": [
+          0.0018199999999999998,
+          0.00052,
+          0.00013000000000000338
+        ],
+        "on_search_boundary": false,
+        "z_range_requested_m_half_open": [
+          1e-10,
+          0.002
+        ]
+      },
+      "full64_matched": {
+        "peak_pa_assumed": 0.9000521898269653,
+        "xyz_m": [
+          0.003315,
+          0.00045499999999999995,
+          0.0014300000000000024
+        ],
+        "on_search_boundary": false,
+        "z_range_requested_m_half_open": [
+          1e-10,
+          0.002
+        ]
+      }
+    },
+    "shallow": {
+      "even32": {
+        "peak_pa_assumed": 1.5016236305236816,
+        "xyz_m": [
+          0.006369999999999999,
+          0.0,
+          0.002015000000000001
+        ],
+        "on_search_boundary": true,
+        "z_range_requested_m_half_open": [
+          0.002,
+          0.005
+        ]
+      },
+      "full64_matched": {
+        "peak_pa_assumed": 1.1083388328552246,
+        "xyz_m": [
+          0.002275,
+          0.0,
+          0.00494
+        ],
+        "on_search_boundary": true,
+        "z_range_requested_m_half_open": [
+          0.002,
+          0.005
+        ]
+      }
+    },
+    "deep": {
+      "even32": {
+        "peak_pa_assumed": 1.4065970182418823,
+        "xyz_m": [
+          0.0,
+          0.0,
+          0.018394999999999998
+        ],
+        "on_search_boundary": false,
+        "z_range_requested_m_half_open": [
+          0.005,
+          1.0
+        ]
+      },
+      "full64_matched": {
+        "peak_pa_assumed": 1.9892306327819824,
+        "xyz_m": [
+          0.0,
+          0.0,
+          0.018394999999999998
+        ],
+        "on_search_boundary": false,
+        "z_range_requested_m_half_open": [
+          0.005,
+          1.0
+        ]
+      }
+    },
+    "z2_plus": {
+      "even32": {
+        "peak_pa_assumed": 1.5016236305236816,
+        "xyz_m": [
+          0.006369999999999999,
+          0.0,
+          0.002015000000000001
+        ],
+        "on_search_boundary": true,
+        "z_range_requested_m_half_open": [
+          0.002,
+          1.0
+        ]
+      },
+      "full64_matched": {
+        "peak_pa_assumed": 1.9892306327819824,
+        "xyz_m": [
+          0.0,
+          0.0,
+          0.018394999999999998
+        ],
+        "on_search_boundary": false,
+        "z_range_requested_m_half_open": [
+          0.002,
+          1.0
+        ]
+      }
+    }
+  },
+  "fixed_trace_comparison": [
+    {
+      "label": "target",
+      "xyz_m": [
+        0,
+        0,
+        0.02002
+      ],
+      "even32_peak_pa_assumed": 1.3471745252609253,
+      "full64_matched_peak_pa_assumed": 1.9051921367645264,
+      "even32_qp_pa2_s_rms_estimate": 2.9170294098637585e-06,
+      "full64_matched_qp_pa2_s_direct": 5.8344961950846496e-06,
+      "pressure_ratio_full64_over_even32": 1.4142133042454335,
+      "qp_ratio_full64_over_even32": 2.000149938617572,
+      "peak_pa_assumed_derived": 2.6943485587389726,
+      "qp_pa2_s_derived": 1.1668992390169325e-05
+    },
+    {
+      "label": "near_main",
+      "xyz_m": [
+        0,
+        0,
+        0.018394999999999998
+      ],
+      "even32_peak_pa_assumed": 1.4065970182418823,
+      "full64_matched_peak_pa_assumed": 1.9892306327819824,
+      "even32_qp_pa2_s_rms_estimate": 3.1816868907409523e-06,
+      "full64_matched_qp_pa2_s_direct": 6.363883235527283e-06,
+      "pressure_ratio_full64_over_even32": 1.4142150217752765,
+      "qp_ratio_full64_over_even32": 2.000160120735595,
+      "peak_pa_assumed_derived": 2.8131969395682965,
+      "qp_pa2_s_derived": 1.2727766471054592e-05
+    },
+    {
+      "label": "qp_main",
+      "xyz_m": [
+        0,
+        0,
+        0.01833
+      ],
+      "even32_peak_pa_assumed": 1.4065217971801758,
+      "full64_matched_peak_pa_assumed": 1.9891217947006226,
+      "even32_qp_pa2_s_rms_estimate": 3.1820372866199774e-06,
+      "full64_matched_qp_pa2_s_direct": 6.3645821582122765e-06,
+      "pressure_ratio_full64_over_even32": 1.4142132732592239,
+      "qp_ratio_full64_over_even32": 2.0001595157210934,
+      "peak_pa_assumed_derived": 2.8130430192775346,
+      "qp_pa2_s_derived": 1.272916431642458e-05
+    },
+    {
+      "label": "offaxis_pos",
+      "xyz_m": [
+        0.006369999999999999,
+        0,
+        0.002015000000000001
+      ],
+      "even32_peak_pa_assumed": 1.5016236305236816,
+      "full64_matched_peak_pa_assumed": 0.034643691033124924,
+      "even32_qp_pa2_s_rms_estimate": 2.440113757974594e-06,
+      "full64_matched_qp_pa2_s_direct": 2.3759886631008466e-09,
+      "pressure_ratio_full64_over_even32": 0.023070821695209444,
+      "qp_ratio_full64_over_even32": 0.0009737204486208159,
+      "peak_pa_assumed_derived": 0.0489935777097085,
+      "qp_pa2_s_derived": 4.751977326201703e-09
+    },
+    {
+      "label": "offaxis_neg",
+      "xyz_m": [
+        -0.006369999999999999,
+        0,
+        0.002015000000000001
+      ],
+      "even32_peak_pa_assumed": 1.456397294998169,
+      "full64_matched_peak_pa_assumed": 0.034642644226551056,
+      "even32_qp_pa2_s_rms_estimate": 2.3102733926297086e-06,
+      "full64_matched_qp_pa2_s_direct": 2.3758643712774385e-09,
+      "pressure_ratio_full64_over_even32": 0.023786534310058994,
+      "qp_ratio_full64_over_even32": 0.0010283910029250131,
+      "peak_pa_assumed_derived": 0.048992097301654554,
+      "qp_pa2_s_derived": 4.751728742554887e-09
+    },
+    {
+      "label": "offaxis_pos_z1",
+      "xyz_m": [
+        0.006369999999999999,
+        0,
+        0.0010400000000000027
+      ],
+      "even32_peak_pa_assumed": 0.7532750964164734,
+      "full64_matched_peak_pa_assumed": 0.02861158549785614,
+      "even32_qp_pa2_s_rms_estimate": 6.63392436388077e-07,
+      "full64_matched_qp_pa2_s_direct": 1.5910977591990035e-09,
+      "pressure_ratio_full64_over_even32": 0.03798291704314789,
+      "qp_ratio_full64_over_even32": 0.0023984261380216123,
+      "peak_pa_assumed_derived": 0.040462892252065556,
+      "qp_pa2_s_derived": 3.1821955183980137e-09
+    },
+    {
+      "label": "offaxis_neg_z1",
+      "xyz_m": [
+        -0.006369999999999999,
+        0,
+        0.0010400000000000027
+      ],
+      "even32_peak_pa_assumed": 0.7529411315917969,
+      "full64_matched_peak_pa_assumed": 0.028612183406949043,
+      "even32_qp_pa2_s_rms_estimate": 6.408115196336826e-07,
+      "full64_matched_qp_pa2_s_direct": 1.5910229742788495e-09,
+      "pressure_ratio_full64_over_even32": 0.03800055835236398,
+      "qp_ratio_full64_over_even32": 0.0024828251764081135,
+      "peak_pa_assumed_derived": 0.04046373782321381,
+      "qp_pa2_s_derived": 3.1820459485577057e-09
+    },
+    {
+      "label": "offaxis_pos_z3",
+      "xyz_m": [
+        0.006369999999999999,
+        0,
+        0.0030549999999999987
+      ],
+      "even32_peak_pa_assumed": 0.25434035062789917,
+      "full64_matched_peak_pa_assumed": 0.04295366629958153,
+      "even32_qp_pa2_s_rms_estimate": 8.808712919851908e-08,
+      "full64_matched_qp_pa2_s_direct": 3.4630035733172715e-09,
+      "pressure_ratio_full64_over_even32": 0.16888262595195874,
+      "qp_ratio_full64_over_even32": 0.03931338896869727,
+      "peak_pa_assumed_derived": 0.06074565743451642,
+      "qp_pa2_s_derived": 6.926007146634558e-09
+    },
+    {
+      "label": "offaxis_pos_z5",
+      "xyz_m": [
+        0.006369999999999999,
+        0,
+        0.005005000000000001
+      ],
+      "even32_peak_pa_assumed": 0.1061200201511383,
+      "full64_matched_peak_pa_assumed": 0.049181777983903885,
+      "even32_qp_pa2_s_rms_estimate": 1.2028373742525183e-08,
+      "full64_matched_qp_pa2_s_direct": 4.441673923328873e-09,
+      "pressure_ratio_full64_over_even32": 0.46345428425153135,
+      "qp_ratio_full64_over_even32": 0.36926637119910505,
+      "peak_pa_assumed_derived": 0.06955353744645944,
+      "qp_pa2_s_derived": 8.883347846657764e-09
+    },
+    {
+      "label": "near_source_peak",
+      "xyz_m": [
+        0.0018199999999999998,
+        0.00052,
+        0.00013000000000000338
+      ],
+      "even32_peak_pa_assumed": 2.2214550971984863,
+      "full64_matched_peak_pa_assumed": 0.7284960746765137,
+      "even32_qp_pa2_s_rms_estimate": 6.212523372223267e-06,
+      "full64_matched_qp_pa2_s_direct": 8.151801402920519e-07,
+      "pressure_ratio_full64_over_even32": 0.32793643931638866,
+      "qp_ratio_full64_over_even32": 0.13121562551165494,
+      "peak_pa_assumed_derived": 1.0302490289430897,
+      "qp_pa2_s_derived": 1.6303602805841071e-06
+    },
+    {
+      "label": "axis_z2",
+      "xyz_m": [
+        0,
+        0,
+        0.002015000000000001
+      ],
+      "even32_peak_pa_assumed": 0.38482049107551575,
+      "full64_matched_peak_pa_assumed": 0.5442187190055847,
+      "even32_qp_pa2_s_rms_estimate": 2.1965057792438306e-07,
+      "full64_matched_qp_pa2_s_direct": 4.393427478189606e-07,
+      "pressure_ratio_full64_over_even32": 1.414214501635749,
+      "qp_ratio_full64_over_even32": 2.0001893551593968,
+      "peak_pa_assumed_derived": 0.7696414933150112,
+      "qp_pa2_s_derived": 8.786854956379231e-07
+    },
+    {
+      "label": "axis_z5",
+      "xyz_m": [
+        0,
+        0,
+        0.005005000000000001
+      ],
+      "even32_peak_pa_assumed": 0.6747036576271057,
+      "full64_matched_peak_pa_assumed": 0.9541745781898499,
+      "even32_qp_pa2_s_rms_estimate": 7.292375511904271e-07,
+      "full64_matched_qp_pa2_s_direct": 1.4586345695362017e-06,
+      "pressure_ratio_full64_over_even32": 1.4142128435254486,
+      "qp_ratio_full64_over_even32": 2.0002186765548307,
+      "peak_pa_assumed_derived": 1.3494066293477143,
+      "qp_pa2_s_derived": 2.91726913907241e-06
+    }
+  ],
+  "selectivity_ratios": {
+    "even32_offaxis_over_fixed_main_qp": 0.7669245409017414,
+    "full64_offaxis_over_fixed_main_qp": 0.00037335516306090475
+  },
+  "protected_files_unchanged": 98,
+  "limitations": "Synthetic aperture changes count/pitch/fill/centroid/aperture together. Proxy budget is not acoustic power or energy. No full-volume new Qp, heat or cure; no fine-grid offaxis verification. Same-element-amplitude numbers are linear derived counterfactuals, not extra solves."
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-08",
+  "matlab_version": "24.2.0.2773142 (R2024b) Update 2",
+  "tests_total": 85,
+  "tests_passed": 85,
+  "tests_failed": 0,
+  "tests_incomplete": 0,
+  "analyzer_files": 12,
+  "analyzer_messages": 0,
+  "git_diff_check": "passed",
+  "new_file_whitespace_check": "passed",
+  "modes_exported": [
+    "imaging_only",
+    "exposure_only",
+    "interleaved"
+  ],
+  "vsx_run": false,
+  "hardware_run": false,
+  "physical_validation": "unknown",
+  "material_cure_validation": "not_run"
+}

@@ -1,0 +1,64 @@
+{
+  "execution_complete": true,
+  "matlab_independent_tests_passed": 36,
+  "python_independent_tests_passed": 25,
+  "matlab_code_analyzer_files": 6,
+  "matlab_code_analyzer_messages": 0,
+  "protected_historical_files_unchanged": 173,
+  "solver_and_launcher_fingerprints_unchanged": 7,
+  "postprocessing_fingerprints_unchanged": 5,
+  "local_report_links_checked": 19,
+  "png_figures_visually_checked": 3,
+  "pdf_figures_exported": 3,
+  "independent_saved_data_integrity_audit_passed": true,
+  "numerical_convergence": "not_established",
+  "proposed_spatial_field_checks": {
+    "even32": {
+      "all_physical": false,
+      "near_source": false,
+      "shallow": false,
+      "deep": true,
+      "z2_plus": false
+    },
+    "full64_matched": {
+      "all_physical": true,
+      "near_source": true,
+      "shallow": true,
+      "deep": true,
+      "z2_plus": true
+    }
+  },
+  "hardware_run": false,
+  "physical_validation": "unknown",
+  "material_model": "none",
+  "bandlimited_source_implementation": "not_implemented",
+  "git_diff_check_exit_code": 0,
+  "observed_limitations": [
+    "Even32 near-source and shallow amplitudes remain grid-sensitive.",
+    "Native argmax location can switch lobes; full64 field checks do not imply all position checks pass.",
+    "Qp nearest-voxel coordinates differ across grids.",
+    "Source spectrum audit does not isolate all propagation-error causes or model real directivity."
+  ],
+  "proposed_native_argmax_position_checks": {
+    "even32": {
+      "all_physical": false,
+      "near_source": false,
+      "shallow": true,
+      "deep": true,
+      "z2_plus": true
+    },
+    "full64_matched": {
+      "all_physical": true,
+      "near_source": false,
+      "shallow": false,
+      "deep": true,
+      "z2_plus": true
+    }
+  },
+  "rms_direct_relative_l2": {
+    "even32": 0.0001277421188694003,
+    "full64_matched": 9.694272916625383e-05
+  },
+  "rms_diagnostic_tolerance_relative": 0.001,
+  "raw_checkpoints_exist": true
+}

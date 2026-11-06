@@ -2,11 +2,19 @@
 
 GitHub 私有仓库：[Zh9426/ICE-Sonocuring](https://github.com/Zh9426/ICE-Sonocuring)。
 
-用于未来 imaging + ultrasound-triggered curing 双功能 ICE 探头结构、驱动与局部声学暴露筛选的 MATLAB 仿真平台。当前 P0 增量支持独立双矩阵阵列与连续块分区比较，后续逐步接入 k-Wave、热/血流、材料剂量和成像模型。**所有内置参数均为合成演示值；没有真实 ICE 型号、材料固化验证或硬件控制代码。**
+跨电脑使用：首次运行 `git clone https://github.com/Zh9426/ICE-Sonocuring.git`；已有本地副本时，先处理本地未提交修改，再运行 `git pull --ff-only`。每台电脑需自行配置 MATLAB、相关工具箱和有授权的 Vantage 软件；`VantageNXT-2.3.2-p2/`、许可证、临时文件和大型 MATLAB 仿真数组不随 Git 同步。依赖原厂安装、原成像脚本或原保存 MAT 的核验须在另一台电脑单独取得相应授权资料；大型结果若需继续分析也须另行传输。脚本中出现的本机绝对路径须按新电脑环境调整。四份指定手册亦需在新电脑上单独提供或调整 `AGENTS.md` 中的路径。
+
+用于未来 imaging + ultrasound-triggered curing 双功能 ICE 探头结构、驱动与局部声学暴露筛选的 MATLAB 仿真平台。当前 P0 增量支持独立双矩阵阵列与连续块分区比较，后续逐步接入 k-Wave、热/血流、材料剂量和成像模型。**仿真参数为合成示例；新增Verasonics序列基于现有ICE软件配置，实物对应与材料固化仍未验证。**
+
+2026-11-03新增[纯照射最小驱动](verasonics/curing_mode/README.md)：单独验证探头固化能力，提供全64、中央48、中央32、中央16元四个MATLAB入口；只构建有限照射，无成像/接收/重建对象，沿用原探头定义和现有发射后端。四版及验证见[对照表](results/curing_only_2026-11-03/variant_summary.csv)。尚未运行VSX或硬件，不把assumed默认照射称为已实现固化。
+
+2026-11-01更新[ICE双模式离线序列入口](verasonics/dual_mode/README.md)：原全64元成像TX/RX，照射从同一阵列选择部分或全部阵元，时间交替；奇偶和左右互斥分区作为显式历史对照。驱动保留已恢复的原成像链路，矩阵分支仅作synthetic回归。探索准则与参数来源见[共享阵元方案](docs/verasonics/shared_aperture_2026-11-01.md)，硬件依据见[研究记录](docs/verasonics/sonic_eyes_hardware_2026-10-12.md)。默认不启动VSX；最低固化功率、器件安全可用上限和恢复时间尚未实测。
 
 2026-09-24 升级范围、差距和阶段验收见 [P0 升级计划](docs/superpowers/plans/2026-09-24-ice-p0-upgrade.md)，代码与数值解释见 [P0-A 升级报告](docs/upgrade_2026-09-24.md)。旧版结果报告记录升级前的基线，不代表新模型的结果。
 
 项目更新与下一步判断见 [更新公告](CHANGELOG.md)；提交说明规则见 [AGENTS.md](AGENTS.md)。
+
+课题整体推进见 [2026-09-26 课题计划](docs/superpowers/plans/2026-09-26-ice-research-roadmap.md)、[实验合同](refine-logs/EXPERIMENT_PLAN.md)和[执行台账](refine-logs/EXPERIMENT_TRACKER.md)。其中 12 周排期与人力是待确认假设，后续模块与实验均按门槛推进，不代表已经实现或验证。
 
 ## 快速开始
 
@@ -69,7 +77,7 @@ disp(r.metrics)
 
 **物理边界**：模型为均匀、线性、单频、无损介质中的平面刚性挡板阵列。未模拟真实导管曲率、声透镜、非线性、吸收、流动、气泡或温升。由声压换算的强度是平面行波等效值。跨线阵/矩阵的默认尺寸和通道数不同，不能将演示差异归因于阵列维度本身。
 
-**尚未接入**：k-Wave 接口目前输出数据与待补决策清单，不运行求解器；Verasonics 接口不转换 TX.Delay 单位、不生成硬件事件。独立双阵列仅限同一平面、同一 +z 法线；成像部分目前只有阵元掩码。电压/功率到表面速度的映射、自动稀疏优化、温升、血流和材料反应动力学留待后续数据支持。驱动限值通过只表示已填数值约束未越界，不能据此认定真实硬件可行。
+**尚未接入**：k-Wave 接口目前输出数据与待补决策清单，不运行求解器；旧 `adapters/+iceio` Verasonics JSON接口仍不转换延时或生成事件。新增 `verasonics/dual_mode` 独立完成波长单位延时与事件编排，尚未接入P0仿真结果或通过VSX/硬件验证。P0独立双阵列仅限同一平面、同一 +z 法线，其成像部分仍只有阵元掩码。电压/功率到表面速度的映射、自动稀疏优化、温升、血流和材料反应动力学留待后续数据支持。驱动限值通过只表示已填数值约束未越界，不能据此认定真实硬件可行。
 
 ## 项目布局
 

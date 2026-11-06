@@ -1,0 +1,52 @@
+{
+  "scope": "offline_saved_structure_checks_only",
+  "vsx_status": "blocked_matlab_version",
+  "simulator_license": "unknown",
+  "matlab": "R2024b Update 2",
+  "vendor_requires": "R2024a",
+  "cases": [
+    {
+      "file": "ICE_baseline_point.mat",
+      "status": "pass",
+      "events": 17,
+      "receive_events": 15,
+      "exposure_events": 0,
+      "sha256": "5e042dbce98d4b27ece0396fc90d502b0f6ab8772988b886474fd583984f74b1"
+    },
+    {
+      "file": "ICE_ImagingCuring_exposure_only.mat",
+      "status": "pass",
+      "events": 16,
+      "receive_events": 0,
+      "exposure_events": 10,
+      "sha256": "58a98650c6aa435a794cb825c6c3f232fd0f49d67d2be43e0676ade0c6a40c78"
+    },
+    {
+      "file": "ICE_ImagingCuring_imaging_only.mat",
+      "status": "pass",
+      "events": 21,
+      "receive_events": 15,
+      "exposure_events": 0,
+      "sha256": "6426cb3d351f68b9b27a0fe050b111f40ea876b72fc81727e25e2a5281fac0e7"
+    },
+    {
+      "file": "ICE_ImagingCuring_interleaved.mat",
+      "status": "pass",
+      "events": 34,
+      "receive_events": 15,
+      "exposure_events": 10,
+      "sha256": "8b8964e0fc4f8507b6ba7b9e3756120f3bd60d0ad60cde13530eb753ca2c1464"
+    }
+  ],
+  "vendor_integrity": {
+    "XJD/SetUpP9_4TSICE_FlashAngles.m": true,
+    "Utilities/computeTrans.m": true,
+    "UserData/Utilities/computeTrans.m": true,
+    "MatFiles/SetUpP9_4TSICE_FlashAngles.mat": true
+  },
+  "regression": {
+    "passed": 85,
+    "failed": 0,
+    "incomplete": 0
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "pages": 11,
+  "tables": 7,
+  "images": 7,
+  "page_summary": [
+    {
+      "page": 1,
+      "text_characters": 1344,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\nICE-Sonocuring 项目工作与研究思路梳理报告\n编制日期：2026年10月23日\n 梳理范围：仓库可追溯的2026年9月22日基线记"
+    },
+    {
+      "page": 2,
+      "text_characters": 1021,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\n当时已完成六组基础案例、不同驱动约束下的架构比较、频率扫描、规则稀疏远场栅瓣诊断和数值细化。早期\n指标包括声学阈值覆盖C、目标外超阈值比例L、"
+    },
+    {
+      "page": 3,
+      "text_characters": 1100,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\n阶段\n实际工作与产物\n认识变化与适用边界\n10月12—19日：当前方\n案三维声场\n从保存序列读取偶数32元TX16，完成65/52 μm两网\n"
+    },
+    {
+      "page": 4,
+      "text_characters": 752,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\n4.2 仍缺少的物理连接\n电气驱动请求到真实p(t)缺少电声标定；声场到吸收热源缺少材料频率/温度相关吸收；温度到材料转化缺少对\n应配方的响应"
+    },
+    {
+      "page": 5,
+      "text_characters": 862,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\n项目\n当前采用值或定义\n证据等级与说明\n供电请求\n成像/照射均5 V、Profile 1\nassumed；没有5 V到声压映射\n额定burst"
+    },
+    {
+      "page": 6,
+      "text_characters": 1199,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\n当前模型读取保存MAT的TX16，只激励偶数32元；源波形经assumed带通响应后归一为1 Pa参考源，并非实\n测探头输出。介质为assum"
+    },
+    {
+      "page": 7,
+      "text_characters": 576,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\n图5 扩大域原始压力与Qp图\n10月22日解释补充进一步指出：离轴声压峰处Qp约为该前向域Qp最大值的76.684%，而Qp峰仍在\n[0,0,"
+    },
+    {
+      "page": 8,
+      "text_characters": 759,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\n图6 同一声场上材料积分盒厚度对Qp比例的影响\n如果仅将同一声场的材料积分盒厚度从18 mm改为1 mm，固定1 mm立方目标比例变为37.0"
+    },
+    {
+      "page": 9,
+      "text_characters": 1264,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\n手册\n本次核对章节\n与项目直接相关的判断\nSystem Product\nSpecification，\nD00108 Rev. L\n§1.4，印"
+    },
+    {
+      "page": 10,
+      "text_characters": 875,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\n九、下一阶段：按证据门槛推进\n图7 下一阶段验证路线\n工作包\n需要完成的具体工作\n阶段产物与进入后续的条件\nA. 解释边界与焦区\n在宽域加厚P"
+    },
+    {
+      "page": 11,
+      "text_characters": 1104,
+      "text_beginning": "ICE-Sonocuring / 项目工作与研究思路梳理\n十、建议用于汇报的表述\n开场可以说：“我们围绕ICE成像与局部超声作用的双用途需求，先建立声学与序列工具，再用实际软件配置推\n进独立传播验证，"
+    }
+  ],
+  "native_word_status": "COM activation failed 0x80080005; report typeset directly as PDF",
+  "docx_delivered": false,
+  "report_markdown_editable": true
+}

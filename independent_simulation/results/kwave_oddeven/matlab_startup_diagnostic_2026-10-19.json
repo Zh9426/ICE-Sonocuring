@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-19",
+  "matlab": "R2024b",
+  "status": "blocked_before_minimal_calculation",
+  "mathworks_site_tcp443_reachable": true,
+  "service_host_restarted": true,
+  "observed_authentication_error": "428: Email to be reverified. (428)",
+  "observed_token_validation": "Failed to validate identity token.",
+  "other_service_log_observation": "SEH exception during connect; log describes likely third-party Winsock hook crash; cause unconfirmed",
+  "required_user_action": "Verify MathWorks Account email and sign in again",
+  "license_files_modified": false,
+  "completed_grid_um": 65,
+  "pending_grid_um": 52,
+  "source_logs": [
+    "MathWorksServiceHost_client-v1_20261019_676.log",
+    "MathWorksServiceHost_client-v1_20261019_677.log",
+    "MathWorksServiceHost_service_20261019_1762.log"
+  ]
+}

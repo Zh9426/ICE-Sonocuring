@@ -1,0 +1,15 @@
+{
+  "matlab_tests_passed": 32,
+  "python_tests_passed": 17,
+  "code_analyzer_files_without_messages": 4,
+  "historical_files_unchanged": 98,
+  "source_solver_files_match_before_run": true,
+  "postprocessing_review_additions_fingerprinted": true,
+  "report_local_links_valid": true,
+  "source_budget_relative_difference": -3.3517243536174135e-08,
+  "rms_direct_relative_l2": 7.616428407104192e-05,
+  "numerical_convergence": "not_established",
+  "hardware_run": false,
+  "material_model": "none",
+  "physical_validation": "unknown"
+}

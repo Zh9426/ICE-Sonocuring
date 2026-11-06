@@ -1,0 +1,26 @@
+[
+  {
+    "path": "XJD/SetUpP9_4TSICE_FlashAngles.m",
+    "expected": "f6486733742e376d5f3f8fbe848683789ef3e2f948123523e0e7ef8bcd3a3892",
+    "actual": "f6486733742e376d5f3f8fbe848683789ef3e2f948123523e0e7ef8bcd3a3892",
+    "matches": true
+  },
+  {
+    "path": "Utilities/computeTrans.m",
+    "expected": "2078ce9cffbe9717aaa2ec01c765cf42feace83fb173ff461a79670c4beb4796",
+    "actual": "2078ce9cffbe9717aaa2ec01c765cf42feace83fb173ff461a79670c4beb4796",
+    "matches": true
+  },
+  {
+    "path": "UserData/Utilities/computeTrans.m",
+    "expected": "2078ce9cffbe9717aaa2ec01c765cf42feace83fb173ff461a79670c4beb4796",
+    "actual": "2078ce9cffbe9717aaa2ec01c765cf42feace83fb173ff461a79670c4beb4796",
+    "matches": true
+  },
+  {
+    "path": "MatFiles/SetUpP9_4TSICE_FlashAngles.mat",
+    "expected": "6bf80b5d915104a6bcf30844a18f4b6a1adccd4953c57a81c1a6e3f060267916",
+    "actual": "6bf80b5d915104a6bcf30844a18f4b6a1adccd4953c57a81c1a6e3f060267916",
+    "matches": true
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "report_pages": 11,
+  "visual_outline_pages": 5,
+  "all_source_hashes_match": true,
+  "all_markdown_links_exist": true,
+  "links_checked": 42,
+  "replacement_characters_in_report_pdf": 0,
+  "intentional_negative_results_present": true,
+  "new_text_whitespace_issues": [],
+  "report_images": 7,
+  "matlab_kwave_rerun": false,
+  "hardware_run": false,
+  "editable_pptx": false,
+  "visual_review": "All 11 report pages and 5 slide composition references inspected; no clipping or overlap observed.",
+  "final_artifact_sha256": {
+    "PPT视觉草案_5页.pdf": "49460ee1f6c97144da166a7e291d55b422f9bb72f9fe0d6afac876aec15a6435",
+    "项目工作梳理报告.pdf": "9c358e4e2712f14396e6c162477e9892b0576a38cb3808350ca1f30d111c18aa"
+  }
+}

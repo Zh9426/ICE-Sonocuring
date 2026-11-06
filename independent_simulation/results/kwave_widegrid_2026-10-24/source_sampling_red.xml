@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.246" timestamp="2026-10-24T12:07:23.558113+08:00" hostname="Zh89"><testcase classname="" name="independent_simulation.tests.test_source_sampling" time="0.000"><error message="collection failure">ImportError while importing test module 'H:\print_transducer\independent_simulation\tests\test_source_sampling.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\Zh89\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+independent_simulation\tests\test_source_sampling.py:7: in &lt;module&gt;
+    from audit_source_sampling import rectangle_transfer
+E   ModuleNotFoundError: No module named 'audit_source_sampling'</error></testcase></testsuite></testsuites>

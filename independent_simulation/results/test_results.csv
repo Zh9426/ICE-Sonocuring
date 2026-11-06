@@ -1,0 +1,16 @@
+Test,Passed,Failed,Incomplete,Duration_s
+test_kwave_bridge/testCountsAndUnits,1,0,0,0.5733288
+test_kwave_bridge/testUnknownCommandRejected,1,0,0,0.1475122
+test_kwave_bridge/testUnknownWaveformRejected,1,0,0,0.0421058
+test_kwave_bridge/testGeometryMmDoesNotChangeTXUnits,1,0,0,0.1596457
+test_kwave_bridge/testOriginalLoopBounded,1,0,0,0.0687881
+test_kwave_bridge/testPWMAndFractionalDelay,1,0,0,0.1627622
+test_matrix96/testGeometryAndPartition,1,0,0,0.0451303
+test_matrix96/testFocusArrivalAndMirror,1,0,0,0.0345482
+test_matrix96/testOverlapRejected,1,0,0,0.0107989
+test_matrix96/testAreaAndYLocations,1,0,0,0.0752127
+test_point_target/testRoundTripTime,1,0,0,0.0080008
+test_point_target/testCenteredSymmetry,1,0,0,0.0108958
+test_point_target/testOffGridLocalization,1,0,0,0.1006734
+test_point_target/testSamplingRejected,1,0,0,0.0088102
+test_point_target/testTruncatedAcquisitionRejected,1,0,0,0.0314072

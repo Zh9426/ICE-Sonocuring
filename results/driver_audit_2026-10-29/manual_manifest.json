@@ -1,0 +1,58 @@
+[
+  {
+    "kind": "required",
+    "path": "F:\\xwechat_files\\wxid_quwpem6vchzg22_3c29\\msg\\file\\2026-10\\Vantage NXT System Product Specification.pdf",
+    "pages": 31,
+    "sha256": "c42020b8fb8e733eacc77f2c5fbf7e3ed871380d031c65b770a7dfaea0a101be",
+    "front_text": "  \n \nVantage NXT Product Specification \nD00108 Rev. L \nVerasonics Inc. | 11335 NE 122nd Way, Ste 100, Kirkland, WA 98034 | www.verasonics.com                         \n©Verasonics Inc. 2001- 2025. Verasonics Confidential. \n \nVantage® NXT Research Ultrasound System \n "
+  },
+  {
+    "kind": "required",
+    "path": "F:\\xwechat_files\\wxid_quwpem6vchzg22_3c29\\msg\\file\\2026-10\\Vantage NXT System Initial Setup Instructions.pdf",
+    "pages": 11,
+    "sha256": "a4fead1127c1094c3e389233f4909fd2f8951fc1ec5e1da9ee52a867fc69e6ba",
+    "front_text": "  \n  \nVantage NXT Initial Setup Instructions \n     D00109 Rev. D \nVerasonics Inc. | 11335 NE 122nd Way, Ste 100, Kirkland, WA 98034 | www.verasonics.com                         \n©Verasonics Inc. 2001- 2025. Verasonics Confidential. \n \nVantage® NXT Research Ultrasound System \n \n"
+  },
+  {
+    "kind": "required",
+    "path": "F:\\xwechat_files\\wxid_quwpem6vchzg22_3c29\\msg\\file\\2026-10\\Vantage NXT System User Manual.pdf",
+    "pages": 67,
+    "sha256": "db3fb635582c7f6155998170fcefdb655a8752d4ec78ed8b68bc6d3614da6073",
+    "front_text": "Vantage NXT System User Manual Verasonics Confidential  \nD00107 Rev. K  1 \nVantage NXT System User Manual \nD00107 Rev. K \nVerasonics Inc. | 11335 NE 122nd Way, Ste 100, Kirkland, WA 98034 | www.verasonics.com                         \n©Verasonics Inc. 2001- 2025. Verasonics Confidential. \n \nVantage® NXT Research Ultrasound System \n \nfunlock  \n \n"
+  },
+  {
+    "kind": "required",
+    "path": "F:\\xwechat_files\\wxid_quwpem6vchzg22_3c29\\msg\\file\\2026-10\\Vantage NXT Sequence Programming Manual.pdf",
+    "pages": 319,
+    "sha256": "41e8b8df13fa3503f1550b7806b530968ad131b4f4a9e46e0b169cf8c633bf9f",
+    "front_text": " Vantage® NXT Research Ultrasound System \nVantage NXT Sequence Programming Manual\nD00163 Rev. K\nVerasonics Inc. | 11335 NE 122nd Way, Ste 100, Kirkland, WA 98034 | www.verasonics.com \n©Verasonics Inc. 2001-2024. Verasonics Confidential."
+  },
+  {
+    "kind": "package",
+    "path": "H:\\print_transducer\\VantageNXT-2.3.2-p2\\Documentation\\Vantage NXT System Product Specification.pdf",
+    "pages": 31,
+    "sha256": "c42020b8fb8e733eacc77f2c5fbf7e3ed871380d031c65b770a7dfaea0a101be",
+    "front_text": "  \n \nVantage NXT Product Specification \nD00108 Rev. L \nVerasonics Inc. | 11335 NE 122nd Way, Ste 100, Kirkland, WA 98034 | www.verasonics.com                         \n©Verasonics Inc. 2001- 2025. Verasonics Confidential. \n \nVantage® NXT Research Ultrasound System \n "
+  },
+  {
+    "kind": "package",
+    "path": "H:\\print_transducer\\VantageNXT-2.3.2-p2\\Documentation\\Vantage NXT System Initial Setup Instructions.pdf",
+    "pages": 11,
+    "sha256": "3fadf98810bed5a1a4758d28a1e27e531d0ffd4f003d9254c57d8242acfcb57b",
+    "front_text": "  \n  \nVantage NXT Initial Setup Instructions \n     D00109 Rev. E \nVerasonics Inc. | 11335 NE 122nd Way, Ste 100, Kirkland, WA 98034 | www.verasonics.com                         \n©Verasonics Inc. 2001- 2026. Verasonics Confidential. \n \nVantage® NXT Research Ultrasound System \n \n"
+  },
+  {
+    "kind": "package",
+    "path": "H:\\print_transducer\\VantageNXT-2.3.2-p2\\Documentation\\Vantage NXT System User Manual.pdf",
+    "pages": 65,
+    "sha256": "5403dea9b7f99dfb77c71265922f91c1713631194953096c7e083973885c3340",
+    "front_text": "Vantage NXT System User Manual Verasonics Confidential  \nD00107 Rev. L  1 \nVantage NXT System User Manual \nD00107 Rev. L \nVerasonics Inc. | 11335 NE 122nd Way, Ste 100, Kirkland, WA 98034 | www.verasonics.com                         \n©Verasonics Inc. 2001- 2026. Verasonics Confidential. \n \nVantage® NXT Research Ultrasound System \n \nfunlock  \n \n"
+  },
+  {
+    "kind": "package",
+    "path": "H:\\print_transducer\\VantageNXT-2.3.2-p2\\Documentation\\Vantage NXT Sequence Programming Manual.pdf",
+    "pages": 324,
+    "sha256": "47771b35ab22bcf5fe234cce447a7a535760228b76dde25e7cd959276e163623",
+    "front_text": " Vantage® NXT Research Ultrasound System \nVantage NXT Sequence Programming Manual\nD00163 Rev. L\nVerasonics Inc. | 11335 NE 122nd Way, Ste 100, Kirkland, WA 98034 | www.verasonics.com \n©Verasonics Inc. 2001-2026. Verasonics Confidential."
+  }
+]

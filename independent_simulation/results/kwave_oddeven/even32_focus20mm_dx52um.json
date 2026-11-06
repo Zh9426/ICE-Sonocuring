@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "solver": "kspaceFirstOrder3D",
+  "kwave_version": "1.4.1",
+  "matlab": "24.2.0.2773142 (R2024b) Update 2",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "runtime_s": 505.951498,
+  "grid_size": [
+    200,
+    100,
+    600
+  ],
+  "dx_m": 5.2E-5,
+  "dt_s": 6.7532467532467536E-9,
+  "Nt": 4080,
+  "pml_cells": 20,
+  "cfl": 0.2,
+  "config": {
+    "input_mat": "H:\\print_transducer\\results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "dx_m": 5.2E-5,
+    "domain_m": [
+      0.010400000000000001,
+      0.0052000000000000006,
+      0.0312
+    ],
+    "source_offset_m": 0.00052,
+    "pml_m": 0.00104,
+    "cfl": 0.2,
+    "density_kg_m3": 1000,
+    "source_amplitude_pa": 1,
+    "output_dir": "H:\\print_transducer\\independent_simulation\\results\\kwave_oddeven",
+    "provenance": "assumed_homogeneous_lossless_linear_flat_elements"
+  },
+  "source": {
+    "input_mat": "H:\\print_transducer\\results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "input_sha256": "e89b2e056538cff0f9fe6ba5a4a11cd23d35829be6019a7411391b9eb417bb3d",
+    "input_partition": "odd_imaging_even_exposure",
+    "num_elements": 64,
+    "active_elements": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64
+    ],
+    "tx_index": 16,
+    "target_m": [
+      0,
+      0,
+      0.02
+    ],
+    "element_area_m2": 2.2220000000000002E-7,
+    "area_error_m2": 6.1082843961045969E-16,
+    "source_z_offset_m": 0.00052,
+    "source_z_kgrid_m": -0.01508,
+    "active_center_arrival_spread_s": 3.3881317890172014E-21,
+    "waveform": {
+      "half_cycles": 40,
+      "active_fraction": 0.67,
+      "frequency_hz": 6.0E+6,
+      "nominal_drive_duration_s": 3.3333333333333333E-6,
+      "assumed_filter_group_delay_s": 4.5E-7,
+      "acoustic_duration_s": 4.234E-6,
+      "assumed_reference_source_pa": 1,
+      "calibration": "assumed_not_voltage_calibrated",
+      "waveform_model": "nominal_centered_PWM_assumed_Gaussian_bandpass_normalized"
+    },
+    "source_model": "assumed_flat_rectangular_additive_pressure_no_lens",
+    "elevation_focus_m_metadata_only": 0.03,
+    "sound_speed_m_s": 1540,
+    "source_pitch_m": 0.00013,
+    "points_per_wavelength": 4.9358974358974361,
+    "spectral_energy_above_spatial_nyquist_fraction": 4.5170731475686118E-8,
+    "sensor_coordinates_m": [
+      [
+        0,
+        0,
+        0.014976
+      ],
+      [
+        -0.000988,
+        0,
+        0.02002
+      ],
+      [
+        0,
+        0,
+        0.02002
+      ],
+      [
+        0.000988,
+        0,
+        0.02002
+      ]
+    ],
+    "source_geometry_provenance": "existing_code_unverified",
+    "medium_provenance": "assumed_homogeneous_lossless_linear_flat_elements"
+  },
+  "metrics": {
+    "forward_roi_z_min_m": 0.002,
+    "forward_peak_pa_assumed": 1.4088795185089111,
+    "forward_peak_xyz_m": [
+      0,
+      0,
+      0.01846
+    ],
+    "forward_peak_error_m": 0.0015399999999999997,
+    "forward_peak_on_boundary": false,
+    "near_target_halfwidth_m": [
+      0.002,
+      0.002,
+      0.004
+    ],
+    "near_target_peak_pa_assumed": 1.4088795185089111,
+    "near_target_peak_xyz_m": [
+      0,
+      0,
+      0.01846
+    ],
+    "near_target_peak_error_m": 0.0015399999999999997,
+    "near_target_peak_on_boundary": false,
+    "target_pa_assumed_interpolated": 1.3510387677412767,
+    "target_over_forward_peak": 0.95894556631155359,
+    "target_plane_sampled_z_m": 0.02002,
+    "target_plane_peak_xyz_m": [
+      0,
+      0,
+      0.02002
+    ],
+    "target_plane_peak_pa_assumed": 1.3497549295425415,
+    "target_plane_lateral_error_m": 0,
+    "width_at_forward_peak_m": [
+      0.00071730969978550554,
+      0.002893661296481896,
+      0.013477402427113974
+    ],
+    "width_clipped": [
+      false,
+      false,
+      false
+    ],
+    "width_definition": "Contiguous half-amplitude crossings through forward peak, approx -6.02 dB; NaN if unclosed.",
+    "proposed_position_tolerance_m": 0.0005,
+    "within_proposed_0p5mm_tolerance": false,
+    "physical_accuracy": "unknown",
+    "pressure_definition": "max_t(abs(p)); not a simultaneous pressure snapshot"
+  },
+  "pressure_units": "Pa under assumed 1 Pa additive source; not calibrated physical output",
+  "recording": "Full XYZ p_max_all/p_min_all and max_t(abs(p)); sparse sensors record p(t).",
+  "physical_validation": "unknown",
+  "convergence": "requires_comparison",
+  "hardware_run": false,
+  "setup_modified": false,
+  "full_sequence_simulated": false,
+  "limitations": [
+    "Homogeneous linear lossless fluid; no tissue, attenuation, temperature or cure.",
+    "Flat finite rectangular sources; elevation lens, backing, matching layers and coupling omitted.",
+    "Finite domain; unrecorded wide-angle grating lobes may leave the domain.",
+    "Single exposure TX only; no imaging reconstruction or Verasonics runtime validation.",
+    "0.5 mm focus threshold is a proposed numerical diagnostic, not a device specification."
+  ]
+}

@@ -1,0 +1,760 @@
+{
+  "reference": "wide65",
+  "cases": [
+    {
+      "tag": "wide_pml20",
+      "runtime_s": 767.9213159,
+      "pml_cells": 20,
+      "domain_m": [
+        0.0156,
+        0.010400000000000001,
+        0.0312
+      ],
+      "source_controls_unchanged": true,
+      "rms_direct_relative_l2": 0.00010263414374693217,
+      "pressure_comparison_vs_wide65": {
+        "all_old_physical_voxels": {
+          "raw_amplitude_relative_l2": 0.0007724236571916556,
+          "maximum_relative_change": 4.5035226554210706e-05
+        },
+        "z0_to2": {
+          "raw_amplitude_relative_l2": 0.00011554328586717915,
+          "maximum_relative_change": 1.051789017991817e-05
+        },
+        "z2_to5": {
+          "raw_amplitude_relative_l2": 0.00020727225848344137,
+          "maximum_relative_change": 1.579799900480545e-05
+        },
+        "z5_plus": {
+          "raw_amplitude_relative_l2": 0.001051963026496425,
+          "maximum_relative_change": 6.763060907126478e-05
+        }
+      },
+      "peak_bands": {
+        "near_source_z0_to2": {
+          "peak_pa_assumed": 2.2214317321777344,
+          "xyz_m": [
+            0.0018199999999999998,
+            0.00052,
+            0.00013000000000000338
+          ],
+          "on_search_boundary": false,
+          "z_range_requested_m_half_open": [
+            1e-10,
+            0.002
+          ]
+        },
+        "shallow_z2_to5": {
+          "peak_pa_assumed": 1.501599907875061,
+          "xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.002015000000000001
+          ],
+          "on_search_boundary": true,
+          "z_range_requested_m_half_open": [
+            0.002,
+            0.005
+          ]
+        },
+        "deep_z5_plus": {
+          "peak_pa_assumed": 1.4065018892288208,
+          "xyz_m": [
+            0.0,
+            0.0,
+            0.01833
+          ],
+          "on_search_boundary": false,
+          "z_range_requested_m_half_open": [
+            0.005,
+            1.0
+          ]
+        },
+        "original_z2_plus": {
+          "peak_pa_assumed": 1.501599907875061,
+          "xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.002015000000000001
+          ],
+          "on_search_boundary": true,
+          "z_range_requested_m_half_open": [
+            0.002,
+            1.0
+          ]
+        }
+      },
+      "forward_peak_displacement_m": 0.0,
+      "trace_statistics": [
+        {
+          "peak_abs_pa_assumed": 1.346913456916809,
+          "peak_signed_pa_assumed": -1.346913456916809,
+          "peak_time_s": 1.397077922077922e-05,
+          "qp_pa2_s": 2.91711023713792e-06,
+          "qp90_interval_s": [
+            1.391168831168831e-05,
+            1.6866233766233764e-05
+          ],
+          "last_5us_qp_fraction": 1.086858099930631e-09,
+          "tag": "wide_pml20",
+          "label": "target",
+          "xyz_m": [
+            0,
+            0,
+            0.02002
+          ],
+          "old_wide65_qp_pa2_s": 2.9170294098637585e-06,
+          "qp_relative_change_vs_wide65": 2.7708762170286505e-05,
+          "same_run_rms_qp_pa2_s": 2.9168780839781466e-06,
+          "rms_qp_relative_change_vs_wide65": -5.1876708921816395e-05,
+          "old_wide65_peak_pa_assumed": 1.3471745252609253,
+          "pressure_relative_change_vs_wide65": -0.00019378954932780523
+        },
+        {
+          "peak_abs_pa_assumed": 1.4064589738845825,
+          "peak_signed_pa_assumed": -1.4064589738845825,
+          "peak_time_s": 1.2924025974025973e-05,
+          "qp_pa2_s": 3.1818319474593906e-06,
+          "qp90_interval_s": [
+            1.2864935064935064e-05,
+            1.5819480519480518e-05
+          ],
+          "last_5us_qp_fraction": 6.503627765369793e-10,
+          "tag": "wide_pml20",
+          "label": "near_main",
+          "xyz_m": [
+            0,
+            0,
+            0.018394999999999998
+          ],
+          "old_wide65_qp_pa2_s": 3.1816868907409523e-06,
+          "qp_relative_change_vs_wide65": 4.559113558921801e-05,
+          "same_run_rms_qp_pa2_s": 3.181587357618449e-06,
+          "rms_qp_relative_change_vs_wide65": -3.128312933387001e-05,
+          "old_wide65_peak_pa_assumed": 1.4065970182418823,
+          "pressure_relative_change_vs_wide65": -9.814065827629115e-05
+        },
+        {
+          "peak_abs_pa_assumed": 1.4065018892288208,
+          "peak_signed_pa_assumed": -1.4065018892288208,
+          "peak_time_s": 1.288181818181818e-05,
+          "qp_pa2_s": 3.1821726133406553e-06,
+          "qp90_interval_s": [
+            1.2822727272727273e-05,
+            1.5777272727272726e-05
+          ],
+          "last_5us_qp_fraction": 6.327843830266463e-10,
+          "tag": "wide_pml20",
+          "label": "qp_main",
+          "xyz_m": [
+            0,
+            0,
+            0.01833
+          ],
+          "old_wide65_qp_pa2_s": 3.1820372866199774e-06,
+          "qp_relative_change_vs_wide65": 4.2528326505530956e-05,
+          "same_run_rms_qp_pa2_s": 3.181933712700904e-06,
+          "rms_qp_relative_change_vs_wide65": -3.254956172538126e-05,
+          "old_wide65_peak_pa_assumed": 1.4065217971801758,
+          "pressure_relative_change_vs_wide65": -1.4154029745472307e-05
+        },
+        {
+          "peak_abs_pa_assumed": 1.501599907875061,
+          "peak_signed_pa_assumed": 1.501599907875061,
+          "peak_time_s": 5.613636363636363e-06,
+          "qp_pa2_s": 2.4404090128810846e-06,
+          "qp90_interval_s": [
+            3.6805194805194803e-06,
+            7.023376623376623e-06
+          ],
+          "last_5us_qp_fraction": 1.701817913268713e-10,
+          "tag": "wide_pml20",
+          "label": "offaxis_pos",
+          "xyz_m": [
+            0.006369999999999999,
+            0,
+            0.002015000000000001
+          ],
+          "old_wide65_qp_pa2_s": 2.440113757974594e-06,
+          "qp_relative_change_vs_wide65": 0.0001210004679190746,
+          "same_run_rms_qp_pa2_s": 2.44011581933421e-06,
+          "rms_qp_relative_change_vs_wide65": 8.447801294053647e-07,
+          "old_wide65_peak_pa_assumed": 1.5016236305236816,
+          "pressure_relative_change_vs_wide65": -1.5797999004751873e-05
+        },
+        {
+          "peak_abs_pa_assumed": 1.4563894271850586,
+          "peak_signed_pa_assumed": -1.4563894271850586,
+          "peak_time_s": 5.613636363636363e-06,
+          "qp_pa2_s": 2.3105671489716677e-06,
+          "qp90_interval_s": [
+            3.7227272727272724e-06,
+            7.074025974025973e-06
+          ],
+          "last_5us_qp_fraction": 3.310142572839254e-10,
+          "tag": "wide_pml20",
+          "label": "offaxis_neg",
+          "xyz_m": [
+            -0.006369999999999999,
+            0,
+            0.002015000000000001
+          ],
+          "old_wide65_qp_pa2_s": 2.3102733926297086e-06,
+          "qp_relative_change_vs_wide65": 0.00012715219891124008,
+          "same_run_rms_qp_pa2_s": 2.3103066311616932e-06,
+          "rms_qp_relative_change_vs_wide65": 1.4387272125659933e-05,
+          "old_wide65_peak_pa_assumed": 1.456397294998169,
+          "pressure_relative_change_vs_wide65": -5.402243699159648e-06
+        },
+        {
+          "peak_abs_pa_assumed": 0.7533075213432312,
+          "peak_signed_pa_assumed": -0.7533075213432312,
+          "peak_time_s": 7.031818181818181e-06,
+          "qp_pa2_s": 6.634601362829592e-07,
+          "qp90_interval_s": [
+            4.516233766233766e-06,
+            8.053246753246752e-06
+          ],
+          "last_5us_qp_fraction": 2.753624164379259e-10,
+          "tag": "wide_pml20",
+          "label": "offaxis_pos_z1",
+          "xyz_m": [
+            0.006369999999999999,
+            0,
+            0.0010400000000000027
+          ],
+          "old_wide65_qp_pa2_s": 6.63392436388077e-07,
+          "qp_relative_change_vs_wide65": 0.00010205105028138206,
+          "same_run_rms_qp_pa2_s": 6.633858339668589e-07,
+          "rms_qp_relative_change_vs_wide65": -9.95251205160308e-06,
+          "old_wide65_peak_pa_assumed": 0.7532750964164734,
+          "pressure_relative_change_vs_wide65": 4.3045265815999656e-05
+        },
+        {
+          "peak_abs_pa_assumed": 0.7529075145721436,
+          "peak_signed_pa_assumed": 0.7529075145721436,
+          "peak_time_s": 7.031818181818181e-06,
+          "qp_pa2_s": 6.408870286399797e-07,
+          "qp90_interval_s": [
+            4.541558441558441e-06,
+            8.027922077922078e-06
+          ],
+          "last_5us_qp_fraction": 2.25039784253123e-10,
+          "tag": "wide_pml20",
+          "label": "offaxis_neg_z1",
+          "xyz_m": [
+            -0.006369999999999999,
+            0,
+            0.0010400000000000027
+          ],
+          "old_wide65_qp_pa2_s": 6.408115196336826e-07,
+          "qp_relative_change_vs_wide65": 0.00011783340964321987,
+          "same_run_rms_qp_pa2_s": 6.408183105661947e-07,
+          "rms_qp_relative_change_vs_wide65": 1.0597394559885842e-05,
+          "old_wide65_peak_pa_assumed": 0.7529411315917969,
+          "pressure_relative_change_vs_wide65": -4.464760688827063e-05
+        },
+        {
+          "peak_abs_pa_assumed": 0.25434452295303345,
+          "peak_signed_pa_assumed": -0.25434452295303345,
+          "peak_time_s": 5.014285714285714e-06,
+          "qp_pa2_s": 8.809449365467666e-08,
+          "qp90_interval_s": [
+            3.309090909090909e-06,
+            8.796103896103895e-06
+          ],
+          "last_5us_qp_fraction": 6.640613304546378e-08,
+          "tag": "wide_pml20",
+          "label": "offaxis_pos_z3",
+          "xyz_m": [
+            0.006369999999999999,
+            0,
+            0.0030549999999999987
+          ],
+          "old_wide65_qp_pa2_s": 8.808712919851908e-08,
+          "qp_relative_change_vs_wide65": 8.36042248690827e-05,
+          "same_run_rms_qp_pa2_s": 8.808601018472646e-08,
+          "rms_qp_relative_change_vs_wide65": -1.2703488044163436e-05,
+          "old_wide65_peak_pa_assumed": 0.25434035062789917,
+          "pressure_relative_change_vs_wide65": 1.6404495488009374e-05
+        },
+        {
+          "peak_abs_pa_assumed": 0.10597041994333267,
+          "peak_signed_pa_assumed": 0.10597041994333267,
+          "peak_time_s": 5.529220779220779e-06,
+          "qp_pa2_s": 1.2029275447550547e-08,
+          "qp90_interval_s": [
+            4.347402597402597e-06,
+            1.0256493506493505e-05
+          ],
+          "last_5us_qp_fraction": 5.61933890004335e-07,
+          "tag": "wide_pml20",
+          "label": "offaxis_pos_z5",
+          "xyz_m": [
+            0.006369999999999999,
+            0,
+            0.005005000000000001
+          ],
+          "old_wide65_qp_pa2_s": 1.2028373742525183e-08,
+          "qp_relative_change_vs_wide65": 7.496483270852394e-05,
+          "same_run_rms_qp_pa2_s": 1.2028017094410955e-08,
+          "rms_qp_relative_change_vs_wide65": -2.965056805370736e-05,
+          "old_wide65_peak_pa_assumed": 0.1061200201511383,
+          "pressure_relative_change_vs_wide65": -0.001409726530324562
+        },
+        {
+          "peak_abs_pa_assumed": 2.2214317321777344,
+          "peak_signed_pa_assumed": 2.2214317321777344,
+          "peak_time_s": 3.114935064935065e-06,
+          "qp_pa2_s": 6.213232344072719e-06,
+          "qp90_interval_s": [
+            1.3675324675324675e-06,
+            4.423376623376623e-06
+          ],
+          "last_5us_qp_fraction": 4.0339981909977923e-11,
+          "tag": "wide_pml20",
+          "label": "near_source_peak",
+          "xyz_m": [
+            0.0018199999999999998,
+            0.00052,
+            0.00013000000000000338
+          ],
+          "old_wide65_qp_pa2_s": 6.212523372223267e-06,
+          "qp_relative_change_vs_wide65": 0.00011411978788244959,
+          "same_run_rms_qp_pa2_s": 6.212523372223267e-06,
+          "rms_qp_relative_change_vs_wide65": 0.0,
+          "old_wide65_peak_pa_assumed": 2.2214550971984863,
+          "pressure_relative_change_vs_wide65": -1.0517890179917444e-05
+        },
+        {
+          "peak_abs_pa_assumed": 0.38482263684272766,
+          "peak_signed_pa_assumed": -0.38482263684272766,
+          "peak_time_s": 2.1525974025974026e-06,
+          "qp_pa2_s": 2.1967311910902936e-07,
+          "qp90_interval_s": [
+            2.177922077922078e-06,
+            5.157792207792207e-06
+          ],
+          "last_5us_qp_fraction": 2.4631600483470227e-08,
+          "tag": "wide_pml20",
+          "label": "axis_z2",
+          "xyz_m": [
+            0,
+            0,
+            0.002015000000000001
+          ],
+          "old_wide65_qp_pa2_s": 2.1965057792438306e-07,
+          "qp_relative_change_vs_wide65": 0.00010262292437057674,
+          "same_run_rms_qp_pa2_s": 2.1965057792438308e-07,
+          "rms_qp_relative_change_vs_wide65": 2.220446049250313e-16,
+          "old_wide65_peak_pa_assumed": 0.38482049107551575,
+          "pressure_relative_change_vs_wide65": 5.576021188336e-06
+        },
+        {
+          "peak_abs_pa_assumed": 0.674453854560852,
+          "peak_signed_pa_assumed": -0.674453854560852,
+          "peak_time_s": 6.753246753246753e-06,
+          "qp_pa2_s": 7.293069920774686e-07,
+          "qp90_interval_s": [
+            4.187012987012986e-06,
+            7.107792207792207e-06
+          ],
+          "last_5us_qp_fraction": 1.9701612276923342e-08,
+          "tag": "wide_pml20",
+          "label": "axis_z5",
+          "xyz_m": [
+            0,
+            0,
+            0.005005000000000001
+          ],
+          "old_wide65_qp_pa2_s": 7.292375511904271e-07,
+          "qp_relative_change_vs_wide65": 9.522395950134488e-05,
+          "same_run_rms_qp_pa2_s": 7.292319167302672e-07,
+          "rms_qp_relative_change_vs_wide65": -7.726508530314646e-06,
+          "old_wide65_peak_pa_assumed": 0.6747036576271057,
+          "pressure_relative_change_vs_wide65": -0.00037024116207140523
+        }
+      ],
+      "within_proposed_criteria": true
+    },
+    {
+      "tag": "wider_x256",
+      "runtime_s": 756.9043012,
+      "pml_cells": 16,
+      "domain_m": [
+        0.01664,
+        0.010400000000000001,
+        0.0312
+      ],
+      "source_controls_unchanged": true,
+      "rms_direct_relative_l2": 0.00010205666998612638,
+      "pressure_comparison_vs_wide65": {
+        "all_old_physical_voxels": {
+          "raw_amplitude_relative_l2": 0.00021657960305602106,
+          "maximum_relative_change": 1.611787055624383e-06
+        },
+        "z0_to2": {
+          "raw_amplitude_relative_l2": 3.9408170160860384e-05,
+          "maximum_relative_change": 1.6098811499874752e-06
+        },
+        "z2_to5": {
+          "raw_amplitude_relative_l2": 2.6520468880788264e-05,
+          "maximum_relative_change": 1.8576541543339072e-05
+        },
+        "z5_plus": {
+          "raw_amplitude_relative_l2": 0.00029526578705368477,
+          "maximum_relative_change": 5.085008200846976e-07
+        }
+      },
+      "peak_bands": {
+        "near_source_z0_to2": {
+          "peak_pa_assumed": 2.2214515209198,
+          "xyz_m": [
+            0.0018199999999999996,
+            0.00052,
+            0.00013000000000000338
+          ],
+          "on_search_boundary": false,
+          "z_range_requested_m_half_open": [
+            1e-10,
+            0.002
+          ]
+        },
+        "shallow_z2_to5": {
+          "peak_pa_assumed": 1.5015957355499268,
+          "xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.002015000000000001
+          ],
+          "on_search_boundary": true,
+          "z_range_requested_m_half_open": [
+            0.002,
+            0.005
+          ]
+        },
+        "deep_z5_plus": {
+          "peak_pa_assumed": 1.4065977334976196,
+          "xyz_m": [
+            0.0,
+            0.0,
+            0.018394999999999998
+          ],
+          "on_search_boundary": false,
+          "z_range_requested_m_half_open": [
+            0.005,
+            1.0
+          ]
+        },
+        "original_z2_plus": {
+          "peak_pa_assumed": 1.5015957355499268,
+          "xyz_m": [
+            0.006369999999999999,
+            0.0,
+            0.002015000000000001
+          ],
+          "on_search_boundary": true,
+          "z_range_requested_m_half_open": [
+            0.002,
+            1.0
+          ]
+        }
+      },
+      "forward_peak_displacement_m": 0.0,
+      "trace_statistics": [
+        {
+          "peak_abs_pa_assumed": 1.3471753597259521,
+          "peak_signed_pa_assumed": 1.3471753597259521,
+          "peak_time_s": 1.5220129870129868e-05,
+          "qp_pa2_s": 2.9172585429698694e-06,
+          "qp90_interval_s": [
+            1.391168831168831e-05,
+            1.6866233766233764e-05
+          ],
+          "last_5us_qp_fraction": 1.5213232844262228e-09,
+          "tag": "wider_x256",
+          "label": "target",
+          "xyz_m": [
+            0,
+            0,
+            0.02002
+          ],
+          "old_wide65_qp_pa2_s": 2.9170294098637585e-06,
+          "qp_relative_change_vs_wide65": 7.855015288371625e-05,
+          "same_run_rms_qp_pa2_s": 2.9170294098637585e-06,
+          "rms_qp_relative_change_vs_wide65": 0.0,
+          "old_wide65_peak_pa_assumed": 1.3471745252609253,
+          "pressure_relative_change_vs_wide65": 6.194186508157173e-07
+        },
+        {
+          "peak_abs_pa_assumed": 1.4065977334976196,
+          "peak_signed_pa_assumed": 1.4065977334976196,
+          "peak_time_s": 1.4173376623376623e-05,
+          "qp_pa2_s": 3.18194307123398e-06,
+          "qp90_interval_s": [
+            1.2864935064935064e-05,
+            1.5819480519480518e-05
+          ],
+          "last_5us_qp_fraction": 9.486745591164378e-10,
+          "tag": "wider_x256",
+          "label": "near_main",
+          "xyz_m": [
+            0,
+            0,
+            0.018394999999999998
+          ],
+          "old_wide65_qp_pa2_s": 3.1816868907409523e-06,
+          "qp_relative_change_vs_wide65": 8.05171916109515e-05,
+          "same_run_rms_qp_pa2_s": 3.1817238797981315e-06,
+          "rms_qp_relative_change_vs_wide65": 1.1625611962884363e-05,
+          "old_wide65_peak_pa_assumed": 1.4065970182418823,
+          "pressure_relative_change_vs_wide65": 5.085008201177743e-07
+        },
+        {
+          "peak_abs_pa_assumed": 1.406522274017334,
+          "peak_signed_pa_assumed": -1.406522274017334,
+          "peak_time_s": 1.288181818181818e-05,
+          "qp_pa2_s": 3.1822914770545395e-06,
+          "qp90_interval_s": [
+            1.2822727272727273e-05,
+            1.5777272727272726e-05
+          ],
+          "last_5us_qp_fraction": 9.469671240753465e-10,
+          "tag": "wider_x256",
+          "label": "qp_main",
+          "xyz_m": [
+            0,
+            0,
+            0.01833
+          ],
+          "old_wide65_qp_pa2_s": 3.1820372866199774e-06,
+          "qp_relative_change_vs_wide65": 7.988292143235043e-05,
+          "same_run_rms_qp_pa2_s": 3.1820372866199774e-06,
+          "rms_qp_relative_change_vs_wide65": 0.0,
+          "old_wide65_peak_pa_assumed": 1.4065217971801758,
+          "pressure_relative_change_vs_wide65": 3.390186764651304e-07
+        },
+        {
+          "peak_abs_pa_assumed": 1.5015957355499268,
+          "peak_signed_pa_assumed": 1.5015957355499268,
+          "peak_time_s": 5.613636363636363e-06,
+          "qp_pa2_s": 2.440397021485263e-06,
+          "qp90_interval_s": [
+            3.6805194805194803e-06,
+            7.023376623376623e-06
+          ],
+          "last_5us_qp_fraction": 4.844232443326119e-10,
+          "tag": "wider_x256",
+          "label": "offaxis_pos",
+          "xyz_m": [
+            0.006369999999999999,
+            0,
+            0.002015000000000001
+          ],
+          "old_wide65_qp_pa2_s": 2.440113757974594e-06,
+          "qp_relative_change_vs_wide65": 0.00011608619054892522,
+          "same_run_rms_qp_pa2_s": 2.44011581933421e-06,
+          "rms_qp_relative_change_vs_wide65": 8.447801294053647e-07,
+          "old_wide65_peak_pa_assumed": 1.5016236305236816,
+          "pressure_relative_change_vs_wide65": -1.8576541543358083e-05
+        },
+        {
+          "peak_abs_pa_assumed": 1.4563920497894287,
+          "peak_signed_pa_assumed": -1.4563920497894287,
+          "peak_time_s": 5.613636363636363e-06,
+          "qp_pa2_s": 2.3105337006145165e-06,
+          "qp90_interval_s": [
+            3.7227272727272724e-06,
+            7.074025974025973e-06
+          ],
+          "last_5us_qp_fraction": 7.232923839099428e-10,
+          "tag": "wider_x256",
+          "label": "offaxis_neg",
+          "xyz_m": [
+            -0.006369999999999999,
+            0,
+            0.002015000000000001
+          ],
+          "old_wide65_qp_pa2_s": 2.3102733926297086e-06,
+          "qp_relative_change_vs_wide65": 0.00011267410412907353,
+          "same_run_rms_qp_pa2_s": 2.3102685214856266e-06,
+          "rms_qp_relative_change_vs_wide65": -2.1084708404783825e-06,
+          "old_wide65_peak_pa_assumed": 1.456397294998169,
+          "pressure_relative_change_vs_wide65": -3.6014957994767727e-06
+        },
+        {
+          "peak_abs_pa_assumed": 0.7533294558525085,
+          "peak_signed_pa_assumed": -0.7533294558525085,
+          "peak_time_s": 7.031818181818181e-06,
+          "qp_pa2_s": 6.63456644942517e-07,
+          "qp90_interval_s": [
+            4.516233766233766e-06,
+            8.053246753246752e-06
+          ],
+          "last_5us_qp_fraction": 2.854037493349276e-10,
+          "tag": "wider_x256",
+          "label": "offaxis_pos_z1",
+          "xyz_m": [
+            0.006369999999999999,
+            0,
+            0.0010400000000000027
+          ],
+          "old_wide65_qp_pa2_s": 6.63392436388077e-07,
+          "qp_relative_change_vs_wide65": 9.678819190273025e-05,
+          "same_run_rms_qp_pa2_s": 6.633858339668589e-07,
+          "rms_qp_relative_change_vs_wide65": -9.95251205160308e-06,
+          "old_wide65_peak_pa_assumed": 0.7532750964164734,
+          "pressure_relative_change_vs_wide65": 7.216412210331313e-05
+        },
+        {
+          "peak_abs_pa_assumed": 0.7529312372207642,
+          "peak_signed_pa_assumed": 0.7529312372207642,
+          "peak_time_s": 7.031818181818181e-06,
+          "qp_pa2_s": 6.408867813943588e-07,
+          "qp90_interval_s": [
+            4.541558441558441e-06,
+            8.027922077922078e-06
+          ],
+          "last_5us_qp_fraction": 2.5878059978631805e-10,
+          "tag": "wider_x256",
+          "label": "offaxis_neg_z1",
+          "xyz_m": [
+            -0.006369999999999999,
+            0,
+            0.0010400000000000027
+          ],
+          "old_wide65_qp_pa2_s": 6.408115196336826e-07,
+          "qp_relative_change_vs_wide65": 0.00011744757759535318,
+          "same_run_rms_qp_pa2_s": 6.4082359242747e-07,
+          "rms_qp_relative_change_vs_wide65": 1.8839851372076666e-05,
+          "old_wide65_peak_pa_assumed": 0.7529411315917969,
+          "pressure_relative_change_vs_wide65": -1.3140962311086746e-05
+        },
+        {
+          "peak_abs_pa_assumed": 0.2543327510356903,
+          "peak_signed_pa_assumed": -0.2543327510356903,
+          "peak_time_s": 5.014285714285714e-06,
+          "qp_pa2_s": 8.809449636388348e-08,
+          "qp90_interval_s": [
+            3.309090909090909e-06,
+            8.796103896103895e-06
+          ],
+          "last_5us_qp_fraction": 1.1624395362690683e-07,
+          "tag": "wider_x256",
+          "label": "offaxis_pos_z3",
+          "xyz_m": [
+            0.006369999999999999,
+            0,
+            0.0030549999999999987
+          ],
+          "old_wide65_qp_pa2_s": 8.808712919851908e-08,
+          "qp_relative_change_vs_wide65": 8.363498085861565e-05,
+          "same_run_rms_qp_pa2_s": 8.808601018472646e-08,
+          "rms_qp_relative_change_vs_wide65": -1.2703488044163436e-05,
+          "old_wide65_peak_pa_assumed": 0.25434035062789917,
+          "pressure_relative_change_vs_wide65": -2.9879616781580687e-05
+        },
+        {
+          "peak_abs_pa_assumed": 0.10611637681722641,
+          "peak_signed_pa_assumed": 0.10611637681722641,
+          "peak_time_s": 5.529220779220779e-06,
+          "qp_pa2_s": 1.2028842364032336e-08,
+          "qp90_interval_s": [
+            4.347402597402597e-06,
+            1.0256493506493505e-05
+          ],
+          "last_5us_qp_fraction": 8.579918211583522e-07,
+          "tag": "wider_x256",
+          "label": "offaxis_pos_z5",
+          "xyz_m": [
+            0.006369999999999999,
+            0,
+            0.005005000000000001
+          ],
+          "old_wide65_qp_pa2_s": 1.2028373742525183e-08,
+          "qp_relative_change_vs_wide65": 3.8959672951977e-05,
+          "same_run_rms_qp_pa2_s": 1.202767854203508e-08,
+          "rms_qp_relative_change_vs_wide65": -5.779671508254758e-05,
+          "old_wide65_peak_pa_assumed": 0.1061200201511383,
+          "pressure_relative_change_vs_wide65": -3.433220147064375e-05
+        },
+        {
+          "peak_abs_pa_assumed": 2.2214515209198,
+          "peak_signed_pa_assumed": 2.2214515209198,
+          "peak_time_s": 3.114935064935065e-06,
+          "qp_pa2_s": 6.213233632250928e-06,
+          "qp90_interval_s": [
+            1.3675324675324675e-06,
+            4.423376623376623e-06
+          ],
+          "last_5us_qp_fraction": 4.973506194657699e-11,
+          "tag": "wider_x256",
+          "label": "near_source_peak",
+          "xyz_m": [
+            0.0018199999999999996,
+            0.00052,
+            0.00013000000000000338
+          ],
+          "old_wide65_qp_pa2_s": 6.212523372223267e-06,
+          "qp_relative_change_vs_wide65": 0.00011432713973147379,
+          "same_run_rms_qp_pa2_s": 6.212523372223267e-06,
+          "rms_qp_relative_change_vs_wide65": 0.0,
+          "old_wide65_peak_pa_assumed": 2.2214550971984863,
+          "pressure_relative_change_vs_wide65": -1.6098811499443144e-06
+        },
+        {
+          "peak_abs_pa_assumed": 0.384820818901062,
+          "peak_signed_pa_assumed": -0.384820818901062,
+          "peak_time_s": 2.1525974025974026e-06,
+          "qp_pa2_s": 2.196710837272043e-07,
+          "qp90_interval_s": [
+            2.177922077922078e-06,
+            5.157792207792207e-06
+          ],
+          "last_5us_qp_fraction": 5.298261842750967e-08,
+          "tag": "wider_x256",
+          "label": "axis_z2",
+          "xyz_m": [
+            0,
+            0,
+            0.002015000000000001
+          ],
+          "old_wide65_qp_pa2_s": 2.1965057792438306e-07,
+          "qp_relative_change_vs_wide65": 9.335647105968015e-05,
+          "same_run_rms_qp_pa2_s": 2.1964682297710092e-07,
+          "rms_qp_relative_change_vs_wide65": -1.7095094024477397e-05,
+          "old_wide65_peak_pa_assumed": 0.38482049107551575,
+          "pressure_relative_change_vs_wide65": 8.518921259526024e-07
+        },
+        {
+          "peak_abs_pa_assumed": 0.6746992468833923,
+          "peak_signed_pa_assumed": 0.6746992468833923,
+          "peak_time_s": 5.503896103896103e-06,
+          "qp_pa2_s": 7.293066738022439e-07,
+          "qp90_interval_s": [
+            4.187012987012986e-06,
+            7.107792207792207e-06
+          ],
+          "last_5us_qp_fraction": 3.233389960917755e-08,
+          "tag": "wider_x256",
+          "label": "axis_z5",
+          "xyz_m": [
+            0,
+            0,
+            0.005005000000000001
+          ],
+          "old_wide65_qp_pa2_s": 7.292375511904271e-07,
+          "qp_relative_change_vs_wide65": 9.47875101933171e-05,
+          "same_run_rms_qp_pa2_s": 7.292319167302672e-07,
+          "rms_qp_relative_change_vs_wide65": -7.726508530314646e-06,
+          "old_wide65_peak_pa_assumed": 0.6747036576271057,
+          "pressure_relative_change_vs_wide65": -6.5373051761907774e-06
+        }
+      ],
+      "within_proposed_criteria": true
+    }
+  ],
+  "protected_files_unchanged": 56,
+  "method": "Independent read of XYZ extrema and label-mapped sparse histories; raw amplitudes and rectangular dt*sum(p^2).",
+  "limitations": "Assumed uncalibrated lossless sources. Small X-domain/PML increments, unchanged Y/Z and finite time; not complete convergence or mechanism identification. No heat or cure prediction."
+}

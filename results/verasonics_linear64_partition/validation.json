@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-12",
+  "matlab": "24.2.0.2773142 (R2024b) Update 2",
+  "test_count": 38,
+  "passed": 38,
+  "static_files": 18,
+  "static_messages": 0,
+  "vendor_key_hashes_unchanged": true,
+  "design": "64-linear left32 imaging right32 exposure",
+  "model_suffix": "unknown",
+  "physical_validation": "unknown",
+  "vsx_validation": "not_run",
+  "hardware_run": false,
+  "cure_validation": "not_run",
+  "review": "Independent review P2 duty boundary corrected; regression red then green; no remaining substantive finding",
+  "manuals": [
+    "D00108 Rev.L sections1.4,3.1,3.2",
+    "D00107 Rev.K sections4.4,14",
+    "D00109 Rev.D section4.5",
+    "D00163 Rev.K sections12,13.1"
+  ]
+}

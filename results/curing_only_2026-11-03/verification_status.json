@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-03",
+  "tests": {
+    "total": 66,
+    "passed": 66,
+    "failed": 0,
+    "incomplete": 0
+  },
+  "code_analyzer": {
+    "files": 33,
+    "messages": 0
+  },
+  "vendor_files_unchanged": true,
+  "saved_mat_variants_checked": 4,
+  "whitespace": {
+    "files_checked": 38,
+    "issues": [],
+    "tracked_diff_check_exit": 0
+  },
+  "VSX": "not_run",
+  "hardware": "not_run",
+  "curing_validation": "not_run",
+  "probe_ratings": "unknown",
+  "exposure_settings": "assumed_inherited_not_curing_or_hardware_recommendations"
+}

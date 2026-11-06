@@ -1,0 +1,50 @@
+[
+  {
+    "id": "E01",
+    "source": "C:\\Users\\Zh89\\AppData\\Local\\Temp\\codex-clipboard-d2842ec4-d2f1-4a4e-bc56-c88616248707.png",
+    "copy": "evidence\\E01.png",
+    "sha256": "077c16985827290d9cfcb6b1dfb12167459cc740bb2732fb080ace8f99fe10b1",
+    "meaning": "诊断探头限值及超额驱动的口头判断",
+    "evidence_status": "user-provided communication; not independent performance evidence"
+  },
+  {
+    "id": "E02",
+    "source": "C:\\Users\\Zh89\\AppData\\Local\\Temp\\codex-clipboard-51b16b6f-7041-48d4-93ad-ebdd1ab82f50.png",
+    "copy": "evidence\\E02.png",
+    "sha256": "f856623133bd563dfe3babffb8ded039188cb4aa80b0bef960295dd5dffedf4b",
+    "meaning": "传统介入路径与简化目标",
+    "evidence_status": "user-provided communication; not independent performance evidence"
+  },
+  {
+    "id": "E03",
+    "source": "C:\\Users\\Zh89\\AppData\\Local\\Temp\\codex-clipboard-39b3b50d-4c0a-423c-97eb-3c8f4c0cbb15.png",
+    "copy": "evidence\\E03.png",
+    "sha256": "bbcdcbe76f943ee136aa8d4ea1abd811f3591c2baf6eed3f9c79e7e0af2afcc6",
+    "meaning": "传统封堵器展开回收难点及手术分级说法",
+    "evidence_status": "user-provided communication; not independent performance evidence"
+  },
+  {
+    "id": "E04",
+    "source": "C:\\Users\\Zh89\\AppData\\Local\\Temp\\codex-clipboard-5ecbb44e-0fdf-422a-861e-39a5aefbc10b.png",
+    "copy": "evidence\\E04.png",
+    "sha256": "7f7f3f1f707a864baab8770247cee317965346608d3edc87ba1c6eee56318c99",
+    "meaning": "临时球囊挡口及适形材料设想",
+    "evidence_status": "user-provided communication; not independent performance evidence"
+  },
+  {
+    "id": "E05",
+    "source": "C:\\Users\\Zh89\\AppData\\Local\\Temp\\codex-clipboard-7ba45fba-8706-4ffb-97ce-be9606ec3795.png",
+    "copy": "evidence\\E05.png",
+    "sha256": "5c67e8308f0d602bdde1e01d19d37728fe89f861f49ca0b64d8f13563c39328b",
+    "meaning": "球囊撤回 PTFE表面及固化后保持设想",
+    "evidence_status": "user-provided communication; not independent performance evidence"
+  },
+  {
+    "id": "E06",
+    "source": "C:\\Users\\Zh89\\AppData\\Local\\Temp\\codex-clipboard-cba8cf83-bfa3-4641-9ba3-924339fd647b.png",
+    "copy": "evidence\\E06.png",
+    "sha256": "3c75f450a00643bf32d83c12a09c87e5edaa5a3ad1036736c8eff7926f423770",
+    "meaning": "对方体外FUS路线 CT规划及知识产权述称",
+    "evidence_status": "user-provided communication; not independent performance evidence"
+  }
+]

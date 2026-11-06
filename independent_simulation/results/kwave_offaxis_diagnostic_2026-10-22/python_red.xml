@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.257" timestamp="2026-10-22T21:28:02.662079+08:00" hostname="Zh89"><testcase classname="" name="independent_simulation.tests.test_offaxis_analysis" time="0.000"><error message="collection failure">ImportError while importing test module 'H:\print_transducer\independent_simulation\tests\test_offaxis_analysis.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\Zh89\anaconda3\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+independent_simulation\tests\test_offaxis_analysis.py:8: in &lt;module&gt;
+    import analyze_kwave_offaxis as analysis
+E   ModuleNotFoundError: No module named 'analyze_kwave_offaxis'</error></testcase></testsuite></testsuites>

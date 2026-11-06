@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei, Arial" font-size="28" data-pptx-page-role="content">
+  <defs>
+    <symbol id="p03-element-pair" viewBox="0 0 20 60"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></symbol>
+    <marker id="p03-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9" fill="none" stroke="#516176" stroke-width="1.5" /></marker>
+  </defs>
+  <rect id="p03-background" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="p03-title" data-pptx-bounds="48 26 1184 110">
+    <text x="48" y="47" font-size="16" fill="#516176">ICE-SONOCURING  /  当前配置与软件证据</text>
+    <text x="48" y="108" font-size="42" font-weight="bold" fill="#142B45">64元奇偶分配，成像与候选照射交替</text>
+  </g>
+  <g id="p03-array-partition" data-pptx-bounds="48 166 736 340">
+    <rect x="48" y="166" width="736" height="340" fill="#EFF3F7" />
+    <text x="76" y="224" font-size="52" font-weight="bold" fill="#142B45">64</text>
+    <text x="158" y="219" font-size="30" font-weight="bold" fill="#142B45">元线阵</text>
+    <text x="755" y="214" font-size="16" text-anchor="end" fill="#516176">拓扑示意，非尺寸比例</text>
+    <g id="p03-64-elements">
+      <g transform="translate(76 260)"><g id="use-instance-1-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(96 260)"><g id="use-instance-2-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(116 260)"><g id="use-instance-3-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(136 260)"><g id="use-instance-4-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(156 260)"><g id="use-instance-5-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(176 260)"><g id="use-instance-6-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(196 260)"><g id="use-instance-7-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(216 260)"><g id="use-instance-8-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(236 260)"><g id="use-instance-9-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(256 260)"><g id="use-instance-10-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(276 260)"><g id="use-instance-11-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(296 260)"><g id="use-instance-12-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(316 260)"><g id="use-instance-13-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(336 260)"><g id="use-instance-14-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(356 260)"><g id="use-instance-15-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(376 260)"><g id="use-instance-16-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(396 260)"><g id="use-instance-17-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(416 260)"><g id="use-instance-18-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(436 260)"><g id="use-instance-19-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(456 260)"><g id="use-instance-20-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(476 260)"><g id="use-instance-21-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(496 260)"><g id="use-instance-22-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(516 260)"><g id="use-instance-23-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(536 260)"><g id="use-instance-24-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(556 260)"><g id="use-instance-25-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(576 260)"><g id="use-instance-26-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(596 260)"><g id="use-instance-27-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(616 260)"><g id="use-instance-28-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(636 260)"><g id="use-instance-29-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(656 260)"><g id="use-instance-30-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(676 260)"><g id="use-instance-31-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g><g transform="translate(696 260)"><g id="use-instance-32-p03-element-pair" transform="matrix(1 0 0 1 0 0)"><rect x="0" y="0" width="8" height="60" fill="#008C95" /><rect x="10" y="0" width="8" height="60" fill="#C27B22" /></g>
+    </g></g>
+    <text x="80" y="344" font-size="16" text-anchor="middle" fill="#516176">1</text>
+    <text x="90" y="344" font-size="16" text-anchor="middle" fill="#516176">2</text>
+    <text x="100" y="344" font-size="16" text-anchor="middle" fill="#516176">3</text>
+    <text x="110" y="344" font-size="16" text-anchor="middle" fill="#516176">4</text>
+    <text x="395" y="344" font-size="16" text-anchor="middle" fill="#516176">…</text>
+    <text x="697" y="344" font-size="16" text-anchor="end" fill="#516176">63</text>
+    <text x="714" y="344" font-size="16" fill="#516176">64</text>
+    <line x1="76" y1="368" x2="714" y2="368" stroke="#516176" stroke-width="1.5" marker-end="url(#p03-arrow)" />
+    <text x="755" y="375" font-size="16" text-anchor="end" fill="#516176">物理+x</text>
+    <rect x="76" y="399" width="12" height="24" fill="#008C95" />
+    <text x="103" y="421" fill="#142B45">奇数32元：成像TX/RX</text>
+    <rect x="76" y="442" width="12" height="24" fill="#C27B22" />
+    <text x="103" y="464" fill="#142B45">偶数32元：候选照射TX</text>
+    <text x="76" y="494" font-size="20" fill="#516176">用途为assumed约定，可交换；保留完整64项映射。</text>
+  </g>
+  <g id="p03-configuration-evidence" data-pptx-bounds="828 166 404 344">
+    <text x="828" y="218" font-size="52" font-weight="bold" fill="#008C95">43/43</text>
+    <text x="828" y="260" font-weight="bold" fill="#142B45">离线相关测试</text>
+    <text x="828" y="292" font-size="16" fill="#516176">10月12日保存记录，本轮未重跑</text>
+    <text x="828" y="325" font-size="20" fill="#C27B22">尚未通过VSX / 实物流程验证</text>
+    <line x1="828" y1="345" x2="1232" y2="345" stroke="#CBD5DF" stroke-width="1" />
+    <text x="828" y="390" font-size="40" font-weight="bold" fill="#142B45">0.13 mm</text>
+    <text x="828" y="420" font-size="20" fill="#516176">源码pitch；每组活动间距0.26 mm</text>
+    <text x="828" y="448" font-size="16" fill="#516176">existing_code_unverified｜尺寸未标定</text>
+    <text x="828" y="478" font-size="20" fill="#516176">历史12×8矩阵：synthetic分支</text>
+    <text x="828" y="503" font-size="16" fill="#516176">本机模块 / 许可 / 额定驱动：unknown</text>
+  </g>
+  <g id="p03-interleaved-sequence" data-pptx-bounds="48 516 1184 102">
+    <text x="48" y="537" font-size="16" fill="#516176">有限时间交替｜示意，非比例；等待值待实际验证</text>
+    <rect x="48" y="550" width="190" height="54" rx="4" fill="#008C95" />
+    <g id="p03-switch-delay" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="flowChartDelay" data-pptx-frame="288 550 170 54" fill="#EFF3F7" stroke="#CBD5DF" stroke-width="1">
+      <path d="M 288 550 L 373 550 A 85 27 0 0 1 373 604 L 288 604 Z" />
+    </g>
+    <rect x="508" y="550" width="226" height="54" rx="4" fill="#C27B22" />
+    <g id="p03-receive-recovery" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="flowChartDelay" data-pptx-frame="784 550 170 54" fill="#EFF3F7" stroke="#CBD5DF" stroke-width="1">
+      <path d="M 784 550 L 869 550 A 85 27 0 0 1 869 604 L 784 604 Z" />
+    </g>
+    <rect x="1004" y="550" width="228" height="54" rx="4" fill="#008C95" />
+    <g stroke="#516176" stroke-width="1.5">
+      <line x1="248" y1="577" x2="276" y2="577" marker-end="url(#p03-arrow)" />
+      <line x1="468" y1="577" x2="496" y2="577" marker-end="url(#p03-arrow)" />
+      <line x1="744" y1="577" x2="772" y2="577" marker-end="url(#p03-arrow)" />
+      <line x1="964" y1="577" x2="992" y2="577" marker-end="url(#p03-arrow)" />
+    </g>
+    <text x="143" y="587" text-anchor="middle" fill="#FFFFFF">成像</text>
+    <text x="362" y="584" font-size="20" text-anchor="middle" fill="#142B45">切换等待</text>
+    <text x="621" y="587" text-anchor="middle" fill="#FFFFFF">候选照射</text>
+    <text x="858" y="584" font-size="20" text-anchor="middle" fill="#142B45">接收恢复</text>
+    <text x="1118" y="587" text-anchor="middle" fill="#FFFFFF">成像</text>
+  </g>
+  <g id="p03-takeaway" data-pptx-bounds="48 632 1184 38">
+    <text x="48" y="657" font-size="30" fill="#142B45">离线编排已完成；<tspan font-weight="bold">声场、成像质量与材料作用需分别验收。</tspan></text>
+  </g>
+  <g id="p03-footer" data-pptx-role="footer" data-pptx-bounds="48 674 1184 30" fill="#516176" font-size="16">
+    <text x="48" y="694">来源：linear64_oddeven_2026-10-12、validation.json｜D00163 Rev.K §4.3.2；完整硬件依据见备注</text>
+    <text x="1232" y="694" text-anchor="end">03 / 05</text>
+  </g>
+</svg>

@@ -1,0 +1,4 @@
+Test,Passed,Failed
+test_kwave_offaxis_diagnostic/testControlledBoundaryChanges,0,1
+test_kwave_offaxis_diagnostic/testTraceRowsHavePhysicalCoordinateMapping,1,0
+test_kwave_offaxis_diagnostic/testBoundaryChangesPreserveSourceAndTraceLocations,1,0

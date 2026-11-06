@@ -1,0 +1,42 @@
+{
+  "reference_pa_assumed": 0.30344387888908386,
+  "isosurface_reference": "shared ROI maximum",
+  "display_stride": 2,
+  "full_resolution_data": "MAT files",
+  "parts": [
+    {
+      "partition": "left",
+      "target_peak_pa_assumed": 0.18328894674777985,
+      "roi_peak_xyz_m": [
+        -0.000192,
+        0,
+        0.012032000000000001
+      ],
+      "roi_peak_on_boundary": true,
+      "minus6db_surface_touches_roi_boundary": true,
+      "target_plane_x_minus6db_width_mm": 6.467077879164504,
+      "target_plane_y_minus6db_width_mm": 4.840323545817437,
+      "width_scope": "profiles through requested x=y=0 at nearest target z; own profile peak"
+    },
+    {
+      "partition": "right",
+      "target_peak_pa_assumed": 0.18328694999217987,
+      "roi_peak_xyz_m": [
+        0.000192,
+        0,
+        0.012032000000000001
+      ],
+      "roi_peak_on_boundary": true,
+      "minus6db_surface_touches_roi_boundary": true,
+      "target_plane_x_minus6db_width_mm": 6.467203350058103,
+      "target_plane_y_minus6db_width_mm": 4.840325997495594,
+      "width_scope": "profiles through requested x=y=0 at nearest target z; own profile peak"
+    }
+  ],
+  "global_surface_reference_pa_assumed": 1.3876686096191406,
+  "global_display_stride": 3,
+  "mirror_relative_l2": 9.16306544240797e-06,
+  "mirror_scope": "matched x locations; same y,z; excludes unmatched negative edge",
+  "target_relative_difference": 1.089403172098141e-05,
+  "convergence": "not_established_single_grid"
+}

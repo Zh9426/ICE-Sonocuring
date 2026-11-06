@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="0.280" timestamp="2026-10-22T21:37:40.982535+08:00" hostname="Zh89"><testcase classname="independent_simulation.tests.test_offaxis_analysis" name="test_temporal_peak_does_not_rank_integrated_exposure" time="0.001" /><testcase classname="independent_simulation.tests.test_offaxis_analysis" name="test_trace_statistics_reject_nonfinite_or_nonpositive_time" time="0.000" /><testcase classname="independent_simulation.tests.test_offaxis_analysis" name="test_band_peak_respects_half_open_depth_range_and_matlab_tie_order" time="0.000" /><testcase classname="independent_simulation.tests.test_offaxis_analysis" name="test_common_grid_preserves_raw_amplitudes_with_larger_domain" time="0.052" /><testcase classname="independent_simulation.tests.test_offaxis_analysis" name="test_near_source_change_cannot_be_hidden_by_stable_deep_field" time="0.000"><failure message="AttributeError: module 'analyze_kwave_offaxis' has no attribute 'criteria_pass'">def test_near_source_change_cannot_be_hidden_by_stable_deep_field():
+        comparison = {k: {'raw_amplitude_relative_l2': .001, 'maximum_relative_change': .001}
+                      for k in ('all_old_physical_voxels','z0_to2','z2_to5','z5_plus')}
+        traces = [{'qp_relative_change_vs_wide65': .001}]
+&gt;       assert analysis.criteria_pass(comparison, 0., traces)
+               ^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'analyze_kwave_offaxis' has no attribute 'criteria_pass'
+
+independent_simulation\tests\test_offaxis_analysis.py:60: AttributeError</failure></testcase></testsuite></testsuites>

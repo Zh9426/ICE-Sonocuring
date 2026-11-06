@@ -1,0 +1,41 @@
+{
+  "variants": [
+    {
+      "file": "results\\curing_only_2026-11-03\\drivers\\ICE_CuringOnly_ExposureFFFFFFFFFFFFFFFF_exposure_only.mat",
+      "active_elements": 64,
+      "events": 363,
+      "transmits": 300,
+      "minimal_payload": true,
+      "references_in_range": true,
+      "final_stop": true
+    },
+    {
+      "file": "results\\curing_only_2026-11-03\\drivers\\ICE_CuringOnly_Exposure00FFFFFFFFFFFF00_exposure_only.mat",
+      "active_elements": 48,
+      "events": 363,
+      "transmits": 300,
+      "minimal_payload": true,
+      "references_in_range": true,
+      "final_stop": true
+    },
+    {
+      "file": "results\\curing_only_2026-11-03\\drivers\\ICE_CuringOnly_Exposure0000FFFFFFFF0000_exposure_only.mat",
+      "active_elements": 32,
+      "events": 363,
+      "transmits": 300,
+      "minimal_payload": true,
+      "references_in_range": true,
+      "final_stop": true
+    },
+    {
+      "file": "results\\curing_only_2026-11-03\\drivers\\ICE_CuringOnly_Exposure000000FFFF000000_exposure_only.mat",
+      "active_elements": 16,
+      "events": 363,
+      "transmits": 300,
+      "minimal_payload": true,
+      "references_in_range": true,
+      "final_stop": true
+    }
+  ],
+  "exposure_settings_identical": true
+}

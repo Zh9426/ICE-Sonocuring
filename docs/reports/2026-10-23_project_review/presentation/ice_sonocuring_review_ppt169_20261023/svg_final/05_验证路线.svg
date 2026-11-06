@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei, Arial" font-size="28" data-pptx-page-role="ending">
+  <rect id="p05-background" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="p05-title" data-pptx-bounds="48 26 1184 110">
+    <text x="48" y="47" font-size="16" fill="#516176">ICE-SONOCURING  /  下一步的证据门槛</text>
+    <text x="48" y="108" font-size="42" font-weight="bold" fill="#142B45">先形成单点证据，再扩展为连续短线</text>
+  </g>
+  <g id="p05-route-status" data-pptx-bounds="48 150 1184 36">
+    <text x="48" y="174" font-size="20" fill="#516176">以下均为后续计划；首步可继续离线工作，后续步骤依赖前序证据。</text>
+  </g>
+  <g id="p05-validation-route" data-pptx-bounds="46 197 1188 225">
+    <g id="p05-boundary-work">
+      <text x="76" y="220" font-size="22" font-weight="bold" fill="#008C95">01  近期离线</text>
+      <g id="p05-boundary-stage" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="48 230 220 64" fill="#EFF3F7" stroke="#008C95" stroke-width="1.5">
+        <path d="M 48 230 L 236 230 L 268 262 L 236 294 L 48 294 L 80 262 Z" />
+      </g>
+      <text x="160" y="272" text-anchor="middle" font-weight="bold" fill="#142B45">边界 / 孔径</text>
+      <text x="76" y="341" font-size="20" fill="#203247">宽域 / PML</text>
+      <text x="76" y="375" font-size="20" fill="#203247">32/64元受控对照</text>
+      <text x="76" y="409" font-size="20" fill="#203247">真实俯仰透镜</text>
+    </g>
+    <g id="p05-calibration-work">
+      <text x="314" y="220" font-size="22" font-weight="bold" fill="#516176">02</text>
+      <g id="p05-calibration-stage" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="286 230 220 64" fill="#EFF3F7" stroke="#CBD5DF" stroke-width="1.5">
+        <path d="M 286 230 L 474 230 L 506 262 L 474 294 L 286 294 L 318 262 Z" />
+      </g>
+      <text x="398" y="272" text-anchor="middle" font-weight="bold" fill="#142B45">参数 / 标定</text>
+      <text x="314" y="341" font-size="20" fill="#203247">额定范围 / p(t)</text>
+      <text x="314" y="375" font-size="20" fill="#203247">样品与容器</text>
+      <text x="314" y="409" font-size="20" fill="#203247">声压与空间坐标</text>
+    </g>
+    <g id="p05-singlepoint-work">
+      <text x="552" y="220" font-size="22" font-weight="bold" fill="#142B45">03  核心门槛</text>
+      <g id="p05-singlepoint-stage" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="524 230 220 64" fill="#142B45" stroke="none">
+        <path d="M 524 230 L 712 230 L 744 262 L 712 294 L 524 294 L 556 262 Z" />
+      </g>
+      <text x="636" y="272" text-anchor="middle" font-weight="bold" fill="#FFFFFF">固定单点</text>
+      <text x="552" y="341" font-size="20" fill="#203247">SonoInk具体配方</text>
+      <text x="552" y="375" font-size="20" fill="#203247">无超声对照</text>
+      <text x="552" y="409" font-size="20" font-weight="bold" fill="#142B45">可测材料判据</text>
+    </g>
+    <g id="p05-line-work">
+      <text x="790" y="220" font-size="22" font-weight="bold" fill="#516176">04</text>
+      <g id="p05-line-stage" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="762 230 220 64" fill="#EFF3F7" stroke="#CBD5DF" stroke-width="1.5">
+        <path d="M 762 230 L 950 230 L 982 262 L 950 294 L 762 294 L 794 262 Z" />
+      </g>
+      <text x="874" y="272" text-anchor="middle" font-weight="bold" fill="#142B45">连续短线</text>
+      <text x="790" y="341" font-size="20" fill="#203247">机械 / 电子分别验证</text>
+      <text x="790" y="375" font-size="20" fill="#203247">连续性 / 宽厚</text>
+      <text x="790" y="409" font-size="20" fill="#203247">线外作用</text>
+    </g>
+    <g id="p05-dual-work">
+      <text x="1028" y="220" font-size="22" font-weight="bold" fill="#516176">05</text>
+      <g id="p05-dual-stage" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="1000 230 220 64" fill="#EFF3F7" stroke="#CBD5DF" stroke-width="1.5">
+        <path d="M 1000 230 L 1188 230 L 1220 262 L 1188 294 L 1000 294 L 1032 262 Z" />
+      </g>
+      <text x="1112" y="272" text-anchor="middle" font-weight="bold" fill="#142B45">双功能流程</text>
+      <text x="1028" y="341" font-size="20" fill="#203247">成像定位 → 照射</text>
+      <text x="1028" y="375" font-size="20" fill="#203247">接收恢复</text>
+      <text x="1028" y="409" font-size="20" fill="#203247">图像恢复</text>
+    </g>
+  </g>
+  <g id="p05-resource-inputs" data-pptx-bounds="48 456 1184 120">
+    <line x1="48" y1="457" x2="1232" y2="457" stroke="#CBD5DF" stroke-width="1" />
+    <text x="48" y="487" font-size="20" font-weight="bold" fill="#C27B22">当前所需输入｜unknown项目须核实</text>
+    <g id="p05-probe-inputs">
+      <text x="48" y="529" font-weight="bold" fill="#142B45">探头与系统</text>
+      <text x="48" y="565" font-size="20" fill="#516176">完整型号 · 额定burst/duty · 模块与许可</text>
+    </g>
+    <g id="p05-material-inputs">
+      <text x="676" y="529" font-weight="bold" fill="#142B45">材料与台架</text>
+      <text x="676" y="565" font-size="20" fill="#516176">配方 · 厚度/容器 · 声压/位移/温度记录</text>
+    </g>
+  </g>
+  <g id="p05-takeaway" data-pptx-bounds="48 605 1184 54">
+    <text x="48" y="642" font-size="30" fill="#142B45">以<tspan font-weight="bold" fill="#008C95">有标定、有对照</tspan>的单点结果，决定是否进入后续验证。</text>
+  </g>
+  <g id="p05-footer" data-pptx-role="footer" data-pptx-bounds="48 674 1184 30" fill="#516176" font-size="16">
+    <text x="48" y="694">来源：10.21体外概念验证方案、10.22验证与解读｜单点成立，才推进短线与双功能；未承诺完成日期</text>
+    <text x="1232" y="694" text-anchor="end">05 / 05</text>
+  </g>
+</svg>

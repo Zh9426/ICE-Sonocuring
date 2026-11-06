@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei, Arial" font-size="30" data-pptx-page-role="cover">
+<defs><marker id="n01-imaging-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9" fill="none" stroke="#008C95" stroke-width="1.5" /></marker><marker id="n01-exposure-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 1 L 9 5 L 0 9" fill="none" stroke="#C27B22" stroke-width="1.5" /></marker></defs>
+<rect id="n01-bg" data-pptx-role="background" width="1280" height="720" fill="#FFFFFF" />
+<g id="n01-title" data-pptx-bounds="48 28 1184 138"><text x="48" y="48" font-size="16" fill="#516176">ICE 新课题  /  2026.10.24</text><text x="48" y="103" font-size="40" font-weight="bold" fill="#142B45">ICE探头成像与局部超声作用协同研究</text><text x="48" y="149" font-size="28" fill="#516176">研究思路、初步探索与验证计划</text></g>
+<g id="n01-concept" data-pptx-bounds="48 194 742 365">
+<g id="n01-concept-field" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="snip1Rect" data-pptx-frame="48 194 742 365" data-pptx-av-adj="val 10000" fill="#EFF3F7" stroke="none"><path d="M 48 194 L 753.5 194 L 790 230.5 L 790 559 L 48 559 Z" /></g>
+<text x="76" y="232" font-size="20" fill="#516176">研究设想，非已实现系统</text>
+<g id="n01-probe"><rect x="76" y="342" width="205" height="55" rx="24" fill="#142B45" /><rect x="244" y="346" width="53" height="47" rx="4" fill="#008C95" /><line x1="254" y1="349" x2="254" y2="390" stroke="#FFFFFF" stroke-width="2" /><line x1="265" y1="349" x2="265" y2="390" stroke="#FFFFFF" stroke-width="2" /><line x1="276" y1="349" x2="276" y2="390" stroke="#FFFFFF" stroke-width="2" /><text x="90" y="440" font-size="28" font-weight="bold" fill="#142B45">现有ICE探头</text></g>
+<g id="n01-sample"><rect x="590" y="297" width="150" height="149" rx="4" fill="#FFFFFF" stroke="#CBD5DF" stroke-width="2" /><circle cx="665" cy="371" r="29" fill="#008C95" fill-opacity="0.12" stroke="#008C95" stroke-width="2" /><line x1="650" y1="371" x2="680" y2="371" stroke="#008C95" stroke-width="2" /><line x1="665" y1="356" x2="665" y2="386" stroke="#008C95" stroke-width="2" /><text x="665" y="486" font-size="28" text-anchor="middle" font-weight="bold" fill="#142B45">体外样品</text></g>
+<line x1="310" y1="354" x2="622" y2="337" stroke="#008C95" stroke-width="3" marker-end="url(#n01-imaging-arrow)" /><line x1="310" y1="385" x2="622" y2="408" stroke="#C27B22" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#n01-exposure-arrow)" />
+<text x="383" y="315" font-size="20" fill="#008C95">成像定位</text><text x="383" y="452" font-size="20" fill="#C27B22">候选照射（拟研究）</text>
+<text x="76" y="532" font-size="16" fill="#516176">概念示意，非尺寸比例；局部作用与材料响应待验证。</text>
+</g>
+<g id="n01-research-scope" data-pptx-bounds="828 194 404 365">
+<text x="828" y="233" font-size="22" fill="#008C95">01  研究对象</text><text x="828" y="278" font-size="28" font-weight="bold" fill="#142B45">阵元与时序资源</text>
+<text x="828" y="339" font-size="22" fill="#008C95">02  基本思路</text><text x="828" y="384" font-size="28" font-weight="bold" fill="#142B45">先定位，再研究局部作用</text>
+<text x="828" y="445" font-size="22" fill="#008C95">03  近期落点</text><text x="828" y="490" font-size="28" font-weight="bold" fill="#142B45">固定单点 → 连续短线</text><text x="828" y="536" font-size="20" fill="#516176">从体外最小证据起步</text>
+</g>
+<g id="n01-takeaway" data-pptx-bounds="48 601 1184 57"><line x1="48" y1="603" x2="1232" y2="603" stroke="#CBD5DF" stroke-width="1" /><text x="48" y="644" font-size="28" fill="#142B45">面向局部材料作用，探索<tspan font-weight="bold">“成像定位＋候选照射”</tspan>的协同方式。</text></g>
+<g id="n01-footer" data-pptx-role="footer" data-pptx-bounds="48 674 1184 29" fill="#516176" font-size="16"><text x="48" y="694">依据：新课题制作说明书；体外验证方案 E7 / 研究路线 E8｜研究设想，非临床结论</text><text x="1232" y="694" text-anchor="end">主汇报 01 / 07</text></g>
+</svg>

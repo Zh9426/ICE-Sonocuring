@@ -1,0 +1,54 @@
+[
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\README.md",
+    "sha256": "5A7884C4C18BE3CEB4D7265570052C3FE1317972BE265DBBEB2E391490851CC5"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\SetUpICE_ImagingCuring.m",
+    "sha256": "CC40AA1799AD5189AB02BA3785417FD98FBD0C38439DC0DF70A16EF5902E5DAC"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\build.m",
+    "sha256": "B4768B591C7BEF5C348BC21C7E6E0C55DE224C0BD7221386AB9DD031491B1112"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\compile_events.m",
+    "sha256": "C736412B2CF8ED2D6C45CB4F162FC9FB3D2A272D45C72757BB5F0DDF7714251A"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\default_config.m",
+    "sha256": "DD6FF66721E34889F94534324C7AF31D78783FC9C5C17F2745AD093A17569E3F"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\focus_delays.m",
+    "sha256": "28E52584908A48D0361BFE5E1244FFCDF8D4B81568F166B4969CC9C70AD413AC"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\make_trans.m",
+    "sha256": "D2F80F59CE70B7DABF7F2B68AC704465944B6F4C97812385D4CA27DF7831F7C1"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\matrix_trans.m",
+    "sha256": "FF59BC761F2C627B7E32E1900D5169E48C05589EC03E7748FF7E643C8BAC7F52"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\operating_envelope.m",
+    "sha256": "C288D6BFCE90F38F240FD60C5FCB8AC910E23B95BFAC82F4CD4A9BBFB67AC1A8"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\partition_apertures.m",
+    "sha256": "1F9DCBAAB5FF95093A30E5F977DB31A28492C699AAE063484F595007EC376FE7"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\save_sequence.m",
+    "sha256": "943900FF09EB5D569DB06C90CF7A412C17A495C861A39319EAB94CDEF1D6A31F"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\tx_delays.m",
+    "sha256": "D55790E7C5A25DDA54FD1F5DD4CE6070D51F2B590ADF3D3D7B01F34C4437991A"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\validate_config.m",
+    "sha256": "0ED6AA93E74FEDC04962FA0C3B869116799D0F9670B5F3B602C63146EC64BAB0"
+  }
+]

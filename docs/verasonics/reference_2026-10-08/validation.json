@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-08",
+  "status": "pass",
+  "checks": [
+    "4046-file inventory and sizes rechecked",
+    "all JSON and CSV files parsed",
+    "347 PDF hashes rechecked",
+    "408 topic page references in valid page ranges",
+    "75 probe branch line references verified",
+    "40 duplicate utility pairs identical",
+    "key vendor source hashes unchanged",
+    "ICE MAT structural counts and no RF data verified",
+    "new Markdown local links resolved",
+    "new Markdown trailing whitespace checked"
+  ],
+  "errors": [],
+  "counts": {
+    "extraction_status.json": "valid JSON",
+    "ice_saved_mat_snapshot.json": "valid JSON",
+    "inventory_summary.json": "valid JSON",
+    "key_source_hashes.json": "valid JSON",
+    "manual_version_comparison.json": "valid JSON",
+    "duplicate_utilities.csv": 40,
+    "file_inventory.csv": 4046,
+    "ice_identity_pdf_hits.csv": 0,
+    "ice_identity_text_hits.csv": 22,
+    "pdf_catalog.csv": 347,
+    "pdf_topic_index.csv": 408,
+    "probe_definitions.csv": 75
+  },
+  "not_run": [
+    "successful MATLAB execution",
+    "VSX or vendor setup execution",
+    "hardware acquisition",
+    "simulation regression tests"
+  ],
+  "git_diff_check": {
+    "command": "git diff --check",
+    "exit_code": 0,
+    "scope": "tracked working-tree changes; new Markdown additionally checked for trailing whitespace and links",
+    "warnings": "existing LF-to-CRLF notices only"
+  }
+}

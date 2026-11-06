@@ -1,0 +1,82 @@
+[
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_oddeven\\even32_focus20mm_dx52um.mat",
+    "sha256": "303e1a1d2638a036519c1b921455907616614799982f327b296ee3acd9e134e0"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_oddeven\\even32_focus20mm_dx65um.mat",
+    "sha256": "f074198cb89dc8e83a079deee7e52c08e6d9c4becbfeccdf09999a432b4af257"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_oddeven\\even32_focus20mm_dx52um.json",
+    "sha256": "c36a08c8fc4823d2cf64d379b704fedc7b0d717c96179cc676efed3004018266"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\results\\kwave_oddeven\\even32_focus20mm_dx65um.json",
+    "sha256": "165e41d43c9b089a8e9e64e47ef17ab2e76962f0f8a490e6fad0576c2655006c"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\README.md",
+    "sha256": "5a7884c4c18be3ceb4d7265570052c3fe1317972be265dbbeb2e391490851cc5"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\SetUpICE_ImagingCuring.m",
+    "sha256": "cc40aa1799ad5189ab02ba3785417fd98fbd0c38439dc0df70a16ef5902e5dac"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\build.m",
+    "sha256": "b4768b591c7bef5c348bc21c7e6e0c55de224c0bd7221386ab9dd031491b1112"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\compile_events.m",
+    "sha256": "c736412b2cf8ed2d6c45cb4f162fc9fb3d2a272d45c72757bb5f0ddf7714251a"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\default_config.m",
+    "sha256": "dd6ff66721e34889f94534324c7af31d78783fc9c5c17f2745ad093a17569e3f"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\focus_delays.m",
+    "sha256": "28e52584908a48d0361bfe5e1244ffcdf8d4b81568f166b4969cc9c70ad413ac"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\make_trans.m",
+    "sha256": "d2f80f59ce70b7dabf7f2b68ac704465944b6f4c97812385d4ca27df7831f7c1"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\matrix_trans.m",
+    "sha256": "ff59bc761f2c627b7e32e1900d5169e48c05589ec03e7748ff7e643c8bac7f52"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\operating_envelope.m",
+    "sha256": "c288d6bfce90f38f240fd60c5fcb8ac910e23b95bfac82f4cd4a9bbfb67ac1a8"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\partition_apertures.m",
+    "sha256": "1f9dcbaab5ff95093a30e5f977db31a28492c699aae063484f595007ec376fe7"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\save_sequence.m",
+    "sha256": "943900ff09eb5d569db06c90cf7a412c17a495c861a39319eab94cdef1d6a31f"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\tx_delays.m",
+    "sha256": "d55790e7c5a25dda54fd1f5dd4ce6070d51f2b590adf3d3d7b01f34c4437991a"
+  },
+  {
+    "path": "H:\\print_transducer\\verasonics\\dual_mode\\+icevs\\validate_config.m",
+    "sha256": "0ed6aa93e74fedc04962fa0c3b869116799d0f9670b5f3b602c63146ec64bab0"
+  },
+  {
+    "path": "H:\\print_transducer\\results\\verasonics_linear64_oddeven\\ICE_Linear64OddEven_interleaved.mat",
+    "sha256": "e89b2e056538cff0f9fe6ba5a4a11cd23d35829be6019a7411391b9eb417bb3d"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\prepare_kwave_focus.m",
+    "sha256": "a6589b4a9573c65409343463572cc6e76af2adbf77dc61cad88ecf041c807fc1"
+  },
+  {
+    "path": "H:\\print_transducer\\independent_simulation\\+iceind\\compile_kwave.m",
+    "sha256": "42a1b880f551e59ddc5cd981aa3c3180aad84c7abe01644f5c59e3ffc4fb8db3"
+  }
+]

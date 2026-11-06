@@ -1,0 +1,431 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "early",
+  "target": "H:\\print_transducer\\docs\\reports\\2026-10-24_ppt_brief\\presentation\\ice_research_proposal_ppt169_20261024",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "4408759dc757d60e109b72c1b1b632a749c89710b8927fbf7b70bab400bf220f",
+    "file_count": 5,
+    "files": [
+      {
+        "file": "01_课题设想.svg",
+        "sha256": "c3e7802a7717c7212700c2dceb8b346ec7e001810ace9382ff191ad03a7f4b0e"
+      },
+      {
+        "file": "02_研究问题.svg",
+        "sha256": "84e9cdbcc49383a716db83c04f09df51221d2799ffa8c883e861fac1fee650a1"
+      },
+      {
+        "file": "03_研究路线.svg",
+        "sha256": "61de993ddf556a946876a383a1715fb287c959cd8d11fba6a36f339110857a5f"
+      },
+      {
+        "file": "04_起步基础.svg",
+        "sha256": "37d9425769581cecd673c5946cad1d511f0eed79d415fd80a0094cca81805b91"
+      },
+      {
+        "file": "05_初步认识.svg",
+        "sha256": "825a54e12d6b0af1f950e118aaabe6fc2a5cdf8a3a9be3ba4b48ead083ca41b9"
+      }
+    ]
+  },
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "warnings": 0,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 0,
+      "issues": []
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {},
+    "fonts": {},
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 5,
+    "totals": {
+      "text_elements": 122,
+      "image_placements": 3,
+      "icons": 0,
+      "svg_geometry_elements": 32,
+      "preset_shapes": 7,
+      "page_frame_elements": 5,
+      "marker_uses": 8,
+      "inline_emphasis_runs": 4,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 1,
+      "icons": 0,
+      "presets": 4,
+      "charts": 0,
+      "tables": 0,
+      "formulas": 0,
+      "inline_emphasis_runs": 4,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": 8,
+    "geometry_elements": {
+      "circle": 1,
+      "ellipse": 0,
+      "line": 14,
+      "path": 0,
+      "polygon": 0,
+      "polyline": 0,
+      "rect": 17
+    },
+    "preset_names": {
+      "chevron": 3,
+      "rightArrow": 1,
+      "rightBracket": 1,
+      "snip1Rect": 2
+    },
+    "native_objects": {
+      "chart": 0,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 0
+    },
+    "image_page_max_frame_share_range": [
+      0.0614,
+      0.0614
+    ]
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_课题设想.svg",
+      "path": "H:\\print_transducer\\docs\\reports\\2026-10-24_ppt_brief\\presentation\\ice_research_proposal_ppt169_20261024\\svg_output\\01_课题设想.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 19,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 1,
+              "ellipse": 0,
+              "line": 8,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 1,
+            "preset_names": {
+              "snip1Rect": 1
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 2
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 19,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "c3e7802a7717c7212700c2dceb8b346ec7e001810ace9382ff191ad03a7f4b0e"
+    },
+    {
+      "file": "02_研究问题.svg",
+      "path": "H:\\print_transducer\\docs\\reports\\2026-10-24_ppt_brief\\presentation\\ice_research_proposal_ppt169_20261024\\svg_output\\02_研究问题.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 19,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 2,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 3,
+            "preset_names": {
+              "chevron": 3
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 19,
+        "tspan_elements": 3
+      },
+      "passed": true,
+      "source_sha256": "84e9cdbcc49383a716db83c04f09df51221d2799ffa8c883e861fac1fee650a1"
+    },
+    {
+      "file": "03_研究路线.svg",
+      "path": "H:\\print_transducer\\docs\\reports\\2026-10-24_ppt_brief\\presentation\\ice_research_proposal_ppt169_20261024\\svg_output\\03_研究路线.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 21,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 2,
+            "preset_names": {
+              "rightBracket": 1,
+              "snip1Rect": 1
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 5
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 21,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "61de993ddf556a946876a383a1715fb287c959cd8d11fba6a36f339110857a5f"
+    },
+    {
+      "file": "04_起步基础.svg",
+      "path": "H:\\print_transducer\\docs\\reports\\2026-10-24_ppt_brief\\presentation\\ice_research_proposal_ppt169_20261024\\svg_output\\04_起步基础.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 22,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 1,
+            "preset_names": {
+              "rightArrow": 1
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 1
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 22,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "37d9425769581cecd673c5946cad1d511f0eed79d415fd80a0094cca81805b91"
+    },
+    {
+      "file": "05_初步认识.svg",
+      "path": "H:\\print_transducer\\docs\\reports\\2026-10-24_ppt_brief\\presentation\\ice_research_proposal_ppt169_20261024\\svg_output\\05_初步认识.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 41,
+          "images": {
+            "placements": 3,
+            "files": [
+              "widegrid_shallow.png"
+            ],
+            "max_frame_share": 0.0614
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Microsoft YaHei, Arial"
+        ],
+        "text_elements": 41,
+        "tspan_elements": 4
+      },
+      "passed": true,
+      "source_sha256": "825a54e12d6b0af1f950e118aaabe6fc2a5cdf8a3a9be3ba4b48ead083ca41b9"
+    }
+  ]
+}

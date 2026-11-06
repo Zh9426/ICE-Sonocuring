@@ -1,0 +1,9 @@
+{
+  "Nt": 4740,
+  "dt_s": 8.441558441558441E-9,
+  "cpu_single_rms_relative_l2": 4.1820956592613636E-6,
+  "gpu_single_rms_relative_l2": 0.00011912365389905959,
+  "saved_kwave_rms_relative_l2": 0.00011912365389922056,
+  "gpu_replay_vs_saved_rms_relative_l2": 0,
+  "interpretation": "Identical saved p(t); repeated GPU single RMS arithmetic compared with CPU single and double direct integration."
+}

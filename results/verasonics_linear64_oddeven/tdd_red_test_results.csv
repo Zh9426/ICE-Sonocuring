@@ -1,0 +1,6 @@
+Name,Passed,Failed,Incomplete,Duration,Details
+test_verasonics_oddeven/testDefaultOddEvenMasksAcrossAllModes,0,1,0,3.5594191,
+test_verasonics_oddeven/testPhysicalRankIndependentOfListAndConnectorOrder,0,1,0,0.4629488,
+test_verasonics_oddeven/testReversedRolesAndWeightedApodization,0,1,1,0.0236598,
+test_verasonics_oddeven/testOddEvenExportMatchesSavedSequence,0,1,0,4.4644509,
+test_verasonics_oddeven/testUnsupportedPartitionRejected,1,0,0,0.1681554,

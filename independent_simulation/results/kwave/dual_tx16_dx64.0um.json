@@ -1,0 +1,45 @@
+{
+  "sequence": "dual",
+  "tx_index": 16,
+  "input_sha256": "d89469db6a031154a638b31270c07e7e91131875b351449fc4834128a22d7989",
+  "solver": "kspaceFirstOrder3D",
+  "kwave_version": "1.4.1",
+  "matlab": "24.2.0.2773142 (R2024b) Update 2",
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "runtime_s": 101.2221546,
+  "dx_m": 6.4E-5,
+  "grid_size": [
+    160,
+    40,
+    360
+  ],
+  "pml_cells": 20,
+  "dt_s": 8.311688311688312E-9,
+  "Nt": 2621,
+  "cfl": 0.2,
+  "source_area_error_m2": 2.6469779601696886E-23,
+  "source_meta": {
+    "half_cycles": 40,
+    "active_fraction": 0.67,
+    "frequency_hz": 6.0E+6,
+    "nominal_drive_duration_s": 3.3333333333333333E-6,
+    "assumed_filter_group_delay_s": 4.5E-7,
+    "acoustic_duration_s": 4.234E-6,
+    "assumed_reference_source_pa": 1,
+    "calibration": "assumed_not_voltage_calibrated",
+    "waveform_model": "nominal_centered_PWM_assumed_Gaussian_bandpass_normalized"
+  },
+  "source_energy_above_grid_nyquist_fraction": 1.3264482702758033E-7,
+  "roi_max_abs_pressure_pa_assumed": 2.8268074989318848,
+  "roi_peak_xyz_m": [
+    0,
+    0,
+    0.018304
+  ],
+  "target_plane_z_m": 0.019968,
+  "physical_validation": "unknown",
+  "timing": "single_event_not_full_hardware_sequence",
+  "medium_provenance": "c_existing_code_unverified_density1000_assumed_lossless",
+  "geometry_model": "flat_rectangular_pressure_sources_no_baffle_no_elevation_lens",
+  "convergence": "not_assessed_in_single_run"
+}

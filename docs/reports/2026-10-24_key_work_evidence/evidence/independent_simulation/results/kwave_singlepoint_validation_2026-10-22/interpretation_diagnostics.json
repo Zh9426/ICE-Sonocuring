@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-22",
+  "method": "Exploratory read-only postprocessing of saved wide65.mat and fine52.mat; no new acoustic solve or material model.",
+  "provenance": "assumed source and uniform linear lossless medium; actual probe and SonoInk properties unknown",
+  "wide65_forward_search_z_min_mm": 2,
+  "wide65_pressure_peak_xyz_mm": [6.37, 0, 2.015],
+  "wide65_pressure_peak_pa_assumed_source": 1.5016236305236816,
+  "wide65_qp_at_pressure_peak_pa2_s": 2.440113757974594e-6,
+  "wide65_qp_peak_xyz_mm": [0, 0, 18.33],
+  "wide65_qp_peak_pa2_s": 3.1820372866199774e-6,
+  "wide65_qp_at_pressure_peak_over_forward_qp_peak": 0.7668400895976083,
+  "fine52_fixed_target_bounds_mm_assumed": [[-0.5, 0.5], [-0.5, 0.5], [19.5, 20.5]],
+  "fine52_fixed_material_xy_bounds_mm_assumed": [[-4, 4], [-2, 2]],
+  "fine52_fixed_target_qp_integral_pa2_s_m3": 1.6203991740183896e-15,
+  "fine52_material_box_diagnostics": [
+    {"z_bounds_mm_assumed": [19.5, 20.5], "target_qp_fraction": 0.37097999557001915, "outside_over_target_max_qp": 0.8640956594300504},
+    {"z_bounds_mm_assumed": [19, 21], "target_qp_fraction": 0.19527245084226416, "outside_over_target_max_qp": 1.0276779515121637},
+    {"z_bounds_mm_assumed": [18, 22], "target_qp_fraction": 0.09644533191714452, "outside_over_target_max_qp": 1.0442926959547583},
+    {"z_bounds_mm_assumed": [10, 28], "target_qp_fraction": 0.021598390916273233, "outside_over_target_max_qp": 1.0442926959547583}
+  ],
+  "box_membership": "Inclusive voxel-centre bounds with 1e-12 m numerical tolerance, matching existing analysis.",
+  "limitations": "Qp is dt*sum(p^2), not deposited energy or cure. Changing integration boxes keeps the field and target numerator fixed; it does not simulate a thinner material or establish a usable cure threshold. Finite forward search is not all space."
+}

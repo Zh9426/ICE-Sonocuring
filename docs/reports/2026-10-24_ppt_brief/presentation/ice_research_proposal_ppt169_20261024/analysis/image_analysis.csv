@@ -1,0 +1,3 @@
+No,Filename,Width,Height,AspectRatio,PixelAspectRatio,SourceDisplayRatio,RatioSource,Format,HasTransparentPixels,UsageCount,DisplayRatioVariants,AssetKind,SvgRenderable,PptxNativeSupported,SizeKB,Category
+1,source_sampling.png,1260,720,1.75,1.75,,native,PNG,False,1,,bitmap,True,True,89.6,Wide landscape
+2,widegrid_shallow.png,1980,1440,1.38,1.38,,native,PNG,False,1,,bitmap,True,True,232.1,Standard landscape

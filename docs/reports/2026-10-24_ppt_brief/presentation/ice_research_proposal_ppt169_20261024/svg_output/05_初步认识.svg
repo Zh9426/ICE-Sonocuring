@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei, Arial" font-size="30" data-pptx-page-role="content">
+<rect id="n05-bg" data-pptx-role="background" width="1280" height="720" fill="#FFFFFF" />
+<g id="n05-title" data-pptx-bounds="48 28 1184 108"><text x="48" y="48" font-size="16" fill="#516176">初步认识  /  用近期探索确定研究优先级</text><text x="48" y="108" font-size="40" font-weight="bold" fill="#142B45">配置影响离轴场，源表示需要优先验证</text></g>
+<g id="n05-comparison-contract" data-pptx-bounds="48 145 1184 32"><text x="48" y="167" font-size="20" fill="#516176">52 μm｜相同源端代理预算B，非实际功率｜assumed未标定源、均匀无损、无透镜</text></g>
+<g id="n05-field-comparison" data-pptx-bounds="48 188 760 376">
+<text x="228" y="213" font-size="28" font-weight="bold" text-anchor="middle" fill="#142B45">偶数32元</text><text x="228" y="242" font-size="20" text-anchor="middle" fill="#516176">当前离线基线</text><text x="568" y="213" font-size="28" font-weight="bold" text-anchor="middle" fill="#142B45">全64元离线对照</text><text x="568" y="242" font-size="20" text-anchor="middle" fill="#516176">synthetic候选</text>
+<svg id="n05-even32-crop" x="88" y="256" width="280" height="202.142857" viewBox="0.477777778 0.063194444 0.395959596 0.393055556" preserveAspectRatio="none" overflow="hidden"><image href="../images/widegrid_shallow.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+<svg id="n05-full64-crop" x="428" y="256" width="280" height="202.142857" viewBox="0.477777778 0.547916667 0.395959596 0.393055556" preserveAspectRatio="none" overflow="hidden"><image href="../images/widegrid_shallow.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+<svg id="n05-shared-colorbar" x="738" y="256" width="16" height="202.142857" viewBox="0.916161616 0.063888889 0.030303030 0.877083333" preserveAspectRatio="none" overflow="hidden"><image href="../images/widegrid_shallow.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+<g id="n05-coordinate-labels" font-size="20" fill="#516176">
+<text x="48" y="245">z/mm</text><text x="74" y="263" text-anchor="end">0</text><text x="74" y="330" text-anchor="end">2</text><text x="74" y="398" text-anchor="end">4</text><text x="74" y="465" text-anchor="end">6</text>
+<text x="388" y="245">z/mm</text><text x="414" y="263" text-anchor="end">0</text><text x="414" y="330" text-anchor="end">2</text><text x="414" y="398" text-anchor="end">4</text><text x="414" y="465" text-anchor="end">6</text>
+<text x="121" y="489" text-anchor="middle">−6</text><text x="228" y="489" text-anchor="middle">0</text><text x="336" y="489" text-anchor="middle">6</text><text x="461" y="489" text-anchor="middle">−6</text><text x="568" y="489" text-anchor="middle">0</text><text x="676" y="489" text-anchor="middle">6</text>
+<text x="228" y="520" text-anchor="middle">x / mm</text><text x="568" y="520" text-anchor="middle">x / mm</text><text x="746" y="242" text-anchor="middle">Pa</text><text x="764" y="263">2.9</text><text x="764" y="326">2</text><text x="764" y="396">1</text><text x="764" y="465">0</text>
+</g>
+<text x="48" y="551" font-size="16" fill="#516176">原图右列重排，颜色与白圈保留；白圈：原离轴测点附近。</text>
+</g>
+<g id="n05-three-findings" data-pptx-bounds="844 188 388 376">
+<text x="844" y="224" font-size="28" font-weight="bold" fill="#142B45">配置值得研究</text><text x="844" y="267" font-size="20" fill="#203247">原离轴测点保留改善趋势<tspan x="844" dy="32">仍需受控比较，不能只归因间距</tspan></text>
+<text x="844" y="352" font-size="28" font-weight="bold" fill="#C27B22">模型仍需验证</text><text x="844" y="395" font-size="20" fill="#203247">32元浅层幅值对网格敏感<tspan x="844" dy="32">先处理源表示</tspan></text>
+<text x="844" y="480" font-size="28" font-weight="bold" fill="#142B45">问题尚未解决</text><text x="844" y="523" font-size="20" fill="#203247">焦移、轴向选择性与材料作用<tspan x="844" dy="30">仍需分别验证</tspan></text>
+</g>
+<g id="n05-scope-note" data-pptx-bounds="48 578 1184 32"><text x="48" y="600" font-size="20" fill="#516176">颜色为各点时间最大绝对声压；有限边界改变未明显改变原结构，不能据此宣称全域收敛。</text></g>
+<g id="n05-takeaway" data-pptx-bounds="48 619 1184 40"><text x="48" y="647" font-size="28" fill="#142B45">把初步结果用于<tspan font-weight="bold">确定下一步</tspan>，而不是提前宣布方案可用。</text></g>
+<g id="n05-footer" data-pptx-role="footer" data-pptx-bounds="48 674 1184 29" fill="#516176" font-size="16"><text x="48" y="694">来源：E1—E3、E5；widegrid_shallow.png（2026.10.24）｜压力图与Qp测点比是不同量</text><text x="1232" y="694" text-anchor="end">主汇报 05 / 07</text></g>
+</svg>

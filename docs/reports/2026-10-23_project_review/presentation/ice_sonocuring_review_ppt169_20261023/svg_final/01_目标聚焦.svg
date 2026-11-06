@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei, Arial" font-size="28" data-pptx-page-role="cover">
+  <rect id="p01-background" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="p01-title" data-pptx-bounds="48 26 1184 110">
+    <text x="48" y="47" font-size="16" fill="#516176">ICE-SONOCURING  /  阶段进展  /  2026.10.23</text>
+    <text x="48" y="108" font-size="42" font-weight="bold" fill="#142B45">从架构设想，走向体外单点验证</text>
+  </g>
+  <g id="p01-research-focus" data-pptx-bounds="48 166 390 396">
+    <g id="p01-focus-field" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="snip1Rect" data-pptx-frame="48 166 390 396" data-pptx-av-adj="val 10000" fill="#142B45" stroke="none">
+      <path d="M 48 166 L 399 166 L 438 205 L 438 562 L 48 562 Z" />
+    </g>
+    <text x="78" y="209" font-size="20" fill="#FFFFFF">当前聚焦</text>
+    <text x="78" y="285" font-size="52" font-weight="bold" fill="#FFFFFF">先把单点做实</text>
+    <rect x="78" y="317" width="52" height="4" fill="#008C95" />
+    <text font-size="20" fill="#FFFFFF" x="78" y="372">同一ICE探头，能否兼顾</text><text font-size="20" fill="#FFFFFF" x="78" y="404">成像定位与局部超声作用？</text><text x="78" y="474" font-weight="bold" fill="#FFFFFF">固定单点 → 连续短线</text>
+    <text x="78" y="525" font-size="20" fill="#FFFFFF">长期：成像与材料作用协同</text>
+  </g>
+  <g id="p01-evolution" data-pptx-bounds="482 166 750 396">
+    <text x="490" y="190" font-size="20" fill="#516176">2026年9—10月  /  阶段演进，非等比例时间轴</text>
+    <line x1="514" y1="229" x2="514" y2="515" stroke="#CBD5DF" stroke-width="3" />
+    <g id="p01-september">
+      <circle cx="514" cy="235" r="19" fill="#008C95" />
+      <text x="514" y="243" font-size="22" text-anchor="middle" font-weight="bold" fill="#FFFFFF">1</text>
+      <text x="550" y="231" font-size="20" fill="#516176">9月</text>
+      <text x="716" y="238" font-size="30" font-weight="bold" fill="#142B45">建工具</text>
+      <text x="550" y="274" font-size="20" fill="#203247">参数化声场 · 架构比较 · 暴露指标</text>
+    </g>
+    <g id="p01-early-october">
+      <circle cx="514" cy="328" r="19" fill="#008C95" />
+      <text x="514" y="336" font-size="22" text-anchor="middle" font-weight="bold" fill="#FFFFFF">2</text>
+      <text x="550" y="324" font-size="20" fill="#516176">10月上旬</text>
+      <text x="716" y="331" font-size="30" font-weight="bold" fill="#142B45">接序列</text>
+      <text x="550" y="367" font-size="20" fill="#203247">原软件核对 · 离线三模式 · 独立仿真</text>
+    </g>
+    <g id="p01-mid-october">
+      <circle cx="514" cy="421" r="19" fill="#008C95" />
+      <text x="514" y="429" font-size="22" text-anchor="middle" font-weight="bold" fill="#FFFFFF">3</text>
+      <text x="550" y="417" font-size="20" fill="#516176">10月中旬</text>
+      <text x="716" y="424" font-size="30" font-weight="bold" fill="#142B45">定当前方案</text>
+      <text x="550" y="460" font-size="20" fill="#203247">64元奇偶分区 · 三维k-Wave验证</text>
+    </g>
+    <g id="p01-late-october">
+      <circle cx="514" cy="514" r="19" fill="#C27B22" />
+      <text x="514" y="522" font-size="22" text-anchor="middle" font-weight="bold" fill="#FFFFFF">4</text>
+      <text x="550" y="510" font-size="20" fill="#516176">10月下旬</text>
+      <text x="716" y="517" font-size="30" font-weight="bold" fill="#142B45">找证据缺口</text>
+      <text x="550" y="553" font-size="20" fill="#203247">扩大域 · Qp代理 · 体外单点方案</text>
+    </g>
+  </g>
+  <g id="p01-takeaway" data-pptx-bounds="48 598 1184 57">
+    <line x1="48" y1="600" x2="1232" y2="600" stroke="#CBD5DF" stroke-width="1" />
+    <text x="48" y="641" font-size="30" fill="#142B45">仿真与离线序列已可追溯；<tspan font-weight="bold" fill="#C27B22">材料固化仍待验证。</tspan></text>
+  </g>
+  <g id="p01-footer" data-pptx-role="footer" data-pptx-bounds="48 674 1184 30" fill="#516176" font-size="16">
+    <text x="48" y="694">来源：项目工作梳理报告 S01、S03、S05、S07、S12—S13｜资料截至2026.10.22</text>
+    <text x="1232" y="694" text-anchor="end">01 / 05</text>
+  </g>
+</svg>

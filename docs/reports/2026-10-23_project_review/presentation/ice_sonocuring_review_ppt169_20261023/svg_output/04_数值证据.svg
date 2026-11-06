@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei, Arial" font-size="28" data-pptx-page-role="content">
+  <rect id="p04-background" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="p04-title" data-pptx-bounds="48 26 1184 110">
+    <text x="48" y="47" font-size="16" fill="#516176">ICE-SONOCURING  /  结果支持到哪里</text>
+    <text x="48" y="108" font-size="42" font-weight="bold" fill="#142B45">局部声压集中存在，空间选择性仍待解决</text>
+  </g>
+  <g id="p04-model-assumptions" data-pptx-bounds="48 146 1184 34">
+    <text x="48" y="169" font-size="20" fill="#516176">assumed 1 Pa参考源｜均匀无损介质｜无俯仰透镜｜k-Wave 1.4.1｜物理标定unknown</text>
+  </g>
+  <g id="p04-local-focus" data-pptx-bounds="48 194 680 120">
+    <text x="48" y="212" font-size="16" fill="#516176">局部结果｜2026.10.19 fine52</text>
+    <text x="48" y="244" font-size="20" fill="#516176">目标深度</text>
+    <text x="308" y="244" font-size="20" fill="#516176">峰值深度</text>
+    <text x="48" y="288" font-size="40" font-weight="bold" fill="#142B45">20.00 <tspan font-size="20" font-weight="normal">mm</tspan></text>
+    <g id="p04-focus-shift-arrow" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="rightArrow" data-pptx-frame="236 260 48 24" fill="#142B45" stroke="none">
+      <path d="M 236 266 L 272 266 L 272 260 L 284 272 L 272 284 L 272 278 L 236 278 Z" />
+    </g>
+    <text x="308" y="288" font-size="40" font-weight="bold" fill="#008C95">18.46 <tspan font-size="20" font-weight="normal">mm</tspan></text>
+    <text x="545" y="288" font-size="20" fill="#C27B22">前移1.540 mm</text>
+  </g>
+  <g id="halfwidths" data-pptx-bounds="48 320 680 198" data-pptx-replace-with="chart" data-pptx-fallback-sha256="82e8e3dcfdccdf0ff84da45201992c5ad81b8ac26cde3759a652b82612a7861d">
+    <metadata type="application/json">
+      {
+        "name":"halfwidths","x":48,"y":320,"width":680,"height":198,
+        "type":"bar","grouping":"clustered",
+        "title":{"text":"连续声压半幅宽 / mm","x":48,"y":319,"width":600,"height":28,"font_size":20,"font_family":"Microsoft YaHei, Arial","color":"#203247"},
+        "categories":["x","y","z"],
+        "series":[{"name":"声压半幅宽","values":[0.717,2.894,13.477],"point_colors":["#008C95","#008C95","#C27B22"]}],
+        "plot_area":{"x":100,"y":354,"width":490,"height":120},
+        "gap_width":150,"overlap":0,"show_legend":false,
+        "data_labels":{"show_value":true,"position":"outside_end","number_format":"0.000","font_size":20,"font_family":"Microsoft YaHei, Arial","color":"#203247"},
+        "axes":{"category":{"position":"left","reverse":true,"visible":true,"font_size":20,"font_family":"Microsoft YaHei, Arial","color":"#203247","major_gridlines":false,"tick_marks":"none"},"value":{"position":"bottom","minimum":0,"maximum":14,"major_unit":7,"visible":true,"font_size":20,"font_family":"Microsoft YaHei, Arial","color":"#203247","major_gridlines":true,"tick_marks":"none","number_format":"0"}},
+        "style":{"font_family":"Microsoft YaHei, Arial","font_size":20,"axis_font_size":20,"text_color":"#203247","axis_color":"#CBD5DF","grid_color":"#E2E8EF","chart_area_fill":"#FFFFFF","plot_area_fill":"#FFFFFF","colors":["#008C95"]}
+      }
+    </metadata>
+    <text x="48" y="338" font-size="20" fill="#203247">连续声压半幅宽 / mm</text>
+    <g id="halfwidths-chartArea">
+      <g id="p04-chart-grid" stroke="#E2E8EF" stroke-width="1">
+        <line x1="345" y1="354" x2="345" y2="474" />
+        <line x1="590" y1="354" x2="590" y2="474" />
+      </g>
+      <g id="p04-chart-axis" stroke="#CBD5DF" stroke-width="1">
+        <line x1="100" y1="354" x2="100" y2="474" />
+        <line x1="100" y1="474" x2="590" y2="474" />
+      </g>
+      <!-- chart-plot-area: object=halfwidths | 100,354,590,474 -->
+      <g id="p04-width-bars">
+        <rect x="100" y="366" width="25.095" height="16" fill="#008C95" />
+        <rect x="100" y="406" width="101.29" height="16" fill="#008C95" />
+        <rect x="100" y="446" width="471.695" height="16" fill="#C27B22" />
+      </g>
+      <g id="p04-width-labels" font-size="20" fill="#203247">
+        <text x="78" y="381" text-anchor="end">x</text>
+        <text x="78" y="421" text-anchor="end">y</text>
+        <text x="78" y="461" text-anchor="end">z</text>
+        <text x="135.095" y="381">0.717</text>
+        <text x="211.29" y="421">2.894</text>
+        <text x="581.695" y="461">13.477</text>
+        <text x="100" y="502" text-anchor="middle">0</text>
+        <text x="345" y="502" text-anchor="middle">7</text>
+        <text x="590" y="502" text-anchor="middle">14</text>
+      </g>
+    </g>
+  </g>
+  <g id="p04-grid-limit" data-pptx-bounds="48 524 680 34">
+    <text x="48" y="547" font-size="20" fill="#516176">两网格公共ROI L2差0.749%；<tspan font-weight="bold">完整收敛未建立。</tspan></text>
+  </g>
+  <g id="p04-wide-domain-result" data-pptx-bounds="780 196 452 354">
+    <g id="p04-wide-domain-field" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="snip1Rect" data-pptx-frame="780 196 452 354" data-pptx-av-adj="val 10000" fill="#FFF6E9" stroke="none">
+      <path d="M 780 196 L 1196.6 196 L 1232 231.4 L 1232 550 L 780 550 Z" />
+    </g>
+    <text x="804" y="232" font-size="20" fill="#516176">扩大横向域｜10月22日 wide65</text>
+    <text x="804" y="311" font-size="52" font-weight="bold" fill="#C27B22">＋6.76%</text>
+    <text x="804" y="348" font-size="20" fill="#142B45">离轴峰高于同工况近目标峰</text>
+    <text x="804" y="394" font-weight="bold" fill="#142B45">[6.370, 0, 2.015] mm</text>
+    <text x="804" y="432" font-size="20" fill="#516176">浅层离轴峰；半幅交点触边</text>
+    <text x="804" y="484" font-weight="bold" fill="#C27B22">全域峰值稳定性未通过</text>
+    <text x="804" y="525" font-size="20" fill="#142B45">热点成因待诊断</text>
+  </g>
+  <g id="p04-qp-boundary" data-pptx-bounds="48 570 1184 64" fill="#516176" font-size="20">
+    <text x="48" y="589">Qp：压力平方时间积分代理；峰压最大点 ≠ Qp最大点。</text>
+    <text x="48" y="622">synthetic 1 mm立方目标占比<tspan font-weight="bold" fill="#142B45">2.160%</tspan>｜assumed 8×4×18 mm评价盒，非固化率 / 能量效率。</text>
+  </g>
+  <g id="p04-takeaway" data-pptx-bounds="48 635 1184 37">
+    <text x="48" y="661" font-size="30" font-weight="bold" fill="#142B45">局部聚焦证据，不能替代局部固化能力。</text>
+  </g>
+  <g id="p04-footer" data-pptx-role="footer" data-pptx-bounds="48 678 1184 27" fill="#516176" font-size="16">
+    <text x="48" y="697">来源：10.19 focus_summary / grid_comparison；10.22 singlepoint_validation / interpretation｜半幅宽为压力口径</text>
+    <text x="1232" y="697" text-anchor="end">04 / 05</text>
+  </g>
+</svg>

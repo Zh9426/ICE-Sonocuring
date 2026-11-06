@@ -1,0 +1,13 @@
+{
+  "reason": "Read-only reviewer additions before actual-field audit: verify saved time vector and dimensions, assert geometry units, label depth bounds. Source/solver unchanged.",
+  "files": [
+    {
+      "path": "H:\\print_transducer\\independent_simulation\\analyze_aperture_control.py",
+      "sha256": "d9f5bec06892ce35e90cef6b491db5803620e75dd3deb0d664cf28df80412b42"
+    },
+    {
+      "path": "H:\\print_transducer\\independent_simulation\\tests\\test_aperture_analysis.py",
+      "sha256": "69b48ca92e93e7997aa310f88552a59bbcccc1c58f5733c23035acd9a6517375"
+    }
+  ]
+}

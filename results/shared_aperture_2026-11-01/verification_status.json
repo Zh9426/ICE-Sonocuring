@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-01",
+  "tests": {
+    "total": 58,
+    "passed": 58,
+    "failed": 0,
+    "incomplete": 0
+  },
+  "code_analyzer": {
+    "files": 23,
+    "messages": 0
+  },
+  "vendor_files_unchanged": true,
+  "candidate_original_imaging_comparison": "all three candidate imaging TX and 450 Receive entries and PData match original MAT; see verification_batch.log",
+  "whitespace": {
+    "files_checked": 29,
+    "issues": [],
+    "tracked_diff_check_exit": 0
+  },
+  "VSX": "not_run",
+  "hardware": "not_run",
+  "minimum_curing_power": "unknown_not_measured",
+  "probe_operating_limits": "unknown_not_manufacturer_verified",
+  "receive_recovery": "assumed_not_measured",
+  "matlab_execution": "batch_with_isolated_workspace_preferences"
+}
