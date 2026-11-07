@@ -59,7 +59,7 @@ addpath('scripts'); summary=verify_curing_only();
 
 实物比较时记录焦点、介质/材料批次、相对位置、实际电压定义、声输出、时间/能量、探头温度和是否达到预定义固化质量。相同电压不是相同总声功率；先验证全孔径能否固化，再比较减少阵元后的范围，不预先断言电压或阵元数增加就必然有效。
 
-完整探头型号、厂家burst/duty/温升额定及本机选件unknown。35 V仅原源码软件上限。stop为冻结，unfreeze可重复，未建立跨运行累计保护或温度闭环。
+2026-11-07用户确认按TINGSN Sonic Eyes 10标准版开展研究，依据见[对照记录](../../docs/verasonics/curing_original_comparison_2026-11-07.md)；代码中的`cfg.identity.exact_model`尚为unknown。厂家burst/duty/温升额定及本机选件仍unknown。35 V仅原源码软件上限。stop为冻结，unfreeze可重复，未建立跨运行累计保护或温度闭环。
 
 指定手册依据：D00108 Rev.L §1.4印刷p8-9；D00109 Rev.D §4.5 p9-10（本轮不执行自检）；D00107 Rev.K §4.4 p30；D00163 Rev.K §4.3 p23-25、§12 p95-98、§13.1 p110-111及Event/stop附录。系统保护不等于探头或声输出保护；许可、器件条件及上机参数仍需核实。
 
