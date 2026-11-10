@@ -1,0 +1,11 @@
+{
+  "outdir": "F:\\project\\ICE\\independent_simulation\\results\\curing_driver_audit_20261110_164549",
+  "matlab_version": "24.1.0.3303086 (R2024a) Update 9",
+  "generated_at": "2026-11-10 16:45:50",
+  "all_passed": true,
+  "checks_total": 461,
+  "checks_passed": 461,
+  "checks_failed": 0,
+  "variants_completed": 4,
+  "failed_checks": []
+}

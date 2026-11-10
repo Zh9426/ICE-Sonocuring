@@ -1,0 +1,5 @@
+dx_um,tolerance,upsampling,source_offset_mm,boundary_x,boundary_y,boundary_z_near,boundary_z_far,nonzero_points,runtime_s
+65,0.05,10,0.52,0,0,0,0,765,0.084964
+65,0.01,10,0.52,0,0,0,0,6365,0.2155718
+52,0.05,10,0.52,0,0,0,0,901,0.0729062
+52,0.01,10,0.52,0,0,0,0,6901,0.3339563

@@ -1,0 +1,13 @@
+{
+  "matlab": "24.1.0.3303086 (R2024a) Update 9",
+  "generated_at": "2026-11-10 16:47:01",
+  "runtime_s": 0.3300853,
+  "input_dir": "F:\\project\\ICE\\independent_simulation\\results\\curing_export_2026-11-10",
+  "output_dir": "F:\\project\\ICE\\independent_simulation\\results\\curing_independent_readback_20261110",
+  "variants_completed": 4,
+  "checks": 204,
+  "passed": 204,
+  "failed": 0,
+  "all_passed": true,
+  "limitations": "Source-derived geometry and assumed nominal pulses; target_arrival_us is defined only for active emitters (inactive=NaN); no VSX, hardware, acoustic, thermal or curing validation."
+}

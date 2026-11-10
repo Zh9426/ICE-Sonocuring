@@ -1,0 +1,47 @@
+{
+  "outdir": "F:\\project\\ICE\\independent_simulation\\results\\curing_driver_audit_20261110_163649",
+  "matlab_version": "24.1.0.3303086 (R2024a) Update 9",
+  "generated_at": "2026-11-10 16:36:53",
+  "all_passed": false,
+  "checks_total": 5,
+  "checks_passed": 0,
+  "checks_failed": 5,
+  "variants_completed": 0,
+  "failed_checks": [
+    {
+      "variant": "All64",
+      "check": "entry_build",
+      "expected": "success",
+      "actual": "未定义与 'double' 类型的输入参数相对应的函数 'range'。",
+      "note": "MATLAB:UndefinedFunction"
+    },
+    {
+      "variant": "Center48",
+      "check": "entry_build",
+      "expected": "success",
+      "actual": "未定义与 'double' 类型的输入参数相对应的函数 'range'。",
+      "note": "MATLAB:UndefinedFunction"
+    },
+    {
+      "variant": "Center32",
+      "check": "entry_build",
+      "expected": "success",
+      "actual": "未定义与 'double' 类型的输入参数相对应的函数 'range'。",
+      "note": "MATLAB:UndefinedFunction"
+    },
+    {
+      "variant": "Center16",
+      "check": "entry_build",
+      "expected": "success",
+      "actual": "未定义与 'double' 类型的输入参数相对应的函数 'range'。",
+      "note": "MATLAB:UndefinedFunction"
+    },
+    {
+      "variant": "ALL",
+      "check": "four_variants_completed",
+      "expected": "All64 | Center48 | Center32 | Center16",
+      "actual": "All64 | Center16 | Center32 | Center48",
+      "note": "All four documented entry points must build and export."
+    }
+  ]
+}
