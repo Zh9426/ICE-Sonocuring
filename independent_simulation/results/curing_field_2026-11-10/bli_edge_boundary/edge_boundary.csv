@@ -1,0 +1,5 @@
+dx_um,x_mm,boundary_x,boundary_y,boundary_z_near,boundary_z_far,nonzero_points
+65,-4.095,0,0,0,0,765
+65,4.095,0,0,0,0,765
+52,-4.095,0,0,0,0,901
+52,4.095,0,0,0,0,901

@@ -1,0 +1,82 @@
+正在运行 curing_field_test_bli_prepare
+Computing distributed source signal...
+  calculating binary mask...                  completed in 0.46473s
+  approximate size of source matrix:          2.6 MB (single precision)
+  calculating element 1 grid weights...       completed in 0.18248s
+  calculating element 1 distributed source... completed in 0.005057s
+  calculating element 2 grid weights...       completed in 0.14923s
+  calculating element 2 distributed source... completed in 0.001874s
+  calculating element 3 grid weights...       completed in 0.15698s
+  calculating element 3 distributed source... completed in 0.001786s
+  calculating element 4 grid weights...       completed in 0.16342s
+  calculating element 4 distributed source... completed in 0.001841s
+  total computation time 1.1426s
+.Computing distributed source signal...
+  calculating binary mask...                  completed in 0.45702s
+  approximate size of source matrix:          2.6 MB (single precision)
+  calculating element 1 grid weights...       completed in 0.16158s
+  calculating element 1 distributed source... completed in 0.003131s
+  calculating element 2 grid weights...       completed in 0.15939s
+  calculating element 2 distributed source... completed in 0.001502s
+  calculating element 3 grid weights...       completed in 0.15545s
+  calculating element 3 distributed source... completed in 0.00156s
+  calculating element 4 grid weights...       completed in 0.16003s
+  calculating element 4 distributed source... completed in 0.001487s
+  total computation time 1.1129s
+..Computing distributed source signal...
+  calculating binary mask...                  completed in 0.45491s
+  approximate size of source matrix:          2.6 MB (single precision)
+  calculating element 1 grid weights...       completed in 0.15792s
+  calculating element 1 distributed source... completed in 0.001741s
+  calculating element 2 grid weights...       completed in 0.15593s
+  calculating element 2 distributed source... completed in 0.001441s
+  calculating element 3 grid weights...       completed in 0.15535s
+  calculating element 3 distributed source... completed in 0.001562s
+  calculating element 4 grid weights...       completed in 0.15736s
+  calculating element 4 distributed source... completed in 0.001525s
+  total computation time 1.0963s
+..Computing distributed source signal...
+  calculating binary mask...                  completed in 0.11569s
+  approximate size of source matrix:          1.8 MB (single precision)
+  calculating element 1 grid weights...       completed in 0.15788s
+  calculating element 1 distributed source... completed in 0.001978s
+  total computation time 0.2792s
+Computing distributed source signal...
+  calculating binary mask...                  completed in 0.45625s
+  approximate size of source matrix:          2.5 MB (single precision)
+  calculating element 1 grid weights...       completed in 0.15698s
+  calculating element 1 distributed source... completed in 0.001786s
+  calculating element 2 grid weights...       completed in 0.15726s
+  calculating element 2 distributed source... completed in 0.00139s
+  calculating element 3 grid weights...       completed in 0.15515s
+  calculating element 3 distributed source... completed in 0.001442s
+  calculating element 4 grid weights...       completed in 0.15577s
+  calculating element 4 distributed source... completed in 0.001489s
+  total computation time 1.098s
+.Computing distributed source signal...
+  calculating binary mask...                  completed in 0.45454s
+  approximate size of source matrix:          2.6 MB (single precision)
+  calculating element 1 grid weights...       completed in 0.1569s
+  calculating element 1 distributed source... completed in 0.001807s
+  calculating element 2 grid weights...       completed in 0.15869s
+  calculating element 2 distributed source... completed in 0.001393s
+  calculating element 3 grid weights...       completed in 0.1579s
+  calculating element 3 distributed source... completed in 0.001426s
+  calculating element 4 grid weights...       completed in 0.15733s
+  calculating element 4 distributed source... completed in 0.001493s
+  total computation time 1.0988s
+Computing distributed source signal...
+  calculating binary mask...                  completed in 0.48361s
+  approximate size of source matrix:          4.2 MB (single precision)
+  calculating element 1 grid weights...       completed in 0.17236s
+  calculating element 1 distributed source... completed in 0.00267s
+  calculating element 2 grid weights...       completed in 0.16258s
+  calculating element 2 distributed source... completed in 0.002381s
+  calculating element 3 grid weights...       completed in 0.16758s
+  calculating element 3 distributed source... completed in 0.002387s
+  calculating element 4 grid weights...       completed in 0.16996s
+  calculating element 4 distributed source... completed in 0.002179s
+  total computation time 1.1735s
+.
+已完成 curing_field_test_bli_prepare
+__________

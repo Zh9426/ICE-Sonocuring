@@ -8,6 +8,10 @@ R2024a Update 9 本次重新导出 All64、Center48、Center32、Center16，两�
 
 已运行 `independent_simulation/curing_qp_rms_probe_20261110.m`：小域两个记录起点的 k-Wave 全域 `p_rms` 与时域平方积分、网格索引一致。正式 65/52 μm 物理网格的 16 步面积源、全域 RMS 资源探针约 44.22/87.54 秒；不足以确认 BLI 全算例的耗时或内存。修订后的声场辅助函数测试 21/21 通过。
 
+DeepSeek 的 `independent_simulation/+iceind/curing_bli_prepare.m` 首轮因滤波前沿起点断言错误导致 5/6 小测试失败；修复后 7/7 小测试和逐版读取四个实际 MAT 的 1/1 测试通过，Sol 已独立复核。完整阵列的正式域资源探针和传播结果以 `independent_simulation/results/curing_field_2026-11-10/` 中实际文件为准；不要把小域测试称为收敛。
+
+`curing_bli_resource_probe_20261110` 对 All64 和 Center16 的 65/52 μm 正式域 16 步检查均已完成，求解约 42–87 秒；不代表完整传播已完成。`curing_bli_compare_grids_20261110.m` 在合成场上验证了共同格点与分区 L2 计算，真实两档全场尚未产生。
+
 本机 MATLAB、k-Wave 和手册状态见[环境记录](independent_simulation/docs/curing_validation_environment_2026-11-10.md)：k-Wave 和厂商软件在本机忽略目录，换电脑须重新准备；指定手册目录不可用，随包手册部分为不同修订版。所有工作离线进行，未运行 VSX 或硬件。
 
 ## 2026-11-07 标准版公开参数与高输出研究

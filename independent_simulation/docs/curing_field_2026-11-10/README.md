@@ -27,15 +27,27 @@
 
 另对单个 0.11×2.02 mm 矩形源进行了 `kWaveArray` 带限插值（BLI）表示诊断，假定 c=1540 m/s、6 MHz，空间角 75°；阈值 0.05、上采样 10 时，两网格相对复谱误差分别约 0.00985、0.00596。更改阈值及上采样的其余结果见 `results/curing_field_2026-11-10/bli_probe/`。在 [15.6,10.4,31.2] mm 域、源面距近端 0.52 mm 的单阵元试验中，65/52 μm 与两种阈值的 BLI 非零支撑未触及域边界，见 `.../bli_boundary/actual_domain_boundary.csv`；这不证明全部阵元或全部传播量都准确。
 
+补充检查全 64 元阵列最外侧两元的代表位置 x=±4.095 mm：65/52 μm、BLI 阈值 0.05、上采样 10 的支撑未触及各物理域边界，见 `results/curing_field_2026-11-10/bli_edge_boundary/edge_boundary.csv`。这只检查两外侧元的源掩码，不替代对完整阵列源的逐元检查。
+
 单阵元传播探针 `curing_bli_propagation_probe_20261110.m` 使用与驱动波形不同的假设 6 MHz、20 周期正弦信号，在 [6.5,5.2,10.4] mm 域中实际计算五个共同物理点；65/52 μm 求解分别约 336.9/895.3 秒，原始时域 MAT、逐点数值和对比见 `results/curing_field_2026-11-10/bli_propagation_probe/`。细网格相对粗网格的最大绝对变化：峰值 4.716%，Qp 2.143%；末 20 个采样的最大尾值相对各点峰值最高为 0.500%。这是五点单阵元诊断，不是全场收敛或真实阵列，有限末尾检查也不保证后续不存在迟到波。当前全阵列 BLI 适配和结果稳定性尚未验证；`curing_field_run('run')`、`('all')` 及直接 `iceind.curing_field_run_case` 有意阻止完整运行。尚无四版 x-z / x-y 声场、三方向剖面和要求的焦斑、目标外、浅层及 Qp 指标表；不能用历史偶数 32 元结果代替。
 
 声场辅助函数在后续边界修订之前运行过 18/18 单元测试；随后根据 Sol 审查增加零场和空 ROI 的防护及完整运行阻断，最终版本重新运行 21/21 通过，保存于 `results/curing_field_2026-11-10/tests/test_results.csv`。
+
+新的完整求解执行脚本 `curing_bli_run_case_20261110.m` 使用已经测试的带限源和全域 RMS 口径，增加了传感掩码、元数据和临时文件保存检查；脚本自身的完整求解及原始文件回读尚未完成，不能据其存在称为声场结果。最终样本 `p_final` 仅供观察，不能单独证明时窗充足。
+
+DeepSeek 编写带限阵列源 `+iceind/curing_bli_prepare.m` 后，首轮小测试 1/6 通过：原断言错误地把带通波形的绝对起点等同于 TX 延时。实际零延时元的 1% 波形起点约 0.304 μs，已记录在 `results/curing_field_2026-11-10/bli_prepare_tests_initial_failure.md`。修订为比较同一无延时参考波形的相对起点，并把源矩阵预算检查移到分配前。修订后 7/7 小测试通过，另有 1/1 测试逐一加载四版实际 MAT 并核对带限源；原始测试结果和日志见 `results/curing_field_2026-11-10/bli_prepare_retest/`。Sol 独立审查未发现修订后的关键阻断；这些测试仍不能证明全阵列传播收敛。
 
 预计正式模型应让每个活动阵元采用相同假设源信号、实际选元及延时，统一介质和域，并检查时窗、源表示、各区网格敏感性以及 −6 dB 交点是否位于计算域内。当前草稿指标函数采用声压幅值阈值 `10^(-6/20)`，被边界截断时应报告无法完整测得。无真实俯仰透镜，阵元数和孔径同时改变；`Qp` 是假设压力平方积分，不是实测声能或热量。
 
 已依据本机 k-Wave 1.4.1 源码制定 Qp 候选方案：记录全物理域 `p_rms`，在记录起点为 1 时用 `double(p_rms).^2*Nt*dt` 计算离散 `dt*Σp²`，避免保存所有体素全部时刻。`curing_qp_rms_probe_20261110.m` 实际运行两次小域求解，记录起点 1/37、320/284 个样本；与全域时序平方和比较，分别全域相对 L2 误差 7.21e-7/6.41e-7，达到门槛的体素最大相对误差 3.30e-6/3.12e-6；最大/最小及两次时窗数据一致。单精度长零尾递推误差 6.34e-6。原始时序及表格见 `results/curing_field_2026-11-10/qp_rms_probe/`；这不证明正式长算例时窗或全域精度，全域 RMS 的 CPU 和内存成本还需用正式规模实测。
 
 补充全域记录资源检查：`curing_rms_resource_probe_20261110.m` 使用面积重叠源，全物理域记录 `p_max_all`、`p_min_all`、`p_rms`，每档仅运行 16 步。65 μm 的 240×160×480 域、外 PML 16 耗时约 44.22 秒；52 μm 的 300×200×600 域、外 PML 20 耗时约 87.54 秒。会话寿命峰值工作集分别约 5.05/7.91 GB，无法归属于单次求解，不作为方案峰值内存。按短试验分别外推约 4740/5925 步为 3.6/9.0 小时每工况，仅为粗略估计，包含短试验初始化的影响，不含 BLI、可能的更长时窗和输出；不是完整声场实测。原始记录见 `results/curing_field_2026-11-10/rms_resource_probe/` 与 `rms_resource_probe_dx52/`。
+
+又运行 `curing_bli_resource_probe_20261110('All64',65/52)`，实际 MAT 带限源、正式物理域、全域 RMS 及单一末时刻场记录：源准备约 36.85/18.32 秒，16 步 CPU 求解约 42.77/86.83 秒，源掩码 6435/9275 点；详见 `results/curing_field_2026-11-10/bli_resource_all64_dx65/` 与 `bli_resource_all64_dx52/`。这是短时资源与接口检查，不是完整传播。
+
+中央 16 元同样在 65/52 μm 正式域实际运行 16 步，源准备约 2.97/4.71 秒、求解约 42.22/84.65 秒，源掩码 2115/2915 点；数据位于 `.../bli_resource_center16_dx65/` 和 `.../bli_resource_center16_dx52/`。共同格点比较脚本 `curing_bli_compare_grids_20261110.m` 使用 260 μm 公共坐标，在浅层、焦前、目标盒、目标外、焦后及前向域分别比较峰值压力和 Qp 的相对 L2；已用合成场按 1.1 倍缩放的测试检验，均得到预期 0.1。该测试不代表实际阵列已收敛。
+
+共同格点间距 260 μm 接近 6 MHz 波长，可能漏掉格点之间的局部峰值；即使 L2 较小，也必须并列两档原生网格的各区峰值、位置和焦宽，不能单凭共同格点 L2 宣称全场收敛。
 
 ## 复现和协作
 
@@ -48,9 +60,16 @@ run_curing_independent_readback_20261110;
 curing_field_run_tests;
 curing_bli_probe_20261110;
 curing_bli_boundary_20261110;
+curing_bli_edge_boundary_20261110;
+% 实际 MAT 的带限源单测包含四个入口，可能需要较长时间：
+runtests(fullfile(pwd,'independent_simulation','tests','curing_field_2026-11-10','curing_field_test_bli_prepare.m'));
 curing_qp_rms_probe_20261110; % 拒绝覆盖已有输出目录
 curing_rms_resource_probe_20261110(65); % 16 步正式网格；拒绝覆盖
 curing_rms_resource_probe_20261110(52);
+curing_bli_resource_probe_20261110('All64',65); % 正式域16步，拒绝覆盖
+curing_bli_resource_probe_20261110('All64',52);
+curing_bli_resource_probe_20261110('Center16',65);
+curing_bli_resource_probe_20261110('Center16',52);
 curing_bli_propagation_compare_20261110;
 % 传播探针拒绝覆盖已有目录；确认输出目录不存在后才运行：
 curing_bli_propagation_probe_20261110;

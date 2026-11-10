@@ -1,0 +1,28 @@
+{
+  "purpose": "16-step CPU resource test; no propagation outcome or physical field",
+  "variant": "All64",
+  "dx_um": 65,
+  "grid": [
+    240,
+    160,
+    480
+  ],
+  "pml_cells": 16,
+  "dt_s": 8.441558441558441E-9,
+  "steps": 16,
+  "prepare_s": 36.8453943,
+  "runtime_s": 42.7672912,
+  "source_points": 6435,
+  "record": [
+    "p_max_all",
+    "p_min_all",
+    "p_rms",
+    "p_final"
+  ],
+  "baseline_working_set_bytes": 2.132221952E+9,
+  "end_working_set_bytes": 2.612928512E+9,
+  "lifetime_peak_working_set_bytes": 7.910146048E+9,
+  "memory_note": "lifetime peak cannot be attributed to this solve",
+  "matlab": "24.1.0.3303086 (R2024a) Update 9",
+  "generated_local": "20261110T212741"
+}
