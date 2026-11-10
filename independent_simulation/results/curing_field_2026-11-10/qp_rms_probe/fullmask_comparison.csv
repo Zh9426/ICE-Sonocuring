@@ -1,0 +1,3 @@
+record_start,recorded_samples,qp_relative_l2,qp_max_absolute_pa2_s,qp_max_relative_above_floor,pmax_max_absolute,pmin_max_absolute,window_trace_max_absolute,runtime_s
+1,320,7.20726801678524e-07,1.23633425977819e-12,3.29618653404346e-06,0,0,0,1.6729736
+37,284,6.40575718739875e-07,7.39643268194104e-13,3.1215395999452e-06,0,0,0,1.6527634

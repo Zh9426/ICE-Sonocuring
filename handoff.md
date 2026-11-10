@@ -4,7 +4,9 @@
 
 R2024a Update 9 本次重新导出 All64、Center48、Center32、Center16，两个 MAT 回读分别 461/461 和 204/204 检查通过；本次另运行 7/7 纯照射测试、40/40 相关回归。物理+x排名为 1–64、9–56、17–48、25–40，孔径为 8.30、6.22、4.14、2.06 mm。原 R2024a 导出因 `range` 未定义失败后，已以等价 `max-min` 修复并重跑。实际输入、结果及限制见[核验报告](independent_simulation/docs/curing_field_2026-11-10/README.md)；历史 66/66 不是本次结果。
 
-统一假设声场比较尚未完成：已实际检验两档网格的面积重叠源与单阵元 BLI 源表示，单阵元传播探针和全阵列源/Qp 适配仍需确认，不得将源谱当传播收敛；完整传播入口暂时阻断。下一步检查 `independent_simulation/results/curing_field_2026-11-10/bli_propagation_probe/` 是否生成两档时域记录、时窗尾迹和逐点指标，并完成全阵列验证后再比较 64/16，达标后扩展 48/32。无真实俯仰透镜；`Qp` 不是实测声能或热量。
+统一假设声场比较尚未完成：已实际检验两档网格的面积重叠源、单阵元 BLI 源表示及单阵元传播；五个共同点的最大峰值差 4.716%、Qp 差 2.143%，不能当作全阵列全域收敛。两档时域记录见 `independent_simulation/results/curing_field_2026-11-10/bli_propagation_probe/`。完整传播入口暂时阻断；下一步验证全阵列带限源，再比较 64/16，达标后扩展 48/32。无真实俯仰透镜；`Qp` 不是实测声能或热量。
+
+已运行 `independent_simulation/curing_qp_rms_probe_20261110.m`：小域两个记录起点的 k-Wave 全域 `p_rms` 与时域平方积分、网格索引一致。正式 65/52 μm 物理网格的 16 步面积源、全域 RMS 资源探针约 44.22/87.54 秒；不足以确认 BLI 全算例的耗时或内存。修订后的声场辅助函数测试 21/21 通过。
 
 本机 MATLAB、k-Wave 和手册状态见[环境记录](independent_simulation/docs/curing_validation_environment_2026-11-10.md)：k-Wave 和厂商软件在本机忽略目录，换电脑须重新准备；指定手册目录不可用，随包手册部分为不同修订版。所有工作离线进行，未运行 VSX 或硬件。
 

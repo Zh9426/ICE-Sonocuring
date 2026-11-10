@@ -1,0 +1,24 @@
+{
+  "purpose": "16-step CPU resource check only; area-overlap, not BLI or a field",
+  "grid": [
+    300,
+    200,
+    600
+  ],
+  "pml_cells": 20,
+  "dt_s": 6.7532467532467536E-9,
+  "steps": 16,
+  "record": [
+    "p_max_all",
+    "p_min_all",
+    "p_rms"
+  ],
+  "runtime_s": 87.543667,
+  "points_steps_per_s": 6.5795735972540425E+6,
+  "baseline_working_set_bytes": 2.388553728E+9,
+  "end_working_set_bytes": 2.857046016E+9,
+  "lifetime_peak_working_set_bytes": 7.910146048E+9,
+  "memory_note": "lifetime peak cannot be attributed to this solve",
+  "matlab": "24.1.0.3303086 (R2024a) Update 9",
+  "generated_local": "20261110T205923"
+}
