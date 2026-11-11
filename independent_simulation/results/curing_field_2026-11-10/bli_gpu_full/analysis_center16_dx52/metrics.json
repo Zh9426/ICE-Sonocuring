@@ -1,0 +1,160 @@
+{
+  "metrics": {
+    "forward_roi_z_min_m": 0.002,
+    "forward_peak_pa_assumed": 1.7485489845275879,
+    "forward_peak_error_to_target_m": 0.014903999999999999,
+    "forward_peak_on_boundary": false,
+    "six_db_threshold_pa": 0.87635040283203125,
+    "six_db_threshold_db": -6,
+    "six_db_definition": "pressure amplitude >= 10^(-6/20)*forward_peak (-6 dB); pressure-squared intensity ratio is also -6 dB",
+    "six_db_volume_m3": 1.2699292735999998E-8,
+    "six_db_fraction_of_forward_volume": 0.0027319116757410769,
+    "six_db_fraction_inside_target_box": 0,
+    "six_db_region_touches_forward_boundary": true,
+    "target_box_peak_pa_assumed": 0.84482789039611816,
+    "target_peak_is_zero": false,
+    "target_peak_xyz_m": [
+      0,
+      0,
+      0.016016
+    ],
+    "target_peak_error_to_target_m": 0.0039840000000000014,
+    "target_peak_on_box_boundary": true,
+    "target_peak_widths_m": [
+      0.0023834468196931571,
+      0.0024987351393361643,
+      null
+    ],
+    "target_peak_width_clipped": [
+      false,
+      false,
+      true
+    ],
+    "target_point_nearest_xyz_m": [
+      0,
+      0,
+      0.02002
+    ],
+    "target_point_peak_pa_assumed": 0.68242913484573364,
+    "target_point_over_target_peak": 0.80777297080682331,
+    "target_over_forward_peak": 0.48315940695500076,
+    "outside_target_box_peak_pa_assumed": 1.7485489845275879,
+    "outside_peak_is_zero": false,
+    "outside_target_peak_xyz_m": [
+      0,
+      0,
+      0.0050960000000000016
+    ],
+    "outside_over_target_peak": 2.069710297688844,
+    "target_plane_sampled_z_m": 0.02002,
+    "target_plane_peak_pa_assumed": 0.68242913484573364,
+    "target_plane_lateral_error_m": 0,
+    "target_plane_peak_over_forward_peak": 0.3902831095293039,
+    "shallow_0_2mm_peak_pa_assumed": 1.3665293455123901,
+    "shallow_0_2mm_over_forward_peak": 0.78152191194208409,
+    "shallow_2_5mm_peak_pa_assumed": 1.7474251985549927,
+    "shallow_2_5mm_over_forward_peak": 0.99935730369435494,
+    "beyond_target_box_peak_pa_assumed": 0.57295334339141846,
+    "beyond_target_over_forward_peak": 0.32767360163273634,
+    "lateral_outside_target_peak_pa_assumed": 0.32950177788734436,
+    "lateral_outside_over_forward_peak": 0.18844297803665311,
+    "axis_peak_pa_assumed": 1.7485489845275879,
+    "axis_peak_z_m": 0.0050960000000000016,
+    "width_definition": "contiguous -6 dB amplitude crossings through the forward peak; interpolated; NaN if unclosed",
+    "pressure_definition": "per-voxel max_t(abs(p)) from p_max_all/p_min_all; not a simultaneous snapshot",
+    "units": "pressure Pa under the assumed 1 Pa reference source; widths m; volumes m^3",
+    "provenance": "synthetic_assumed_lossless_flat_source_no_cure_no_safety_threshold",
+    "not_acoustic_energy": "Peak pressure and volumes above threshold are not deposited energy, dose, heating or cure.",
+    "forward_peak_xyz_m": [
+      0,
+      0,
+      0.0050960000000000016
+    ],
+    "six_db_widths_m": [
+      0.000951097981215017,
+      0.0017832421883147032,
+      0.012723941950927012
+    ],
+    "six_db_width_clipped": [
+      false,
+      false,
+      false
+    ],
+    "target_m": [
+      0,
+      0,
+      0.02
+    ],
+    "target_halfwidth_m": [
+      0.002,
+      0.002,
+      0.004
+    ],
+    "target_plane_peak_xy_m": [
+      0,
+      0
+    ]
+  },
+  "qp_at_target_peak_pa2_s": 1.1493251577121555E-6,
+  "qp_at_target_point_pa2_s": 7.5273004540576949E-7,
+  "target_peak_sample_xyz_m": [
+    0,
+    0,
+    0.016016
+  ],
+  "outside_all_z_ge_zero_peak_assumed_pa": 1.7485489845275879,
+  "outside_all_z_ge_zero_peak_xyz_m": [
+    0,
+    0,
+    0.0050960000000000016
+  ],
+  "qp_at_outside_peak_pa2_s": 4.928704584017396E-6,
+  "pressure_units": "assumed Pa",
+  "qp_units": "assumed Pa^2 s",
+  "input_mat": "F:\\project\\ICE\\independent_simulation\\results\\curing_field_2026-11-10\\bli_gpu_full\\center16_dx52_field.mat",
+  "dt_s": 6.7532467532467536E-9,
+  "Nt": 5925,
+  "elapsed_s": 464.0188624,
+  "final_over_global_peak": 6.24508948E-6,
+  "case": {
+    "tag": "center16_dx52um",
+    "variant": "Center16",
+    "entry": "SetUpICE_Curing_Center16",
+    "ranks": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "num_active": 16,
+    "dx_m": 5.2E-5,
+    "domain_m": [
+      0.0156,
+      0.010400000000000001,
+      0.0312
+    ],
+    "pml_m": 0.00104,
+    "cfl": 0.2,
+    "density_kg_m3": 1000,
+    "sound_speed_m_s": 1540,
+    "source_offset_m": 0.00052,
+    "source_amplitude_pa": 1,
+    "minimum_end_time_s": 4E-5,
+    "output_dir": "F:\\project\\ICE\\independent_simulation\\results\\curing_field_2026-11-10",
+    "provenance": "assumed_homogeneous_lossless_linear_flat_rectangles; equal_assumed_source_per_element_not_energy_calibrated"
+  },
+  "target_width_definition": "Amplitude -6 dB crossings on each full native-grid axis through target-box peak; NaN if clipped.",
+  "notes": "Uncalibrated equal per-element source; Qp is pressure squared integral, not measured energy or heat. Outside-target peak is reported for z>=0 and separately for z>=2 mm. A target-box peak on its ROI boundary is not established as a distinct focus."
+}

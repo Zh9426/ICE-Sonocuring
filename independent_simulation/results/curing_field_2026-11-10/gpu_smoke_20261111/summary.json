@@ -1,0 +1,15 @@
+{
+  "purpose": "small point-source CPU/GPU smoke only; not calibrated",
+  "grid": [
+    32,
+    32,
+    32
+  ],
+  "nt": 386,
+  "dt_s": 1.2987012987012988E-8,
+  "cpu_s": 2.6510594,
+  "gpu_s": 13.7984434,
+  "trace_relative_l2": 3.569256218023847E-6,
+  "qp_relative_l2": 7.4475975311600927E-7,
+  "peak_relative_error": 5.2550187005095474E-7
+}

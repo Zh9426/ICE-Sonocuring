@@ -1,0 +1,4 @@
+file,sha256,note
+all64_dx52_field.mat,4395419a5d1f7ffa6467a47caa7994e2e71383990f28077f70201e8b354a257b,raw peak pressure Qp and final field
+all64_dx52_gpu_io/field_input.h5,08049bd2a00caee7650d465e9634e52dea8c8c90f35554be45d08430b8351ce4,CUDA input
+all64_dx52_gpu_io/field_output.h5,27260f839464ff668bc1d40cd9f3092586f2b7f8dea4cfee624ad6adbe17a804,CUDA output

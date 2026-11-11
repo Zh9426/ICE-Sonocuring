@@ -1,5 +1,11 @@
 # ICE 双功能探头：驱动核验与实验准备交接
 
+## 2026-11-11 GPU 部署与首批两版三维传播
+
+按用户要求继续解决环境问题：在本机项目依赖目录部署社区 kspacefirstorder-unified v1.4.2 Windows CUDA 二进制及运行库，并核对发布 SHA-256；MATLAB 仍为 R2024a Update 9，未安装 Parallel Computing Toolbox，但 `kspaceFirstOrder3DG` 可调用独立 GPU 求解器。RTX 5060 Ti 已实际完成小网格、单元 BLI 的 CPU/GPU 时序与 Qp 对照；具体版本、命令及数值见 [GPU 环境和验证](independent_simulation/docs/gpu_deployment_2026-11-11.md)。二进制依赖在 Git 忽略目录，跨电脑需按脚本重装。
+
+All64、Center16 已各完成 65/52 μm 全域 GPU 传播，并生成原始场、统一色标切片、剖面和指标，位于 `independent_simulation/results/curing_field_2026-11-10/bli_gpu_full/`；原始大型 MAT 和 CUDA HDF5 使用 Git LFS。All64 目标区两档相近，但 z=0 源面 Qp 原生峰相差8.97%；Center16 源面相差6.10%，虽然其 0–2 mm 总层峰变化较小。源支撑实际只在z=0，源面不可忽略，分层与模型限制见 `bli_gpu_full/shallow_audit_20261111/`。Center16 目标盒内峰位于盒浅边界，其轴向−6 dB宽度无法完整测得；不能称其目标处已实现独立焦点。缩短轴向域的同网格对照及第三档加密诊断仍需实际结果后判断，不能因共同格点L2小而宣布所有区域收敛。
+
 ## 2026-11-10 纯照射四版离线核验和声场方法检查
 
 R2024a Update 9 本次重新导出 All64、Center48、Center32、Center16，两个 MAT 回读分别 461/461 和 204/204 检查通过；本次另运行 7/7 纯照射测试、40/40 相关回归。物理+x排名为 1–64、9–56、17–48、25–40，孔径为 8.30、6.22、4.14、2.06 mm。原 R2024a 导出因 `range` 未定义失败后，已以等价 `max-min` 修复并重跑。实际输入、结果及限制见[核验报告](independent_simulation/docs/curing_field_2026-11-10/README.md)；历史 66/66 不是本次结果。

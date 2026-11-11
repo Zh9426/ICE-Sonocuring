@@ -1,0 +1,19 @@
+{
+  "purpose": "16-step GPU resource test; not a propagated field result",
+  "variant": "All64",
+  "dx_um": 65,
+  "grid": [
+    240,
+    160,
+    480
+  ],
+  "steps": 16,
+  "dt_s": 8.441558441558441E-9,
+  "prepare_s": 5.2067574,
+  "elapsed_s": 3.6411669,
+  "source_points": 6435,
+  "p_source_mode": 2,
+  "matlab": "24.1.0.3303086 (R2024a) Update 9",
+  "solver_release": "community kspacefirstorder-unified v1.4.2; binary reports CUDA v1.3 build 3.6",
+  "note": "Inspect executable log for GPU device memory; no full-solve resource guarantee."
+}

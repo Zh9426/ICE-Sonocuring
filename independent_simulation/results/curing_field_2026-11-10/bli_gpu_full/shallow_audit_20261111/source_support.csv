@@ -1,0 +1,5 @@
+case_name,source_z_min_mm,source_z_max_mm,source_plane_count,source_points
+all64_dx65,0,0,1,6435
+all64_dx52,1.73472347597681e-15,1.73472347597681e-15,1,9275
+center16_dx65,0,0,1,2115
+center16_dx52,1.73472347597681e-15,1.73472347597681e-15,1,2915

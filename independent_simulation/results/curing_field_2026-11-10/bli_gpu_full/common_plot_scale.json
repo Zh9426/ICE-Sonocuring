@@ -1,0 +1,5 @@
+{
+  "pressure_limits_assumed_pa": [0, 3],
+  "definition": "Shared color limits for all four native-grid pressure slices. Values above 3 assumed Pa saturate. This is an uncalibrated model reference, not measured pressure.",
+  "selection": "All four z>=2 mm native forward peaks were below 3 assumed Pa; source-plane values can exceed this scale."
+}
