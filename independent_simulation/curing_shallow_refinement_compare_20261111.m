@@ -1,15 +1,28 @@
-function result=curing_shallow_refinement_compare_20261111(variant)
-%CURING_SHALLOW_REFINEMENT_COMPARE_20261111 52 vs 43.333 um shallow diagnostic.
+function result=curing_shallow_refinement_compare_20261111(variant,fineGrid)
+%CURING_SHALLOW_REFINEMENT_COMPARE_20261111 Adjacent shallow-grid diagnostic.
 % This does not establish full-domain convergence; retain 52um domain check.
 root=fileparts(mfilename('fullpath')); base=fullfile(root,'results','curing_field_2026-11-10','bli_gpu_shallow');
-prefix=lower(variant); f=load(fullfile(base,[prefix '_dx52_field.mat']), ...
+if nargin<2, fineGrid='dx43p333'; end
+if strcmp(fineGrid,'dx43p333')
+    coarseGrid='dx52'; coarseStep=5; fineStep=6;
+    suffix='_shallow_refinement_comparison.csv';
+elseif strcmp(fineGrid,'dx32p5')
+    coarseGrid='dx43p333'; coarseStep=3; fineStep=4;
+    suffix='_shallow_dx43p333_dx32p5_comparison.csv';
+elseif strcmp(fineGrid,'dx26')
+    coarseGrid='dx32p5_narrow'; fineGrid='dx26_narrow'; coarseStep=4; fineStep=5;
+    suffix='_shallow_narrow_dx32p5_dx26_comparison.csv';
+else
+    error('iceind:Shallow','Unsupported fine grid.');
+end
+prefix=lower(variant); f=load(fullfile(base,[prefix '_' coarseGrid '_field.mat']), ...
     'p_amp','qp','x_m','y_m','z_m','dt_s','Nt');
-s=load(fullfile(base,[prefix '_dx43p333_field.mat']), ...
+s=load(fullfile(base,[prefix '_' fineGrid '_field.mat']), ...
     'p_amp','qp','x_m','y_m','z_m','dt_s','Nt');
-out=fullfile(base,[prefix '_shallow_refinement_comparison.csv']);
+out=fullfile(base,[prefix suffix]);
 assert(~isfile(out),'iceind:NoOverwrite','Comparison already exists.');
-ix=1:5:numel(f.x_m); iy=1:5:numel(f.y_m); iz=1:5:numel(f.z_m);
-jx=1:6:numel(s.x_m); jy=1:6:numel(s.y_m); jz=1:6:numel(s.z_m);
+ix=1:coarseStep:numel(f.x_m); iy=1:coarseStep:numel(f.y_m); iz=1:coarseStep:numel(f.z_m);
+jx=1:fineStep:numel(s.x_m); jy=1:fineStep:numel(s.y_m); jz=1:fineStep:numel(s.z_m);
 assert(max(abs(f.x_m(ix)-s.x_m(jx)))<1e-12 && ...
     max(abs(f.y_m(iy)-s.y_m(jy)))<1e-12 && ...
     max(abs(f.z_m(iz)-s.z_m(jz)))<1e-12 && ...
@@ -38,7 +51,8 @@ end
 result=table(labels,commonCount,pressureL2,qpL2,pmax52,pmax43, ...
     100*(pmax43./pmax52-1),qmax52,qmax43,100*(qmax43./qmax52-1), ...
     'VariableNames',{'region','common_points','pressure_common_l2','qp_common_l2', ...
-    'pmax_52','pmax_43p333','pmax_change_percent','qpmax_52','qpmax_43p333','qpmax_change_percent'});
+    ['pmax_' coarseGrid(3:end)],['pmax_' fineGrid(3:end)],'pmax_change_percent', ...
+    ['qpmax_' coarseGrid(3:end)],['qpmax_' fineGrid(3:end)],'qpmax_change_percent'});
 writetable(result,out); disp(result);
 end
 function masks=layer_masks(z)

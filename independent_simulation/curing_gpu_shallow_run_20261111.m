@@ -1,22 +1,32 @@
-function rawPath=curing_gpu_shallow_run_20261111(variant,gridLabel)
+function rawPath=curing_gpu_shallow_run_20261111(variant,gridLabel,domainLabel)
 %CURING_GPU_SHALLOW_RUN_20261111 Reduced-z diagnostic, not full-field comparison.
 % Check the 52 um reduced domain against the full domain before using 43.333 um.
 root=fileparts(mfilename('fullpath')); old=path; cleanup=onCleanup(@()path(old));
 addpath(root,fullfile(root,'dependencies','k-wave-1.4.1','k-Wave'));
 bin=fullfile(root,'dependencies','kwave-cuda-unified-v1.4.2'); binary='kspaceFirstOrder-CUDA-windows.exe';
+if nargin<3, domainLabel='wide'; end
 assert(ismember(string(variant),["All64","Center16"]) && ...
-    ismember(string(gridLabel),["dx52","dx43p333","dx32p5"]),'iceind:Shallow','Unsupported case.');
+    ismember(string(gridLabel),["dx52","dx43p333","dx32p5","dx26"]) && ...
+    ismember(string(domainLabel),["wide","narrow"]),'iceind:Shallow','Unsupported case.');
+assert(~strcmp(gridLabel,'dx26') || strcmp(domainLabel,'narrow'), ...
+    'iceind:Shallow','The 26 um diagnostic is limited to the validated narrow domain.');
 cases=iceind.curing_field_cases(); i=find(strcmp({cases.variant},variant) & ...
     abs([cases.dx_m]-52e-6)<1e-12,1); c=cases(i);
 if strcmp(gridLabel,'dx43p333'), c.dx_m=130e-6/3; end
 if strcmp(gridLabel,'dx32p5'), c.dx_m=32.5e-6; end
+if strcmp(gridLabel,'dx26'), c.dx_m=26e-6; end
 c.domain_m=[15.6 10.4 5.2]*1e-3; c.tag=[lower(variant) '_' gridLabel '_shallow'];
+if strcmp(domainLabel,'narrow')
+    c.domain_m=[10.4 5.2 5.2]*1e-3; c.tag=[c.tag '_narrow'];
+end
 drivers=struct('All64','ICE_CuringOnly_ExposureFFFFFFFFFFFFFFFF_exposure_only.mat', ...
     'Center16','ICE_CuringOnly_Exposure000000FFFF000000_exposure_only.mat');
 driver=fullfile(root,'results','curing_export_2026-11-10',drivers.(variant));
 out=fullfile(root,'results','curing_field_2026-11-10','bli_gpu_shallow');
 if ~isfolder(out), mkdir(out); end
-tag=[lower(variant) '_' gridLabel]; rawPath=fullfile(out,[tag '_field.mat']);
+tag=[lower(variant) '_' gridLabel];
+if strcmp(domainLabel,'narrow'), tag=[tag '_narrow']; end
+rawPath=fullfile(out,[tag '_field.mat']);
 partial=fullfile(out,[tag '_field.partial.mat']); io=fullfile(out,[tag '_gpu_io']);
 assert(~isfile(rawPath) && ~isfile(partial) && ~isfolder(io),'iceind:NoOverwrite', ...
     'Existing final, partial, or GPU I/O; inspect before rerun.'); mkdir(io);

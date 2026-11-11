@@ -4,7 +4,11 @@
 
 按用户要求继续解决环境问题：在本机项目依赖目录部署社区 kspacefirstorder-unified v1.4.2 Windows CUDA 二进制及运行库，并核对发布 SHA-256；MATLAB 仍为 R2024a Update 9，未安装 Parallel Computing Toolbox，但 `kspaceFirstOrder3DG` 可调用独立 GPU 求解器。RTX 5060 Ti 已实际完成小网格、单元 BLI 的 CPU/GPU 时序与 Qp 对照；具体版本、命令及数值见 [GPU 环境和验证](independent_simulation/docs/gpu_deployment_2026-11-11.md)。二进制依赖在 Git 忽略目录，跨电脑需按脚本重装。
 
-All64、Center16 已各完成 65/52 μm 全域 GPU 传播，并生成原始场、统一色标切片、剖面和指标，位于 `independent_simulation/results/curing_field_2026-11-10/bli_gpu_full/`；原始大型 MAT 和 CUDA HDF5 使用 Git LFS。All64 目标区两档相近，但 z=0 源面 Qp 原生峰相差8.97%；Center16 源面相差6.10%，虽然其 0–2 mm 总层峰变化较小。源支撑实际只在z=0，源面不可忽略，分层与模型限制见 `bli_gpu_full/shallow_audit_20261111/`。Center16 目标盒内峰位于盒浅边界，其轴向−6 dB宽度无法完整测得；不能称其目标处已实现独立焦点。缩短轴向域的同网格对照及第三档加密诊断仍需实际结果后判断，不能因共同格点L2小而宣布所有区域收敛。
+All64、Center16 已各完成 65/52 μm 全域 GPU 传播，并生成原始场、统一色标切片、剖面和指标，位于 `independent_simulation/results/curing_field_2026-11-10/bli_gpu_full/`；原始大型 MAT 和 CUDA HDF5 使用 Git LFS。All64 目标区两档相近，但 z=0 源面 Qp 原生峰相差8.97%；Center16 源面相差6.10%，虽然其 0–2 mm 总层峰变化较小。源支撑实际只在z=0，源面不可忽略，分层与模型限制见 `bli_gpu_full/shallow_audit_20261111/`。Center16 目标盒内峰位于盒浅边界，其轴向−6 dB宽度无法完整测得；不能称其目标处已实现独立焦点。不能因共同格点L2小而宣布所有区域收敛。
+
+补充：两版52 μm短域与完整域浅层已验证一致；短域第三档43.333 μm已完成，All64 52→43.333 μm源面Qp峰变化−9.79%；其43.333→32.5 μm仍变化+5.49%，紧邻源面的子区变化+7.02%。Center16 52→43.333 μm源面变化+0.98%、邻近子区+7.21%，43.333→32.5 μm分别变化+1.53%/+4.41%。All64 32.5 μm缩窄横向域与原宽域在浅层Qp分区的L2差均低于0.001%，26 μm窄域结果仍以实际输出和复核为准。不得把短域当作20 mm目标区完整计算。
+
+另一台电脑需安装并启用 Git LFS，拉取后核对大文件已下载而非只有指针；可执行 `git lfs pull`。独立 CUDA 文件和 k-Wave MATLAB 依赖目录均受忽略规则保护，不会随 Git 自动同步，部署方式见 GPU 环境报告。
 
 ## 2026-11-10 纯照射四版离线核验和声场方法检查
 
