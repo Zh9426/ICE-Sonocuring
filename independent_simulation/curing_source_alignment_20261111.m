@@ -1,6 +1,7 @@
-function result=curing_source_alignment_20261111()
+function result=curing_source_alignment_20261111(include26)
 %CURING_SOURCE_ALIGNMENT_20261111 Native source-plane peak/grid alignment.
 % Model geometry is existing-code-unverified; this is not a measured hotspot.
+if nargin<1, include26=false; end
 root=fileparts(mfilename('fullpath')); addpath(root);
 base=fullfile(root,'results','curing_field_2026-11-10');
 rows=struct('variant',{},'grid',{},'dx_um',{},'qp_peak_pa2_s',{}, ...
@@ -11,9 +12,13 @@ drivers=struct('All64','ICE_CuringOnly_ExposureFFFFFFFFFFFFFFFF_exposure_only.ma
 for variant={'All64','Center16'}
     d=load(fullfile(base,'..','curing_export_2026-11-10',drivers.(variant{1})));
     compiled=iceind.compile_kwave(d); active=find(compiled.tx(1).apod~=0);
-    for grid={'dx65','dx52','dx43p333','dx32p5'}
+    grids={'dx65','dx52','dx43p333','dx32p5'};
+    if include26, grids{end+1}='dx26'; end
+    for grid=grids
         if ismember(grid{1},{'dx65','dx52'})
             path=fullfile(base,'bli_gpu_full',[lower(variant{1}) '_' grid{1} '_field.mat']);
+        elseif strcmp(grid{1},'dx26')
+            path=fullfile(base,'bli_gpu_shallow',[lower(variant{1}) '_dx26_narrow_field.mat']);
         else
             path=fullfile(base,'bli_gpu_shallow',[lower(variant{1}) '_' grid{1} '_field.mat']);
         end
@@ -31,7 +36,9 @@ for variant={'All64','Center16'}
             'element_height_um',compiled.geometry.height_m*1e6); %#ok<AGROW>
     end
 end
-result=struct2table(rows); dest=fullfile(base,'bli_gpu_shallow','source_plane_alignment.csv');
+result=struct2table(rows);
+if include26, name='source_plane_alignment_5grid.csv'; else, name='source_plane_alignment.csv'; end
+dest=fullfile(base,'bli_gpu_shallow',name);
 assert(~isfile(dest),'iceind:NoOverwrite','Alignment table exists.');
 writetable(result,dest); disp(result);
 end

@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "case_tag": "curing_gpu_validation_20261111",
+  "model_status": "synthetic_assumed",
+  "n": [
+    30,
+    24,
+    20
+  ],
+  "dx_m": 0.00015,
+  "domain_m": [
+    0.0045,
+    0.0036,
+    0.0029999999999999996
+  ],
+  "pml_cells": 8,
+  "cfl": 0.2,
+  "dt_s": 1.9480519480519478E-8,
+  "medium": {
+    "sound_speed": 1540,
+    "density": 1000
+  },
+  "source_mode": "additive",
+  "source_mode_definition": "additive mass source; the same mode as iceind.curing_bli_prepare, not converted to Dirichlet",
+  "source_model": "band_limited_finite_rectangles_additive_no_lens",
+  "num_elements": 3,
+  "element_positions_m": [
+    [
+      -0.0005,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0.0005,
+      0,
+      0
+    ]
+  ],
+  "element_width_m": 0.00034,
+  "element_height_m": 0.0006,
+  "delay_samples": [
+    0,
+    16,
+    32
+  ],
+  "delays_s": [
+    0,
+    3.1168831168831165E-7,
+    6.2337662337662329E-7
+  ],
+  "source_mask_nonzero_points": 437,
+  "waveform": {
+    "f0_hz": 1.0E+6,
+    "cycles": 3,
+    "amplitude_pa": 1,
+    "amplitude_definition": "assumed equal reference pressure per element; not voltage calibrated",
+    "burst_samples": 154,
+    "signal_samples": 186,
+    "dt_s": 1.9480519480519478E-8,
+    "shape": "Hann-windowed sine burst, whole-sample delays"
+  },
+  "signal_samples": 186,
+  "signal_peak_pa": [
+    0.94035697,
+    0.94035697,
+    0.94035697
+  ],
+  "signal_onset_s": [
+    1.1688311688311687E-7,
+    4.2857142857142851E-7,
+    7.4025974025974011E-7
+  ],
+  "relative_onset_s": [
+    0,
+    3.1168831168831165E-7,
+    6.2337662337662329E-7
+  ],
+  "expected_relative_delay_s": [
+    0,
+    3.1168831168831165E-7,
+    6.2337662337662329E-7
+  ],
+  "onset_max_error_s": 0,
+  "bli": {
+    "type": "sinc",
+    "tolerance": 0.05,
+    "upsampling_rate": 10,
+    "single_precision": true,
+    "support_radius_cells": 7,
+    "support_radius_m": 0.00105,
+    "mask_nonzero_points": 437,
+    "expected_weight_sum_area_over_dx2": 9.0666666666666682,
+    "per_element_weight_sum_error": [
+      0.0024393306058994161,
+      0.0022345360587623241,
+      0.0024395409752339175
+    ],
+    "max_weight_sum_error": 0.0024395409752339175
+  },
+  "support": {
+    "nonzero_points": 437,
+    "bounding_box_indices": [
+      [
+        5,
+        27
+      ],
+      [
+        4,
+        22
+      ],
+      [
+        11,
+        11
+      ]
+    ],
+    "bounding_box_m": [
+      [
+        -0.0016499999999999998,
+        0.0016499999999999998
+      ],
+      [
+        -0.00135,
+        0.00135
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "margin_cells": {
+      "x_lo": 4,
+      "x_hi": 3,
+      "y_lo": 3,
+      "y_hi": 2,
+      "z_lo": 10,
+      "z_hi": 9
+    },
+    "margin_m": {
+      "x_lo": 0.0006,
+      "x_hi": 0.00045,
+      "y_lo": 0.00045,
+      "y_hi": 0.0003,
+      "z_lo": 0.0014999999999999998,
+      "z_hi": 0.0013499999999999999
+    },
+    "min_margin_cells": 2,
+    "min_margin_m": 0.0003,
+    "nonzero_on_face": {
+      "x_lo": false,
+      "x_hi": false,
+      "y_lo": false,
+      "y_hi": false,
+      "z_lo": false,
+      "z_hi": false
+    },
+    "touching_faces": "",
+    "touches_boundary": false
+  },
+  "hdf5_source_check": {
+    "pml_cells": 8,
+    "expanded_size": [
+      46,
+      40,
+      36
+    ],
+    "source_scale_factor": 5.6220835441614657E-8,
+    "index_definition": "PMLInside=false: sub2ind(size(mask)+2*PMLSize, ix+PMLSize, iy+PMLSize, iz+PMLSize) in original find(mask) order",
+    "scale_definition": "additive p_source_input uses 2*dt/(kgrid.dim*c0*dx) from kspaceFirstOrder_scaleSourceTerms on a uniform isotropic grid"
+  },
+  "grid_limits_m": {
+    "x_m": [
+      -0.00225,
+      0.0021
+    ],
+    "y_m": [
+      -0.0018000000000000002,
+      0.00165
+    ],
+    "z_m": [
+      -0.0014999999999999998,
+      0.0013499999999999999
+    ]
+  },
+  "support_margin_m": {
+    "x_lo": 0.00052999999999999987,
+    "x_hi": 0.00037999999999999991,
+    "y_lo": 0.00045000000000000031,
+    "y_hi": 0.00030000000000000014,
+    "z_lo": 0.00044999999999999988,
+    "z_hi": 0.00029999999999999992
+  },
+  "geometry_margin_m": {
+    "x_lo": 0.0015799999999999998,
+    "x_hi": 0.0014299999999999998,
+    "y_lo": 0.0015000000000000002,
+    "y_hi": 0.00135,
+    "z_lo": 0.0014999999999999998,
+    "z_hi": 0.0013499999999999999
+  },
+  "time_window": {
+    "source_tail_end_s": 3.6038961038961035E-6,
+    "one_way_bound_s": 3.6839362651655621E-6,
+    "one_way_bound_definition": "maximum distance from the BLI source support (element half-size plus truncated-BLI support radius) to a physical-domain corner",
+    "margin_s": 1E-6,
+    "required_end_s": 8.2878323690616654E-6,
+    "t_end_s": 8.2987012987012968E-6,
+    "Nt": 427,
+    "dt_s": 1.9480519480519478E-8
+  },
+  "distributed_source": {
+    "rows": 437,
+    "columns": 186,
+    "class": "single",
+    "mask_rows_match": true,
+    "max_direct_sum_relative_error": 0,
+    "direct_check_columns": [
+      2,
+      66,
+      186
+    ],
+    "direct_check_definition": "weighted delayed sum of all elements at the first, peak and last signal samples"
+  },
+  "record_fields_requested": [
+    "p"
+  ],
+  "record_fields_not_requested": [
+    "p_rms",
+    "p_max_all",
+    "p_min_all",
+    "p_final",
+    "u"
+  ],
+  "record_field_policy": "Only raw p is requested from CPU and GPU. Peaks and Qp are computed from the complete p(t) series on both sides. If /p is missing from the GPU output, the run fails; no CPU result and no alternative GPU accumulator field is substituted.",
+  "start_indices": [
+    1,
+    37
+  ],
+  "sensor_mask_definition": "sensor.mask is all true on the n-cell physical grid; PMLInside=false and PMLSize=pml keep the absorbing layer outside it",
+  "assumptions": [
+    "Homogeneous lossless fluid; no absorption, nonlinearity, lens, backing, coupling layer, container or SonoInk reaction.",
+    "Flat rectangular pressure sources with an assumed 1 Pa reference per element; not voltage calibrated.",
+    "Three elements with distinct whole-sample delays; the additive source signal is the BLI weighted delayed sum.",
+    "Pressure peaks and Qp are numerical proxies, not acoustic power, energy, heating, dose or cure."
+  ]
+}

@@ -1,0 +1,3 @@
+solver,full_start_index,window_start_index,full_samples,window_samples,max_abs_pa,max_abs_over_peak,tolerance_rel,status
+cpu,1,37,427,391,0,0,1e-06,PASS
+gpu,1,37,427,391,0,0,1e-06,PASS

@@ -37,6 +37,10 @@ Center16 的 43.333→32.5 μm 短域对照，源面 Qp 原生峰变化 +1.53%�
 
 为适配8 GB显卡，对 All64 32.5 μm 比较了宽浅域 `[15.6,10.4,5.2] mm` 与窄浅域 `[10.4,5.2,5.2] mm` 的重叠部分：各浅层分区Qp相对L2均低于0.001%，源面峰差约−0.00047%；原始记录见 `bli_gpu_shallow/all64_dx32p5_lateral_domain_comparison.csv`。这一验证支持在该窄域评估26 μm浅层，但不保证窄域可用于目标深度或其他阵元配置。
 
+All64 窄浅域 26 μm 已完成，仍为 40 μs 单发传播。32.5→26 μm 源面 Qp 原生峰由 2.8817e-6 增至 3.0367e-6 assumed Pa²·s（+5.3768%）；0<z<0.26 mm 分区原生峰 +7.3655%，均超过预设的5%内部诊断阈值。源面共同 130 μm 采样点的 Qp 相对 L2 为 2.5446%，共同点最大值 +0.61779%；具体最大值位置与两档原生峰位置分别记录于 `bli_gpu_shallow/all64_source_peak_diagnostic_20261111.csv`。两档源面 Qp 经样条插值到 6.5 μm 网格后峰值差 +3.3054%，见 `bli_gpu_shallow/all64_source_interpolation_diagnostic_20261111.csv`；插值引入额外假设，不能替代原生网格峰值或单独证明数值收敛。多档峰位置变化支持进一步研究采样和源表示，尚不能认定唯一原因。原始数据、对照表和生成脚本在同目录及 `independent_simulation/curing_source_*_20261111.m`。中断的一次26 μm运行仅保存了不完整输出，留在本机标有 interrupted 的目录，不作为结果。
+
+另运行 DeepSeek 编写的 `curing_gpu_validation_20261111.m`（三阵元、1 MHz 合成模型，并非实际探头或正式声场），其 8/8 MATLAB 单元测试通过，拒绝错误路径的测试发出 MATLAB 路径转义警告。Terra 运行实际 CPU/GPU 对照，记录起点1和37分别完成：时间序列相对 L2 均约 1.12e-6，Qp 相对 L2 均约 3.93e-7；两个记录窗口一致性通过。该次执行约10.4 s，输出 `results/curing_gpu_validation_20261111/run_20261111_220328/`。它只验证所列合成工况的实现与记录，不取代实际阵列模型的网格敏感性检查。
+
 首批两版四个工况使用统一 `[0,3]` assumed Pa 色标；`bli_gpu_full/combined_metrics.csv`、`combined_axial_regions.csv` 分别汇总目标区指标和各深度层压力/Qp独立峰值。Center16 的目标盒峰位于盒边界，因此另输出通过全前向峰的 x-y 图；轴向 −6 dB 交点超出计算域时记录 NaN 和 clipped，而不是填入域宽。
 
 ## 协作记录
