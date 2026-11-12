@@ -19,6 +19,20 @@ verifyEqual(t,[c.dx_m],[65e-6 65e-6 52e-6 52e-6],'AbsTol',1e-18);
 verifyEqual(t,{c.tag},{'all64_dx65um','center16_dx65um','all64_dx52um','center16_dx52um'});
 verifyEqual(t,[c.num_active],[64 16 64 16]);
 end
+function testExpandedCasesPreserveEqualPhysicalAssumptions(t)
+c=iceind.curing_field_cases(true);
+verifyEqual(t,numel(c),8);
+verifyEqual(t,{c.variant},{'All64','Center48','Center32','Center16', ...
+    'All64','Center48','Center32','Center16'});
+verifyEqual(t,[c.num_active],[64 48 32 16 64 48 32 16]);
+verifyEqual(t,c(2).ranks,9:56); verifyEqual(t,c(3).ranks,17:48);
+base=c(1);
+for k=1:numel(c)
+    verifyEqual(t,c(k).domain_m,base.domain_m); verifyEqual(t,c(k).pml_m,base.pml_m);
+    verifyEqual(t,c(k).source_amplitude_pa,base.source_amplitude_pa);
+    verifyEqual(t,c(k).minimum_end_time_s,base.minimum_end_time_s);
+end
+end
 function testGridsAndCommonDomain(t)
 c=iceind.curing_field_cases();
 expected=[240 160 480;300 200 600];

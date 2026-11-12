@@ -1,5 +1,5 @@
-function cases=curing_field_cases()
-%CURING_FIELD_CASES Four propagation cases: All64/Center16 x 65/52 um grids.
+function cases=curing_field_cases(includeAll)
+%CURING_FIELD_CASES Default two variants; includeAll=true selects all four.
 % One physical domain and the same PML thickness (1.04 mm) are kept so that
 % the only grid change is dx. Each active element receives the SAME assumed
 % source signal (1 Pa reference); there is no cross-grid or cross-aperture
@@ -7,7 +7,8 @@ function cases=curing_field_cases()
 root=fileparts(fileparts(mfilename('fullpath')));
 out=fullfile(root,'results','curing_field_2026-11-10');
 variants=iceind.curing_field_variants();
-keep=[1 4]; % user asked to test All64 and Center16 first
+if nargin<1, includeAll=false; end
+if includeAll, keep=1:4; else, keep=[1 4]; end
 grids=[65e-6 52e-6];
 cases=struct('tag',{},'variant',{},'entry',{},'ranks',{},'num_active',{}, ...
     'dx_m',{},'domain_m',{},'pml_m',{},'cfl',{},'density_kg_m3',{}, ...
