@@ -1,5 +1,10 @@
 # 更新与升级公告
 
+## 2026-11-13 — 文献图表对照及源谱指标口径更正
+
+- 新增 `independent_simulation/docs/curing_literature_comparison_2026-11-13.md`，按焦点、孔径、近场和源表示逐项对照已有项目结果与文献图表，保留模型和数据适用边界。本次没有重新运行仿真。
+- 更正 `independent_simulation/docs/curing_field_2026-11-10/README.md`：单阵元75° BLI诊断为谱幅值相对差而非复谱误差；原始数值不变，不改变声场结果。
+
 ## 2026-11-13 — 更正目标距离并整理一维线阵文献
 
 **更正及文献。** 用户澄清此前“2 mm”为口误，关注设定20 mm与实际焦点距离的关系；整理结构相近的一维线阵水听器和声全息研究，见 [线阵文献对照](independent_simulation/docs/linear_array_nearfield_literature_2026-11-13.md)。区分目标盒内峰与全前向峰、近场测量与源面重建、半功率与压力−6 dB宽度。仿真继续暂停；未运行硬件或新增传播。
