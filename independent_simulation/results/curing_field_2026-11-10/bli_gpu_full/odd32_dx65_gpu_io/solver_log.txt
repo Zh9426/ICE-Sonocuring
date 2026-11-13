@@ -1,0 +1,119 @@
+Running k-Wave simulation...
+  start time: 2026-11-12 12:44:46
+  reference sound speed: 1540m/s
+  dt: 8.4416ns, t_end: 40.0045us, time steps: 4740
+  input grid size: 240 by 160 by 480 grid points (15.6 by 10.4 by 31.2mm)
+  maximum supported frequency: 11.8462MHz
+  expanding computational grid...
+  computational grid size: 272 by 192 by 512 grid points
+  WARNING: Highest prime factors in each dimension are 17   3   2
+           Use dimension sizes with lower prime factors to improve speed
+  precomputation completed in 0.75044s
+  saving input files to disk...
+  completed in 0.75454s
++---------------------------------------------------------------+ 
+|                  kspaceFirstOrder-CUDA v1.3                   | 
++---------------------------------------------------------------+ 
+| Reading simulation configuration:                        Done | 
+| Selected GPU device id:                                     0 | 
+| GPU device name:                   NVIDIA GeForce RTX 5060 Ti | 
+| Number of CPU threads:                                      1 | 
+| Processor name:                  Intel(R) Core(TM) i5-14600KF | 
++---------------------------------------------------------------+ 
+|                      Simulation details                       | 
++---------------------------------------------------------------+ 
+| Domain dimensions:                            272 x 192 x 512 | 
+| Medium type:                                               3D | 
+| Simulation time steps:                                   4740 | 
++---------------------------------------------------------------+ 
+| Input file:  F:\project\ICE\independent_simulation\results\   | 
+|              curing_field_2026-11-10\bli_gpu_full\odd32_dx65_ | 
+|              gpu_io\field_input.h5                            | 
+| Input file:  F:\project\ICE\independent_simulation\results\   | 
+|              curing_field_2026-11-10\bli_gpu_full\odd32_dx65_ | 
+|              gpu_io\field_output.h5                           | 
++---------------------------------------------------------------+ 
+| Compression level:                                          0 | 
++---------------------------------------------------------------+ 
+|                        Medium details                         | 
++---------------------------------------------------------------+ 
+| Wave propagation:                                      Linear | 
+| Absorption type:                                     Lossless | 
+| Medium parameters:                                Homogeneous | 
++---------------------------------------------------------------+ 
+|                        Source details                         | 
++---------------------------------------------------------------+ 
+| Pressure source:                                              | 
+| + Source type:                                           Many | 
+| + Source condition:                                  Additive | 
+| + Memory usage:                                       16.12MB | 
++---------------------------------------------------------------+ 
+|                        Sensor details                         | 
++---------------------------------------------------------------+ 
+| Sensor mask type:                                       Index | 
+| Sampling begins at time step:                               1 | 
++---------------------------------------------------------------+ 
+| Pressure sensor p_rms                                         | 
+| + File usage:                                         70.31MB | 
+| Pressure sensor p_max_all                                     | 
+| + File usage:                                        102.00MB | 
+| Pressure sensor p_min_all                                     | 
+| + File usage:                                        102.00MB | 
+| Pressure sensor p_final                                       | 
+| + File usage:                                        102.00MB | 
++---------------------------------------------------------------+ 
+|                        Initialization                         | 
++---------------------------------------------------------------+ 
+| Memory allocation:                                       Done | 
+| Data loading:                                            Done | 
+| Elapsed time:                                           0.14s | 
++---------------------------------------------------------------+ 
+| FFT plans creation:                                      Done | 
+| Pre-processing phase:                                    Done | 
+| Elapsed time:                                           0.12s | 
++---------------------------------------------------------------+ 
+|                    Computational resources                    | 
++---------------------------------------------------------------+ 
+| Current host memory in use:                            2330MB | 
+| Current device memory in use:                          3299MB | 
+| Expected output file size:                              376MB | 
++---------------------------------------------------------------+ 
+|                          Simulation                           | 
++----------+----------------+--------------+--------------------+ 
+| Progress |  Elapsed time  |  Time to go  |  Est. finish time  | 
++----------+----------------+--------------+--------------------+ 
+|     0%   |        0.001s  |      2.369s  |  12/11/26 12:44:51 | 
+|     5%   |        8.583s  |    161.641s  |  12/11/26 12:47:38 | 
+|    10%   |       17.900s  |    160.348s  |  12/11/26 12:47:47 | 
+|    15%   |       26.832s  |    151.546s  |  12/11/26 12:47:47 | 
+|    20%   |       34.459s  |    137.473s  |  12/11/26 12:47:40 | 
+|    25%   |       42.102s  |    126.022s  |  12/11/26 12:47:37 | 
+|    30%   |       49.901s  |    116.202s  |  12/11/26 12:47:35 | 
+|    35%   |       57.605s  |    106.783s  |  12/11/26 12:47:32 | 
+|    40%   |       65.094s  |     97.470s  |  12/11/26 12:47:31 | 
+|    45%   |       72.581s  |     88.559s  |  12/11/26 12:47:29 | 
+|    50%   |       80.068s  |     79.933s  |  12/11/26 12:47:28 | 
+|    55%   |       87.557s  |     71.516s  |  12/11/26 12:47:27 | 
+|    60%   |       95.046s  |     63.253s  |  12/11/26 12:47:27 | 
+|    65%   |      102.534s  |     55.108s  |  12/11/26 12:47:26 | 
+|    70%   |      110.022s  |     47.058s  |  12/11/26 12:47:26 | 
+|    75%   |      117.510s  |     39.082s  |  12/11/26 12:47:25 | 
+|    80%   |      124.998s  |     31.167s  |  12/11/26 12:47:25 | 
+|    85%   |      132.487s  |     23.303s  |  12/11/26 12:47:24 | 
+|    90%   |      139.975s  |     15.480s  |  12/11/26 12:47:24 | 
+|    95%   |      147.464s  |      7.692s  |  12/11/26 12:47:23 | 
++----------+----------------+--------------+--------------------+ 
+| Elapsed time:                                         155.00s | 
++---------------------------------------------------------------+ 
+| Sampled data post-processing:                            Done | 
+| Elapsed time:                                           1.11s | 
++---------------------------------------------------------------+ 
+|                            Summary                            | 
++---------------------------------------------------------------+ 
+| Peak host memory in use:                               2348MB | 
+| Peak device memory in use:                             3299MB | 
++---------------------------------------------------------------+ 
+| Total execution time:                                 157.00s | 
++---------------------------------------------------------------+ 
+|                       End of computation                      | 
++---------------------------------------------------------------+ 

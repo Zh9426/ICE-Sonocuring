@@ -5,15 +5,29 @@ root=fileparts(mfilename('fullpath')); old=path; cleanup=onCleanup(@()path(old))
 addpath(root,fullfile(root,'dependencies','k-wave-1.4.1','k-Wave'));
 bin=fullfile(root,'dependencies','kwave-cuda-unified-v1.4.2');
 binary='kspaceFirstOrder-CUDA-windows.exe';
-assert(ismember(dx_um,[65 52]) && ismember(string(variant),["All64","Center48","Center32","Center16"]), ...
+assert(ismember(dx_um,[65 52]) && ismember(string(variant),["All64","Center48","Center32","Center16","Odd32","Even32"]), ...
     'iceind:GPUField','Unsupported variant or grid.');
-cases=iceind.curing_field_cases(true); idx=find(strcmp({cases.variant},variant) & ...
+if ismember(string(variant),["Odd32","Even32"])
+    cases=iceind.curing_sparse_cases_20261112();
+else
+    cases=iceind.curing_field_cases(true);
+end
+idx=find(strcmp({cases.variant},variant) & ...
     abs([cases.dx_m]-dx_um*1e-6)<1e-12,1); assert(~isempty(idx)); c=cases(idx);
 drivers=struct('All64','ICE_CuringOnly_ExposureFFFFFFFFFFFFFFFF_exposure_only.mat', ...
     'Center48','ICE_CuringOnly_Exposure00FFFFFFFFFFFF00_exposure_only.mat', ...
     'Center32','ICE_CuringOnly_Exposure0000FFFFFFFF0000_exposure_only.mat', ...
     'Center16','ICE_CuringOnly_Exposure000000FFFF000000_exposure_only.mat');
-driver=fullfile(root,'results','curing_export_2026-11-10',drivers.(variant));
+if ismember(string(variant),["Odd32","Even32"])
+    driverDir=fullfile(root,'results','curing_sparse_2026-11-12','drivers');
+    manifest=jsondecode(fileread(fullfile(driverDir,'sparse_manifest.json')));
+    mi=find(strcmp({manifest.rows.variant},variant),1); assert(~isempty(mi));
+    driver=fullfile(driverDir,manifest.rows(mi).file);
+    assert(strcmp(iceind.curing_field_sha256(driver),manifest.rows(mi).sha256), ...
+        'iceind:GPUField','Sparse exported driver hash does not match manifest.');
+else
+    driver=fullfile(root,'results','curing_export_2026-11-10',drivers.(variant));
+end
 out=fullfile(root,'results','curing_field_2026-11-10','bli_gpu_full');
 if ~isfolder(out), mkdir(out); end
 tag=sprintf('%s_dx%d',lower(variant),dx_um);

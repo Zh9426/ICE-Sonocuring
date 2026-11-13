@@ -5,3 +5,5 @@ tmp/
 dependencies/*/
 dependencies/*.zip
 results/**/*.mat
+results/curing_field_2026-11-10/bli_gpu_full/odd32_dx*_gpu_io/*.h5
+results/curing_field_2026-11-10/bli_gpu_full/even32_dx*_gpu_io/*.h5
