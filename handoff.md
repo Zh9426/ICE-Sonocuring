@@ -1,5 +1,7 @@
 # 2026-11-14：线阵声场建模方法文献对照
 
+- 用户将多焦点同时照射、同焦点分批照射暂列待选，要求先从原始数据比较现有声压分布。完成 `independent_simulation/docs/pressure_raw_data_comparison_2026-11-14.md`：下载并核对 UCL Wang 2012 公开水听器HDF5（本机 `independent_simulation/results/pressure_comparison_local_20261114/`，未纳入Git），提取声压面和曲线，与既有52 μm六组对照；脚本和派生表图 `independent_simulation/results/pressure_evidence_20261114/` 随Git同步。实验YZ的扫描Z原点距探头未知，只能峰对齐做形态参考，不能用来认定20 mm焦深或实物验证。无新传播仿真。
+
 - 用户要求论文原图直接放入报告、围绕图解释硬件与算法、最后对比结论。图文版 `independent_simulation/docs/linear_array_paper_figures_comparison_2026-11-14.md` 附本项目图和 Kashani 2022 图13、Chen 2022 图5、Williams 2023 图4、Marhenke 2019 图8，图像在同目录 `literature_figures_2026-11-14/`；四张图片已人工查看核对，来源及图号随报告保存。其他论文原图未取得，报告明确列出；未运行仿真。
 
 - 已安全拉取远端 `main`，原有未跟踪文件保留；未重启仿真。报告 `independent_simulation/docs/linear_array_model_methods_comparison_2026-11-14.md` 对照本项目 BLI/k-Wave 与 Kashani 2022（k-Wave+COMSOL）、Kashani 2023（k-Wave）、Chen 2022（MUST+水听器）、Williams 2023（实测源全息与传播）、Karunakaran 2013（Field II与单元合成）的源、介质、验证与原图。文献不直接验证本探头近场或绝对声压；新增2023年论文至参考文献集。
