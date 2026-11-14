@@ -1,3 +1,7 @@
+# 2026-11-14：线阵声场建模方法文献对照
+
+- 已安全拉取远端 `main`，原有未跟踪文件保留；未重启仿真。报告 `independent_simulation/docs/linear_array_model_methods_comparison_2026-11-14.md` 对照本项目 BLI/k-Wave 与 Kashani 2022（k-Wave+COMSOL）、Kashani 2023（k-Wave）、Chen 2022（MUST+水听器）、Williams 2023（实测源全息与传播）、Karunakaran 2013（Field II与单元合成）的源、介质、验证与原图。文献不直接验证本探头近场或绝对声压；新增2023年论文至参考文献集。
+
 # 2026-11-13：暂停仿真并转入文献研究
 
 - 参考文献统一索引在 `independent_simulation/docs/curing_references_2026-11-13.md`，可导入的12条BibTeX在同目录 `curing_references_2026-11-13.bib`；包含当日三个报告中的论文。文献条目和链接随Git同步，论文PDF本体不在仓库；部分多作者条目简写为 `and others`。无新增仿真。

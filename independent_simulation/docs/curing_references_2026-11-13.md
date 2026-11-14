@@ -9,6 +9,7 @@
 | Marhenke 等，2019 | 医疗线阵、水听器和声场重建；图6焦点测量 | [全文](https://www.mdpi.com/1424-8220/19/4/863) |
 | Williams 等，2023 | 带俯仰透镜的一维阵列；图3轴向与横向声束剖面 | [作者稿](https://pmc.ncbi.nlm.nih.gov/articles/PMC10712801/) |
 | Kashani 等，2022 | 16元线阵，20 mm设焦；图13模拟与水听器 | [作者稿](https://pmc.ncbi.nlm.nih.gov/articles/PMC9131469/) |
+| Kashani 和 Kiani，2023 | 32元线阵的k-Wave三维网格和水听器对照 | [作者稿](https://pmc.ncbi.nlm.nih.gov/articles/PMC10664043/) |
 | Chen 等，2022 | 约6 MHz、64元线阵；图5为选元发射聚焦及水听器测量 | [全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC10521654/) |
 | Karunakaran 和 Oelze，2013 | 单阵元测量信号叠加合成九元线阵，研究栅瓣 | [作者稿](https://pmc.ncbi.nlm.nih.gov/articles/PMC3674191/) |
 | Ilham 等，2021 | 16元线阵聚焦与测量，说明不能单以数量决定焦距 | [作者稿](https://pmc.ncbi.nlm.nih.gov/articles/PMC8904087/) |
