@@ -1,3 +1,7 @@
+# 2026-11-14：All64 单焦深度对照
+
+用户要求沿用 All64，仅增加 16、18、22 mm 焦深，并指定只用 52 μm 统一比较。四组前向压力峰深为 15.080、16.536、18.460、19.708 mm；输入、图表、逐组曲线、核验及限制见 `independent_simulation/docs/focus_depth_comparison_2026-11-14.md`。三个新组 CUDA 场与 HDF5 全量回读一致，输入条件已独立核查。16 mm 场的 `meta.target_m` 历史错误和实际目标字段的判读见报告；本机原始场、HDF5 和主动中止的 18 mm/65 μm 中间文件不随 Git 同步。模拟输入不是硬件序列，材料和压力未标定，MATLAB/k-Wave/CUDA 本机依赖跨电脑可能不可用。无 VSX 或硬件操作。
+
 # 2026-11-14：线阵声场建模方法文献对照
 
 - 用户将多焦点同时照射、同焦点分批照射暂列待选，要求先从原始数据比较现有声压分布。完成 `independent_simulation/docs/pressure_raw_data_comparison_2026-11-14.md`：下载并核对 UCL Wang 2012 公开水听器HDF5（本机 `independent_simulation/results/pressure_comparison_local_20261114/`，未纳入Git），提取声压面和曲线，与既有52 μm六组对照；脚本和派生表图 `independent_simulation/results/pressure_evidence_20261114/` 随Git同步。实验YZ的扫描Z原点距探头未知，只能峰对齐做形态参考，不能用来认定20 mm焦深或实物验证。无新传播仿真。

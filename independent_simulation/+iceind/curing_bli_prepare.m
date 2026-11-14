@@ -303,6 +303,11 @@ sensor.record_start_index=1;
 target=double(s.ICEConfig.exposure.foci_mm(1,:))*1e-3;
 assert(norm(target-[0 0 20e-3])<0.5e-3,'iceind:CuringBLITarget', ...
     'Exported focus is not the assumed 20 mm on-axis target.');
+if isfield(s,'synthetic_focus_depth_mm')
+    assert(ismember(s.synthetic_focus_depth_mm,[16 18 20 22]),'iceind:CuringBLITarget', ...
+        'Unsupported synthetic focus depth.');
+    target=[0 0 double(s.synthetic_focus_depth_mm)*1e-3];
+end
 activeX=sort(positions(active,1));
 span=max(activeX)-min(activeX)+width;
 perElementProxy=area*kg.dt*sum(double(sig).^2,2);
@@ -464,7 +469,7 @@ m.grid_size=n;
 m.grid_with_pml=n+2*pml;
 m.domain_m=domain;
 m.foci_mm=target*1e3;
-m.target_m=[0 0 20]*1e-3;
+m.target_m=target;
 
 diag=struct();
 diag.active=active;
