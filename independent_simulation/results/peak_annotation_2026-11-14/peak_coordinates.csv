@@ -1,0 +1,16 @@
+group,variant,target_x_mm,roi_peak_x_mm,roi_peak_y_mm,roi_peak_z_mm,roi_peak_assumed_pa,roi_boundary,forward_x_mm,forward_y_mm,forward_z_mm,forward_assumed_pa,source
+multifocus,All64,0,0.0,0.0,18.46,2.8297884464263916,False,0.0,0.0,18.46,2.82978844642639,saved 3D field MAT
+multifocus,Dual,-2,-1.976,0.0,16.016,1.626767873764038,True,-2.028,0.0,12.116,1.88605439662933,saved 3D field MAT
+multifocus,Dual,2,1.976,0.0,16.016,1.6267625093460083,True,-2.028,0.0,12.116,1.88605439662933,saved 3D field MAT
+multifocus,Quad,-3,-2.028,0.0,20.695999999999998,1.017042636871338,True,-3.068,0.0,5.096,1.65623593330383,saved 3D field MAT
+multifocus,Quad,-1,-1.976,0.0,20.332,1.0230344533920288,True,-3.068,0.0,5.096,1.65623593330383,saved 3D field MAT
+multifocus,Quad,1,1.976,0.0,20.332,1.0230292081832886,True,-3.068,0.0,5.096,1.65623593330383,saved 3D field MAT
+multifocus,Quad,3,2.028,0.0,20.695999999999998,1.0170369148254395,True,-3.068,0.0,5.096,1.65623593330383,saved 3D field MAT
+decreasing,All64,0,0.0,0.0,18.46,2.82978844642639,False,0.0,0.0,18.46,2.82978844642639,archived 3D metrics CSV
+decreasing,Center48,0,0.0,0.0,16.38,2.28712511062622,False,0.0,0.0,16.38,2.28712511062622,archived 3D metrics CSV
+decreasing,Center32,0,0.0,0.0,16.016,1.65555489063263,True,0.0,0.0,11.232,1.92757248878479,archived 3D metrics CSV
+decreasing,Center16,0,0.0,0.0,16.016,0.844827890396118,True,0.0,0.0,5.096,1.74854898452759,archived 3D metrics CSV
+sparse,All64,0,0.0,0.0,18.46,2.82978844642639,False,0.0,0.0,18.46,2.82978844642639,archived 3D metrics CSV
+sparse,Center32,0,0.0,0.0,16.016,1.65555489063263,True,0.0,0.0,11.232,1.92757248878479,archived 3D metrics CSV
+sparse,Odd32,0,0.0,0.0,18.46,1.41489434242249,False,-6.344,0.0,2.028,1.80897510051727,archived 3D metrics CSV
+sparse,Even32,0,0.0,0.0,18.46,1.41489374637604,False,6.344,0.0,2.028,1.80896699428558,archived 3D metrics CSV
