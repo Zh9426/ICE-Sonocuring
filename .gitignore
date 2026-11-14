@@ -25,3 +25,4 @@ docs/reports/**/.svg_final.candidate-*/
 /results/driver_audit_2026-10-29/package_Vantage*.txt
 /results/driver_audit_2026-10-29/required_Vantage*.txt
 /results/verification_2026-10-09/systemInfo_*.txt
+independent_simulation/results/multifocus_2026-11-14/*_gpu_io/*.h5

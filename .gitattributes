@@ -6,3 +6,4 @@ independent_simulation/results/curing_field_2026-11-10/bli_gpu_shallow/*_gpu_io/
 independent_simulation/results/curing_field_2026-11-10/bli_gpu_shallow/*_gpu_io/solver_log.txt -diff
 independent_simulation/results/curing_gpu_validation_20261111/**/*.mat filter=lfs diff=lfs merge=lfs -text
 independent_simulation/results/curing_gpu_validation_20261111/**/*.h5 filter=lfs diff=lfs merge=lfs -text
+independent_simulation/results/multifocus_2026-11-14/*_gpu_io/solver_log.txt -diff

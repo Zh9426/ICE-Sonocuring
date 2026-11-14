@@ -40,6 +40,10 @@
 
 # ICE 双功能探头：驱动核验与实验准备交接
 
+## 2026-11-14 双焦与四焦仿真完成
+
+MATLAB 许可恢复后完成 64 元单焦、双焦和四焦各 65/52 μm 六组三维单发场，同源模型与求解器；图表、输入假设、逐组到时检查、六组 HDF5 逐元素回读和网格剖面见 [对照报告](independent_simulation/docs/curing_multifocus_comparison_2026-11-14.md)。焦点为 assumed 的局部 6 mm 线段与 20 mm 深度，未测量患者或探头到目标距离；无实际固化及硬件运行。原始全场 MAT/HDF5 本机保留，跨电脑需复制或重算；CUDA 路径与 MATLAB/k-Wave 安装均可能不可用。下方同日草稿记录为计算前状态。
+
 ## 2026-11-11 GPU 部署与首批两版三维传播
 
 按用户要求继续解决环境问题：在本机项目依赖目录部署社区 kspacefirstorder-unified v1.4.2 Windows CUDA 二进制及运行库，并核对发布 SHA-256；MATLAB 仍为 R2024a Update 9，未安装 Parallel Computing Toolbox，但 `kspaceFirstOrder3DG` 可调用独立 GPU 求解器。RTX 5060 Ti 已实际完成小网格、单元 BLI 的 CPU/GPU 时序与 Qp 对照；具体版本、命令及数值见 [GPU 环境和验证](independent_simulation/docs/gpu_deployment_2026-11-11.md)。二进制依赖在 Git 忽略目录，跨电脑需按脚本重装。
@@ -234,3 +238,9 @@ max_t|p| 是每一点随时间的最大绝对声压；Qp=∫p²dt 是压力平�
 工作区已有大量修改和未跟踪文件，包括 Vantage 包、自写驱动、独立仿真和结果。不要清理、重置、批量覆盖或把全部 dirty 内容归为本轮改动。原 SetUp 会运行 VSX；自写 SetUp 和 scripts/verify_verasonics_dual_mode.m 默认会覆盖已有导出，查看状态无需执行。
 
 本次仅更新根目录 handoff.md、新增旧交接完整快照及快照说明；没有修改驱动、启动 MATLAB/VSX、操作硬件、修改许可证、提交或推送。未知数据继续标 synthetic/assumed/unknown，声学暴露不写成成功固化或临床安全。
+
+## 2026-11-14 双焦/四焦离线仿真草稿（未完成）
+
+按用户要求，新增 `independent_simulation/curing_multifocus_20261114.m` 和 `independent_simulation/curing_multifocus_gpu_20261114.m` 草稿，复用 All64 原始导出、64 元同幅声源及 65/52 μm 求解设置。两个相邻 32 元分组对应目标 x = ±2 mm，四个相邻 16 元分组对应 x = −3、−1、1、3 mm，y = 0、z = 20 mm；均为示例 assumed，并非患者测量。延时使用统一全局时间参考。目标跨距选为局部 6 mm 以适应现有物理计算域，不能代表覆盖整个左心耳落地区。
+
+尚未运行或验证脚本，也没有仿真结果。当前 MATLAB R2024b 启动报告无法连接 MathWorks 许可服务（错误 5201）；原 R2024a 和原 CUDA 路径本机不可用，脚本暂指向本机 `H:/HDSP/tools/kwave_unified_1p4p2`，另一台电脑可能不可用，版本与哈希尚未核实。需先恢复 MATLAB 许可，检查脚本及波形相位、测例、求解器版本后运行和生成对照图，检查多焦点各 ROI、近场及网格敏感性；原单焦 ROI 诊断不适合直接解释多焦场。参数与声压未标定，不能报告固化结论。当前已有其他线程的修改及删除，未触碰；远端查询因代理连接失败未完成，未提交推送。
