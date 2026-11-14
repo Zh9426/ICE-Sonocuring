@@ -65,3 +65,6 @@ matlab -batch "run('independent_simulation/pressure_ucl_compare_20261114.m')"
 ```
 
 已核对数据大小和MD5，按作者脚本使用 `scanSize` 重排和灵敏度，确认扫描范围 Y=−5.0…4.9 mm、Z=0…29.9 mm（扫描起点坐标）；测量面最大值非横向或轴向扫描边界。`peak_abs`、`peak_pos`、`peak_neg`分开保存，避免把论文图的频谱指标当成时域峰值。运行期间曾发现标称 Y=0 线未经过平面峰，已在最终脚本保留零线并另外明确报告峰所在横线；没有把峰值对齐曲线用于焦深验证。方法由 Astra提出比较边界，Sol独立审查相关数据和曲线口径。
+# 2026-11-14 补充：四组分图
+
+原图中 All64、Odd32、Even32 归一化轴线近乎重合，后绘制的曲线遮挡前面的曲线。新增[四组分图](../results/pressure_evidence_20261114/ucl_four_selected_profiles.png)，各图分别比较 UCL 与 All64、Center48、Center32、Odd32，统一坐标和归一化口径。读取已有 CSV，不重新求解；生成脚本为 [plot_pressure_four_groups_20261114.m](../plot_pressure_four_groups_20261114.m)。All64 与 Odd32 对应采样点归一化最大差约 3.16e-6；仅为轴线结果，不代表离轴声场相同。图中模型剖面限制在 z=2–29.9 mm，Center32 峰在 z=11.232 mm，不是 20 mm 目标附近的独立峰；对齐峰值无法比较实际焦点距离。UCL 与模型的探头及脉冲不同，不能据相似形状认定验证成功。

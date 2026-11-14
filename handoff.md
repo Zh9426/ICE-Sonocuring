@@ -248,3 +248,6 @@ max_t|p| 是每一点随时间的最大绝对声压；Qp=∫p²dt 是压力平�
 按用户要求，新增 `independent_simulation/curing_multifocus_20261114.m` 和 `independent_simulation/curing_multifocus_gpu_20261114.m` 草稿，复用 All64 原始导出、64 元同幅声源及 65/52 μm 求解设置。两个相邻 32 元分组对应目标 x = ±2 mm，四个相邻 16 元分组对应 x = −3、−1、1、3 mm，y = 0、z = 20 mm；均为示例 assumed，并非患者测量。延时使用统一全局时间参考。目标跨距选为局部 6 mm 以适应现有物理计算域，不能代表覆盖整个左心耳落地区。
 
 尚未运行或验证脚本，也没有仿真结果。当前 MATLAB R2024b 启动报告无法连接 MathWorks 许可服务（错误 5201）；原 R2024a 和原 CUDA 路径本机不可用，脚本暂指向本机 `H:/HDSP/tools/kwave_unified_1p4p2`，另一台电脑可能不可用，版本与哈希尚未核实。需先恢复 MATLAB 许可，检查脚本及波形相位、测例、求解器版本后运行和生成对照图，检查多焦点各 ROI、近场及网格敏感性；原单焦 ROI 诊断不适合直接解释多焦场。参数与声压未标定，不能报告固化结论。当前已有其他线程的修改及删除，未触碰；远端查询因代理连接失败未完成，未提交推送。
+# 2026-11-14 四组轴向声压分图
+
+为解决曲线重合造成的原图难辨，新增 `independent_simulation/plot_pressure_four_groups_20261114.m` 和 `independent_simulation/results/pressure_evidence_20261114/ucl_four_selected_profiles.png`，见 `independent_simulation/docs/pressure_raw_data_comparison_2026-11-14.md`。MATLAB R2024a 仅读取既有数据生成图；All64 与 Odd32 归一化轴线最大差约 3.16e-6，离轴结果不等同。未重新运行仿真；峰值对齐不能用于比较实际聚焦距离。
