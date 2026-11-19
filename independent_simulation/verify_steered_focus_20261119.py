@@ -25,6 +25,7 @@ def sha256(path):
 def main(folder):
     folder = Path(folder)
     rows, input_rows, profiles = [], [], {}
+    reference_input,reference_source,reference_axes = None,None,None
     for mat in sorted(folder.glob('*_field.mat')):
         tag = mat.name.removesuffix('_field.mat')
         driver = folder / (tag.removesuffix('_dx52') + '_simulation_input.mat')
@@ -46,12 +47,26 @@ def main(folder):
         with h5py.File(io / 'field_input.h5') as inp:
             assert int(np.asarray(inp['p_source_mode']).item()) == 2
             assert int(np.asarray(inp['p_source_many']).item()) == 1
+            common={k:np.asarray(inp[k]).item() for k in
+                    ('Nx','Ny','Nz','Nt','dt','dx','dy','dz','c0','rho0','pml_x_size','pml_y_size','pml_z_size')}
+            source_index=np.asarray(inp['p_source_index']).ravel()
+            assert (common['Nx'],common['Ny'],common['Nz']) == (640,160,640)
+            assert common['c0']==1540 and common['rho0']==1000
+            assert all(common[k]==20 for k in ('pml_x_size','pml_y_size','pml_z_size'))
+            assert all(abs(common[k]-52e-6)<1e-12 for k in ('dx','dy','dz'))
+            if reference_input is None:
+                reference_input,reference_source=common,source_index
+            else:
+                assert common==reference_input, 'Common grid/time/medium/PML parameters differ'
+                assert np.array_equal(source_index,reference_source), 'Source support differs'
         input_rows.append(dict(angle_deg=angle, range_mm=np.linalg.norm(target)*1000,
                                arrival_spread_s=np.ptp(arrival), active_elements=64,
                                driver_sha256=sha256(driver)))
         with h5py.File(mat) as f, h5py.File(io / 'field_output.h5') as out:
             assert float(np.asarray(f['angle_deg']).item()) == angle
             assert np.allclose(np.asarray(f['target_m']).ravel(), target, rtol=0, atol=1e-14)
+            binary_hash=''.join(chr(int(v)) for v in np.asarray(f['runtime_metadata/binary_sha256']).ravel())
+            assert binary_hash=='806f20c2529c2454cef89badbfcc9c19c2360260236af5a4e98735a336899b09'
             # MATLAB stores long z chunks per x column. Loading each float32
             # array once avoids decompressing the same chunks for every z plane.
             amp, qp, final = (np.asarray(f[k]) for k in ('p_amp','qp','p_final'))
@@ -82,6 +97,10 @@ def main(folder):
             assert max_amp_error == max_qp_error == max_final_error == 0
             x, y, z = (np.asarray(f[k]).ravel() for k in ('x_m', 'y_m', 'z_m'))
             assert np.allclose(np.diff(x),52e-6) and np.allclose(np.diff(y),52e-6) and np.allclose(np.diff(z),52e-6)
+            if reference_axes is None:
+                reference_axes=(x,y,z)
+            else:
+                assert all(np.array_equal(a,b) for a,b in zip(reference_axes,(x,y,z)))
             ix, iy = int(np.argmin(abs(x))), int(np.argmin(abs(y)))
             profiles[angle] = (z, np.asarray(amp[:,iy,ix]))
             rows.append(dict(angle_deg=angle, amplitude_max_abs_difference=max_amp_error,
@@ -94,7 +113,10 @@ def main(folder):
         with (folder/name).open('w',newline='',encoding='utf-8') as stream:
             writer=csv.DictWriter(stream,fieldnames=list(data[0])); writer.writeheader(); writer.writerows(data)
     audit=dict(completed_fields=len(rows), raw_readback='exact stored numeric equality of float32 fields',
-               source_models='assumed; not calibrated', verifier_sha256=sha256(Path(__file__)))
+               source_models='assumed; not calibrated', verifier_sha256=sha256(Path(__file__)),
+               common_input_parameters=reference_input,common_source_points=int(len(reference_source)),
+               common_source_support_equal=True,physical_coordinates_equal=True,
+               common_solver_binary_sha256=binary_hash)
     results_root=next(parent for parent in (folder,*folder.parents) if parent.name=='results')
     old=results_root/'focus_depth_2026-11-14'/'focus20_axial_dx52.csv'
     if 0 in profiles and old.exists():

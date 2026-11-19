@@ -1,0 +1,3 @@
+PASS: 7 angles, R20, unchanged geometry/waveform/aperture, metadata, arrivals, baseline and mirrors.
+PASS: 5 inconsistent steering metadata cases rejected before allocation.
+Focus-depth inputs passed.

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-19",
+  "task": "steered-focus-validate",
+  "matlab_release_assertion": "2024b",
+  "exit_code": 0,
+  "steering_geometry_angles": 7,
+  "inconsistent_metadata_rejections": 5,
+  "legacy_focus_depth_inputs": "passed",
+  "propagation_launched": false,
+  "log": "windows_matlab_validation.txt"
+}

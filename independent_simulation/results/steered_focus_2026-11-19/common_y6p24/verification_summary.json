@@ -1,14 +1,38 @@
 {
-  "completed_fields": 3,
+  "completed_fields": 5,
   "raw_readback": "exact stored numeric equality of float32 fields",
   "source_models": "assumed; not calibrated",
-  "verifier_sha256": "85e331e6cb2cf6b68686dd1fa45e49dcd2e75a715e70b1fdf529d59bcd17beeb",
+  "verifier_sha256": "9adb5dd8154bdc385e9a598ff227b5ddb9270edd9450398992eace8dddc98a89",
+  "common_input_parameters": {
+    "Nx": 640,
+    "Ny": 160,
+    "Nz": 640,
+    "Nt": 5925,
+    "dt": 6.753246850621508e-09,
+    "dx": 5.199999941396527e-05,
+    "dy": 5.199999941396527e-05,
+    "dz": 5.199999941396527e-05,
+    "c0": 1540.0,
+    "rho0": 1000.0,
+    "pml_x_size": 20,
+    "pml_y_size": 20,
+    "pml_z_size": 20
+  },
+  "common_source_points": 9275,
+  "common_source_support_equal": true,
+  "physical_coordinates_equal": true,
+  "common_solver_binary_sha256": "806f20c2529c2454cef89badbfcc9c19c2360260236af5a4e98735a336899b09",
   "zero_vs_old_axial_z_ge2_relative_l2": 0.0003022411137030894,
   "zero_vs_old_axial_max_abs_assumed_pa": 0.0020632743835491407,
   "positive_negative_pressure_mirrors": [
     {
       "angle_abs_deg": 10,
       "pressure_mirror_relative_l2": 3.589973706468724e-05,
+      "scope": "common x coordinates excluding unpaired first x plane"
+    },
+    {
+      "angle_abs_deg": 20,
+      "pressure_mirror_relative_l2": 4.004639428313269e-05,
       "scope": "common x coordinates excluding unpaired first x plane"
     }
   ]

@@ -3,8 +3,8 @@
 - 用户明确要求运行仿真，替代此前暂停传播约定，仅限本轮离线研究；首要指标改为焦区范围。保持全64元、中心至目标直线距离20 mm、0/±10/±20/±30°平面内偏转，52 μm网格；无VSX或硬件操作。
 - 实施计划：`independent_simulation/docs/plans/2026-11-19-steered-focus-simulation.md`，本轮报告：`independent_simulation/docs/steered_focus_results_2026-11-19.md`。输入/运行入口 `independent_simulation/curing_steered_focus_gpu_20261119.m`，Python分析入口 `independent_simulation/analyze_steered_focus_20261119.py`，独立原始输出回读 `independent_simulation/verify_steered_focus_20261119.py`。
 - 本机为MATLAB R2024b Update2、RTX4070 Laptop8GB、物理RAM约16GB；CUDA二进制本机路径`H:/HDSP/tools/kwave_unified_1p4p2`，SHA256与旧结果一致（806f20c2…）。MATLAB初始许可错误5201，用户手动启动后batch测试恢复；未关闭用户会话或重装许可。依赖不保证跨电脑可用。
-- 首次共同域31.2×10.4×31.2 mm的0°尝试CUDA内存不足，无有效场；失败现场保存在 `independent_simulation/results/steered_focus_2026-11-19/angle_p00_dx52_gpu_io/`，不能解释为结果。重试共同域31.2×6.24×31.2 mm、物理600×120×600格点、外部PML20格，输出 `independent_simulation/results/steered_focus_2026-11-19/common_y6p24/`。当前0°和±10°完成、原始输出回读一致，+20°运行中，后续−20/+30/−30顺序排队；以各组stage.json和最终field.mat为准。用户已确认完整七角度继续采用52 μm（每组实测约12分钟）。
-- 新增输入7角几何/延时/镜像/元数据及5个无效元数据测试实际通过；BLI回归8/8、Python13项解析焦区测试通过。压力−6/−3 dB相对本组局部峰的六邻域连通区及穿峰宽度、目标法向截面面积为指标，另给0°峰压固定阈值下的范围。0°的−6 dB宽度n/u/y约13.418/0.715/2.886 mm、体积30.173 mm³、目标截面1.793 mm²；±10°截面积1.825 mm²、固定0°阈值截面积1.804 mm²、目标压力保留约98.84%，当前均未触边。±10°全场镜像相对L2约0.00359%，新旧0°轴线z≥2 mm相对L2约0.0302%；都不证明三维域或网格收敛。其余角度仍未完成，不能推断实测固化或安全。
+- 首次共同域31.2×10.4×31.2 mm的0°尝试CUDA内存不足，无有效场；失败现场保存在 `independent_simulation/results/steered_focus_2026-11-19/angle_p00_dx52_gpu_io/`，不能解释为结果。重试共同域31.2×6.24×31.2 mm、物理600×120×600格点、外部PML20格，输出 `independent_simulation/results/steered_focus_2026-11-19/common_y6p24/`。当前0°、±10°、±20°完成、原始输出回读一致，+30°运行中，后续−30°排队；以各组stage.json和最终field.mat为准。用户已确认完整七角度继续采用52 μm（每组实测约12分钟）。
+- 新增输入7角几何/延时/镜像/元数据及5个无效元数据测试实际通过；BLI回归8/8、Python13项解析焦区测试通过。压力−6/−3 dB相对本组局部峰的六邻域连通区及穿峰宽度、目标法向截面面积为指标，另给0°峰压固定阈值下的范围。0/±10/±20°的−6 dB目标截面约1.793/1.825/1.879 mm²，当前均未触边；±20°目标声压保留约96.30%，固定0°阈值截面约1.815 mm²。±10/±20°全场镜像相对L2约0.00359%/0.00400%，新旧0°轴线z≥2 mm相对L2约0.0302%；五组网格/时间/介质/PML/源支撑及二进制哈希一致。不能据此证明三维域或网格收敛。±30°仍未完成，不能推断实测固化或安全。
 - 原始大场/HDF5仅本机，新增忽略规则；本轮开发分支 `codex/steered-focus-20261119`。原有三份文献修改和SVG状态保留。完成后需更新本节、CHANGELOG、正式报告并提交推送。
 
 # 2026-11-19：新增偏转聚焦研究方向
