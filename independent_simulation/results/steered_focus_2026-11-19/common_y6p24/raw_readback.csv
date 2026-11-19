@@ -1,0 +1,2 @@
+angle_deg,amplitude_max_abs_difference,qp_max_abs_difference,final_max_abs_difference,Nt,dt_s,mat_sha256,output_h5_sha256
+0.0,0.0,0.0,0.0,5925,6.753246753246754e-09,0c0bc79b44cb6119a3c02b61c53a4d733ac457d164edab697dc87ce81ac9e63c,21d0e85a8b632184084fdde59dcf3355348f1c6e0a1b2f4be254d3db64bebf4e

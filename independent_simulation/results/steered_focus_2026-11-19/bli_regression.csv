@@ -1,0 +1,9 @@
+name,passed,failed,incomplete
+curing_field_test_bli_prepare/testSmallGridSelectionDelaysWaveformAndSupport,1,0,0
+curing_field_test_bli_prepare/testTimeWindowNotShorterThanOriginalPrepare,1,0,0
+curing_field_test_bli_prepare/testBoundarySupportIsRejected,1,0,0
+curing_field_test_bli_prepare/testMemoryBudgetIsCheckedBeforeAllocation,1,0,0
+curing_field_test_bli_prepare/testRankMismatchIsRejected,1,0,0
+curing_field_test_bli_prepare/testNoElementCountNormalization,1,0,0
+curing_field_test_bli_prepare/testBLIOptionsAreRecordedNotHidden,1,0,0
+curing_field_test_bli_prepare/testActualFourExports,1,0,0

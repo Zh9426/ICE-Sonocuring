@@ -66,6 +66,31 @@ ranks=sort(double(c.ranks(:)'));
 assert(isequal(ranks,sort(double(s.ICEConfig.partition.exposure_ranks(:)'))), ...
     'iceind:CuringBLIInput','Driver rank mask does not match the requested case.');
 b=iceind.compile_kwave(s);
+% Validate target metadata before allocating the distributed source. Synthetic
+% steering is an explicit simulation input, never an exported hardware claim.
+target=double(s.ICEConfig.exposure.foci_mm(1,:))*1e-3;
+if isfield(s,'synthetic_target_m') || isfield(s,'synthetic_angle_deg')
+    assert(isfield(s,'synthetic_target_m') && isfield(s,'synthetic_angle_deg'), ...
+        'iceind:CuringBLITarget','Synthetic steering requires both target and angle.');
+    angle=double(s.synthetic_angle_deg);
+    assert(isscalar(angle) && ismember(angle,[0 10 -10 20 -20 30 -30]), ...
+        'iceind:CuringBLITarget','Unsupported synthetic steering angle.');
+    expected=[sind(angle) 0 cosd(angle)]*0.02;
+    assert(isequal(size(s.synthetic_target_m),[1 3]) && ...
+        all(isfinite(s.synthetic_target_m)) && norm(target-expected)<1e-12 && ...
+        norm(double(s.synthetic_target_m)-expected)<1e-12, ...
+        'iceind:CuringBLITarget','Synthetic angle, target and ICEConfig focus must agree at R20.');
+    assert(~isfield(s,'synthetic_focus_depth_mm'),'iceind:CuringBLITarget', ...
+        'Do not combine synthetic depth and synthetic steering overrides.');
+else
+    assert(norm(target-[0 0 20e-3])<0.5e-3,'iceind:CuringBLITarget', ...
+        'Exported focus is not the assumed 20 mm on-axis target.');
+    if isfield(s,'synthetic_focus_depth_mm')
+        assert(ismember(s.synthetic_focus_depth_mm,[16 18 20 22]),'iceind:CuringBLITarget', ...
+            'Unsupported synthetic focus depth.');
+        target=[0 0 double(s.synthetic_focus_depth_mm)*1e-3];
+    end
+end
 assert(numel(b.tx)==1,'iceind:CuringBLIInput','Expected exactly one exposure TX.');
 q=b.tx(1);
 active=find(q.apod(:)~=0)';
@@ -300,14 +325,6 @@ sensor.mask=true(n);
 sensor.record={'p_max_all','p_min_all','p_rms'};
 sensor.record_start_index=1;
 
-target=double(s.ICEConfig.exposure.foci_mm(1,:))*1e-3;
-assert(norm(target-[0 0 20e-3])<0.5e-3,'iceind:CuringBLITarget', ...
-    'Exported focus is not the assumed 20 mm on-axis target.');
-if isfield(s,'synthetic_focus_depth_mm')
-    assert(ismember(s.synthetic_focus_depth_mm,[16 18 20 22]),'iceind:CuringBLITarget', ...
-        'Unsupported synthetic focus depth.');
-    target=[0 0 double(s.synthetic_focus_depth_mm)*1e-3];
-end
 activeX=sort(positions(active,1));
 span=max(activeX)-min(activeX)+width;
 perElementProxy=area*kg.dt*sum(double(sig).^2,2);
@@ -412,6 +429,8 @@ m.active_center_x_m=mean(activeX);
 m.aperture_span_m=span;
 m.fill_fraction_of_span=area*numel(active)/(span*height);
 m.f_number_target_over_span=target(3)/span;
+m.f_number_target_over_span_definition='axial target z / aperture span, not slant range';
+m.f_number_range_over_span=norm(target)/span;
 m.waveform=wm;
 m.source_amplitude_definition=['assumed equal reference pressure per element; ' ...
     'not voltage calibrated'];

@@ -1,0 +1,18 @@
+错误使用 h5readc
+HDF5 库遇到错误并生成了以下堆栈跟踪信息:
+
+
+    H5G__loc_find_cb    object 'Nx' doesn't exist
+
+出错 h5read (第 95 行)
+    [data,var_class] = h5readc(Filename,Dataset,start,count,stride);
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 kspaceFirstOrder3DC (第 569 行)
+Nx = h5read(output_filename, '/Nx');
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 kspaceFirstOrder3DG (第 69 行)
+sensor_data = kspaceFirstOrder3DC(varargin{:});
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 curing_steered_focus_gpu_20261119 (第 100 行)
+        gpu_stdout=evalc("try; data=kspaceFirstOrder3DG(g,medium,source,sensor,'PMLInside',false," + ...
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

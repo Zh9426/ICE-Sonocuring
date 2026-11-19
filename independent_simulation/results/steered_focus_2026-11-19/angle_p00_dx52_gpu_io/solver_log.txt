@@ -1,0 +1,80 @@
+Running k-Wave simulation...
+  start time: 2026-11-19 15:05:30
+  reference sound speed: 1540m/s
+  dt: 6.7532ns, t_end: 40.0062us, time steps: 5925
+  input grid size: 600 by 200 by 600 grid points (31.2 by 10.4 by 31.2mm)
+  maximum supported frequency: 14.8077MHz
+  expanding computational grid...
+  computational grid size: 640 by 240 by 640 grid points
+  precomputation completed in 5.1177s
+  saving input files to disk...
+  completed in 4.3223s
++---------------------------------------------------------------+ 
+|                  kspaceFirstOrder-CUDA v1.3                   | 
++---------------------------------------------------------------+ 
+| Reading simulation configuration:                        Done | 
+| Selected GPU device id:                                     0 | 
+| GPU device name:           NVIDIA GeForce RTX 4070 Laptop GPU | 
+| Number of CPU threads:                                      1 | 
+| Processor name:         12th Gen Intel(R) Core(TM) i7-12800HX | 
++---------------------------------------------------------------+ 
+|                      Simulation details                       | 
++---------------------------------------------------------------+ 
+| Domain dimensions:                            640 x 240 x 640 | 
+| Medium type:                                               3D | 
+| Simulation time steps:                                   5925 | 
++---------------------------------------------------------------+ 
+| Input file:  H:\print_transducer\independent_simulation\      | 
+|              results\steered_focus_2026-11-19\angle_p00_dx52_ | 
+|              gpu_io\field_input.h5                            | 
+| Input file:  H:\print_transducer\independent_simulation\      | 
+|              results\steered_focus_2026-11-19\angle_p00_dx52_ | 
+|              gpu_io\field_output.h5                           | 
++---------------------------------------------------------------+ 
+| Compression level:                                          0 | 
++---------------------------------------------------------------+ 
+|                        Medium details                         | 
++---------------------------------------------------------------+ 
+| Wave propagation:                                      Linear | 
+| Absorption type:                                     Lossless | 
+| Medium parameters:                                Homogeneous | 
++---------------------------------------------------------------+ 
+|                        Source details                         | 
++---------------------------------------------------------------+ 
+| Pressure source:                                              | 
+| + Source type:                                           Many | 
+| + Source condition:                                  Additive | 
+| + Memory usage:                                       29.44MB | 
++---------------------------------------------------------------+ 
+|                        Sensor details                         | 
++---------------------------------------------------------------+ 
+| Sensor mask type:                                       Index | 
+| Sampling begins at time step:                               1 | 
++---------------------------------------------------------------+ 
+| Pressure sensor p_rms                                         | 
+| + File usage:                                        274.66MB | 
+| Pressure sensor p_max_all                                     | 
+| + File usage:                                        375.00MB | 
+| Pressure sensor p_min_all                                     | 
+| + File usage:                                        375.00MB | 
+| Pressure sensor p_final                                       | 
+| + File usage:                                        375.00MB | 
++---------------------------------------------------------------+ 
+|                        Initialization                         | 
++---------------------------------------------------------------+ 
+| Memory allocation:                                       Done | 
+| Data loading:                                          Failed | 
++---------------------------------------------------------------+ 
++---------------------------------------------------------------+ 
+|            !!! K-Wave experienced a fatal error !!!           | 
++---------------------------------------------------------------+ 
+| Error: An unknown error happened. GPU error: out of memory    | 
+|        routine name: cudaHostRegister(mHostBuffer,            | 
+|        mBufferSize * sizeof (float),                          | 
+|        cudaHostRegisterPortable | cudaHostRegisterMapped) in  | 
+|        file D:\a\kspacefirstorder-unified\kspacefirstorder-   | 
+|        unified\repos\kspaceFirstOrder-cuda-windows\           | 
+|        OutputStreams\BaseOutputStream.cpp, line 176.          | 
++---------------------------------------------------------------+ 
+|                      Execution terminated                     | 
++---------------------------------------------------------------+ 

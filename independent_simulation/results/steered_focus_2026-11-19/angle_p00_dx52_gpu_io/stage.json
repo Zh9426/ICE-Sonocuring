@@ -1,0 +1,34 @@
+{
+  "stage": "failed",
+  "angle_deg": 0,
+  "target_m": [
+    0,
+    0,
+    0.02
+  ],
+  "grid_size": [
+    600,
+    200,
+    600
+  ],
+  "domain_m": [
+    0.0312,
+    0.010400000000000001,
+    0.0312
+  ],
+  "dx_m": 5.2E-5,
+  "pml_cells": 20,
+  "started": "20261119T150512",
+  "input_driver": "H:\\print_transducer\\independent_simulation\\results\\steered_focus_2026-11-19\\angle_p00_simulation_input.mat",
+  "prepare_only": false,
+  "domain_override_mm": "31.2,10.4,31.2",
+  "Nt": 5925,
+  "dt_s": 6.7532467532467536E-9,
+  "t_end_s": 4.000623376623377E-5,
+  "source_points": 9275,
+  "source_samples": 830,
+  "source_matrix_bytes": 3.0793E+7,
+  "error_identifier": "MATLAB:imagesci:h5read:libraryError",
+  "error_message": "HDF5 库遇到错误并生成了以下堆栈跟踪信息:\n\n\n    H5G__loc_find_cb    object 'Nx' doesn't exist",
+  "updated": "20261119T150548"
+}
