@@ -1,3 +1,9 @@
+# 2026-11-19：新增偏转聚焦研究方向
+
+- 用户希望研究左心房向左心耳照射时的偏转聚焦，已确认保持探头中心到目标的直线距离20 mm，而非固定z=20 mm。当前先研究全64元阵列平面内电子偏转，目标定义为`[20 sinθ,0,20 cosθ] mm`；实际解剖角度、探头姿态及目标面入射角仍unknown，不能相互等同。
+- 研究依据与拟议工况、手册章节、代码边界、评价指标见 `independent_simulation/docs/all64_steered_focus_research_2026-11-19.md`。0/±10/±20/±30°为拟议探索角度，尚未实现、运行或验证；原15.6 mm横向域不足以直接承接大角度比较，需覆盖ROI和目标外区域的共同域及新域0°基线核对。
+- 本轮只读查文献、代码和指定手册，未修改驱动或启动传播/硬件。继续遵守暂停传播约定；后续按新任务推进。手册在F盘、本机MATLAB/k-Wave/CUDA和大场数据路径跨电脑可能不可用。
+
 # 2026-11-19：固定20 mm处的全64元声场回读
 
 - 用户选择本轮优先分析已有声场与20 mm处表现；继续暂停传播，无MATLAB、VSX或硬件操作。报告：`independent_simulation/docs/all64_fixed_target20_analysis_2026-11-19.md`；派生表：`independent_simulation/results/focus_depth_2026-11-14/fixed_target20_comparison_20261119.csv`。
