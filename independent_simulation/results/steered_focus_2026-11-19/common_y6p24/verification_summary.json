@@ -1,9 +1,15 @@
 {
-  "completed_fields": 1,
+  "completed_fields": 3,
   "raw_readback": "exact stored numeric equality of float32 fields",
   "source_models": "assumed; not calibrated",
   "verifier_sha256": "85e331e6cb2cf6b68686dd1fa45e49dcd2e75a715e70b1fdf529d59bcd17beeb",
   "zero_vs_old_axial_z_ge2_relative_l2": 0.0003022411137030894,
   "zero_vs_old_axial_max_abs_assumed_pa": 0.0020632743835491407,
-  "positive_negative_pressure_mirrors": []
+  "positive_negative_pressure_mirrors": [
+    {
+      "angle_abs_deg": 10,
+      "pressure_mirror_relative_l2": 3.589973706468724e-05,
+      "scope": "common x coordinates excluding unpaired first x plane"
+    }
+  ]
 }

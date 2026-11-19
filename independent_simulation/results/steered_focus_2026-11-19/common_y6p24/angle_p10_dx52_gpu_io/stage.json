@@ -1,0 +1,34 @@
+{
+  "stage": "complete",
+  "angle_deg": 10,
+  "target_m": [
+    0.0034729635533386066,
+    0,
+    0.01969615506024416
+  ],
+  "grid_size": [
+    600,
+    120,
+    600
+  ],
+  "domain_m": [
+    0.0312,
+    0.0062400000000000008,
+    0.0312
+  ],
+  "dx_m": 5.2E-5,
+  "pml_cells": 20,
+  "started": "20261119T152155",
+  "input_driver": "H:\\print_transducer\\independent_simulation\\results\\steered_focus_2026-11-19\\common_y6p24\\angle_p10_simulation_input.mat",
+  "prepare_only": false,
+  "domain_override_mm": "",
+  "Nt": 5925,
+  "dt_s": 6.7532467532467536E-9,
+  "t_end_s": 4.000623376623377E-5,
+  "source_points": 9275,
+  "source_samples": 925,
+  "source_matrix_bytes": 3.43175E+7,
+  "elapsed_s": 710.9120653,
+  "raw_path": "H:\\print_transducer\\independent_simulation\\results\\steered_focus_2026-11-19\\common_y6p24\\angle_p10_dx52_field.mat",
+  "updated": "20261119T153411"
+}

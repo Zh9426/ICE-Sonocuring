@@ -340,8 +340,17 @@ def run_analysis(input_folder,output_folder):
         target_plane = analyze_target_plane(p,(x,y,z),np.asarray(r['target_xyz_mm'])/1000,angle,r['local_peak_pa_assumed'])
         target_planes.append((angle,target_plane.pop('plane_data'),r['local_peak_pa_assumed']))
         r['target_plane'] = target_plane
+        common_plane = analyze_target_plane(p,(x,y,z),np.asarray(r['target_xyz_mm'])/1000,angle,baseline_peak)
+        common_plane.pop('plane_data')
+        common_plane['reference_focal_peak_valid'] = baseline_peak_valid
+        common_plane['reference_zero_deg_peak_pa_assumed'] = baseline_peak
+        r['common_target_plane'] = common_plane
         for db in (3,6):
             r['target_plane'][f'minus{db}db']['valid_target_plane_region'] &= r['focal_peak_valid']
+            common_metric = common_plane[f'minus{db}db']
+            common_metric['valid_target_plane_region'] &= baseline_peak_valid and r['focal_peak_valid']
+            if not np.isfinite(baseline_peak):
+                common_metric.update(status='baseline_unavailable',area_mm2=np.nan)
         for db in (3,6):
             r[f'common_minus{db}db']['valid_focal_region'] &= r['focal_peak_valid'] and baseline_peak_valid
         del p
@@ -353,7 +362,9 @@ def run_analysis(input_folder,output_folder):
             row.update({f'minus{db}db_{k}':v for k,v in r[f'minus{db}db'].items() if not isinstance(v,list)})
             row.update({f'common_minus{db}db_{k}':v for k,v in r[f'common_minus{db}db'].items() if not isinstance(v,list)})
             row.update({f'target_plane_minus{db}db_{k}':v for k,v in r['target_plane'][f'minus{db}db'].items()})
+            row.update({f'common_target_plane_minus{db}db_{k}':v for k,v in r['common_target_plane'][f'minus{db}db'].items()})
         row.update({f'target_plane_{k}':v for k,v in r['target_plane'].items() if not isinstance(v,(list,dict))})
+        row.update({f'common_target_plane_{k}':v for k,v in r['common_target_plane'].items() if not isinstance(v,(list,dict))})
         for key in ('peak_xyz_mm','target_xyz_mm','forward_max_xyz_mm'):
             row.update({f'{key}_{axis}':v for axis,v in zip('xyz',r[key])})
         for db in (3,6):
@@ -369,6 +380,7 @@ def run_analysis(input_folder,output_folder):
                                   common_absolute_thresholds_pa_assumed=common_thresholds,
                                   common_absolute_baseline_focal_peak_valid=baseline_peak_valid,
                                   target_plane='F+u*t+y*v, target centered; 4 connectivity; own-local-peak thresholds; area=count*dt*dv; sample-border components truncated',
+                                  common_target_plane='Same target-normal plane and 4-connected target component, threshold derived from zero-degree local peak; supplemental common absolute level',
                                   volume='voxel_count * dx * dy * dz',bbox='occupied voxel center extrema',
                                   xz_contours='Scalar pressure threshold contours; include disconnected lobes, not selected focal component boundaries',
                                   profile_sampling='linear interpolation, step <= min grid spacing / 4',
@@ -390,7 +402,7 @@ def run_analysis(input_folder,output_folder):
         ax.plot(0,0,'wx',label='Target'); ax.set(title=f'{angle:g} deg',xlabel='Transverse u from target (mm)',ylabel='Elevation from target (mm)')
         ax.set_aspect('equal'); ax.legend(fontsize=7)
     fig.colorbar(im,ax=list(axs[0]),label='Pressure amplitude (assumed Pa; uncalibrated)')
-    fig.suptitle('Synthetic target-normal planes: common absolute scale\nScalar contours include disconnected regions; area counts target-connected component only')
+    fig.suptitle('Synthetic target-normal planes\nCommon absolute scale (uncalibrated)\nScalar contours: all regions; areas: target-connected only',fontsize=10)
     fig.savefig(out/'target_plane_maps.png',dpi=160); plt.close(fig)
     vmax = max(float(m[3].max()) for m in maps)
     fig,axs = plt.subplots(1,len(maps),figsize=(max(5,3*len(maps)),5),squeeze=False,constrained_layout=True)
@@ -404,7 +416,7 @@ def run_analysis(input_folder,output_folder):
         ax.axhline(2,color='gray',linestyle=':'); ax.set(title=f'{angle:g} deg',xlabel='x (mm)',ylabel='z (mm)')
         ax.set_aspect('equal'); ax.legend(fontsize=7)
     fig.colorbar(im,ax=list(axs[0]),label='Pressure amplitude (assumed Pa; uncalibrated)')
-    fig.suptitle('Synthetic ICE: common absolute color scale, y nearest 0\nScalar threshold contours include disconnected lobes; not focal component boundaries')
+    fig.suptitle('Synthetic ICE x-z slices, y nearest 0\nCommon absolute scale (uncalibrated)\nScalar contours include disconnected lobes',fontsize=10)
     fig.savefig(out/'xz_maps.png',dpi=160); plt.close(fig)
     fig,axs = plt.subplots(1,3,figsize=(14,4),constrained_layout=True)
     for ax,key,title in zip(axs,('n','u','y'),('Longitudinal n','Transverse u','Elevation y')):
@@ -432,6 +444,24 @@ def run_analysis(input_folder,output_folder):
         ax.set(xlabel='Steering angle (deg)',ylabel=label); ax.legend(fontsize=7); ax.grid(alpha=.2)
     fig.suptitle('Synthetic, uncalibrated focal geometry; clipped volumes are incomplete')
     fig.savefig(out/'metrics_vs_angle.png',dpi=160); plt.close(fig)
+    fig,axs=plt.subplots(1,2,figsize=(11,4),constrained_layout=True)
+    for db in (3,6):
+        for key,style,label in [('target_plane','o-',f'-{db} dB relative to each peak'),
+                                ('common_target_plane','s--',f'-{db} dB relative to 0 deg peak')]:
+            axs[0].plot(angles,[r[key][f'minus{db}db']['area_mm2'] for r in records],style,label=label)
+            for r in records:
+                m=r[key][f'minus{db}db']
+                if not m['valid_target_plane_region'] and m['status']!='below_threshold':
+                    axs[0].annotate('incomplete / invalid',(r['angle_deg'],m['area_mm2']),fontsize=6,rotation=60)
+        for key in ('u','y'):
+            axs[1].plot(angles,[r['target_plane'][f'minus{db}db'][f'width_{key}_mm'] for r in records],
+                        'o-',label=f'-{db} dB {key}, each peak')
+    axs[0].set(ylabel='Target-connected area (mm2)')
+    axs[1].set(ylabel='Width through nominal target (mm)')
+    for ax in axs:
+        ax.set(xlabel='Steering angle (deg)'); ax.legend(fontsize=7); ax.grid(alpha=.2)
+    fig.suptitle('At 20 mm slant range: plane normal to nominal beam\nSynthetic, uncalibrated pressure; areas are not cure coverage',fontsize=11)
+    fig.savefig(out/'target_area_vs_angle.png',dpi=160); plt.close(fig)
     return records
 
 

@@ -154,6 +154,14 @@ class FocusAnalysisTests(unittest.TestCase):
         self.assertTrue(np.isnan(m['width_u_mm']))
         self.assertFalse(m['valid_target_plane_region'])
 
+    def test_common_target_plane_area_shrinks_with_amplitude(self):
+        p,x,y,z,target = self.gaussian(30)
+        planes = [self.mod.analyze_target_plane(p*scale,(x,y,z),target,30,1.) for scale in (1,.8,.4)]
+        self.assertGreater(planes[0]['minus6db']['area_mm2'],planes[1]['minus6db']['area_mm2'])
+        self.assertGreater(planes[1]['minus6db']['area_mm2'],0)
+        self.assertEqual(planes[2]['minus6db']['area_mm2'],0)
+        self.assertEqual(planes[2]['minus6db']['status'],'below_threshold')
+
     def test_matlab_hdf5_axis_reversal_and_cli_artifacts(self):
         p,x,y,z,target = self.gaussian(0)
         tmp = MODULE.parent / ('focus_analysis_test_' + uuid.uuid4().hex)
@@ -165,8 +173,12 @@ class FocusAnalysisTests(unittest.TestCase):
                 f['p_amp'] = p.transpose(2,1,0)
                 for key,value in [('x_m',x),('y_m',y),('z_m',z),('target_m',target),('angle_deg',[0])]:
                     f[key] = np.asarray(value).reshape(-1,1)
+            with h5py.File(inp/'angle10_field.mat','w') as f:
+                f['p_amp'] = (p*.4).transpose(2,1,0)
+                for key,value in [('x_m',x),('y_m',y),('z_m',z),('target_m',target),('angle_deg',[10])]:
+                    f[key] = np.asarray(value).reshape(-1,1)
             self.mod.run_analysis(inp,out)
-            for name in ['summary.csv','analysis_manifest.json','xz_maps.png','profiles.png','metrics_vs_angle.png','target_plane_maps.png']:
+            for name in ['summary.csv','analysis_manifest.json','xz_maps.png','profiles.png','metrics_vs_angle.png','target_plane_maps.png','target_area_vs_angle.png']:
                 self.assertTrue((out/name).is_file(),name)
             manifest = json.loads((out/'analysis_manifest.json').read_text())
             result = manifest['results'][0]
@@ -175,6 +187,10 @@ class FocusAnalysisTests(unittest.TestCase):
             self.assertEqual(len(manifest['source_sha256']['angle0_field.mat']),64)
             self.assertIn('disconnected',manifest['settings']['xz_contours'])
             self.assertEqual(result['common_minus6db']['voxel_count'],result['minus6db']['voxel_count'])
+            reduced = manifest['results'][1]
+            self.assertGreater(reduced['target_plane']['minus6db']['area_mm2'],0)
+            self.assertEqual(reduced['common_target_plane']['minus6db']['area_mm2'],0)
+            self.assertEqual(reduced['common_target_plane']['minus6db']['status'],'below_threshold')
         finally:
             shutil.rmtree(tmp)
 

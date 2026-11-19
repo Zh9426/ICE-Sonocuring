@@ -1,0 +1,27 @@
+{
+  "matlab_launched": false,
+  "checks": [
+    {
+      "invalid_input_rejected": true,
+      "task": "bad"
+    },
+    {
+      "invalid_input_rejected": true,
+      "task": "steered-focus"
+    },
+    {
+      "invalid_input_rejected": true,
+      "task": "steered-focus"
+    },
+    {
+      "invalid_input_rejected": true,
+      "task": "steered-focus"
+    },
+    {
+      "invalid_input_rejected": true,
+      "task": "steered-focus"
+    }
+  ],
+  "invalid_cases": 5,
+  "parser_errors": 0
+}

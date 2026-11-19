@@ -1,0 +1,118 @@
+Running k-Wave simulation...
+  start time: 2026-11-19 15:34:33
+  reference sound speed: 1540m/s
+  dt: 6.7532ns, t_end: 40.0062us, time steps: 5925
+  input grid size: 600 by 120 by 600 grid points (31.2 by 6.24 by 31.2mm)
+  maximum supported frequency: 14.8077MHz
+  expanding computational grid...
+  computational grid size: 640 by 160 by 640 grid points
+  precomputation completed in 1.5348s
+  saving input files to disk...
+  completed in 1.0745s
++---------------------------------------------------------------+ 
+|                  kspaceFirstOrder-CUDA v1.3                   | 
++---------------------------------------------------------------+ 
+| Reading simulation configuration:                        Done | 
+| Selected GPU device id:                                     0 | 
+| GPU device name:           NVIDIA GeForce RTX 4070 Laptop GPU | 
+| Number of CPU threads:                                      1 | 
+| Processor name:         12th Gen Intel(R) Core(TM) i7-12800HX | 
++---------------------------------------------------------------+ 
+|                      Simulation details                       | 
++---------------------------------------------------------------+ 
+| Domain dimensions:                            640 x 160 x 640 | 
+| Medium type:                                               3D | 
+| Simulation time steps:                                   5925 | 
++---------------------------------------------------------------+ 
+| Input file:  H:\print_transducer\independent_simulation\      | 
+|              results\steered_focus_2026-11-19\common_y6p24\   | 
+|              angle_m10_dx52_gpu_io\field_input.h5             | 
+| Input file:  H:\print_transducer\independent_simulation\      | 
+|              results\steered_focus_2026-11-19\common_y6p24\   | 
+|              angle_m10_dx52_gpu_io\field_output.h5            | 
++---------------------------------------------------------------+ 
+| Compression level:                                          0 | 
++---------------------------------------------------------------+ 
+|                        Medium details                         | 
++---------------------------------------------------------------+ 
+| Wave propagation:                                      Linear | 
+| Absorption type:                                     Lossless | 
+| Medium parameters:                                Homogeneous | 
++---------------------------------------------------------------+ 
+|                        Source details                         | 
++---------------------------------------------------------------+ 
+| Pressure source:                                              | 
+| + Source type:                                           Many | 
+| + Source condition:                                  Additive | 
+| + Memory usage:                                       32.80MB | 
++---------------------------------------------------------------+ 
+|                        Sensor details                         | 
++---------------------------------------------------------------+ 
+| Sensor mask type:                                       Index | 
+| Sampling begins at time step:                               1 | 
++---------------------------------------------------------------+ 
+| Pressure sensor p_rms                                         | 
+| + File usage:                                        164.79MB | 
+| Pressure sensor p_max_all                                     | 
+| + File usage:                                        250.00MB | 
+| Pressure sensor p_min_all                                     | 
+| + File usage:                                        250.00MB | 
+| Pressure sensor p_final                                       | 
+| + File usage:                                        250.00MB | 
++---------------------------------------------------------------+ 
+|                        Initialization                         | 
++---------------------------------------------------------------+ 
+| Memory allocation:                                       Done | 
+| Data loading:                                            Done | 
+| Elapsed time:                                           0.38s | 
++---------------------------------------------------------------+ 
+| FFT plans creation:                                      Done | 
+| Pre-processing phase:                                    Done | 
+| Elapsed time:                                           0.39s | 
++---------------------------------------------------------------+ 
+|                    Computational resources                    | 
++---------------------------------------------------------------+ 
+| Current host memory in use:                            5422MB | 
+| Current device memory in use:                          6419MB | 
+| Expected output file size:                              914MB | 
++---------------------------------------------------------------+ 
+|                          Simulation                           | 
++----------+----------------+--------------+--------------------+ 
+| Progress |  Elapsed time  |  Time to go  |  Est. finish time  | 
++----------+----------------+--------------+--------------------+ 
+|     0%   |        0.001s  |      2.961s  |  19/11/26 15:34:41 | 
+|     5%   |       38.706s  |    730.868s  |  19/11/26 15:47:28 | 
+|    10%   |       80.175s  |    719.550s  |  19/11/26 15:47:58 | 
+|    15%   |      121.670s  |    688.324s  |  19/11/26 15:48:08 | 
+|    20%   |      156.508s  |    624.713s  |  19/11/26 15:47:39 | 
+|    25%   |      190.355s  |    570.166s  |  19/11/26 15:47:19 | 
+|    30%   |      224.330s  |    522.806s  |  19/11/26 15:47:05 | 
+|    35%   |      258.313s  |    479.280s  |  19/11/26 15:46:56 | 
+|    40%   |      292.317s  |    437.859s  |  19/11/26 15:46:48 | 
+|    45%   |      326.223s  |    398.241s  |  19/11/26 15:46:43 | 
+|    50%   |      360.168s  |    359.803s  |  19/11/26 15:46:38 | 
+|    55%   |      394.157s  |    322.217s  |  19/11/26 15:46:35 | 
+|    60%   |      428.254s  |    285.101s  |  19/11/26 15:46:32 | 
+|    65%   |      462.233s  |    248.572s  |  19/11/26 15:46:29 | 
+|    70%   |      496.193s  |    212.398s  |  19/11/26 15:46:27 | 
+|    75%   |      530.198s  |    176.534s  |  19/11/26 15:46:25 | 
+|    80%   |      564.279s  |    140.772s  |  19/11/26 15:46:23 | 
+|    85%   |      598.264s  |    105.332s  |  19/11/26 15:46:22 | 
+|    90%   |      632.239s  |     70.051s  |  19/11/26 15:46:21 | 
+|    95%   |      666.222s  |     34.909s  |  19/11/26 15:46:19 | 
++----------+----------------+--------------+--------------------+ 
+| Elapsed time:                                         700.49s | 
++---------------------------------------------------------------+ 
+| Sampled data post-processing:                            Done | 
+| Elapsed time:                                           3.91s | 
++---------------------------------------------------------------+ 
+|                            Summary                            | 
++---------------------------------------------------------------+ 
+| Peak host memory in use:                               5422MB | 
+| Peak device memory in use:                             6419MB | 
++---------------------------------------------------------------+ 
+| Total execution time:                                 706.66s | 
++---------------------------------------------------------------+ 
+|                       End of computation                      | 
++---------------------------------------------------------------+ 
+Solver completed angle_m10_dx52 at 20261119T154624.
