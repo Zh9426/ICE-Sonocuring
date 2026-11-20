@@ -1,0 +1,4 @@
+PASS: 7 angles, R20, unchanged geometry/waveform/aperture, metadata, arrivals, baseline and mirrors.
+PASS: 5 inconsistent steering metadata cases rejected before allocation.
+PASS: default and isolated run directories, strict run tag rejection, no mkdir.
+Focus-depth inputs passed.

@@ -1,5 +1,5 @@
 {
-  "completed_fields": 5,
+  "completed_fields": 7,
   "raw_readback": "exact stored numeric equality of float32 fields",
   "source_models": "assumed; not calibrated",
   "verifier_sha256": "9adb5dd8154bdc385e9a598ff227b5ddb9270edd9450398992eace8dddc98a89",
@@ -33,6 +33,11 @@
     {
       "angle_abs_deg": 20,
       "pressure_mirror_relative_l2": 4.004639428313269e-05,
+      "scope": "common x coordinates excluding unpaired first x plane"
+    },
+    {
+      "angle_abs_deg": 30,
+      "pressure_mirror_relative_l2": 3.972407093505959e-05,
       "scope": "common x coordinates excluding unpaired first x plane"
     }
   ]

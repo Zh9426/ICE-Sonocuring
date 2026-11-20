@@ -1,8 +1,12 @@
 # 更新与升级公告
 
-## 2026-11-19 — 偏转聚焦输入与焦区范围分析（执行中）
+## 2026-11-20 — 完成全64元七角度偏转焦区对照
 
-新增全64元固定20 mm距离的偏转输入及压力焦区范围分析；七角度传播正在执行。已实现、已验证及未完成项、配置来源、单位和限制见[本轮报告](independent_simulation/docs/steered_focus_results_2026-11-19.md)及[实施计划](independent_simulation/docs/plans/2026-11-19-steered-focus-simulation.md)。
+完成统一52 μm七角度单发声场、焦区/目标截面范围分析、原始输出回读及恢复核验；新增隔离运行标签以支持跨电脑重新计算。已实现、实际验证、阈值口径和未标定/单档网格等限制见[完整报告](independent_simulation/docs/steered_focus_results_2026-11-19.md)。
+
+## 2026-11-19 — 启动偏转聚焦输入与焦区范围分析
+
+新增全64元固定20 mm距离的偏转输入及压力焦区范围分析，计算与核验于11月20日完成。配置来源、单位和限制见[本轮报告](independent_simulation/docs/steered_focus_results_2026-11-19.md)及[实施计划](independent_simulation/docs/plans/2026-11-19-steered-focus-simulation.md)。
 
 ## 2026-11-19 — 补充全64元在固定20 mm处的比较
 

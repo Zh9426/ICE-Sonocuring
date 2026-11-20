@@ -1,0 +1,37 @@
+{
+  "stage": "complete",
+  "angle_deg": 30,
+  "target_m": [
+    0.01,
+    0,
+    0.017320508075688773
+  ],
+  "grid_size": [
+    600,
+    120,
+    600
+  ],
+  "domain_m": [
+    0.0312,
+    0.0062400000000000008,
+    0.0312
+  ],
+  "dx_m": 5.2E-5,
+  "pml_cells": 20,
+  "started": "20261119T161141",
+  "input_driver": "H:\\print_transducer\\independent_simulation\\results\\steered_focus_2026-11-19\\common_y6p24\\angle_p30_simulation_input.mat",
+  "prepare_only": false,
+  "domain_override_mm": "",
+  "Nt": 5925,
+  "dt_s": 6.7532467532467536E-9,
+  "t_end_s": 4.000623376623377E-5,
+  "source_points": 9275,
+  "source_samples": 1178,
+  "source_matrix_bytes": 4.37038E+7,
+  "updated": "20261120T140304",
+  "recovered_at": "20261120T140304",
+  "recovered_from_completed_cuda_output": true,
+  "elapsed_s": 714.32,
+  "elapsed_scope": "CUDA total header time; excludes resumed MATLAB conversion",
+  "raw_path": "H:\\print_transducer\\independent_simulation\\results\\steered_focus_2026-11-19\\common_y6p24\\angle_p30_dx52_field.mat"
+}

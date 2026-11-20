@@ -352,7 +352,19 @@ def run_analysis(input_folder,output_folder):
             if not np.isfinite(baseline_peak):
                 common_metric.update(status='baseline_unavailable',area_mm2=np.nan)
         for db in (3,6):
-            r[f'common_minus{db}db']['valid_focal_region'] &= r['focal_peak_valid'] and baseline_peak_valid
+            m=r[f'common_minus{db}db']
+            m['valid_focal_region'] &= r['focal_peak_valid'] and baseline_peak_valid
+            for key,profile in r['profiles'].items():
+                if m['status']=='component':
+                    width,clipped=_crossing_width(np.asarray(profile['distance_mm'])/1000,
+                                                 np.asarray(profile['pressure_pa_assumed']),common_thresholds[db])
+                else:
+                    width=0. if m['status']=='below_threshold' else np.nan
+                    clipped=False
+                m[f'width_{key}_mm']=width
+                m[f'width_{key}_truncated']=clipped
+                m['truncated'] |= clipped
+                m['valid_focal_region'] &= not clipped
         del p
     rows = []
     for r in records:

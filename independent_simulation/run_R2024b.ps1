@@ -7,7 +7,12 @@ param(
         -not [double]::IsNaN($_) -and -not [double]::IsInfinity($_) -and
         $_ -in @(0, 10, -10, 20, -20, 30, -30)
     })]
-    [double[]]$Angles = @(0, 10, -10, 20, -20, 30, -30)
+    [double[]]$Angles = @(0, 10, -10, 20, -20, 30, -30),
+    [AllowEmptyString()]
+    [ValidateScript({
+        $_ -ceq '' -or $_ -cmatch '\A[A-Za-z0-9][A-Za-z0-9_-]{0,63}\z'
+    })]
+    [string]$RunTag = ''
 )
 $ErrorActionPreference = 'Stop'
 if ($null -eq $Angles -or $Angles.Count -eq 0) { throw 'Angles must not be empty.' }
@@ -28,10 +33,14 @@ switch ($Task) {
             $_.ToString('R', [System.Globalization.CultureInfo]::InvariantCulture)
         }) -join ' '
         $batch = "assert(strcmp(version('-release'),'2024b'),'Use MATLAB R2024b'); addpath(pwd); for angle_deg=[$angleList]; curing_steered_focus_gpu_20261119(angle_deg,52,false); end;"
+        if ($RunTag -cne '') {
+            # The validated ASCII whitelist excludes MATLAB quotes and separators.
+            $batch = "setenv('ICE_STEERED_RUN_TAG','$RunTag'); " + $batch
+        }
         $logName = 'run_R2024b_steered-focus.log'
     }
     'steered-focus-validate' {
-        $batch = "assert(strcmp(version('-release'),'2024b'),'Use MATLAB R2024b'); addpath(pwd); test_steered_focus_20261119; test_steered_focus_metadata_20261119; test_focus_depth_20261114;"
+        $batch = "assert(strcmp(version('-release'),'2024b'),'Use MATLAB R2024b'); addpath(pwd); test_steered_focus_20261119; test_steered_focus_metadata_20261119; test_steered_focus_output_dir_20261119; test_focus_depth_20261114;"
         $logName = 'run_R2024b_steered-focus-validate.log'
     }
 }

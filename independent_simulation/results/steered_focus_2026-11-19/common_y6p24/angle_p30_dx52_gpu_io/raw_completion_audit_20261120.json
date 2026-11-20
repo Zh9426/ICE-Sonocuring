@@ -1,0 +1,16 @@
+{
+  "Nt": 5925,
+  "completed_steps": 5925,
+  "shape_xyz": [
+    600,
+    120,
+    600
+  ],
+  "all_required_arrays_finite": true,
+  "rms_bounded_by_peak": true,
+  "peak_assumed_pa": 2.706618070602417,
+  "final_over_peak": 1.155250970441557e-06,
+  "solver_total_execution_time": "  714.32s",
+  "solver_post_processing_time": "    3.89s",
+  "status": "complete raw CUDA output; MATLAB conversion pending"
+}

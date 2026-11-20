@@ -187,10 +187,12 @@ class FocusAnalysisTests(unittest.TestCase):
             self.assertEqual(len(manifest['source_sha256']['angle0_field.mat']),64)
             self.assertIn('disconnected',manifest['settings']['xz_contours'])
             self.assertEqual(result['common_minus6db']['voxel_count'],result['minus6db']['voxel_count'])
+            self.assertAlmostEqual(result['common_minus6db']['width_n_mm'],result['minus6db']['width_n_mm'])
             reduced = manifest['results'][1]
             self.assertGreater(reduced['target_plane']['minus6db']['area_mm2'],0)
             self.assertEqual(reduced['common_target_plane']['minus6db']['area_mm2'],0)
             self.assertEqual(reduced['common_target_plane']['minus6db']['status'],'below_threshold')
+            self.assertEqual(reduced['common_minus6db']['width_n_mm'],0)
         finally:
             shutil.rmtree(tmp)
 

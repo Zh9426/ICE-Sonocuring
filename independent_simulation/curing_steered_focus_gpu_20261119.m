@@ -23,7 +23,7 @@ base=fullfile(root,'results','curing_export_2026-11-10', ...
 if angle_deg<0, signTag='m'; else, signTag='p'; end
 variant=sprintf('angle_%s%02d',signTag,abs(angle_deg));
 tag=sprintf('%s_dx%d',variant,dx_um);
-out=fullfile(root,'results','steered_focus_2026-11-19','common_y6p24');
+out=iceind.steered_focus_output_dir_20261119(root,getenv('ICE_STEERED_RUN_TAG'));
 if ~isfolder(out), mkdir(out); end
 rawPath=fullfile(out,[tag '_field.mat']);
 partial=fullfile(out,[tag '_field.partial.mat']);

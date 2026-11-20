@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-20",
+  "validation_case_deg": 20,
+  "test": "test_steered_focus_recovery_20261120",
+  "observed_result": "passed",
+  "compared_fields": [
+    "p_amp",
+    "qp",
+    "p_final",
+    "x_m",
+    "y_m",
+    "z_m",
+    "dt_s",
+    "Nt"
+  ],
+  "exact_existing_field_equality": true,
+  "recovered_case_deg": 30,
+  "propagation_rerun_for_recovery": false,
+  "recovery_script_sha256": "c4183dedc7bcfe11f877033007e922ffc4c9c2f3f158b4d06d32bbd674a688d3",
+  "raw_completion_evidence": "common_y6p24/angle_p30_dx52_gpu_io/raw_completion_audit_20261120.json"
+}
