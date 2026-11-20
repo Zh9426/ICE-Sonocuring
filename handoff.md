@@ -1,3 +1,8 @@
+# 2026-11-20：原始驱动纯照射离线版本
+
+- 用户要求原始成像脚本为基准、完全无成像事件的单独照射版本。`verasonics/curing_mode/SetUpP9_4TSICE_TXOnly_20mm_35V_offline.m` 保留原厂探头及延时函数、原6 MHz单周期波形和原15次/组、30组时序，64元、20 mm、35 V请求；去掉接收/重建/显示/传输，有限stop，不调用VSX或保存。独立MATLAB R2024b测试1/1通过、静态分析0项；首次缺厂商路径后修复通过。
+- 35 V仅软件上限，其他探头参数及安全功率unknown；未证明最高功率、实物安全、VSX加载、声压或固化。时序和差异见 `verasonics/curing_mode/原版驱动纯照射离线说明_2026-11-20.md`。厂商软件和F盘手册跨电脑可能不可用；测试必须在独立MATLAB进程运行以避免厂商函数基础工作区冲突。
+
 # 2026-11-20：原始驱动20 mm离线对照
 
 - 用户确认基准为 `VantageNXT-2.3.2-p2/XJD/SetUpP9_4TSICE_FlashAngles.m`，要求原版一致，只修改需要之处。副本 `verasonics/curing_mode/SetUpP9_4TSICE_20mm_35V_offline.m` 保留原始对象和15次采集/重建/循环，将焦点设为20 mm、所有TX转向设为0、增加TPC(1).hv=35；强制simulateMode=1、禁用VSX、改输出名以防覆盖。副本15次均聚焦同一点，不再实现原角度复合成像；不是经VSX验证的驱动或硬件安全版。
