@@ -1,3 +1,8 @@
+# 2026-11-20：全64元35 V离线候选
+
+- 用户希望20 mm目标、尽可能提高驱动；新增 `verasonics/curing_mode/+icec/all64_35v_candidate.m`，64元、Profile 1、35 V请求，其他仍为assumed有限默认时序。35 V仅既有软件上限，非探头额定；burst、占空比、总发射上限unknown，不能称最大安全功率。参数、手册依据与待确认事项见 `verasonics/curing_mode/all64_35v_candidate_2026-11-20.md`。
+- MATLAB连接会话新增测试1/1、纯照射回归8/8通过，新增函数静态分析0项；未运行VSX、硬件或声传播。命令行MATLAB首次启动文件系统不一致，连接会话可用。四手册F盘路径及MATLAB等本机依赖跨电脑可能不可用。
+
 # 2026-11-20：完成七角度偏转聚焦与焦区范围对照
 
 - 已完成全64元、固定20 mm直线距离、52 μm的0/±10/±20/±30°七组单发声场、统一焦区分析及原始输出回读。本轮报告 `independent_simulation/docs/steered_focus_results_2026-11-19.md`；完整表图在 `independent_simulation/results/steered_focus_2026-11-19/common_y6p24/analysis/`。没有活动求解器需要继续等待。
